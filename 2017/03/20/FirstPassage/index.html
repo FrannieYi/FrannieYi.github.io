@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Yangyi的博客</title>
+  <title>FirstPassage | Yangyi的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yangyi的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="第一篇博文（搭建博客的坑！！！）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="FirstPassage">
+<meta property="og:url" content="http://yoursite.com/2017/03/20/FirstPassage/index.html">
 <meta property="og:site_name" content="Yangyi的博客">
+<meta property="og:description" content="第一篇博文（搭建博客的坑！！！）">
+<meta property="og:updated_time" content="2017-03-20T13:25:25.144Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yangyi的博客">
+<meta name="twitter:title" content="FirstPassage">
+<meta name="twitter:description" content="第一篇博文（搭建博客的坑！！！）">
   
     <link rel="alternative" href="/atom.xml" title="Yangyi的博客" type="application/atom+xml">
   
@@ -153,36 +157,110 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-FirstPassage" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/20/FirstPassage/" class="archive-article-date">
-  	<time datetime="2017-03-20T13:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/20/FirstPassage/">FirstPassage</a>
+    <h1 class="article-title" itemprop="name">
+      FirstPassage
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/20/FirstPassage/" class="archive-article-date">
+  	<time datetime="2017-03-20T13:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="第一篇博文（搭建博客的坑！！！）"><a href="#第一篇博文（搭建博客的坑！！！）" class="headerlink" title="第一篇博文（搭建博客的坑！！！）"></a>第一篇博文（搭建博客的坑！！！）</h2><a id="more"></a>
+<h3 id="1-关于Hexo"><a href="#1-关于Hexo" class="headerlink" title="1.关于Hexo"></a>1.关于Hexo</h3><ul>
+<li>nmp安装Hexo</li>
+</ul>
+<p>打开命令行工具，执行如下命令：</p>
+<pre><code>$ npm install -g hexo
+</code></pre><ul>
+<li>创建文件夹</li>
+</ul>
+<p>本人是直接在D盘创建了一个名叫blog的文件夹，在blog中创建了Hexo文件夹。（这个看个人喜好吧，用命令行也未尝不可。）</p>
+<ul>
+<li>初始化</li>
+</ul>
+<p>在Hexo目录下打开命令行工具，执行：</p>
+<pre><code>hexo init
+</code></pre><p>之后执行：</p>
+<pre><code>hexo server
+</code></pre><p>会看到：</p>
+<pre><code>INFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+</code></pre><p>访问：<a href="http://localhost:4000/" title="初始页面" target="_blank" rel="external">http://localhost:4000/</a>就可以看到Hexo的初始页面了。</p>
+<h3 id="2-关于个人设置"><a href="#2-关于个人设置" class="headerlink" title="2.关于个人设置"></a>2.关于个人设置</h3><ul>
+<li>基本信息</li>
+</ul>
+<p>本人修改了title、subtitle、author的内容，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: YangKunyi的博客</div><div class="line">subtitle: 爱看书的杨杨</div><div class="line">description:</div><div class="line">author: FrannieYi</div><div class="line">language:</div><div class="line">timezone:</div></pre></td></tr></table></figure>
+<p><strong><em>第一个坑</em></strong><br><strong>注意每一个冒号后面都有一个空格</strong></p>
+<blockquote>
+<p>无法生效的写法：title:Drubear的博客<br>有效的写法：title:[空格]Drubear的博客</p>
+</blockquote>
+<ul>
+<li>主题</li>
+</ul>
+<blockquote>
+<p>知乎 - <a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">好看的主题！</a></p>
+</blockquote>
+<p>使用git命令在github上clone下自己喜欢的主题，本人使用的是litten的yilia。</p>
+<ul>
+<li><p>配置主题<br>根据clone下来的主题将页面进行个性化设置。可以参考博主给的各种参数。</p>
+</li>
+<li><p>部署设置</p>
+</li>
+</ul>
+<p>只需简单的执行</p>
+<pre><code>hexo d
+</code></pre><h3 id="But，重点来了"><a href="#But，重点来了" class="headerlink" title="But，重点来了"></a><strong>But，重点来了</strong></h3><p><strong><em>前方巨坑请注意</em></strong></p>
+<ol>
+<li>首先在github上建立一个仓库，名字叫做：<code>[你的用户名].github.io</code><strong>注意，你的用户名必须与你实际的用户名一字不差！</strong></li>
+<li>拥有了个人的GitHubPages后，再回到Hexo的_config.yml文件，找到Deployment章节，做以下修改：（以FrannieYi为用户名为例）<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/FrannieYi/FrannieYi.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>以上两步做完后，执行 hexo d<br>如果没有报错，你是幸运的。<br>本人在这个坑里栽了无数次，系统报错</p>
+<pre><code>ERROR Deployer not found: Git
+</code></pre><p>最后发现这个错误是因为少运行了一行代码：</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>运行完以上代码终于，本人泪流满面的看到了自己亲手搭建的博客。</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -194,46 +272,88 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/20/FirstPassage/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/20/hello-world/" class="archive-article-date">
-  	<time datetime="2017-03-20T10:41:27.348Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/20/hello-world/">Hello World</a>
-    </h1>
+  
+    <a href="/2017/03/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -256,8 +376,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
