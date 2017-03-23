@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: JSON，前端 | Yangyi的博客</title>
+  <title>动画和HTML5 | Yangyi的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yangyi的博客">
-<meta property="og:url" content="http://yoursite.com/tags/JSON，前端/index.html">
+  <meta name="description" content="用JavaScript实现动画效果">
+<meta property="og:type" content="article">
+<meta property="og:title" content="动画和HTML5">
+<meta property="og:url" content="http://yoursite.com/2017/03/23/动画和HTML5/index.html">
 <meta property="og:site_name" content="Yangyi的博客">
+<meta property="og:description" content="用JavaScript实现动画效果">
+<meta property="og:updated_time" content="2017-03-23T06:35:14.250Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yangyi的博客">
+<meta name="twitter:title" content="动画和HTML5">
+<meta name="twitter:description" content="用JavaScript实现动画效果">
   
     <link rel="alternative" href="/atom.xml" title="Yangyi的博客" type="application/atom+xml">
   
@@ -153,60 +157,204 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-动画和HTML5" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/22/JSON相关内容/" class="archive-article-date">
-  	<time datetime="2017-03-22T15:02:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/22/JSON相关内容/">JSON相关内容</a>
+    <h1 class="article-title" itemprop="name">
+      动画和HTML5
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/03/23/动画和HTML5/" class="archive-article-date">
+  	<time datetime="2017-03-23T06:33:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-23</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3><a id="more"></a>
+<h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><ul>
+<li>position属性：<ul>
+<li>static：默认值，意思是有关元素将按照它们在标记里出现的先后顺序出现在浏览器窗口里。</li>
+<li>relative：与static相似，区别是relative的元素还可以（通过应用float属性）从文档的正常显示顺序里脱离出来。</li>
+<li>absolute：我们就可以将它摆在“容器”的任何位置。这个容器要么是文档本身，要么是一个有着fixed或absolute属性的父元素。这个元素在原始标记里面出现的位置与它显示位置无关，因为它的显示位置由top，left，right和bottom等属性决定。你可以使用像素或百分比为单位设置这些属性。</li>
+</ul>
+</li>
+<li>overflow属性：<ul>
+<li>visible：不裁剪溢出内容。</li>
+<li>hidden：隐藏溢出内容。</li>
+<li>scroll：类似鱼hidden，浏览器将对溢出的内容进行隐藏，但显示一个滚动条以便让用户能够滚动看到内容的其他部分。</li>
+<li>auto：类似于scroll，但浏览器只在确实发生溢出时才显示滚动条，如果没有溢出就不显示滚动条。<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4></li>
+</ul>
+</li>
+<li>setTimeout：能够让某个函数在经过一段预定的时间之后才开始执行。<ul>
+<li>函数有两个参数：第一个是字符串，执行的函数名；第二个是数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数所给出的函数。</li>
+<li><code>setTimeout(&quot;function&quot;,interval)</code></li>
+<li>在绝大多数情况下，将函数调用赋值给一个变量是一个好主意。</li>
+<li><code>varible=setTimeout(&quot;function&quot;,interval)</code></li>
+<li>取消某个正在排队等候执行的函数：</li>
+<li><code>clearTimeout(variable)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><h4 id="video："><a href="#video：" class="headerlink" title="video："></a>video：</h4><ul>
+<li>currentTime：返回当前播放的位置，以秒表示；</li>
+<li>duration：返回媒体的总时长，以秒表示，对于流媒体返回无穷大； * paused：表示媒体是否处于暂停状态；</li>
+<li>触发脚本的事件：</li>
+<li>play：在媒体播放开始时发生；</li>
+<li>pause：在媒体暂停是发生；</li>
+<li>loadeddata：在媒体可以从当前播放位置开始播放时发生；</li>
+<li>ended：在媒体已播放完成而停止时发生；</li>
+<li>别忘了给<code>&lt;video&gt;</code>元素叫control属性：</li>
+<li><code>&lt;video src=&quot;movie.ogv&quot; control&gt;</code></li>
+</ul>
+<h4 id="表单："><a href="#表单：" class="headerlink" title="表单："></a>表单：</h4><p>新的输入控件类型</p>
+<ul>
+<li>email，用于输入电子邮件地址；</li>
+<li>url，用于输入URL；</li>
+<li>date，用于输入日期和时间；</li>
+<li>number，数值；</li>
+<li>ranger，生成滑动条；</li>
+<li>search，搜索框；</li>
+<li>tel，电话号码；</li>
+<li><p>color，选择颜色；<br>新的属性</p>
+</li>
+<li><p>autocomplete，用于为文本（text）输入框添加一组建议的输入项；</p>
+</li>
+<li>autofocus，让表单元素自动获得焦点；</li>
+<li>form，对<form>标签外部的表单元素分组；</form></li>
+<li>min，max和step，用在范围（range）和数值（number）输入框中；</li>
+<li>pattern，定义一个正则表达式，以便验证输入的值；</li>
+<li>placeholder，在文本输入临时性的提示信息；</li>
+<li>required，表示必填；</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JSON，前端</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JS,动画,HTML5</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/03/23/动画和HTML5/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
   
   
-    </div></section>
+    <a href="/2017/03/22/JSON相关内容/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JSON相关内容</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-    
+
 
 
           </div>
@@ -229,9 +377,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
