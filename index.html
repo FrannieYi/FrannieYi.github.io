@@ -175,10 +175,63 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3>
-        
-          <a class="article-more-a" href="/2017/03/23/动画和HTML5/#more">more >></a>
-        
+        <a id="more"></a>
+<h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3><h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><ul>
+<li>position属性：<ul>
+<li>static：默认值，意思是有关元素将按照它们在标记里出现的先后顺序出现在浏览器窗口里。</li>
+<li>relative：与static相似，区别是relative的元素还可以（通过应用float属性）从文档的正常显示顺序里脱离出来。</li>
+<li>absolute：我们就可以将它摆在“容器”的任何位置。这个容器要么是文档本身，要么是一个有着fixed或absolute属性的父元素。这个元素在原始标记里面出现的位置与它显示位置无关，因为它的显示位置由top，left，right和bottom等属性决定。你可以使用像素或百分比为单位设置这些属性。</li>
+</ul>
+</li>
+<li>overflow属性：<ul>
+<li>visible：不裁剪溢出内容。</li>
+<li>hidden：隐藏溢出内容。</li>
+<li>scroll：类似鱼hidden，浏览器将对溢出的内容进行隐藏，但显示一个滚动条以便让用户能够滚动看到内容的其他部分。</li>
+<li>auto：类似于scroll，但浏览器只在确实发生溢出时才显示滚动条，如果没有溢出就不显示滚动条。<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4></li>
+</ul>
+</li>
+<li>setTimeout：能够让某个函数在经过一段预定的时间之后才开始执行。<ul>
+<li>函数有两个参数：第一个是字符串，执行的函数名；第二个是数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数所给出的函数。</li>
+<li><code>setTimeout(&quot;function&quot;,interval)</code></li>
+<li>在绝大多数情况下，将函数调用赋值给一个变量是一个好主意。</li>
+<li><code>varible=setTimeout(&quot;function&quot;,interval)</code></li>
+<li>取消某个正在排队等候执行的函数：</li>
+<li><code>clearTimeout(variable)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><h4 id="video："><a href="#video：" class="headerlink" title="video："></a>video：</h4><ul>
+<li>currentTime：返回当前播放的位置，以秒表示；</li>
+<li>duration：返回媒体的总时长，以秒表示，对于流媒体返回无穷大； * paused：表示媒体是否处于暂停状态；</li>
+<li>触发脚本的事件：</li>
+<li>play：在媒体播放开始时发生；</li>
+<li>pause：在媒体暂停是发生；</li>
+<li>loadeddata：在媒体可以从当前播放位置开始播放时发生；</li>
+<li>ended：在媒体已播放完成而停止时发生；</li>
+<li>别忘了给<code>&lt;video&gt;</code>元素叫control属性：</li>
+<li><code>&lt;video src=&quot;movie.ogv&quot; control&gt;</code></li>
+</ul>
+<h4 id="表单："><a href="#表单：" class="headerlink" title="表单："></a>表单：</h4><p>新的输入控件类型</p>
+<ul>
+<li>email，用于输入电子邮件地址；</li>
+<li>url，用于输入URL；</li>
+<li>date，用于输入日期和时间；</li>
+<li>number，数值；</li>
+<li>ranger，生成滑动条；</li>
+<li>search，搜索框；</li>
+<li>tel，电话号码；</li>
+<li><p>color，选择颜色；<br>新的属性</p>
+</li>
+<li><p>autocomplete，用于为文本（text）输入框添加一组建议的输入项；</p>
+</li>
+<li>autofocus，让表单元素自动获得焦点；</li>
+<li>form，对<form>标签外部的表单元素分组；</form></li>
+<li>min，max和step，用在范围（range）和数值（number）输入框中；</li>
+<li>pattern，定义一个正则表达式，以便验证输入的值；</li>
+<li>placeholder，在文本输入临时性的提示信息；</li>
+<li>required，表示必填；</li>
+</ul>
+
       
 
       
@@ -239,10 +292,46 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2>
-        
-          <a class="article-more-a" href="/2017/03/22/JSON相关内容/#more">more >></a>
-        
+        <a id="more"></a>
+<h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2><h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><ul>
+<li>JSON是一种数据结构，不是一种编程语言。</li>
+</ul>
+<h3 id="语法（三种类型的值）"><a href="#语法（三种类型的值）" class="headerlink" title="语法（三种类型的值）"></a>语法（三种类型的值）</h3><ul>
+<li>简单值：使用JavaScript语法，可以在JSON中表示字符串、数值、布尔值和null，但不支持undefined。<ul>
+<li>字符串必须用双引号。</li>
+<li>没有变量，没有分号。</li>
+</ul>
+</li>
+<li>对象：表示一组无序的键值对儿，每个键值对儿的值可以是简单值，也可以是复杂数据类型。<ul>
+<li><strong>对象的属性必须加双引号</strong>。</li>
+<li>没有声明，没有末尾的分号。</li>
+<li>一个对象绝不能出项两个同名的属性。</li>
+</ul>
+</li>
+<li>数组：一组有序的值的列表，可以通过数值索引类访问其中的值，数组的值也可以是任意值。<ul>
+<li>没有变量，没有分号。</li>
+</ul>
+</li>
+</ul>
+<h3 id="解析与序列化"><a href="#解析与序列化" class="headerlink" title="解析与序列化"></a>解析与序列化</h3><p>JSON可以将JSON数据结构解析为有用的JavaScript对象。</p>
+<ul>
+<li><p>JSON对象</p>
+<ul>
+<li>stringify()：将JavaScript对象序列化为JSON字符串。</li>
+<li>parse()：将JSON字符串解析为原生的JavaScript值。</li>
+</ul>
+</li>
+<li><p>序列化选项</p>
+<ul>
+<li>stringify()除了要序列化的JavaScript对象外，还可以接收两个参数，用于指定以不同的方式序列化JavaScript对象。一个是参数过滤器（可以是数组，可以是函数），第二个参数是选项，表示是否在JSON字符串中保存缩进。</li>
+<li>如果是数组，就返回对象相应的属性。</li>
+<li>如果是函数，返回值是undefined将会被忽略。</li>
+<li>字符串缩进：第三个参数用于控制结果中的缩进和空白字符串。如果是数字就表示的是每个级别缩进的空格数。</li>
+<li>toJSON()方法：（没看懂）。</li>
+</ul>
+</li>
+</ul>
+
       
 
       
@@ -303,12 +392,206 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ol>
+        <a id="more"></a>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ol>
 <li>子元素使用padding会影响父元素。（解决方法是给父元素用padding）</li>
-<li>背景图片的设置。（已解决）
-        
-          <a class="article-more-a" href="/2017/03/21/css选择器、权重及优先级/#more">more >></a>
-        
+<li>背景图片的设置。（已解决）</li>
+</ol>
+<hr>
+<h2 id="分享会（胡小青）"><a href="#分享会（胡小青）" class="headerlink" title="分享会（胡小青）"></a>分享会（胡小青）</h2><h1 id="CSS选择器、权重及优先级"><a href="#CSS选择器、权重及优先级" class="headerlink" title="CSS选择器、权重及优先级"></a>CSS选择器、权重及优先级</h1><h3 id="选择器的种类"><a href="#选择器的种类" class="headerlink" title="选择器的种类"></a>选择器的种类</h3><ul>
+<li>通配符选择器（＊）</li>
+<li>id选择器（#ID）</li>
+<li>类选择器（.className）</li>
+<li>标签选择器(E)</li>
+<li>后代选择器（Ｅ Ｆ）</li>
+<li>子元素选择器(E&gt;F)</li>
+<li>相邻兄弟元素选择器(E + F)</li>
+<li>群组选择器（selector1,selector2,…,selectorN）</li>
+<li>交集选择器（E.className)</li>
+<li>属性选择器</li>
+<li>伪类选择器</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;div id=&quot;share&quot;&gt;id选择器&lt;/div&gt;</div><div class="line">&lt;div class=&quot;share&quot;&gt;类选择器&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">	&lt;em&gt;标签选择器&lt;/em&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">	&lt;p&gt;后代选择器&lt;/p&gt;</div><div class="line">	&lt;p&gt;&lt;span&gt;非直系后代&lt;/span&gt;&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">	&lt;p&gt;子元素选择器&lt;/p&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">	&lt;p&gt;相邻兄弟1&lt;/p&gt;</div><div class="line">	&lt;span&gt;相邻兄弟2&lt;/span&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div&gt;</div><div class="line">	&lt;h1&gt;群组选择器&lt;/h1&gt;</div><div class="line">	&lt;h2&gt;群组选择器&lt;/h2&gt;</div><div class="line">	&lt;h3&gt;群组选择器&lt;/h3&gt;</div><div class="line">&lt;/div&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">*&#123;</div><div class="line">	margin: 0;</div><div class="line">	padding: 0;</div><div class="line">&#125;</div><div class="line">#share&#123;</div><div class="line">	width: 200px;</div><div class="line">	background: #cfd2d1;</div><div class="line">&#125;</div><div class="line">.share&#123;</div><div class="line">	width: 200px;</div><div class="line">	background: #e9eeec;</div><div class="line">	margin-bottom: 10px;</div><div class="line">&#125;</div><div class="line">div.share &#123;</div><div class="line">	border: 2px solid #000;</div><div class="line">&#125;</div><div class="line">em&#123;</div><div class="line">	background: #f5f6f6;</div><div class="line"></div><div class="line">&#125;</div><div class="line">div p &#123;</div><div class="line">	background: #e9eeec;</div><div class="line">&#125;</div><div class="line">div p span&#123;</div><div class="line">	width: 200px;</div><div class="line">	background: #acb1af;</div><div class="line">&#125;</div><div class="line"></div><div class="line">div &gt; p &#123;</div><div class="line">	width: 200px;</div><div class="line">	background: #adcec0;</div><div class="line">&#125;</div><div class="line">p + span &#123;</div><div class="line">	width: 200px;</div><div class="line">	background: #9d9e9e;</div><div class="line">&#125;</div><div class="line">h1,h2,h3 &#123;</div><div class="line">	width: 200px;</div><div class="line">	background: #afead2;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<hr>
+<h4 id="属性选择器"><a href="#属性选择器" class="headerlink" title="属性选择器"></a>属性选择器</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">属性选择器</th>
+<th style="text-align:center">功能</th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">E[att]</td>
+<td style="text-align:center">匹配所有具有att属性的E元素，不考虑它的值。</td>
+<td style="text-align:center">css2</td>
+</tr>
+<tr>
+<td style="text-align:center">E[att=val]</td>
+<td style="text-align:center">匹配所有att属性等于”val”的E元素</td>
+<td style="text-align:center">css2</td>
+</tr>
+<tr>
+<td style="text-align:center">E[att~=val]</td>
+<td style="text-align:center">匹配属性包含val的元素，并设置其样式：注意是val，所以val-ab这样不算</td>
+<td style="text-align:center">css2</td>
+</tr>
+<tr>
+<td style="text-align:center">E[att\</td>
+<td style="text-align:center">=val]</td>
+<td style="text-align:center">匹配所有att属性具有多个连字号分隔（hyphen-separated）的值、其中一个值以”val”开头的E元素，主要用于lang属性</td>
+<td>css2</td>
+</tr>
+<tr>
+<td style="text-align:center">E[att^=val]</td>
+<td style="text-align:center">选择匹配的元素E，E定义了属性att,属性值以val开头的字符串</td>
+<td style="text-align:center">css3</td>
+</tr>
+<tr>
+<td style="text-align:center">E[arr$=val]</td>
+<td style="text-align:center">选择匹配的元素E，E定义了属性att,属性值以val结尾的字符串</td>
+<td style="text-align:center">css3</td>
+</tr>
+<tr>
+<td style="text-align:center">E[att*=val]</td>
+<td style="text-align:center">选择匹配的元素E，E定义了属性att,属性值包含val的字符串，也就是val可以在任意位置</td>
+<td style="text-align:center">css3</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;a href=&quot;xxx.pdf&quot;&gt;我链接的是PDF文件&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; class=&quot;icon&quot;&gt;我类名是icon&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; title=&quot;我的title是more&quot;&gt;我的title是more&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; name=&quot;about&quot; lang=&quot;en-zhN&quot;&gt;选择含有about的元素&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; name=&quot;about-ab&quot; lang=&quot;en&quot;&gt;选择含有about的元素&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; name=&quot;about ab&quot;&gt;选择含有about的元素&lt;/a&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">a[href=&quot;xxx.pdf&quot;] &#123;</div><div class="line">	border: 1px solid #000;</div><div class="line">&#125;</div><div class="line">a[href$=pdf]&#123;</div><div class="line">  background: orange;</div><div class="line">  color: #fff;</div><div class="line">&#125;</div><div class="line">a[class^=icon] &#123;</div><div class="line">  background: #55e2a8;</div><div class="line">  color:#fff;</div><div class="line">&#125;</div><div class="line">a[title*=more] &#123;</div><div class="line">  background: #7a92e9;</div><div class="line">  color: #fff;</div><div class="line">&#125;</div><div class="line">a[name~=about] &#123;</div><div class="line">	background: #55e2a8;</div><div class="line">&#125;</div><div class="line">a[lang|=en] &#123;</div><div class="line">	border: 1px solid #000;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="伪类选择器"><a href="#伪类选择器" class="headerlink" title="伪类选择器 *"></a>伪类选择器 <em>*</em></h3><h4 id="动态伪类"><a href="#动态伪类" class="headerlink" title="动态伪类"></a>动态伪类</h4><ul>
+<li><p>锚点伪类</p>
+<ul>
+<li><code>:link</code>  链接访问前状态</li>
+<li><code>:visited</code>  链接访问后状态</li>
+<li><code>:hover</code>  鼠标悬浮链接的状态</li>
+<li><code>:active</code>  激活链接时的状态<blockquote>
+<p>伪类的顺序：link - visited -&gt; hover -&gt; active</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>用户行为伪类</p>
+<ul>
+<li><code>:hover</code> 用于当用户把鼠标移动到元素上面时的效果</li>
+<li><code>:active</code> 用于用户点击元素那一下的效果</li>
+<li><code>:focus</code>用于元素成为焦点，这个经常用在表单元素上<blockquote>
+<p>顺序： focus - &gt; hover -&gt; active<br>IE6下只有<code>&lt;a&gt;</code>支持<code>:hover</code>，IE6,7都不支持<code>:focus</code>、<code>:active</code></p>
+</blockquote>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;link效果&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; class=&quot;visited&quot;&gt;visited效果&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; class=&quot;hover&quot;&gt;hover效果&lt;/a&gt;</div><div class="line">&lt;a href=&quot;#&quot; class=&quot;active&quot;&gt;active效果&lt;/a&gt;</div><div class="line">&lt;input type=&quot;text&quot; name=&quot;&quot;&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">.link:link &#123;</div><div class="line">	background: pink;</div><div class="line">&#125;</div><div class="line">.visited:visited&#123;</div><div class="line">	background: #cca;</div><div class="line">&#125;</div><div class="line">.hover:hover &#123;</div><div class="line">	background: lightblue;</div><div class="line">&#125;</div><div class="line">.active:active &#123;</div><div class="line">	background: lightgreen;</div><div class="line">&#125;</div><div class="line">input:focus &#123;</div><div class="line">	outline: 2px solid red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="UI元素状态伪类"><a href="#UI元素状态伪类" class="headerlink" title="UI元素状态伪类"></a>UI元素状态伪类</h4><p>这类伪类主要针对form元素</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">伪类</th>
+<th style="text-align:center">功能</th>
+<th>适用元素</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>:enabled</code></td>
+<td style="text-align:center">匹配表单中激活的元素</td>
+<td>type=”text”</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>:disabled</code></td>
+<td style="text-align:center">匹配表单中禁用的元素</td>
+<td>type=”text”</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>:checked</code></td>
+<td style="text-align:center">匹配表单中被选中的radio（单选框）或checkbox（复选框）元素</td>
+<td>type=”radio”</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>::selection</code></td>
+<td style="text-align:center">匹配用户当前选中的元素</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">input[type=&quot;radio&quot;]:disabled &#123;</div><div class="line">	background-color: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="结构伪类"><a href="#结构伪类" class="headerlink" title="结构伪类"></a>结构伪类</h4><ul>
+<li><code>:first-child</code>*  选择某个元素的第一个子元素,IE6不支持；</li>
+<li><code>:last-child</code>* 选择某个元素的最后一个子元素；</li>
+<li><code>:nth-child()</code>* 选择某个元素的一个或多个特定的子元素，IE6-8，Firefox3.0不兼容；<blockquote>
+<p>:nth-child(length)&ensp;&ensp;参数是具体数字<br> :nth-child(n)&ensp;&ensp;参数是n,n从0开始计算<br> :nth-child(n<em>length)&ensp;&ensp;n的倍数选择，n从0开始算<br> :nth-child(n+length)&ensp;&ensp;选择大于length后面的元素<br>  :nth-child(-n+length)&ensp;&ensp;选择小于length前面的元素<br>  :nth-child(n</em>length+1)&ensp;&ensp;表示隔几选一</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">li:last-child &#123;</div><div class="line">	background: #f9f57a;</div><div class="line">&#125;</div><div class="line">li:nth-child(2) &#123;</div><div class="line">	background: #c8cac9;</div><div class="line">&#125;</div><div class="line">li:nth-child(2n) &#123;</div><div class="line">	border: 3px solid red;</div><div class="line">&#125;</div><div class="line">li:nth-child(n+3) &#123;</div><div class="line">	border: 3px solid yellow;</div><div class="line">&#125;</div><div class="line">li:nth-child(-n+3) &#123;</div><div class="line">	border: 3px solid yellow;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li><code>:nth-last-child()</code>选择某个元素的一个或多个特定的子元素，从这个元素的最后一个子元素开始算，IE6-8，Firefox3.0不兼容；</li>
+<li><code>:nth-of-type()</code>选择指定的元素,与nth-child类似也可以使用表达式，IE6-8，Firefox3.0不兼容；</li>
+<li><code>:nth-last-of-type()</code>选择指定的元素，从元素的最后一个开始计算；</li>
+<li><code>:first-of-type</code>选择一个上级元素下的第一个同类子元素，与first-child类似，不过是指定了元素类型；</li>
+<li><code>:last-of-type</code>选择一个上级元素的最后一个同类子元素；</li>
+<li><code>:only-child</code>选择的元素是它的父元素的唯一一个子元素，兼容到IE9；</li>
+<li><code>:only-of-type</code>选择一个元素是它的上级元素的唯一一个相同类型的子元素，IE6-8，Firefox3.0不兼容；</li>
+<li><code>:empty</code>选择的元素里面没有任何内容，兼容到IE9；</li>
+<li><code>:not()</code>选择不匹配的元素，兼容到IE9；</li>
+<li><code>target</code> 匹配文档中特定”id”点击后的效果，兼容到IE9。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;a href=&quot;#test&quot;&gt;test&lt;/a&gt;</div><div class="line">&lt;div&gt;第一个div&lt;/div&gt;</div><div class="line">&lt;p&gt;第一个p&lt;/p&gt;</div><div class="line">&lt;div id=&quot;test&quot;&gt;第二个div&lt;/div&gt;</div><div class="line">&lt;p&gt;第二个p&lt;/p&gt;</div><div class="line">&lt;p&gt;&lt;/p&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">div:not&#123;</div><div class="line">	background-color: lightgrey;</div><div class="line">&#125;</div><div class="line">p:empty&#123;</div><div class="line">	height:30px;</div><div class="line">	width:30px;</div><div class="line">	background:pink;</div><div class="line">&#125;</div><div class="line">div:target&#123;</div><div class="line">	color:blue;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="伪元素选择器"><a href="#伪元素选择器" class="headerlink" title="伪元素选择器"></a>伪元素选择器</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">伪元素</th>
+<th style="text-align:center">功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><code>:first-line</code></td>
+<td style="text-align:center">匹配元素的第一行</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>:first-letter</code></td>
+<td style="text-align:center">匹配元素的第一个字母</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>:before</code></td>
+<td style="text-align:center">元素之前插入生成的内容</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>:after</code></td>
+<td style="text-align:center">元素之后插入生成的内容</td>
+</tr>
+<tr>
+<td style="text-align:center"><code>:selecton</code></td>
+<td style="text-align:center">改变浏览网页选中文的默认效果</td>
+</tr>
+</tbody>
+</table>
+<p>伪元素可以用<code>::</code>也可以用<code>:</code><br>关于first-letter使用条件比较苛刻，一般只有<br>有兴趣可以参考<a href="http://www.zhangxinxu.com/wordpress/2016/09/css-first-letter-pseudo-element/" target="_blank" rel="external">深入CSS ::first-letter伪元素及其实例</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">li::first-letter &#123;</div><div class="line">	font-size: 56px;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="伪类和伪元素的区别"><a href="#伪类和伪元素的区别" class="headerlink" title="伪类和伪元素的区别"></a>伪类和伪元素的区别</h3><p>&gt;</p>
+<ul>
+<li>CSS 伪类用于向某些选择器添加特殊的效果。</li>
+<li>CSS 伪元素用于将特殊的效果添加到某些选择器。<br>两者都与选择器相关，可以添加一些“特殊”的效果。</li>
+</ul>
+<blockquote>
+<p>区别：<br>&ensp;&ensp;&ensp;&ensp;伪类的效果可以通过添加一个实际的类来达到，而伪元素的效果则需要通过添加一个实际的元素才能达到</p>
+</blockquote>
+<p><strong>伪类</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;p&gt;</div><div class="line">    &lt;i&gt;first&lt;/i&gt;</div><div class="line">    &lt;i&gt;second&lt;/i&gt;+</div><div class="line">&lt;/p&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">p&gt;i:first-child &#123;</div><div class="line">    color: red</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><img src="https://sfault-image.b0.upaiyun.com/28/5a/285a5d7bc8c979311d637f576914ccea_articlex" alt="伪类"></p>
+<p><strong>伪类</strong> <code>:first-child</code> 添加样式到第一个子元素<br>如果我们不使用伪类，而希望达到上述效果，可以这样做：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;p&gt;</div><div class="line">    &lt;i class=&quot;first-child&quot;&gt;first&lt;/i&gt;</div><div class="line">    &lt;i&gt;second&lt;/i&gt;</div><div class="line">&lt;/p&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">.first-child &#123;</div><div class="line">    color: red</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>我们给第一个子元素添加一个类，然后定义这个类的样式。</p>
+</blockquote>
+<p><strong>伪元素：</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;p&gt;I am stephen lee.&lt;/p&gt;</div><div class="line"></div><div class="line">//css</div><div class="line">p:first-letter &#123;</div><div class="line">    color: red</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><img src="https://sfault-image.b0.upaiyun.com/47/d5/47d55dc18a1c34ba5ca9dc53faccb623_articlex" alt="伪元素"></p>
+<p>伪元素 <code>:first-letter</code> 添加样式到第一个字母<br>那么如果我们不使用伪元素，要达到上述效果，我们可以这样做：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//html</div><div class="line">&lt;p&gt;</div><div class="line">    &lt;span&gt;I&lt;/span&gt; am stephen lee.</div></pre></td></tr></table></figure>
+
       
 
       
@@ -369,10 +652,62 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一篇博文（搭建博客的坑！！！）"><a href="#第一篇博文（搭建博客的坑！！！）" class="headerlink" title="第一篇博文（搭建博客的坑！！！）"></a>第一篇博文（搭建博客的坑！！！）</h2>
-        
-          <a class="article-more-a" href="/2017/03/20/FirstPassage/#more">more >></a>
-        
+        <a id="more"></a>
+<h2 id="第一篇博文（搭建博客的坑！！！）"><a href="#第一篇博文（搭建博客的坑！！！）" class="headerlink" title="第一篇博文（搭建博客的坑！！！）"></a>第一篇博文（搭建博客的坑！！！）</h2><h3 id="1-关于Hexo"><a href="#1-关于Hexo" class="headerlink" title="1.关于Hexo"></a>1.关于Hexo</h3><ul>
+<li>nmp安装Hexo</li>
+</ul>
+<p>打开命令行工具，执行如下命令：</p>
+<pre><code>$ npm install -g hexo
+</code></pre><ul>
+<li>创建文件夹</li>
+</ul>
+<p>本人是直接在D盘创建了一个名叫blog的文件夹，在blog中创建了Hexo文件夹。（这个看个人喜好吧，用命令行也未尝不可。）</p>
+<ul>
+<li>初始化</li>
+</ul>
+<p>在Hexo目录下打开命令行工具，执行：</p>
+<pre><code>hexo init
+</code></pre><p>之后执行：</p>
+<pre><code>hexo server
+</code></pre><p>会看到：</p>
+<pre><code>INFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.
+</code></pre><p>访问：<a href="http://localhost:4000/" title="初始页面" target="_blank" rel="external">http://localhost:4000/</a>就可以看到Hexo的初始页面了。</p>
+<h3 id="2-关于个人设置"><a href="#2-关于个人设置" class="headerlink" title="2.关于个人设置"></a>2.关于个人设置</h3><ul>
+<li>基本信息</li>
+</ul>
+<p>本人修改了title、subtitle、author的内容，如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: YangKunyi的博客</div><div class="line">subtitle: 爱看书的杨杨</div><div class="line">description:</div><div class="line">author: FrannieYi</div><div class="line">language:</div><div class="line">timezone:</div></pre></td></tr></table></figure>
+<p><strong><em>第一个坑</em></strong><br><strong>注意每一个冒号后面都有一个空格</strong></p>
+<blockquote>
+<p>无法生效的写法：title:Drubear的博客<br>有效的写法：title:[空格]Drubear的博客</p>
+</blockquote>
+<ul>
+<li>主题</li>
+</ul>
+<blockquote>
+<p>知乎 - <a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">好看的主题！</a></p>
+</blockquote>
+<p>使用git命令在github上clone下自己喜欢的主题，本人使用的是litten的yilia。</p>
+<ul>
+<li><p>配置主题<br>根据clone下来的主题将页面进行个性化设置。可以参考博主给的各种参数。</p>
+</li>
+<li><p>部署设置</p>
+</li>
+</ul>
+<p>只需简单的执行</p>
+<pre><code>hexo d
+</code></pre><h3 id="But，重点来了"><a href="#But，重点来了" class="headerlink" title="But，重点来了"></a><strong>But，重点来了</strong></h3><p><strong><em>前方巨坑请注意</em></strong></p>
+<ol>
+<li>首先在github上建立一个仓库，名字叫做：<code>[你的用户名].github.io</code><strong>注意，你的用户名必须与你实际的用户名一字不差！</strong></li>
+<li>拥有了个人的GitHubPages后，再回到Hexo的_config.yml文件，找到Deployment章节，做以下修改：（以FrannieYi为用户名为例）<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/FrannieYi/FrannieYi.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>以上两步做完后，执行 hexo d<br>如果没有报错，你是幸运的。<br>本人在这个坑里栽了无数次，系统报错</p>
+<pre><code>ERROR Deployer not found: Git
+</code></pre><p>最后发现这个错误是因为少运行了一行代码：</p>
+<pre><code>npm install hexo-deployer-git --save
+</code></pre><p>运行完以上代码终于，本人泪流满面的看到了自己亲手搭建的博客。</p>
+
       
 
       
@@ -502,11 +837,11 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JSON，前端</a>
+                <a href="javascript:void(0)" class="js-tag color2">hexo,github</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo,github</a>
+                <a href="javascript:void(0)" class="js-tag color3">JSON，前端</a>
               </li>
              
               <li class="article-tag-list-item">
