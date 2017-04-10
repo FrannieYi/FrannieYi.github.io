@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/06/BOM知识点/index.html">
 <meta property="og:site_name" content="Yangyi的博客">
 <meta property="og:description" content="BOM">
-<meta property="og:updated_time" content="2017-04-06T00:59:11.447Z">
+<meta property="og:updated_time" content="2017-04-10T11:03:27.002Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BOM知识点">
 <meta name="twitter:description" content="BOM">
@@ -271,6 +271,39 @@
 <li>back()</li>
 <li>forward()</li>
 <li>lengh属性</li>
+</ul>
+<h3 id="编程艺术"><a href="#编程艺术" class="headerlink" title="编程艺术"></a>编程艺术</h3><p>D：document（文档）<br>O：object（对象）：用户定义对象，内建对象，宿主对象<br>M：model（模型）：“map”，树</p>
+<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><ul>
+<li>元素节点（element node）：body，ul，li……<br>获取元素节点的方法：<ul>
+<li>通过元素id（getElementById ）</li>
+<li>通过标签名（getElementsByTagName）</li>
+<li>通过类名（getElementsByClassName）</li>
+</ul>
+</li>
+<li>属性节点（attribute node）<br><code>&lt;p title=&quot;yang&quot;&gt;hahahahahahha&lt;/p&gt;</code><br>title=”yang”是一个属性节点<br>属性节点总是包含在元素节点中</li>
+<li>文本节点</li>
+</ul>
+<h4 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h4><ul>
+<li><p>getAttribute（获取）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//例子</div><div class="line">var paras=document.getElementsByTagName(&quot;p&quot;);</div><div class="line">for(var i=0;i&lt;paras.lengeh;i++)&#123;</div><div class="line">    alert(paras[i].getAttribute(&quot;title&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>setAttribute（设置）<br>若属性本不存在，实际就将完成两项操作：1.创建属性，2.设置值。<br>注：并不会改变源文件扽静态内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//例子</div><div class="line">var shopping=document.getElementById(&quot;purchases&quot;);</div><div class="line">shopping.setAttribute(&quot;title&quot;,&quot;a list of goods&quot;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="实例：JavaScript图片库"><a href="#实例：JavaScript图片库" class="headerlink" title="实例：JavaScript图片库"></a>实例：JavaScript图片库</h3><ul>
+<li><p>childNodes属性<br>用来获取任何一个元素的所有子元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//获取body所有子元素个数的函数例子</div><div class="line">function countBodyChildren()&#123;</div><div class="line">    var body_element=document.getElementsByTagName(&quot;body&quot;)[0];</div><div class="line">    alert(body_element.childNodes.length);</div><div class="line">&#125;</div><div class="line">window.onload=countBodyChildren;</div></pre></td></tr></table></figure>
+</li>
+<li><p>nodeType属性</p>
+<ul>
+<li>元素节点的nodeType属性值是1。</li>
+<li>属性节点的nodeType属性值是2。</li>
+<li>文本节点的nodeType属性值是3。<br><code>alert(body_element.nodeType);</code></li>
+</ul>
+</li>
+<li>nodeValue属性<br>得到和设置一个节点的值。<br><code>alert(discription.nodeValue);</code></li>
+<li>firstChild和lastChild属性<br>这两个属性都是为了个简便且直观的获取对应的元素。</li>
 </ul>
 
       
