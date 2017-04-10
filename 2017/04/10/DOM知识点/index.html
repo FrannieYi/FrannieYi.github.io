@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | Yangyi的博客</title>
+  <title>DOM知识点 | Yangyi的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yangyi的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="DOM">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOM知识点">
+<meta property="og:url" content="http://yoursite.com/2017/04/10/DOM知识点/index.html">
 <meta property="og:site_name" content="Yangyi的博客">
+<meta property="og:description" content="DOM">
+<meta property="og:updated_time" content="2017-04-10T11:08:56.995Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yangyi的博客">
+<meta name="twitter:title" content="DOM知识点">
+<meta name="twitter:description" content="DOM">
   
     <link rel="alternative" href="/atom.xml" title="Yangyi的博客" type="application/atom+xml">
   
@@ -153,239 +157,180 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-DOM知识点" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      DOM知识点
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/10/DOM知识点/" class="archive-article-date">
+
+        
+        <a href="/2017/04/10/DOM知识点/" class="archive-article-date">
   	<time datetime="2017-04-10T11:07:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/10/DOM知识点/">DOM知识点</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h3><a id="more"></a>
+<p>D：document（文档）<br>O：object（对象）：用户定义对象，内建对象，宿主对象<br>M：model（模型）：“map”，树</p>
+<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><ul>
+<li>元素节点（element node）：body，ul，li……<br>获取元素节点的方法：<ul>
+<li>通过元素id（getElementById ）</li>
+<li>通过标签名（getElementsByTagName）</li>
+<li>通过类名（getElementsByClassName）</li>
+</ul>
+</li>
+<li>属性节点（attribute node）<br><code>&lt;p title=&quot;yang&quot;&gt;hahahahahahha&lt;/p&gt;</code><br>title=”yang”是一个属性节点<br>属性节点总是包含在元素节点中</li>
+<li>文本节点<h4 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h4></li>
+<li><p>getAttribute（获取）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//例子</div><div class="line">var paras=document.getElementsByTagName(&quot;p&quot;);</div><div class="line">for(var i=0;i&lt;paras.lengeh;i++)&#123;</div><div class="line">    alert(paras[i].getAttribute(&quot;title&quot;));</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>setAttribute（设置）<br>若属性本不存在，实际就将完成两项操作：1.创建属性，2.设置值。<br>注：并不会改变源文件扽静态内容。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//例子</div><div class="line">var shopping=document.getElementById(&quot;purchases&quot;);</div><div class="line">shopping.setAttribute(&quot;title&quot;,&quot;a list of goods&quot;);</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="实例：JavaScript图片库"><a href="#实例：JavaScript图片库" class="headerlink" title="实例：JavaScript图片库"></a>实例：JavaScript图片库</h3><ul>
+<li><p>childNodes属性<br>用来获取任何一个元素的所有子元素。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">//获取body所有子元素个数的函数例子</div><div class="line">function countBodyChildren()&#123;</div><div class="line">    var body_element=document.getElementsByTagName(&quot;body&quot;)[0];</div><div class="line">    alert(body_element.childNodes.length);</div><div class="line">&#125;</div><div class="line">window.onload=countBodyChildren;</div></pre></td></tr></table></figure>
+</li>
+<li><p>nodeType属性</p>
+<ul>
+<li>元素节点的nodeType属性值是1。</li>
+<li>属性节点的nodeType属性值是2。</li>
+<li>文本节点的nodeType属性值是3。<br><code>alert(body_element.nodeType);</code></li>
+</ul>
+</li>
+<li>nodeValue属性<br>得到和设置一个节点的值。<br><code>alert(discription.nodeValue);</code></li>
+<li>firstChild和lastChild属性<br>这两个属性都是为了个简便且直观的获取对应的元素。</li>
+</ul>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ul>
+<li>DOM是一套对文档内容进行抽象和概念化的方法。</li>
+<li>变量名中不能包含空格和标点符号（美元$符号除外）。</li>
+<li>变量名允许包含字母，数字，美元符号和下划线（但第一个字符不能是数字）。</li>
+<li>变量申明实例：my_mood或者myMood（峰驼式camel case：首选）。</li>
+<li>Javascript是弱类型语言，不需要对变量进行类型声明。</li>
+<li>变量可以包含操作。</li>
+<li>字符串可以做拼接操作。</li>
+<li>innerHTML属性和documen.write方法都是HTML的专有属性。<br><code>var message=&quot;I am feeling&quot;+&quot;happy&quot;;</code></li>
+<li>每个元素节点都是一个对象。</li>
+</ul>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/04/10/DOM知识点/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/06/BOM知识点/" class="archive-article-date">
-  	<time datetime="2017-04-06T00:56:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-06</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/06/BOM知识点/">BOM知识点</a>
-    </h1>
+  
+    <a href="/2017/04/06/BOM知识点/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">BOM知识点</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">BOM,前端,笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/23/动画和HTML5/" class="archive-article-date">
-  	<time datetime="2017-03-23T06:33:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/23/动画和HTML5/">动画和HTML5</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">JS,动画,HTML5</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/22/JSON相关内容/" class="archive-article-date">
-  	<time datetime="2017-03-22T15:02:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/22/JSON相关内容/">JSON相关内容</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">JSON，前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/21/css选择器、权重及优先级/" class="archive-article-date">
-  	<time datetime="2017-03-21T07:11:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-21</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/21/css选择器、权重及优先级/">css选择器、权重及优先级</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">笔记，分享，前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/03/20/FirstPassage/" class="archive-article-date">
-  	<time datetime="2017-03-20T13:20:46.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-03-20</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/03/20/FirstPassage/">FirstPassage</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">hexo,github</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -408,8 +353,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
