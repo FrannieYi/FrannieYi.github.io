@@ -175,74 +175,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><ul>
-<li>Array创建实例<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">//用构造函数的方法</div><div class="line">var colors=new Array();</div><div class="line">var colors=new Array(20);</div><div class="line">var colors=new Array(&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;);</div><div class="line">var colors=Array();//可以省略new</div><div class="line"></div><div class="line">//用数组字面量表示法</div><div class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</div><div class="line">var names=[];</div><div class="line">var values=[1,2,];//不要这样，这样会创建一个包含2或3项的数组</div><div class="line">var options=[,,,,,]//不要这样，这样会创建一个包含2或6项的数组</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="检测数组"><a href="#检测数组" class="headerlink" title="检测数组"></a>检测数组</h4><ul>
-<li><code>Array.isArray()</code>确定一个值到底是不是数组<h4 id="转换方法"><a href="#转换方法" class="headerlink" title="转换方法"></a>转换方法</h4></li>
-<li>toString()：返回有由数组中每个值得字符串形式拼接而成的一个以逗号分隔的字符串。</li>
-<li>valueOf()：直接返回数组</li>
-<li><p>toLocaleString()：创建一个数组值的以逗号分隔的字符串。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</div><div class="line">alert(colors.toString());  //gray,green,red</div><div class="line">alert(colors.valueOf());   //gray,green,red</div><div class="line">alert(colors);             //gray,green,red</div><div class="line">//最后一行将数组传给alert，alert要求接受字符串，所以后台自动调用头String（）</div><div class="line"></div><div class="line">var person1=&#123;</div><div class="line">    toLocaleString:function()&#123;</div><div class="line">        return &quot;Nikolaos&quot;;</div><div class="line">    &#125;,</div><div class="line">    toString:function()&#123;</div><div class="line">        return &quot;Nicholas&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">var person2=&#123;</div><div class="line">    toLocaleString:function()&#123;</div><div class="line">        return &quot;Grigorios&quot;;</div><div class="line">    &#125;,</div><div class="line">    toString:function()&#123;</div><div class="line">        return &quot;Greg&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line">var people=[person1,person2];</div><div class="line">alert(people);                       //Nicholas,Greg</div><div class="line">alert(people.toString());            //Nicholas,Greg</div><div class="line">alert(people.toLocaleString());      //Nicholas,Grigorios</div></pre></td></tr></table></figure>
-</li>
-<li><p>join()方法：可以用其他符号来分隔数组</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</div><div class="line">alert(colors.join(&quot;,&quot;));     //gray,green,red</div><div class="line">alert(solors.join(&quot;||&quot;));    //gray||green||red</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="栈方法"><a href="#栈方法" class="headerlink" title="栈方法"></a>栈方法</h4><ul>
-<li>push()方法可以接受任意数量的参数，把他们逐个添加到数组末尾，并返回修改后的数组的长度。</li>
-<li>pop()方法则是从数组末尾移除最后一项，减少数组的length值，然后返回移除的项。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var colors=new Array();</div><div class="line">var count=colors.push(&quot;red&quot;,&quot;green&quot;);</div><div class="line">alert(count);            //2</div><div class="line">count=colors.push(&quot;black&quot;);</div><div class="line">alert(count);            //3</div><div class="line">var item=color.pop();</div><div class="line">alert(item);             //&quot;black&quot;;</div><div class="line">alert(colors.length);    //2</div><div class="line">//可以将栈方法和其它数组方法连用</div><div class="line">var colors=[&quot;red&quot;,&quot;blue&quot;];</div><div class="line">colors.push(&quot;brow&quot;);</div><div class="line">colors.[3]=&quot;black&quot;;</div><div class="line">alert(colors.length);    //4</div><div class="line">var item=colors.pop();</div><div class="line">alert(item);             //&quot;black&quot;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="队列方法"><a href="#队列方法" class="headerlink" title="队列方法"></a>队列方法</h4><ul>
-<li>shift()方法能够移除数组中的第一项，并且返回该项，同时将数组长度减1。</li>
-<li>unshift()方法能在数组前段端添加任意个项并返回数组长度。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var colors=new Array();</div><div class="line">var count=colors.push(&quot;red&quot;,&quot;green&quot;);</div><div class="line">alert(count);            //2</div><div class="line">var item=colors.shift();</div><div class="line">alert(item);             //&quot;red&quot;</div><div class="line">alert(colors.length);    //1</div><div class="line">count=colors.unshift(&quot;black&quot;);</div><div class="line">alert(count);            //2</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4><ul>
-<li>reverse()方法：反转数组项的顺序。返回值是数组。</li>
-<li>sort()方法：按升序排列数字项。（比较的是字符串）返回值是数组。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">var values=[1,2,3,4,5];</div><div class="line">values.reverse();</div><div class="line">alert(values);   //5,4,3,2,1</div><div class="line"></div><div class="line">var values=[0,1,5,10,15];</div><div class="line">values.sort();</div><div class="line">alert(values);   //0,1,10,15,5</div><div class="line">//在字符串进行比较的时候5是比10大的，这个时候我们经常让sort方法接受一个比较函数作为参考。</div><div class="line">//比较函数（升序，改变大于和小于就能变成降序）</div><div class="line">function campare(value1,value2)&#123;</div><div class="line">    if(value1&lt;value2)</div><div class="line">        return -1;</div><div class="line">    else if(value1&gt;value2)</div><div class="line">        return 1;</div><div class="line">    else</div><div class="line">        return 0;</div><div class="line">&#125;</div><div class="line">var values=[0,1,5,10,15];</div><div class="line">values.sort(campare);</div><div class="line">alert(values);   //0,1,5,10,15</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h4><ul>
-<li><p>concat()方法：创建一个新的数组。复制一遍数组并在末尾添上新的元素。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</div><div class="line">var colors2=colors.contac(&quot;yellow&quot;,[&quot;black&quot;,&quot;brown&quot;]);</div><div class="line">alert(colors);             //gray,green,red</div><div class="line">alert(colors2);            //gray,green,red,yellow,black,brown</div></pre></td></tr></table></figure>
-</li>
-<li><p>slice()方法：能够基于当前数组中的一或多个项创建一个新数组。</p>
-<ul>
-<li>当有一个参数时：返回从该参数指定位置开始到当前数组末尾的所有项。</li>
-<li>如果有两个参数时：返回起始和结束位置之间的项，但不包括结束为止的项。</li>
-</ul>
-</li>
-<li>splice()方法：主要用途是项数组中部插入项。（最强大的数组方法）<ul>
-<li>删除：需要两个参数，位置和删除项数。例：<code>splice(0,2);</code>删除数组中的前两项。</li>
-<li>插入：需要三个参数，起始位置，0（删除的项数）和插入项。例：<code>splice(2,0,&quot;red,&quot;green&quot;)</code>从数组的位置2开始插入字符串”red”和”green”。</li>
-<li>替换：需要三个参数，起始位置，要删除的的项数和要插入的任意数量的项。例：<code>splice(2，1，&quot;red&quot;,&quot;green&quot;)</code>删除当前数组位置2的项，然后再从位置2开始插入字符串。<h4 id="位置方法"><a href="#位置方法" class="headerlink" title="位置方法"></a>位置方法</h4></li>
-</ul>
-</li>
-<li>indexOf()方法：从数组的开头开始向后查找。</li>
-<li>lastIndexOf()方法：从数组的末尾开始向前查找。<br>两个方法都接收两个参数，要查找的项和开始查找的起始位置。没找到的情况返回-1，返回值是位置。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">var numbers=[1,2,3,4,5,4,3,2,1];</div><div class="line">alert(numbers.indexOf(4));              //3</div><div class="line">alert(numbers.lastIndexOf(4));          //5</div><div class="line"></div><div class="line">alert(numbers.indexOf(4，4));           //5</div><div class="line">alert(numbers.lastIndexOf(4，4));       //3</div><div class="line"></div><div class="line">var person=&#123;name:&quot;Nicholas&quot;&#125;;</div><div class="line">var people=[&#123;name:&quot;Nicholas&quot;&#125;];</div><div class="line">var morePeople=[people];</div><div class="line">alert(people.indexOf(person));          //-1</div><div class="line">alert(morePeople.indexOf(peoson));      //0</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="迭代方法"><a href="#迭代方法" class="headerlink" title="迭代方法"></a>迭代方法</h4><ul>
-<li>every():对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true，否则返回false。</li>
-<li>filter():对数组中的每一项运行给定函数，返回该函数会返回true的项组成数组。</li>
-<li>forEach():对数组中的每一项运行给定函数，这个方法没有返回值。</li>
-<li>map():对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。</li>
-<li>some():对数组中的每一项运行给定函数，如果该函数对任意一项返回true，则返回true。<br>以上方法都不会修改数组中包含的值。都接收三个参数：数组项的值，该项在数组的位置，数组对象本身。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line">//every()</div><div class="line">var numbers=[1,2,3,4,5,4,3,2,1];</div><div class="line">var everyResult=numbers.every(function(item,index,array)&#123;</div><div class="line">    return (item&gt;2);</div><div class="line">&#125;);</div><div class="line">alert(everyResult);           //false</div><div class="line">//some()</div><div class="line">var numbers=[1,2,3,4,5,4,3,2,1];</div><div class="line">var someResult=numbers.every(function(item,index,array)&#123;</div><div class="line">    return (item&gt;2);</div><div class="line">&#125;);</div><div class="line">alert(someResult);           //true</div><div class="line">//filter()</div><div class="line">var numbers=[1,2,3,4,5,4,3,2,1];</div><div class="line">var filterResult=numbers.every(function(item,index,array)&#123;</div><div class="line">    return (item&gt;2);</div><div class="line">&#125;);</div><div class="line">alert(filterResult);           //[3,4,5,4,3]</div><div class="line">//map()</div><div class="line">var numbers=[1,2,3,4,5,4,3,2,1];</div><div class="line">var mapResult=numbers.every(function(item,index,array)&#123;</div><div class="line">    return item*2;</div><div class="line">&#125;);</div><div class="line">alert(mapResult);           //[2,4,6,8,10,8,6,4,2]</div><div class="line">//forEach()</div><div class="line">var numbers=[1,2,3,4,5,4,3,2,1];</div><div class="line">numbers.forEach(function(item,index,array)&#123;</div><div class="line">    //执行某些操作</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h4 id="归并方法"><a href="#归并方法" class="headerlink" title="归并方法"></a>归并方法</h4><ul>
-<li>reduce():从数组的第一个开始，逐个遍历到最后。</li>
-<li>reduceRight():从数组最后一个开始，逐个遍历到第一个。</li>
-</ul>
-<ol>
-<li>这两个函数接收两个参数：一个在每一项上的调用的函数和（可选的）作为归并基础的初始值。</li>
-<li>传给两个函数的函数接收四个参数：前一个值，当前值，项的索引，数组对象。</li>
-<li>函数的返回值都会作为第一个参数自动传给下一项。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">//reduce()正向</div><div class="line">var values=[1,2,3,4,5];</div><div class="line">var sum=values.reduce(function(prev,cur,index,array)&#123;</div><div class="line">    return prev+cur;</div><div class="line">&#125;);</div><div class="line">alert(sum);          //15</div><div class="line">//ruduceRight()反向</div><div class="line">var values=[1,2,3,4,5];</div><div class="line">var sum=values.reduceRight(function(prev,cur,index,array)&#123;</div><div class="line">    return prev+cur;</div><div class="line">&#125;);</div><div class="line">alert(sum);          //15</div></pre></td></tr></table></figure></li>
-</ol>
-
+        <h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3>
+        
+          <a class="article-more-a" href="/2017/04/10/数组/#more">more >></a>
+        
       
 
       
@@ -756,11 +692,7 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">BOM,前端,笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">DOM,JS,前端</a>
+                <a href="javascript:void(0)" class="js-tag color2">hexo,github</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -768,7 +700,7 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">笔记，分享，前端</a>
+                <a href="javascript:void(0)" class="js-tag color5">BOM,前端,笔记</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -780,7 +712,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo,github</a>
+                <a href="javascript:void(0)" class="js-tag color5">DOM,JS,前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">笔记，分享，前端</a>
               </li>
             
             <div class="clearfix"></div>
