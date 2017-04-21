@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/04/16/坎帕斯学院日常讨论/index.html">
 <meta property="og:site_name" content="Yangyi的博客">
 <meta property="og:description" content="话题：width：100%和width：auto的区别">
-<meta property="og:updated_time" content="2017-04-16T08:15:13.315Z">
+<meta property="og:updated_time" content="2017-04-21T02:38:33.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="坎帕斯学院日常讨论">
 <meta name="twitter:description" content="话题：width：100%和width：auto的区别">
@@ -195,6 +195,36 @@
 <p>test width=500-padding-margin-border<br>这里的500px并不是继承，而是因为div块级元素的影响而来的。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">//test4a</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">	body&#123;</div><div class="line">		font-size: 20px;</div><div class="line">		padding: 0;</div><div class="line">		margin: 0;</div><div class="line">	&#125;</div><div class="line">	.first1&#123;</div><div class="line">		background: red;</div><div class="line">		width: 200px;</div><div class="line">		height: 400px;</div><div class="line">		overflow: hidden;</div><div class="line">	&#125;</div><div class="line">	.second1&#123;</div><div class="line">		height: 25%;width: 25%;</div><div class="line">		margin-top: 10%;</div><div class="line">		background-color: green;</div><div class="line">		padding-left: 10%;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;div class=&quot;first1&quot;&gt;</div><div class="line">		&lt;div class=&quot;second1&quot;&gt;&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
 <p>test width=50,height=100,margin-top=20</p>
+<h5 id="2017-4-19-21-00"><a href="#2017-4-19-21-00" class="headerlink" title="2017.4.19 21:00"></a>2017.4.19 21:00</h5><h2 id="话题：document-getElementByClassName-返回的是什么？"><a href="#话题：document-getElementByClassName-返回的是什么？" class="headerlink" title="话题：document.getElementByClassName()返回的是什么？"></a>话题：document.getElementByClassName()返回的是什么？</h2><ul>
+<li>是一个HTML集合。</li>
+</ul>
+<h4 id="集合和数组的区别"><a href="#集合和数组的区别" class="headerlink" title="集合和数组的区别"></a>集合和数组的区别</h4><ul>
+<li>HTML集合：一直与文档保持着链接，每次你需要最新的信息时，都会重复执行查询的过程，哪怕只是获取集合里的元素个数，即集合的length属性也是这样。（简单的说就是这个集合会实时改变）</li>
+<li>案例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var alldivs document.getElementsByTagName(&apos;div&apos;);</div><div class="line">for(var i=0;i&lt;alldivs.length;i++)&#123;</div><div class="line">    document.body.appendChild(document.createElement(&apos;div&apos;));</div><div class="line">&#125;</div><div class="line">//该循环会一直循环下去，因为每次添加一个div之后，alldicvs.length的值也会改变，导致循环条件一直为true，一直循环。</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="关于闭包和词法作用域"><a href="#关于闭包和词法作用域" class="headerlink" title="关于闭包和词法作用域"></a>关于闭包和词法作用域</h4><ul>
+<li>案例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">    concile.log(a);//2</div><div class="line">&#125;</div><div class="line">function bar()&#123;</div><div class="line">    var a=3;</div><div class="line">    foo();</div><div class="line">&#125;</div><div class="line">var a=2;</div><div class="line">bar();</div><div class="line">//原理：js的运行原理是词法作用域，而非动态作用域，因此当foo函数被调用的时候，对a进行查询的时候会直接在全局作用域中查询。</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="话题：display：none和visibility：hidden区别？"><a href="#话题：display：none和visibility：hidden区别？" class="headerlink" title="话题：display：none和visibility：hidden区别？"></a>话题：display：none和visibility：hidden区别？</h2><ul>
+<li>display：none；有dom树，没有渲染树，也就是说js可以找到display：none。</li>
+<li>visibility：hidden；只是将内容隐藏起来了，还是要占位的。</li>
+</ul>
+<h2 id="话题：两个inline-block元素在同一行中间的那个间距是多少？"><a href="#话题：两个inline-block元素在同一行中间的那个间距是多少？" class="headerlink" title="话题：两个inline-block元素在同一行中间的那个间距是多少？"></a>话题：两个inline-block元素在同一行中间的那个间距是多少？</h2><ul>
+<li>每个浏览器间距不同。</li>
+<li>字体大小不同间距不同。</li>
+</ul>
+<h4 id="如何去掉这个空格？"><a href="#如何去掉这个空格？" class="headerlink" title="如何去掉这个空格？"></a>如何去掉这个空格？</h4><ul>
+<li>去掉最底层html标签的空格。</li>
+<li>margin为负值。（每个浏览器不同，值不同）</li>
+<li>将父级元素的字体大小设置为0。（推荐方案）</li>
+</ul>
+<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
+<li>这个间距不仅在水平方向有，在垂直方向也有！</li>
+<li>距离大概是字体大小的1/8（可能会有叠加）。</li>
+<li>inline-block元素之间，block和inline-block和inline的元素之间都有间距。</li>
+</ul>
 
       
 
@@ -405,23 +435,19 @@
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">hexo,github</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">BOM,前端,笔记</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">DOM,JS,前端</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">JSON，前端</a>
+                <a href="javascript:void(0)" class="js-tag color2">hexo,github</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">记录，前端，问题，讨论</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">JSON，前端</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -434,6 +460,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">笔记，分享，前端</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">DOM,JS,前端</a>
               </li>
             
             <div class="clearfix"></div>
