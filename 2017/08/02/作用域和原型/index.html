@@ -6,14 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017/4 | Yangyi的博客</title>
+  <title>作用域和原型 | Yangyi的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Yangyi的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/04/index.html">
+  <meta name="description" content="作用域什么是作用域？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="作用域和原型">
+<meta property="og:url" content="http://yoursite.com/2017/08/02/作用域和原型/index.html">
 <meta property="og:site_name" content="Yangyi的博客">
+<meta property="og:description" content="作用域什么是作用域？">
+<meta property="og:image" content="http://i1.piimg.com/567571/5d27ab14bdca83a3.png">
+<meta property="og:image" content="http://i1.piimg.com/567571/abb987dd184464f7.jpg">
+<meta property="og:image" content="http://i2.muimg.com/567571/055ff751adbbf734.jpg">
+<meta property="og:updated_time" content="2017-08-02T11:35:03.831Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yangyi的博客">
+<meta name="twitter:title" content="作用域和原型">
+<meta name="twitter:description" content="作用域什么是作用域？">
+<meta name="twitter:image" content="http://i1.piimg.com/567571/5d27ab14bdca83a3.png">
   
     <link rel="alternative" href="/atom.xml" title="Yangyi的博客" type="application/atom+xml">
   
@@ -153,174 +161,294 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-作用域和原型" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      作用域和原型
+    </h1>
+  
+
+        
+        <a href="/2017/08/02/作用域和原型/" class="archive-article-date">
+  	<time datetime="2017-08-02T11:29:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-02</time>
+</a>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="作用域"><a href="#作用域" class="headerlink" title="作用域"></a>作用域</h2><h3 id="什么是作用域？"><a href="#什么是作用域？" class="headerlink" title="什么是作用域？"></a>什么是作用域？</h3><a id="more"></a>
+<blockquote>
+<p>它是一套规则，这套规则用来管理引擎如何在当前作用域及嵌套的子作用域中根据标识符名称进行变量的查找。</p>
+</blockquote>
+<h4 id="先介绍一下RHS和LHS"><a href="#先介绍一下RHS和LHS" class="headerlink" title="先介绍一下RHS和LHS"></a>先介绍一下RHS和LHS</h4><ul>
+<li>这是引擎的两种查找类型</li>
+<li>“R”和“L”分别代表赋值操作的右侧和左侧</li>
+<li><strong>案例</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">function foo(a)&#123;//对a进行LHS引用2</div><div class="line">    console.log(a);</div><div class="line">    //对console进行RHS引用3</div><div class="line">    //对a进行RHS引用4</div><div class="line">&#125;</div><div class="line">foo(2);//对foo进行RHS引用1</div></pre></td></tr></table></figure>
+<ul>
+<li>当变量还没有声明的时候（在任何作用域都找不到该变量），这两种查询的行为是不一样的：LHS查询会在全局作用域中自己创建一个变量。RHS查询会抛出一个ReferenceError错误。</li>
+</ul>
+<h4 id="作用域的嵌套"><a href="#作用域的嵌套" class="headerlink" title="作用域的嵌套"></a>作用域的嵌套</h4><blockquote>
+<p>当一个块或函数嵌套在另一个块或函数中时，就发生了作用域的嵌套。因此，在当前作用域中无法找到某个变量时，引擎就会在外层嵌套的作用域中继续查找，直到找到该变量，或抵达最外层的作用域（也就是全局作用域）为止。这一就形成了一条作用域链。</p>
+</blockquote>
+<ul>
+<li><p><strong>案例</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">function foo(a)&#123;</div><div class="line">    console.log(a+b);</div><div class="line">&#125;</div><div class="line">var b=2;</div><div class="line">foo(2);//4</div></pre></td></tr></table></figure>
+</li>
+<li><p><strong>将作用域链比喻成一个建筑</strong></p>
+</li>
+</ul>
+<p><img src="http://i1.piimg.com/567571/5d27ab14bdca83a3.png" alt="作用域链"></p>
+<h3 id="词法作用域"><a href="#词法作用域" class="headerlink" title="词法作用域"></a>词法作用域</h3><ul>
+<li>词法作用域是由你写代码时将变量和块作用域写在哪里来决定的。</li>
+<li><strong>案例</strong><br><img src="http://i1.piimg.com/567571/abb987dd184464f7.jpg" alt="三级逐步嵌套的作用域"></li>
+</ul>
+<h4 id="JavaScript中有两个机制可以“欺骗”词法作用域"><a href="#JavaScript中有两个机制可以“欺骗”词法作用域" class="headerlink" title="JavaScript中有两个机制可以“欺骗”词法作用域"></a>JavaScript中有两个机制可以“欺骗”词法作用域</h4><ul>
+<li><p>eval() 例子：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">function foo(str, a) &#123;</div><div class="line">    eval( str ); // 欺骗！</div><div class="line">    console.log( a, b );</div><div class="line">&#125;</div><div class="line">var b = 2;</div><div class="line">foo( &quot;var b = 3;&quot;, 1 );</div><div class="line"></div><div class="line">//严格模式</div><div class="line">// function foo(str) &#123;</div><div class="line">//    &quot;use strict&quot;;</div><div class="line">//    eval( str );</div><div class="line">//    console.log( a ); // ReferenceError: a is not defined</div><div class="line">// &#125;</div><div class="line"></div><div class="line">foo( &quot;var a = 2&quot;);</div></pre></td></tr></table></figure>
+</li>
+<li><p>with() 例子：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">function foo(obj) &#123;</div><div class="line">    with (obj) &#123;</div><div class="line">        var a = 2;</div><div class="line">    &#125;</div><div class="line">    // a = 2;</div><div class="line">&#125;</div><div class="line">var o1 = &#123;</div><div class="line">    a: 3</div><div class="line">&#125;;</div><div class="line">var o2 = &#123;</div><div class="line">    b: 3</div><div class="line">&#125;;</div><div class="line">foo( o1 );</div><div class="line">console.log( o1.a );</div><div class="line"></div><div class="line">foo( o2 );</div><div class="line">console.log( o2.a );</div><div class="line">console.log( a );</div></pre></td></tr></table></figure>
+<h3 id="函数作用域"><a href="#函数作用域" class="headerlink" title="函数作用域"></a>函数作用域</h3><ul>
+<li>在任意代码片段外部添加包装函数，可以将内部的变量和函数定义“隐藏”起来，外部作用域无法访问包装函数内部的任何内容。</li>
+<li><strong>案例</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var a=2;</div><div class="line">function foo()&#123;</div><div class="line">    var a=3;</div><div class="line">    console.log(a);//3</div><div class="line">&#125;</div><div class="line">foo();</div><div class="line">console.log(a);//2</div></pre></td></tr></table></figure>
+<ul>
+<li>不足之处：<ul>
+<li>必须声明一个foo函数，这个foo“污染”了所在作用域。</li>
+<li>必须显示调用才能运行其中的代码</li>
+</ul>
+</li>
+<li><strong>改进</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">var a=2;</div><div class="line">(function foo()&#123;</div><div class="line">    var a=3;</div><div class="line">    console.log(a);//3</div><div class="line">&#125;)();</div><div class="line">console.log(a);//2</div><div class="line">//函数会被当作函数表达式而不是一个标准的函数声明来处理。</div></pre></td></tr></table></figure>
+<h4 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h4><ul>
+<li>优点：<ul>
+<li>书写起来简单快捷</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>匿名函数在栈追踪中不会显示出有意义的函数名，使得调试很困难。</li>
+<li>如果没有函数名，当函数需要引用自身时只能使用已经过期的arguments.callee引用。（callee是arguments对象的一个属性。它可以用于引用该函数的函数体内当前正在执行的函数。）</li>
+<li>匿名函数省略了对于代码可读性/可理解性很重要的函数名。</li>
+</ul>
+</li>
+</ul>
+<h4 id="立即执行函数表达式"><a href="#立即执行函数表达式" class="headerlink" title="立即执行函数表达式"></a>立即执行函数表达式</h4><ul>
+<li>IIFE(Immediately Invoked Function Expression)：<code>(function foo(){...})()</code></li>
+<li>函数名对IIFE来说不是必须的：<code>(function(){...}())</code></li>
+<li>进阶用法：当作函数调用并传参数进去。</li>
+<li>例子：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line"></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="块作用域"><a href="#块作用域" class="headerlink" title="块作用域"></a>块作用域</h3><blockquote>
+<p>块作用域将代码在函数中隐藏的信息扩展为在块中隐藏起来。</p>
+</blockquote>
+<ul>
+<li><strong>思考</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">for(var i=0;i&lt;10;i++)&#123;</div><div class="line">    console.log(i);</div><div class="line">&#125;</div><div class="line">console.log(i);</div><div class="line">//为什么要把一个只在for循环内部使用（至少是应该只在内部使用）的变量i“污染”到整个作用域（不管是函数还是全局）中？</div></pre></td></tr></table></figure>
+<ul>
+<li>with：用with从对象创建出的作用域仅在with声明中而非外部作用域中有效。</li>
+<li>try/catch：例子：try.html</li>
+<li>let：let关键字可以将变量绑定到所在的任意作用域中。<ul>
+<li>垃圾回收</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function process(data)&#123;</div><div class="line">  //在这里做点有趣的事情</div><div class="line">&#125;</div><div class="line"></div><div class="line">&#123;//在这个块中定义的内容完事可以销毁</div><div class="line">  let someReallyBigData=&#123;...&#125;;</div><div class="line">  process(someReallyBigData);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>let循环</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">for(let i=0;i&lt;10;i++)&#123;</div><div class="line">   console.log(i);</div><div class="line">&#125;</div><div class="line">console.log(i);ReferenceError</div></pre></td></tr></table></figure>
+<ul>
+<li>const：定义一个该块的常量，不能修改值。例子：</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var person = function(name)&#123;</div><div class="line">    this.name = name</div><div class="line">&#125;;</div><div class="line">person.prototype.getName = function()&#123;</div><div class="line">    console.log(this.name);</div><div class="line">&#125;</div><div class="line">var zjh = new person(&apos;zhangjiahao&apos;);</div><div class="line">zjh.getName(); //zhangjiahao</div></pre></td></tr></table></figure>
+<h2 id="原型-prototype"><a href="#原型-prototype" class="headerlink" title="原型[prototype]"></a>原型[prototype]</h2><h3 id="普通对象和函数对象"><a href="#普通对象和函数对象" class="headerlink" title="普通对象和函数对象"></a>普通对象和函数对象</h3><ul>
+<li>JavaScript 中，万物皆对象！但对象也是有区别的。分为普通对象和函数对象。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">var o1 = &#123;&#125;; </div><div class="line">var o2 =new Object();</div><div class="line">var o3 = new f1();</div><div class="line"></div><div class="line">function f1()&#123;&#125;; </div><div class="line">var f2 = function()&#123;&#125;;</div><div class="line">var f3 = new Function(&apos;str&apos;,&apos;console.log(str)&apos;);</div><div class="line"></div><div class="line">console.log(typeof Object); //function </div><div class="line">console.log(typeof Function); //function  </div><div class="line"></div><div class="line">console.log(typeof f1); //function </div><div class="line">console.log(typeof f2); //function </div><div class="line">console.log(typeof f3); //function   </div><div class="line"></div><div class="line">console.log(typeof o1); //object </div><div class="line">console.log(typeof o2); //object </div><div class="line">console.log(typeof o3); //object</div></pre></td></tr></table></figure>
+<ul>
+<li>怎么区分，其实很简单，<strong>凡是通过new&nbsp;Function()创建的对象都是函数对象，其他的都是普通对象。f1,f2,归根结底都是通过new&nbsp;Function()的方式进行创建的。Function Object 也都是通过 New Function()创建的。</strong></li>
+</ul>
+<h3 id="什么是prototype？"><a href="#什么是prototype？" class="headerlink" title="什么是prototype？"></a>什么是<code>prototype</code>？</h3><blockquote>
+<p>在 JavaScript 中，每当定义一个对象（函数也是对象）时候，对象中都会包含一些预定义的属性。其中每个函数对象都有一个<code>prototype</code>属性，这个属性指向函数的原型对象。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">function Person() &#123;</div><div class="line">    Person.prototype.name = &apos;Zaxlct&apos;;</div><div class="line">    Person.prototype.age  = 28;</div><div class="line">    Person.protetype.job  = &apos;Software Engineer&apos;;</div><div class="line">    Person.prototype.sayName = function() &#123;</div><div class="line">      alert(this.name);</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var person1 = new Person();</div><div class="line">person1.sayName(); // &apos;Zaxlct&apos;</div><div class="line"></div><div class="line">var person2 = new Person();</div><div class="line">person2.sayName(); // &apos;Zaxlct&apos;</div><div class="line"></div><div class="line">console.log(person1.sayname == person2.sayname); //true</div></pre></td></tr></table></figure>
+<ul>
+<li>只有函数对象才有 <code>prototype</code> 属性</li>
+</ul>
+<h3 id="什么是原型对象？"><a href="#什么是原型对象？" class="headerlink" title="什么是原型对象？"></a>什么是原型对象？</h3><blockquote>
+<p>原型对象，顾名思义，它就是一个普通对象。从现在开始你要牢牢记住原型对象就是 <code>Person.prototype</code>，如果你还是记不住，那就把它想想成一个字母 A： <code>var A = Person.prototype;</code></p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">Person.prototype = &#123;</div><div class="line">   name:  &apos;Zaxlct&apos;,</div><div class="line">   age: 28,</div><div class="line">   job: &apos;Software Engineer&apos;,</div><div class="line">   sayName: function() &#123;</div><div class="line">     alert(this.name);</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>在默认情况下，所有的原型对象都会自动获得一个<code>constructor</code>（构造函数）属性，这个属性（是一个指针）指向 <code>prototype</code> 属性所在的函数（Person）</p>
+</blockquote>
+<ul>
+<li><p><strong>原型对象（Person.prototype）是 构造函数（Person）的一个实例。</strong></p>
+</li>
+<li><p>那原型对象是用来做什么的呢？举个例子：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var person = function(name)&#123;</div><div class="line">    this.name = name</div><div class="line">&#125;;</div><div class="line">person.prototype.getName = function()&#123;</div><div class="line">    return this.name;</div><div class="line">&#125;</div><div class="line">var zjh = new person(‘zhangjiahao’);</div><div class="line">zjh.getName(); //zhangjiahao</div></pre></td></tr></table></figure>
+<ul>
+<li>从这个例子可以看出，通过给<code>person.prototype</code>设置了一个函数对象的属性，那由<code>person</code>实例（例中：zjh）出来的普通对象就继承了这个属性。<strong>所以原型对象的主要作用就是用于继承。</strong></li>
+<li>具体是怎么实现的继承，就要讲到下面的原型链了。</li>
+</ul>
+<h3 id="什么是原型链？"><a href="#什么是原型链？" class="headerlink" title="什么是原型链？"></a>什么是原型链？</h3><ul>
+<li>JS在创建对象（不论是普通对象还是函数对象）的时候，都有一个叫做__proto__的内置属性，用于指向创建它的函数对象的原型对象prototype。例如：<ul>
+<li><code>console.log(zjh.__proto__ === person.prototype) //true</code></li>
+</ul>
+</li>
+<li>同样，person.prototype对象也有__proto__属性，它指向创建它的函数对象（Object）的prototype<ul>
+<li><code>console.log(person.prototype.__proto__ === Object.prototype) //true</code></li>
+</ul>
+</li>
+<li>继续，Object.prototype对象也有__proto__属性，但它比较特殊，为null<ul>
+<li><code>console.log(Object.prototype.__proto__) //null</code> </li>
+</ul>
+</li>
+<li><strong>我们把这个有<strong>proto</strong>串起来的直到Object.prototype.<strong>proto</strong>为null的链叫做原型链。</strong><br><img src="http://i2.muimg.com/567571/055ff751adbbf734.jpg" alt="原型链"></li>
+</ul>
+<h2 id="注"><a href="#注" class="headerlink" title="注"></a>注</h2><ul>
+<li>ReferenceError同作用域判别失败相关，而TypeError则代表作用域判别成功了，但是对结果的操作是非法或不合理的。</li>
+<li>区分函数声明和表达式最简单的方法是看function关键字出现在声明这哦那个的位置（不仅仅是一行代码，而是整个声明中的位置）。如果function是在声明的第一个词，那么就是一个函数声明，否则就是一个函数表达式。</li>
+<li>作用域理解基于《你不知道的Javascript 上卷》</li>
+<li>原型理解基于文章<a href="http://www.jianshu.com/p/dee9f8b14771" target="_blank" rel="external">原型与原型链</a></li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/16/坎帕斯学院日常讨论/" class="archive-article-date">
-  	<time datetime="2017-04-16T08:14:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/16/坎帕斯学院日常讨论/">坎帕斯学院日常讨论</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">记录，前端，问题，讨论</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">分享,javascript</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/02/作用域和原型/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/10/数组/" class="archive-article-date">
-  	<time datetime="2017-04-10T11:13:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-10</time>
-</a>
-        </div>
-    	 
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/10/数组/">数组</a>
-    </h1>
+  
+    <a href="/2017/07/20/JavaSccript语言精粹/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaSccript语言精粹</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+  
+    <div class="duoshuo"></div>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">数组,前端,笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/10/DOM知识点/" class="archive-article-date">
-  	<time datetime="2017-04-10T11:07:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/10/DOM知识点/">DOM知识点</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">DOM,JS,前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/04/06/BOM知识点/" class="archive-article-date">
-  	<time datetime="2017-04-06T00:56:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-04-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/04/06/BOM知识点/">BOM知识点</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">BOM,前端,笔记</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -343,8 +471,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
