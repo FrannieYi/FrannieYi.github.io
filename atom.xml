@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-15T09:43:54.594Z</updated>
+  <updated>2017-11-16T10:39:46.924Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript调试</title>
+    <link href="http://yoursite.com/2017/11/16/JavaScript%E8%B0%83%E8%AF%95/"/>
+    <id>http://yoursite.com/2017/11/16/JavaScript调试/</id>
+    <published>2017-11-16T10:38:42.000Z</published>
+    <updated>2017-11-16T10:39:46.924Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。</p></blockquote><a id="more"></a><h3 id="1、最常用console-log（简单数据输出）"><a href="#1、最常用console-log（简单数据输出）" class="headerlink" title="1、最常用console.log（简单数据输出）"></a>1、最常用<code>console.log</code>（简单数据输出）</h3><ul><li>这就没有什么好解释的，不过输出也是有技巧的，那就是要格式化，简单说就是要有标志性，只有数据或许会让人不理解，最好是加上前缀</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// example</div><div class="line">console.log(&quot;fun&apos;s result---&quot; + fun(2));</div><div class="line">console.log(&quot;value of a---&quot; + a);</div></pre></td></tr></table></figure><ul><li>当然可以改变颜色和字体等</li></ul><h3 id="2、debugger：断点"><a href="#2、debugger：断点" class="headerlink" title="2、debugger：断点"></a>2、debugger：断点</h3><ul><li>与<code>console.log</code>相比，debugger会在执行的过程中停在你想的地方，能够更加直接的看到执行过程。</li></ul><h3 id="3、将对象以表格的形式展示console-table"><a href="#3、将对象以表格的形式展示console-table" class="headerlink" title="3、将对象以表格的形式展示console.table()"></a>3、将对象以表格的形式展示<code>console.table()</code></h3><ul><li>将对象强制用表格打出来，这样展开的对象键值对应更加清晰</li><li>注意firefox有限制，最多显示1000行</li></ul><h3 id="4、尝试适配各种机型屏幕大小"><a href="#4、尝试适配各种机型屏幕大小" class="headerlink" title="4、尝试适配各种机型屏幕大小"></a>4、尝试适配各种机型屏幕大小</h3><ul><li>这个对开发手机页面很有帮助</li><li>其次是可以检查布局问题</li></ul><h3 id="5、如何快速找到对应的DOM元素"><a href="#5、如何快速找到对应的DOM元素" class="headerlink" title="5、如何快速找到对应的DOM元素"></a>5、如何快速找到对应的DOM元素</h3><ul><li>方法1浏览器的快速选择工具</li><li>方法2是通过参数访问，浏览器有将DOM元素进行编号，可以通过$x的方式去访问。（具体后续补充）</li></ul><h3 id="6、使用console-time-和console-timeEnd-来记录时间"><a href="#6、使用console-time-和console-timeEnd-来记录时间" class="headerlink" title="6、使用console.time()和console.timeEnd()来记录时间"></a>6、使用<code>console.time()</code>和<code>console.timeEnd()</code>来记录时间</h3><ul><li>关注函数运行的时间是提高效率的方法之一</li></ul><h3 id="获取某个函数的Stacktrace"><a href="#获取某个函数的Stacktrace" class="headerlink" title="获取某个函数的Stacktrace"></a>获取某个函数的Stacktrace</h3><ul><li>console.trace()</li><li>向Web控制台输出一个堆栈跟踪</li></ul><h3 id="将minify的代码还原"><a href="#将minify的代码还原" class="headerlink" title="将minify的代码还原"></a>将minify的代码还原</h3><ul><li>{}</li></ul><h3 id="快速定位需要debug的函数"><a href="#快速定位需要debug的函数" class="headerlink" title="快速定位需要debug的函数"></a>快速定位需要debug的函数</h3><ul><li>debug(funName)</li><li>会在执行函数的地方停下来</li></ul><h3 id="屏蔽不相关的脚本"><a href="#屏蔽不相关的脚本" class="headerlink" title="屏蔽不相关的脚本"></a>屏蔽不相关的脚本</h3><ul><li>注释掉</li></ul><h3 id="查看某个函数调用和其参数"><a href="#查看某个函数调用和其参数" class="headerlink" title="查看某个函数调用和其参数"></a>查看某个函数调用和其参数</h3><ul><li>monitor(funName)</li></ul><h3 id="Postman很好用，不过传说Firefox更快"><a href="#Postman很好用，不过传说Firefox更快" class="headerlink" title="Postman很好用，不过传说Firefox更快"></a>Postman很好用，不过传说Firefox更快</h3><ul><li>但由于本人喜欢用chrome，所以没有用尝试firefox</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="Javascript" scheme="http://yoursite.com/tags/Javascript/"/>
+    
+  </entry>
   
   <entry>
     <title>域名的购买和绑定</title>

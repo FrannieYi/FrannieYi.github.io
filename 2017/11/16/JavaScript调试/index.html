@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="PHP, 学习," />
+  <meta name="keywords" content="Javascript," />
 
 
 
@@ -125,29 +125,16 @@
 
 
 
-<meta name="description" content="搭建本地服务器
-
-注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。">
+<meta name="description" content="本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="学习PHP之环境搭建">
-<meta property="og:url" content="http://yoursite.com/2017/09/30/学习PHP之环境搭建/index.html">
+<meta property="og:title" content="JavaScript调试">
+<meta property="og:url" content="http://yoursite.com/2017/11/16/JavaScript调试/index.html">
 <meta property="og:site_name" content="杨杨">
-<meta property="og:description" content="搭建本地服务器
-
-注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。">
-<meta property="og:image" content="http://otn4ut2th.bkt.clouddn.com/blogwebsite.PNG">
-<meta property="og:image" content="http://otn4ut2th.bkt.clouddn.com/blogresult.PNG">
-<meta property="og:image" content="http://otn4ut2th.bkt.clouddn.com/blogfile.PNG">
-<meta property="og:image" content="http://otn4ut2th.bkt.clouddn.com/blogifo.png">
-<meta property="og:image" content="http://otn4ut2th.bkt.clouddn.com/blogfilename.png">
-<meta property="og:image" content="http://otn4ut2th.bkt.clouddn.com/blogover.png">
-<meta property="og:updated_time" content="2017-09-30T04:10:18.271Z">
+<meta property="og:description" content="本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。">
+<meta property="og:updated_time" content="2017-11-16T10:39:46.924Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="学习PHP之环境搭建">
-<meta name="twitter:description" content="搭建本地服务器
-
-注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。">
-<meta name="twitter:image" content="http://otn4ut2th.bkt.clouddn.com/blogwebsite.PNG">
+<meta name="twitter:title" content="JavaScript调试">
+<meta name="twitter:description" content="本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。">
 
 
 
@@ -177,13 +164,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/30/学习PHP之环境搭建/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/11/16/JavaScript调试/"/>
 
 
 
 
 
-  <title>学习PHP之环境搭建 | 杨杨</title>
+  <title>JavaScript调试 | 杨杨</title>
   
 
 
@@ -320,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/30/学习PHP之环境搭建/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/11/16/JavaScript调试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="杨杨">
@@ -337,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">学习PHP之环境搭建</h1>
+          <h1 class="post-title" itemprop="name headline">JavaScript调试</h1>
         
 
         <div class="post-meta">
@@ -349,8 +336,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-09-30T12:02:08+08:00">
-                2017-09-30
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-16T18:38:42+08:00">
+                2017-11-16
               </time>
             
 
@@ -387,28 +374,55 @@
       
 
       
-        <h1 id="搭建本地服务器"><a href="#搭建本地服务器" class="headerlink" title="搭建本地服务器"></a>搭建本地服务器</h1><hr>
-<blockquote>
-<p>注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。</p>
+        <blockquote>
+<p>本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。</p>
 </blockquote>
 <a id="more"></a>
-<h3 id="一、注册域名"><a href="#一、注册域名" class="headerlink" title="一、注册域名"></a>一、注册域名</h3><ol>
-<li>这是一个免费域名的注册地址<a href="https://www.noip.com/" target="_blank" rel="external">www.noip.com</a>，这种网站有很多，只是本人用的这一个，可自由选择。<br><img src="http://otn4ut2th.bkt.clouddn.com/blogwebsite.PNG" alt="此处输入图片的描述"></li>
-<li>注册登录即可。（一个简单的域名注册申请，就不再赘述了）</li>
-<li>根据自己的ip注册后的结果是这样（要特别注意的是ip地址的填写，不知道自己此刻的ip地址可以用命令行查询；<strong><em>此处的ip地址会根据你使用的网络而改变</em></strong>）：<br><img src="http://otn4ut2th.bkt.clouddn.com/blogresult.PNG" alt="此处输入图片的描述"></li>
-</ol>
-<h3 id="二、架构包的安装"><a href="#二、架构包的安装" class="headerlink" title="二、架构包的安装"></a>二、架构包的安装</h3><ol>
-<li>下载架构包（架构包当然也有很多种，本人使用的是链接中的这个）<a href="https://www.appservnetwork.com/en/" target="_blank" rel="external">AppSever8.6.0</a></li>
-<li>安装架构包（跟着流程走就好了，规则就是两个键按左边，三个键按中间，一个键就只能按它咯~）<strong><em>注意安装目录的选择！</em></strong>安装完之后，会有一个这样的目录：<br><img src="http://otn4ut2th.bkt.clouddn.com/blogfile.PNG" alt="此处输入图片的描述"></li>
-<li>测试：在浏览器地址栏中输入你之前申请的并且与ip地址对应的域名，当看到以下结果，说明你ok了，否则请从头开始=_=（嘿嘿，有问题肯定是某个步骤出了问题，仔细检查）：<br><img src="http://otn4ut2th.bkt.clouddn.com/blogifo.png" alt="此处输入图片的描述"></li>
-<li>此处显示的是，文件夹<code>www</code>中的index.php文件<blockquote>
-<p>当然我们希望这些关于服务器的各种信息只有我们自己能看到，而别人看不到，很简单，将文档的名字改成只有你自己知道就好了:<br><img src="http://otn4ut2th.bkt.clouddn.com/blogfilename.png" alt="此处输入图片的描述"></p>
-</blockquote>
-</li>
-<li>既然index文件已经被我们改掉了，因此可以开始写第一个index文件了，此刻网页会自动显示该文件（之后就可以开始写自己的网页了）：</li>
-</ol>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">// index.html</div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">	&lt;title&gt;index&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;p style=&quot;font-size: 50px;color: #66ccff;&quot;&gt;啦啦啦&lt;/p&gt;</div><div class="line">	&lt;p style=&quot;font-size: 40px;color: red&quot;&gt;完了&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-<p><img src="http://otn4ut2th.bkt.clouddn.com/blogover.png" alt="此处输入图片的描述"></p>
+<h3 id="1、最常用console-log（简单数据输出）"><a href="#1、最常用console-log（简单数据输出）" class="headerlink" title="1、最常用console.log（简单数据输出）"></a>1、最常用<code>console.log</code>（简单数据输出）</h3><ul>
+<li>这就没有什么好解释的，不过输出也是有技巧的，那就是要格式化，简单说就是要有标志性，只有数据或许会让人不理解，最好是加上前缀</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">// example</div><div class="line">console.log(&quot;fun&apos;s result---&quot; + fun(2));</div><div class="line">console.log(&quot;value of a---&quot; + a);</div></pre></td></tr></table></figure>
+<ul>
+<li>当然可以改变颜色和字体等</li>
+</ul>
+<h3 id="2、debugger：断点"><a href="#2、debugger：断点" class="headerlink" title="2、debugger：断点"></a>2、debugger：断点</h3><ul>
+<li>与<code>console.log</code>相比，debugger会在执行的过程中停在你想的地方，能够更加直接的看到执行过程。</li>
+</ul>
+<h3 id="3、将对象以表格的形式展示console-table"><a href="#3、将对象以表格的形式展示console-table" class="headerlink" title="3、将对象以表格的形式展示console.table()"></a>3、将对象以表格的形式展示<code>console.table()</code></h3><ul>
+<li>将对象强制用表格打出来，这样展开的对象键值对应更加清晰</li>
+<li>注意firefox有限制，最多显示1000行</li>
+</ul>
+<h3 id="4、尝试适配各种机型屏幕大小"><a href="#4、尝试适配各种机型屏幕大小" class="headerlink" title="4、尝试适配各种机型屏幕大小"></a>4、尝试适配各种机型屏幕大小</h3><ul>
+<li>这个对开发手机页面很有帮助</li>
+<li>其次是可以检查布局问题</li>
+</ul>
+<h3 id="5、如何快速找到对应的DOM元素"><a href="#5、如何快速找到对应的DOM元素" class="headerlink" title="5、如何快速找到对应的DOM元素"></a>5、如何快速找到对应的DOM元素</h3><ul>
+<li>方法1浏览器的快速选择工具</li>
+<li>方法2是通过参数访问，浏览器有将DOM元素进行编号，可以通过$x的方式去访问。（具体后续补充）</li>
+</ul>
+<h3 id="6、使用console-time-和console-timeEnd-来记录时间"><a href="#6、使用console-time-和console-timeEnd-来记录时间" class="headerlink" title="6、使用console.time()和console.timeEnd()来记录时间"></a>6、使用<code>console.time()</code>和<code>console.timeEnd()</code>来记录时间</h3><ul>
+<li>关注函数运行的时间是提高效率的方法之一</li>
+</ul>
+<h3 id="获取某个函数的Stacktrace"><a href="#获取某个函数的Stacktrace" class="headerlink" title="获取某个函数的Stacktrace"></a>获取某个函数的Stacktrace</h3><ul>
+<li>console.trace()</li>
+<li>向Web控制台输出一个堆栈跟踪</li>
+</ul>
+<h3 id="将minify的代码还原"><a href="#将minify的代码还原" class="headerlink" title="将minify的代码还原"></a>将minify的代码还原</h3><ul>
+<li>{}</li>
+</ul>
+<h3 id="快速定位需要debug的函数"><a href="#快速定位需要debug的函数" class="headerlink" title="快速定位需要debug的函数"></a>快速定位需要debug的函数</h3><ul>
+<li>debug(funName)</li>
+<li>会在执行函数的地方停下来</li>
+</ul>
+<h3 id="屏蔽不相关的脚本"><a href="#屏蔽不相关的脚本" class="headerlink" title="屏蔽不相关的脚本"></a>屏蔽不相关的脚本</h3><ul>
+<li>注释掉</li>
+</ul>
+<h3 id="查看某个函数调用和其参数"><a href="#查看某个函数调用和其参数" class="headerlink" title="查看某个函数调用和其参数"></a>查看某个函数调用和其参数</h3><ul>
+<li>monitor(funName)</li>
+</ul>
+<h3 id="Postman很好用，不过传说Firefox更快"><a href="#Postman很好用，不过传说Firefox更快" class="headerlink" title="Postman很好用，不过传说Firefox更快"></a>Postman很好用，不过传说Firefox更快</h3><ul>
+<li>但由于本人喜欢用chrome，所以没有用尝试firefox</li>
+</ul>
 
       
     </div>
@@ -434,7 +448,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/PHP-学习/" rel="tag"># PHP, 学习</a>
+            <a href="/tags/Javascript/" rel="tag"># Javascript</a>
           
         </div>
       
@@ -447,8 +461,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/08/04/画地为牢/" rel="next" title="画地为牢">
-                <i class="fa fa-chevron-left"></i> 画地为牢
+              <a href="/2017/11/15/域名的购买和绑定/" rel="next" title="域名的购买和绑定">
+                <i class="fa fa-chevron-left"></i> 域名的购买和绑定
               </a>
             
           </div>
@@ -456,10 +470,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/15/域名的购买和绑定/" rel="prev" title="域名的购买和绑定">
-                域名的购买和绑定 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -621,7 +631,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建本地服务器"><span class="nav-number">1.</span> <span class="nav-text">搭建本地服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、注册域名"><span class="nav-number">1.0.1.</span> <span class="nav-text">一、注册域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、架构包的安装"><span class="nav-number">1.0.2.</span> <span class="nav-text">二、架构包的安装</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、最常用console-log（简单数据输出）"><span class="nav-number">1.</span> <span class="nav-text">1、最常用console.log（简单数据输出）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、debugger：断点"><span class="nav-number">2.</span> <span class="nav-text">2、debugger：断点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、将对象以表格的形式展示console-table"><span class="nav-number">3.</span> <span class="nav-text">3、将对象以表格的形式展示console.table()</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、尝试适配各种机型屏幕大小"><span class="nav-number">4.</span> <span class="nav-text">4、尝试适配各种机型屏幕大小</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5、如何快速找到对应的DOM元素"><span class="nav-number">5.</span> <span class="nav-text">5、如何快速找到对应的DOM元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6、使用console-time-和console-timeEnd-来记录时间"><span class="nav-number">6.</span> <span class="nav-text">6、使用console.time()和console.timeEnd()来记录时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#获取某个函数的Stacktrace"><span class="nav-number">7.</span> <span class="nav-text">获取某个函数的Stacktrace</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#将minify的代码还原"><span class="nav-number">8.</span> <span class="nav-text">将minify的代码还原</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速定位需要debug的函数"><span class="nav-number">9.</span> <span class="nav-text">快速定位需要debug的函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#屏蔽不相关的脚本"><span class="nav-number">10.</span> <span class="nav-text">屏蔽不相关的脚本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看某个函数调用和其参数"><span class="nav-number">11.</span> <span class="nav-text">查看某个函数调用和其参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Postman很好用，不过传说Firefox更快"><span class="nav-number">12.</span> <span class="nav-text">Postman很好用，不过传说Firefox更快</span></a></li></ol></div>
             
 
           </div>
