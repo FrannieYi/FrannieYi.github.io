@@ -1828,7 +1828,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #45d994;
+  background: #cb916a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2911,7 +2911,7 @@ hr {
 }
 body {
   background-color: #000;
-  background: url("http://otn4ut2th.bkt.clouddn.com/blog-bgwallhaven-594141.jpg");
+  background: url("http://otn4ut2th.bkt.clouddn.com/blog-bgwallhaven-594141.jpg") center 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
