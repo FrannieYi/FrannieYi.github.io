@@ -1051,6 +1051,7 @@ pre .javascript .function {
 }
 .tag-cloud {
   text-align: center;
+  color: #fff;
 }
 .tag-cloud a {
   display: inline-block;
@@ -1220,6 +1221,7 @@ pre .javascript .function {
 }
 .post-body {
   font-family: 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: #999;
 }
 @media (max-width: 767px) {
   .post-body {
@@ -1456,6 +1458,7 @@ pre .javascript .function {
   text-align: center;
   word-break: break-word;
   font-weight: 400;
+  color: #fff;
 }
 .posts-expand .post-title-link {
   display: inline-block;
@@ -1666,7 +1669,7 @@ pre .javascript .function {
   width: 0;
   z-index: 1040;
   box-shadow: inset 0 2px 6px #000;
-  background: $dark;
+  background: rgba(0,0,0,0.5);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   -webkit-transform: translateZ(0);
@@ -1691,7 +1694,7 @@ pre .javascript .function {
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #999;
+  color: #fff;
   text-align: center;
 }
 .site-overview-wrap {
@@ -1748,14 +1751,14 @@ pre .javascript .function {
 .site-author-name {
   margin: 5px 0 0;
   text-align: center;
-  color: #f5f5f5;
+  color: #fff;
   font-weight: normal;
 }
 .site-description {
   margin-top: 5px;
   text-align: center;
   font-size: 14px;
-  color: #999;
+  color: #666;
 }
 .site-state {
   overflow: hidden;
@@ -1825,7 +1828,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #490b8e;
+  background: #ff0644;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2908,20 +2911,27 @@ hr {
 }
 body {
   background-color: #000;
-  background: url("http://otn4ut2th.bkt.clouddn.com/bloghei.jpg");
+  background: url("http://otn4ut2th.bkt.clouddn.com/blog-bgwallhaven-594141.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 .main-inner {
+  border-radius: 20px;
   margin-top: 60px;
   padding: 60px 60px 60px 60px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(245,245,245,0.5);
   min-height: 500px;
 }
 .header {
-  background: rgba(245,245,245,0.6);
+  background: rgba(0,0,0,0.5);
 }
 .site-title {
+  color: #fff;
+}
+.footer {
+  background: rgba(0,0,0,0.5);
+}
+.post-title-link {
   color: #fff;
 }
