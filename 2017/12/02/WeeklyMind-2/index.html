@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="JS,动画,HTML5," />
+  <meta name="keywords" content="周记," />
 
 
 
@@ -125,16 +125,16 @@
 
 
 
-<meta name="description" content="用JavaScript实现动画效果">
+<meta name="description" content="忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="动画和HTML5">
-<meta property="og:url" content="http://yoursite.com/2017/03/23/动画和HTML5/index.html">
+<meta property="og:title" content="WeeklyMind-2">
+<meta property="og:url" content="http://yoursite.com/2017/12/02/WeeklyMind-2/index.html">
 <meta property="og:site_name" content="杨杨">
-<meta property="og:description" content="用JavaScript实现动画效果">
-<meta property="og:updated_time" content="2017-03-23T06:39:11.819Z">
+<meta property="og:description" content="忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。">
+<meta property="og:updated_time" content="2017-12-02T04:29:55.301Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="动画和HTML5">
-<meta name="twitter:description" content="用JavaScript实现动画效果">
+<meta name="twitter:title" content="WeeklyMind-2">
+<meta name="twitter:description" content="忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。">
 
 
 
@@ -164,13 +164,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/03/23/动画和HTML5/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/12/02/WeeklyMind-2/"/>
 
 
 
 
 
-  <title>动画和HTML5 | 杨杨</title>
+  <title>WeeklyMind-2 | 杨杨</title>
   
 
 
@@ -307,7 +307,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/03/23/动画和HTML5/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/12/02/WeeklyMind-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="杨杨">
@@ -324,7 +324,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">动画和HTML5</h1>
+          <h1 class="post-title" itemprop="name headline">WeeklyMind-2</h1>
         
 
         <div class="post-meta">
@@ -336,8 +336,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-03-23T14:33:24+08:00">
-                2017-03-23
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-02T12:29:09+08:00">
+                2017-12-02
               </time>
             
 
@@ -374,62 +374,64 @@
       
 
       
-        <h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3><a id="more"></a>
-<h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><ul>
-<li>position属性：<ul>
-<li>static：默认值，意思是有关元素将按照它们在标记里出现的先后顺序出现在浏览器窗口里。</li>
-<li>relative：与static相似，区别是relative的元素还可以（通过应用float属性）从文档的正常显示顺序里脱离出来。</li>
-<li>absolute：我们就可以将它摆在“容器”的任何位置。这个容器要么是文档本身，要么是一个有着fixed或absolute属性的父元素。这个元素在原始标记里面出现的位置与它显示位置无关，因为它的显示位置由top，left，right和bottom等属性决定。你可以使用像素或百分比为单位设置这些属性。</li>
-</ul>
-</li>
-<li>overflow属性：<ul>
-<li>visible：不裁剪溢出内容。</li>
-<li>hidden：隐藏溢出内容。</li>
-<li>scroll：类似鱼hidden，浏览器将对溢出的内容进行隐藏，但显示一个滚动条以便让用户能够滚动看到内容的其他部分。</li>
-<li>auto：类似于scroll，但浏览器只在确实发生溢出时才显示滚动条，如果没有溢出就不显示滚动条。<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4></li>
-</ul>
-</li>
-<li>setTimeout：能够让某个函数在经过一段预定的时间之后才开始执行。<ul>
-<li>函数有两个参数：第一个是字符串，执行的函数名；第二个是数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数所给出的函数。</li>
-<li><code>setTimeout(&quot;function&quot;,interval)</code></li>
-<li>在绝大多数情况下，将函数调用赋值给一个变量是一个好主意。</li>
-<li><code>varible=setTimeout(&quot;function&quot;,interval)</code></li>
-<li>取消某个正在排队等候执行的函数：</li>
-<li><code>clearTimeout(variable)</code></li>
-</ul>
-</li>
-</ul>
-<h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><h4 id="video："><a href="#video：" class="headerlink" title="video："></a>video：</h4><ul>
-<li>currentTime：返回当前播放的位置，以秒表示；</li>
-<li>duration：返回媒体的总时长，以秒表示，对于流媒体返回无穷大； * paused：表示媒体是否处于暂停状态；</li>
-<li>触发脚本的事件：</li>
-<li>play：在媒体播放开始时发生；</li>
-<li>pause：在媒体暂停是发生；</li>
-<li>loadeddata：在媒体可以从当前播放位置开始播放时发生；</li>
-<li>ended：在媒体已播放完成而停止时发生；</li>
-<li>别忘了给<code>&lt;video&gt;</code>元素叫control属性：</li>
-<li><code>&lt;video src=&quot;movie.ogv&quot; control&gt;</code></li>
-</ul>
-<h4 id="表单："><a href="#表单：" class="headerlink" title="表单："></a>表单：</h4><p>新的输入控件类型</p>
+        <blockquote>
+<p>忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="总结上两周"><a href="#总结上两周" class="headerlink" title="总结上两周"></a>总结上两周</h3><h5 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h5><blockquote>
+<p>期中考试和报告全部完成，成绩一般，接下来又要开始准备期末考试了，来台湾三个月了，自己也在想这一趟来的值不值。</p>
+</blockquote>
 <ul>
-<li>email，用于输入电子邮件地址；</li>
-<li>url，用于输入URL；</li>
-<li>date，用于输入日期和时间；</li>
-<li>number，数值；</li>
-<li>ranger，生成滑动条；</li>
-<li>search，搜索框；</li>
-<li>tel，电话号码；</li>
-<li><p>color，选择颜色；<br>新的属性</p>
-</li>
-<li><p>autocomplete，用于为文本（text）输入框添加一组建议的输入项；</p>
-</li>
-<li>autofocus，让表单元素自动获得焦点；</li>
-<li>form，对<form>标签外部的表单元素分组；</form></li>
-<li>min，max和step，用在范围（range）和数值（number）输入框中；</li>
-<li>pattern，定义一个正则表达式，以便验证输入的值；</li>
-<li>placeholder，在文本输入临时性的提示信息；</li>
-<li>required，表示必填；</li>
+<li><p>课程：</p>
+<ul>
+<li>突然对不动产的作业很是上心，希望在同学和老师们面前不丢咱大陆学生的脸</li>
+<li>为了行销管理的期中报告，自己也算是呕心沥血了，希望不要太差</li>
+<li>西方哲学到康德部分，开始有点抽象到不懂了，还是知识面太狭窄了</li>
+<li>财务管理课程让自己彻底对经融课程失望了，自己是真的不适合学习，修这门课都当作了解吧</li>
+<li>突然觉得人际交往是一门很重要的课程，既认识了自己，也认识了别人</li>
+<li>这两个周因为中间的各种考试和报告，时间有点混乱，所以接下来应该好好计划</li>
 </ul>
+</li>
+<li><p>其它</p>
+<ul>
+<li>http缓存机制的了解，周末希望能理解完</li>
+<li>继续学习了php</li>
+<li>了解php架构包中如何建wordpress以及评论板块（但是发现自己对数据库的认识还不够，导致在尝试过程中老是出现问题）</li>
+</ul>
+</li>
+</ul>
+<h5 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h5><blockquote>
+<p>上个周末算是很精彩了，一趟三天两夜的旅行回来，也导致了博客的的各种托更。</p>
+</blockquote>
+<ul>
+<li><p>台南：</p>
+<ul>
+<li>赤崁楼</li>
+<li>安平古堡</li>
+<li>安平树屋</li>
+<li>安平老街</li>
+</ul>
+</li>
+<li><p>高雄</p>
+<ul>
+<li>夜市</li>
+<li>爱河</li>
+<li>真爱码头</li>
+<li>西子湾</li>
+<li>中山大学</li>
+</ul>
+</li>
+</ul>
+<p>也算是见过真正的浪了！</p>
+<h5 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h5><ul>
+<li>12月计划</li>
+<li>微信订阅号</li>
+<li>各种作业</li>
+<li>前端书籍（每天给点时间来做，积累最重要）</li>
+</ul>
+<blockquote>
+<p>今年的最后一个月，完成你年初的计划可好，少年！</p>
+</blockquote>
 
       
     </div>
@@ -455,7 +457,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/JS-动画-HTML5/" rel="tag"># JS,动画,HTML5</a>
+            <a href="/tags/周记/" rel="tag"># 周记</a>
           
         </div>
       
@@ -468,8 +470,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/22/JSON相关内容/" rel="next" title="JSON相关内容">
-                <i class="fa fa-chevron-left"></i> JSON相关内容
+              <a href="/2017/11/19/WeeklyMind-1/" rel="next" title="WeeklyMind-1">
+                <i class="fa fa-chevron-left"></i> WeeklyMind-1
               </a>
             
           </div>
@@ -477,10 +479,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/04/06/BOM知识点/" rel="prev" title="BOM知识点">
-                BOM知识点 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -642,7 +640,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#用JavaScript实现动画效果"><span class="nav-number">1.</span> <span class="nav-text">用JavaScript实现动画效果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#知识点"><span class="nav-number">1.1.</span> <span class="nav-text">知识点</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#时间"><span class="nav-number">1.2.</span> <span class="nav-text">时间</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5"><span class="nav-number">2.</span> <span class="nav-text">HTML5</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#video："><span class="nav-number">2.1.</span> <span class="nav-text">video：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#表单："><span class="nav-number">2.2.</span> <span class="nav-text">表单：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#总结上两周"><span class="nav-number">1.</span> <span class="nav-text">总结上两周</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#学习"><span class="nav-number">1.0.1.</span> <span class="nav-text">学习</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#生活"><span class="nav-number">1.0.2.</span> <span class="nav-text">生活</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#待更进事项"><span class="nav-number">1.0.3.</span> <span class="nav-text">待更进事项</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>

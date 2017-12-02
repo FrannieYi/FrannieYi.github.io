@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-11-19T06:12:39.908Z</updated>
+  <updated>2017-12-02T04:29:55.301Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>WeeklyMind-2</title>
+    <link href="http://yoursite.com/2017/12/02/WeeklyMind-2/"/>
+    <id>http://yoursite.com/2017/12/02/WeeklyMind-2/</id>
+    <published>2017-12-02T04:29:09.000Z</published>
+    <updated>2017-12-02T04:29:55.301Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。</p></blockquote><a id="more"></a><h3 id="总结上两周"><a href="#总结上两周" class="headerlink" title="总结上两周"></a>总结上两周</h3><h5 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h5><blockquote><p>期中考试和报告全部完成，成绩一般，接下来又要开始准备期末考试了，来台湾三个月了，自己也在想这一趟来的值不值。</p></blockquote><ul><li><p>课程：</p><ul><li>突然对不动产的作业很是上心，希望在同学和老师们面前不丢咱大陆学生的脸</li><li>为了行销管理的期中报告，自己也算是呕心沥血了，希望不要太差</li><li>西方哲学到康德部分，开始有点抽象到不懂了，还是知识面太狭窄了</li><li>财务管理课程让自己彻底对经融课程失望了，自己是真的不适合学习，修这门课都当作了解吧</li><li>突然觉得人际交往是一门很重要的课程，既认识了自己，也认识了别人</li><li>这两个周因为中间的各种考试和报告，时间有点混乱，所以接下来应该好好计划</li></ul></li><li><p>其它</p><ul><li>http缓存机制的了解，周末希望能理解完</li><li>继续学习了php</li><li>了解php架构包中如何建wordpress以及评论板块（但是发现自己对数据库的认识还不够，导致在尝试过程中老是出现问题）</li></ul></li></ul><h5 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h5><blockquote><p>上个周末算是很精彩了，一趟三天两夜的旅行回来，也导致了博客的的各种托更。</p></blockquote><ul><li><p>台南：</p><ul><li>赤崁楼</li><li>安平古堡</li><li>安平树屋</li><li>安平老街</li></ul></li><li><p>高雄</p><ul><li>夜市</li><li>爱河</li><li>真爱码头</li><li>西子湾</li><li>中山大学</li></ul></li></ul><p>也算是见过真正的浪了！</p><h5 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h5><ul><li>12月计划</li><li>微信订阅号</li><li>各种作业</li><li>前端书籍（每天给点时间来做，积累最重要）</li></ul><blockquote><p>今年的最后一个月，完成你年初的计划可好，少年！</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="周记" scheme="http://yoursite.com/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>WeeklyMind-1</title>
