@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>杨杨</title>
+  <title>杨坤怡</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://yangkunyi.com/</id>
   
   <author>
-    <name>杨杨</name>
+    <name>杨坤怡</name>
     
   </author>
   
@@ -314,11 +314,11 @@
     </summary>
     
     
+      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
       <category term="DOM" scheme="http://yangkunyi.com/tags/DOM/"/>
     
       <category term="JS" scheme="http://yangkunyi.com/tags/JS/"/>
-    
-      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -338,9 +338,9 @@
     </summary>
     
     
-      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="BOM" scheme="http://yangkunyi.com/tags/BOM/"/>
+    
+      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
       <category term="笔记" scheme="http://yangkunyi.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
