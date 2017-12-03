@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="前端,记录,问题,讨论," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="杨坤怡" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="话题：width：100%和width：auto的区别">
+<meta property="og:type" content="article">
+<meta property="og:title" content="坎帕斯学院日常讨论">
+<meta property="og:url" content="http://yangkunyi.com/2017/04/16/坎帕斯学院日常讨论-1/index.html">
+<meta property="og:site_name" content="杨坤怡">
+<meta property="og:description" content="话题：width：100%和width：auto的区别">
+<meta property="og:updated_time" content="2017-12-02T06:46:40.649Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="坎帕斯学院日常讨论">
+<meta name="twitter:description" content="话题：width：100%和width：auto的区别">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yangkunyi.com/2017/04/16/坎帕斯学院日常讨论-1/"/>
+
+
+
+
+
+  <title>坎帕斯学院日常讨论 | 杨坤怡</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">杨坤怡</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/04/16/坎帕斯学院日常讨论-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23172898_147614172637953_1889825038122566657_n.jpg?oh=071d058ee323bcf8d3805d7edd0c1dbc&oe=5AABCCA7">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杨坤怡">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">坎帕斯学院日常讨论</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-16T16:14:15+08:00">
+                2017-04-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/04/16/坎帕斯学院日常讨论-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/04/16/坎帕斯学院日常讨论-1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="话题：width：100-和width：auto的区别"><a href="#话题：width：100-和width：auto的区别" class="headerlink" title="话题：width：100%和width：auto的区别"></a>话题：width：100%和width：auto的区别</h2><a id="more"></a>
+<h4 id="width：100"><a href="#width：100" class="headerlink" title="width：100%"></a>width：100%</h4><ul>
+<li>元素宽度等于父级元素的宽度。</li>
+</ul>
+<h4 id="width：auto"><a href="#width：auto" class="headerlink" title="width：auto"></a>width：auto</h4><ul>
+<li>元素的宽度等于父元素的宽度减去margin，padding，border这些。</li>
+</ul>
+<h4 id="高度知识点"><a href="#高度知识点" class="headerlink" title="高度知识点"></a>高度知识点</h4><ul>
+<li>子元素的margin和padding百分比知识点根据父元素的width来算。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">//test1</div><div class="line">&lt;style&gt;</div><div class="line">    body&#123;</div><div class="line">        margin:0;</div><div class="line">        padding:0;</div><div class="line">    &#125;</div><div class="line">    .main&#123;</div><div class="line">        width:500px;</div><div class="line">        background:red;</div><div class="line">    &#125;</div><div class="line">    .test&#123;</div><div class="line">        width:auto;</div><div class="line">        padding:20px;</div><div class="line">        margin:10px;</div><div class="line">        border:5px solid blue;</div><div class="line">        background:green;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;main&quot;&gt;</div><div class="line">    &lt;div class=&quot;wrap&quot;&gt;</div><div class="line">        &lt;div class=&quot;test&quot;&gt;123&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>test width=父元素width-margin-padding-border</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">//test2</div><div class="line">&lt;style&gt;</div><div class="line">    body&#123;</div><div class="line">        margin:0;</div><div class="line">        padding:0;</div><div class="line">    &#125;</div><div class="line">    .main&#123;</div><div class="line">        display:inline-block;</div><div class="line">        background:red;</div><div class="line">    &#125;</div><div class="line">    .test&#123;</div><div class="line">        width:auto;</div><div class="line">        padding:20px;</div><div class="line">        margin:10px;</div><div class="line">        border:5px solid blue;</div><div class="line">        background:green;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;main&quot;&gt;</div><div class="line">    &lt;div class=&quot;wrap&quot;&gt;</div><div class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>test width=123123123123123+margin+padding+border</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">//test3</div><div class="line">&lt;style&gt;</div><div class="line">    body&#123;</div><div class="line">        font-size:20px;</div><div class="line">        margin:0;</div><div class="line">        padding:0;</div><div class="line">    &#125;</div><div class="line">    .main&#123;</div><div class="line">        display:inline-block;</div><div class="line">        background:red;</div><div class="line">        width:500px;</div><div class="line">    &#125;</div><div class="line">    .test&#123;</div><div class="line">        width:auto;</div><div class="line">        padding:20px;</div><div class="line">        margin:10px;</div><div class="line">        border:5px solid blue;</div><div class="line">        background:green;</div><div class="line">    &#125;</div><div class="line">&lt;/style&gt;</div><div class="line"></div><div class="line">&lt;div class=&quot;main&quot;&gt;</div><div class="line">    &lt;div class=&quot;wrap&quot;&gt;</div><div class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>test width=500-padding-margin-border<br>这里的500px并不是继承，而是因为div块级元素的影响而来的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line">//test4a</div><div class="line">&lt;style type=&quot;text/css&quot;&gt;</div><div class="line">	body&#123;</div><div class="line">		font-size: 20px;</div><div class="line">		padding: 0;</div><div class="line">		margin: 0;</div><div class="line">	&#125;</div><div class="line">	.first1&#123;</div><div class="line">		background: red;</div><div class="line">		width: 200px;</div><div class="line">		height: 400px;</div><div class="line">		overflow: hidden;</div><div class="line">	&#125;</div><div class="line">	.second1&#123;</div><div class="line">		height: 25%;width: 25%;</div><div class="line">		margin-top: 10%;</div><div class="line">		background-color: green;</div><div class="line">		padding-left: 10%;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	&lt;/style&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">	&lt;div class=&quot;first1&quot;&gt;</div><div class="line">		&lt;div class=&quot;second1&quot;&gt;&lt;/div&gt;</div><div class="line">	&lt;/div&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure>
+<p>test width=50,height=100,margin-top=20</p>
+<h5 id="2017-4-19-21-00"><a href="#2017-4-19-21-00" class="headerlink" title="2017.4.19 21:00"></a>2017.4.19 21:00</h5><h2 id="话题：document-getElementByClassName-返回的是什么？"><a href="#话题：document-getElementByClassName-返回的是什么？" class="headerlink" title="话题：document.getElementByClassName()返回的是什么？"></a>话题：document.getElementByClassName()返回的是什么？</h2><ul>
+<li>是一个HTML集合。</li>
+</ul>
+<h4 id="集合和数组的区别"><a href="#集合和数组的区别" class="headerlink" title="集合和数组的区别"></a>集合和数组的区别</h4><ul>
+<li>HTML集合：一直与文档保持着链接，每次你需要最新的信息时，都会重复执行查询的过程，哪怕只是获取集合里的元素个数，即集合的length属性也是这样。（简单的说就是这个集合会实时改变）</li>
+<li>案例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">var alldivs document.getElementsByTagName(&apos;div&apos;);</div><div class="line">for(var i=0;i&lt;alldivs.length;i++)&#123;</div><div class="line">    document.body.appendChild(document.createElement(&apos;div&apos;));</div><div class="line">&#125;</div><div class="line">//该循环会一直循环下去，因为每次添加一个div之后，alldicvs.length的值也会改变，导致循环条件一直为true，一直循环。</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="关于闭包和词法作用域"><a href="#关于闭包和词法作用域" class="headerlink" title="关于闭包和词法作用域"></a>关于闭包和词法作用域</h4><ul>
+<li>案例：<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function foo()&#123;</div><div class="line">    concile.log(a);//2</div><div class="line">&#125;</div><div class="line">function bar()&#123;</div><div class="line">    var a=3;</div><div class="line">    foo();</div><div class="line">&#125;</div><div class="line">var a=2;</div><div class="line">bar();</div><div class="line">//原理：js的运行原理是词法作用域，而非动态作用域，因此当foo函数被调用的时候，对a进行查询的时候会直接在全局作用域中查询。</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="话题：display：none和visibility：hidden区别？"><a href="#话题：display：none和visibility：hidden区别？" class="headerlink" title="话题：display：none和visibility：hidden区别？"></a>话题：display：none和visibility：hidden区别？</h2><ul>
+<li>display：none；有dom树，没有渲染树，也就是说js可以找到display：none。</li>
+<li>visibility：hidden；只是将内容隐藏起来了，还是要占位的。</li>
+</ul>
+<h2 id="话题：两个inline-block元素在同一行中间的那个间距是多少？"><a href="#话题：两个inline-block元素在同一行中间的那个间距是多少？" class="headerlink" title="话题：两个inline-block元素在同一行中间的那个间距是多少？"></a>话题：两个inline-block元素在同一行中间的那个间距是多少？</h2><ul>
+<li>每个浏览器间距不同。</li>
+<li>字体大小不同间距不同。</li>
+</ul>
+<h4 id="如何去掉这个空格？"><a href="#如何去掉这个空格？" class="headerlink" title="如何去掉这个空格？"></a>如何去掉这个空格？</h4><ul>
+<li>去掉最底层html标签的空格。</li>
+<li>margin为负值。（每个浏览器不同，值不同）</li>
+<li>将父级元素的字体大小设置为0。（推荐方案）</li>
+</ul>
+<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
+<li>这个间距不仅在水平方向有，在垂直方向也有！</li>
+<li>距离大概是字体大小的1/8（可能会有叠加）。</li>
+<li>inline-block元素之间，block和inline-block和inline的元素之间都有间距。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="https://mp.weixin.qq.com/cgi-bin/settingpage?t=setting/index&action=index&token=32880149&lang=zh_CN/misc/getqrcode?fakeid=3551286361&token=32880149&style=1" alt="杨坤怡 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎关注我的公众号，看看不一样的生活</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/前端/" rel="tag"># 前端</a>
+          
+            <a href="/tags/记录/" rel="tag"># 记录</a>
+          
+            <a href="/tags/问题/" rel="tag"># 问题</a>
+          
+            <a href="/tags/讨论/" rel="tag"># 讨论</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/10/数组/" rel="next" title="数组">
+                <i class="fa fa-chevron-left"></i> 数组
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/02/vue2-0生命周期/" rel="prev" title="vue2.0生命周期">
+                vue2.0生命周期 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23172898_147614172637953_1889825038122566657_n.jpg?oh=071d058ee323bcf8d3805d7edd0c1dbc&oe=5AABCCA7"
+                alt="杨坤怡" />
+            
+              <p class="site-author-name" itemprop="name">杨坤怡</p>
+              <p class="site-description motion-element" itemprop="description">愿你一世清高 两鬓斑白艳阳照</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/FrannieYi" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="frannieyi99@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/Frannie" target="_blank" title="Google">
+                    
+                      <i class="fa fa-fw fa-google"></i>Google</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/杨坤怡" target="_blank" title="FB Page">
+                    
+                      <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#话题：width：100-和width：auto的区别"><span class="nav-number">1.</span> <span class="nav-text">话题：width：100%和width：auto的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#width：100"><span class="nav-number">1.0.1.</span> <span class="nav-text">width：100%</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#width：auto"><span class="nav-number">1.0.2.</span> <span class="nav-text">width：auto</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#高度知识点"><span class="nav-number">1.0.3.</span> <span class="nav-text">高度知识点</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#2017-4-19-21-00"><span class="nav-number">1.0.3.1.</span> <span class="nav-text">2017.4.19 21:00</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#话题：document-getElementByClassName-返回的是什么？"><span class="nav-number">2.</span> <span class="nav-text">话题：document.getElementByClassName()返回的是什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#集合和数组的区别"><span class="nav-number">2.0.1.</span> <span class="nav-text">集合和数组的区别</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#关于闭包和词法作用域"><span class="nav-number">2.0.2.</span> <span class="nav-text">关于闭包和词法作用域</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#话题：display：none和visibility：hidden区别？"><span class="nav-number">3.</span> <span class="nav-text">话题：display：none和visibility：hidden区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#话题：两个inline-block元素在同一行中间的那个间距是多少？"><span class="nav-number">4.</span> <span class="nav-text">话题：两个inline-block元素在同一行中间的那个间距是多少？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#如何去掉这个空格？"><span class="nav-number">4.0.1.</span> <span class="nav-text">如何去掉这个空格？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#注意："><span class="nav-number">4.0.2.</span> <span class="nav-text">注意：</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨坤怡</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yangkunyi.com/2017/04/16/坎帕斯学院日常讨论-1/';
+          this.page.identifier = '2017/04/16/坎帕斯学院日常讨论-1/';
+          this.page.title = '坎帕斯学院日常讨论';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

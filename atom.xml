@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2017-12-02T06:43:47.499Z</updated>
+  <updated>2017-12-03T13:25:19.622Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>坎帕斯学院讨论日常-2</title>
+    <link href="http://yangkunyi.com/2017/12/03/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-2/"/>
+    <id>http://yangkunyi.com/2017/12/03/坎帕斯学院日常讨论-2/</id>
+    <published>2017-12-03T13:23:28.000Z</published>
+    <updated>2017-12-03T13:25:19.622Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这是第二次整理讨论的内容，本次内容有点深奥，值得细嚼慢咽。<br><a id="more"></a></p></blockquote><h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><ul><li>高并发(High Concurrency)<ul><li>指通过设计保证系统能够同时并行处理很多请求。</li><li>是互联网分布式系统架构设计中必须考虑的因素之一。</li></ul></li><li>高性能(High performance)<ul><li>目前理解就是提高浏览网页的速度。</li></ul></li><li>高可用(High Availability)<ul><li>通常来描述一个系统经过专门的设计，从而减少停工时间，而保持其服务的高度可用性。</li></ul></li><li>高扩展性(High Extensibility)<ul><li>通常和可伸缩性混为一谈.在软件范畴上，是软件系统本身的属性，或者进一步说是设计的属性，代码的属性。 </li></ul></li><li>高可维护性(High Maintainability)<ul><li>是衡量一个系统的可修复(恢复)性和可改进性的难易程度。</li></ul></li></ul><h3 id="接口的高可用性"><a href="#接口的高可用性" class="headerlink" title="接口的高可用性"></a>接口的高可用性</h3><blockquote><p>保证这个接口在任何情况下都可以正确的取到数据。</p></blockquote><ul><li>方案一：每次访问的时候将a接口的数据存在本地，第二次访问的时候接口如果gg了，可以直接在本地获取数据，然后渲染出来；（前提是访问过a接口）</li><li>方案二：推oss或者cdn；每次访问了一个接口，然后服务器把返回的数据生成文件推送到一个静态资源服务器上去；<ul><li>好处：比如某人访问了接口，静态资源服务器就会缓存a里面的数据，这时候gg了，其他人依然可以请求到oss上的数据；（逻辑是前端做到的，但是数据推到oss上是从后台推上去的）</li><li>oss几乎不可能gg，原因是它只是一个静态资源存储的地方；</li></ul></li><li>默认数据：（假数据）当接口不可用的时候，用这个自己做的数据；</li></ul><blockquote><p>目前企业的解决方案是：先走服务器接口，若是gg了；再访问本地缓存；若没有，则访问oss。</p></blockquote><h3 id="本地缓存"><a href="#本地缓存" class="headerlink" title="本地缓存"></a>本地缓存</h3><ul><li>优点：<ul><li>如果第一次没有访问对应的接口就没有本地缓存；</li><li>数据的时效性不够；</li></ul></li><li>缺点：<ul><li>快，不用通过网络请求；</li></ul></li></ul><h4 id="缓存地点"><a href="#缓存地点" class="headerlink" title="缓存地点"></a>缓存地点</h4><ul><li>缓存类型：<ul><li><code>sessionStorage</code>：只在当次回话有效，不会带到每一个请求里面去；</li><li><code>indexDB</code>：浏览器支持度很低，也就是说兼容问题很大；</li><li><code>cookie</code>：过期时间可以设置，默认是浏览器当期回话结束失效；cookie很小；每次对应域名是会在每个请求头带过去，浪费资源，所以限制了大小，如果不限制，就会跟上传文件没有区别了，会导致特别慢；对于数据接口，我们不能保证内容有多大，而且每个接口数据都要缓存，所以不能用cookie。</li><li><code>localstorage</code>：没有大小限制；</li></ul></li></ul><blockquote><p>以上都属于这两种类型：</p><ol><li>（私有）浏览器缓存：单个用户，你浏览过的页面浏览器缓存起来。</li><li>（共享）代理缓存：多个用户，所在公司自己架构的，减少网络拥堵与延迟。</li></ol></blockquote><h3 id="浏览器缓存机制"><a href="#浏览器缓存机制" class="headerlink" title="浏览器缓存机制"></a>浏览器缓存机制</h3><h4 id="浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？"><a href="#浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？" class="headerlink" title="浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？"></a>浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？</h4><p><img src="http://otn4ut2th.bkt.clouddn.com/blog201211281402438011.png" alt="浏览器缓存"></p><h4 id="状态码304是怎么产生的？"><a href="#状态码304是怎么产生的？" class="headerlink" title="状态码304是怎么产生的？"></a>状态码304是怎么产生的？</h4><ul><li>是因为本地文件设置的信息头部过期了，去服务器拉取，然后服务器告诉我，其实你的文件还尚未过期，让你回自己本地取资源；</li></ul><h4 id="状态码200（from-cache）是怎么产生的？"><a href="#状态码200（from-cache）是怎么产生的？" class="headerlink" title="状态码200（from cache）是怎么产生的？"></a>状态码200（from cache）是怎么产生的？</h4><ul><li>一定是通过了请求并且成功然后返回的状态码，方式<code>get</code>或者<code>post</code>。</li></ul><blockquote><p>以上的问题只是有所了解了，但是关于浏览器的缓存机制还没有系统的了解，自己在看官方文档的时候，感觉有点困惑，所以先在这里埋个种子。</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;这是第二次整理讨论的内容，本次内容有点深奥，值得细嚼慢咽。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="问题" scheme="http://yangkunyi.com/tags/%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="讨论" scheme="http://yangkunyi.com/tags/%E8%AE%A8%E8%AE%BA/"/>
+    
+      <category term="浏览器缓存" scheme="http://yangkunyi.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98/"/>
+    
+      <category term="状态码" scheme="http://yangkunyi.com/tags/%E7%8A%B6%E6%80%81%E7%A0%81/"/>
+    
+  </entry>
   
   <entry>
     <title>WeeklyMind-2</title>
@@ -248,8 +277,8 @@
   
   <entry>
     <title>坎帕斯学院日常讨论</title>
-    <link href="http://yangkunyi.com/2017/04/16/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA/"/>
-    <id>http://yangkunyi.com/2017/04/16/坎帕斯学院日常讨论/</id>
+    <link href="http://yangkunyi.com/2017/04/16/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-1/"/>
+    <id>http://yangkunyi.com/2017/04/16/坎帕斯学院日常讨论-1/</id>
     <published>2017-04-16T08:14:15.000Z</published>
     <updated>2017-12-02T06:46:40.649Z</updated>
     
