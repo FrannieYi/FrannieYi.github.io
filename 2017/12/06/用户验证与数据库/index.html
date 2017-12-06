@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="笔记,PHP,验证,数据库," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="杨坤怡" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="用户验证与数据库">
+<meta property="og:url" content="http://yangkunyi.com/2017/12/06/用户验证与数据库/index.html">
+<meta property="og:site_name" content="杨坤怡">
+<meta property="og:description" content="这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。">
+<meta property="og:updated_time" content="2017-12-06T12:25:46.194Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="用户验证与数据库">
+<meta name="twitter:description" content="这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yangkunyi.com/2017/12/06/用户验证与数据库/"/>
+
+
+
+
+
+  <title>用户验证与数据库 | 杨坤怡</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">杨坤怡</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/06/用户验证与数据库/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23172898_147614172637953_1889825038122566657_n.jpg?oh=071d058ee323bcf8d3805d7edd0c1dbc&oe=5AABCCA7">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杨坤怡">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">用户验证与数据库</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-06T20:22:28+08:00">
+                2017-12-06
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/12/06/用户验证与数据库/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/12/06/用户验证与数据库/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。</p>
+</blockquote>
+<a id="more"></a>
+<h2 id="验证用户方法"><a href="#验证用户方法" class="headerlink" title="验证用户方法"></a>验证用户方法</h2><h3 id="1-HTTP自带的验证"><a href="#1-HTTP自带的验证" class="headerlink" title="1. HTTP自带的验证"></a>1. HTTP自带的验证</h3><blockquote>
+<p>这种方式是利用HTTP所提供的验证头信息来对用户进行身份验证。由于这种凡是对大量的使用者缺乏有效的管理，在用户太多时并没有太大用处，因此少量用户时使用。例如开发人员。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&lt;?php </div><div class="line">    // 如果 $PHP_AUTH_USER 不等于 &quot;tea&quot;，就进不去网站。 </div><div class="line">    if($_SERVER[&apos;PHP_AUTH_USER&apos;] !=&apos;tea&apos; || $_SERVER[&apos;PHP_AUTH_PW&apos;] !=&apos;ok&apos;)&#123; </div><div class="line">    //通过头部信息告知浏览器验证</div><div class="line">    header(&apos;WWW-Authenticate: Basic realm=&quot;「需验证」---请输入账户/密码&quot;&apos;); </div><div class="line">    header(&apos;HTTP/1.0 401 Unauthorized&apos;); </div><div class="line">    echo &quot;账号或密码错误。请刷新重新输入。&quot;; </div><div class="line">    </div><div class="line">    //记得要加上 exit() 离开，不然就跟没有验证一样了！ </div><div class="line">    exit(); </div><div class="line">    &#125; </div><div class="line">    /* </div><div class="line">    如果用户输入正确的账户和密码，下面的 HTML 就会显示 </div><div class="line">    */ </div><div class="line">    ?&gt; </div><div class="line">&lt;HTML&gt; </div><div class="line">    &lt;HEAD&gt; </div><div class="line">        &lt;TITLE&gt;&lt;/TlTLE&gt; </div><div class="line">    &lt;/HEAD&gt; </div><div class="line"></div><div class="line">    &lt;BODY&gt; </div><div class="line">        &lt;P&gt;Hello World！&lt;/P&gt; </div><div class="line">    &lt;/BODY&gt; </div><div class="line">&lt;/HTML&gt;</div></pre></td></tr></table></figure>
+<h3 id="2-htaccess方式的验证"><a href="#2-htaccess方式的验证" class="headerlink" title="2. htaccess方式的验证"></a>2. <code>htaccess</code>方式的验证</h3><blockquote>
+<p>这种凡是其实时Apche所提供的加强版HTTP验证方式，利用Apche所提供的<code>htpasswd</code>来设定使用者账号和密码。但是任然不适用过多用户。</p>
+</blockquote>
+<h4 id="首先建立用户数据（授权的动作）"><a href="#首先建立用户数据（授权的动作）" class="headerlink" title="首先建立用户数据（授权的动作）"></a>首先建立用户数据（授权的动作）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// 第一次 -c，第二次添加就不需要了</div><div class="line">c:\appserv\apache\bin&gt; htpasswd -c htusers Tom </div><div class="line">New password: ←输入用户密码 </div><div class="line">Re-type new password: ←再次输入 </div><div class="line">Adding password for user Tom</div><div class="line"></div><div class="line">c:\appserv\apache\bin&gt; htpasswd htusers Jack </div><div class="line">New password: </div><div class="line">Re-type new password: </div><div class="line">Adding password for user Jack</div><div class="line"></div><div class="line">// 可以将不同的人进行分组，group是群组名称</div><div class="line">group:Tom Jack</div></pre></td></tr></table></figure>
+<h4 id="然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）"><a href="#然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）" class="headerlink" title="然后在需要权限才可以进入的路径中建.htaccess文档（将已授权和访问地址联系到一起）"></a>然后在需要权限才可以进入的路径中建<code>.htaccess</code>文档（将已授权和访问地址联系到一起）</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// 显示给用户看的提示</div><div class="line">AuthName &quot;登陆时需要输入账号和密码「账号」与「密码」&quot; </div><div class="line">// 验证时不编码</div><div class="line">AuthType Basic </div><div class="line">// 之前建立的用户数据</div><div class="line">AuthUserFile c:\appserv\apache\bin\htusers </div><div class="line">#AuthGroupFile c:\appserv\apache\bin\htgroup </div><div class="line">// 所有访问的都需要验证</div><div class="line">require valid-user </div><div class="line">#require user jollen </div><div class="line">#require group ieem316 </div><div class="line">// 定义说拒绝所有，允许个别</div><div class="line">order deny,allow </div><div class="line">deny from all </div><div class="line">#allow from .nthu.edu.tw </div><div class="line">allow from 140.114.70.31</div></pre></td></tr></table></figure>
+<h3 id="3-数据库存储用户数据"><a href="#3-数据库存储用户数据" class="headerlink" title="3. 数据库存储用户数据"></a>3. 数据库存储用户数据</h3><blockquote>
+<p>最有效，最普遍的做法，将用户的账户和密码存在数据库中，每次登陆到数据库中查找数据，最后返回有无和正确性。</p>
+</blockquote>
+<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
+<li>登陆的表单</li>
+<li>登陆的程序</li>
+<li>建好用户的资料库，至少要包括账号和密码</li>
+</ol>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
+<li>通过表单获取用户账号与密码</li>
+<li>到数据库中查找对应的账号和密码</li>
+<li>失败就返回重新获取信息，直到成功为止</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">// 本程序通过头信息获取的用户的账户和密码</div><div class="line">&lt;?php </div><div class="line">    // 如果用户沒有输入账户，要求用户重新验证。 </div><div class="line">    IF(!isset($PHP_AUTH_USER))&#123; </div><div class="line">        header(&apos;WWW-Authenticate: Basic realm=&quot;请输入账号和密码&quot;&apos;); </div><div class="line">        header(&apos;HTTP/1.0 401 Unauthorized&apos;); </div><div class="line">        echo &quot;刷新后重新登陆&quot;; </div><div class="line">        exit(); </div><div class="line">    &#125;</div><div class="line">    else&#123; </div><div class="line">        mysql_connect(&quot;localhost&quot;,&quot;admin&quot;,&quot;asdee4&quot;) or die (&quot;无法连接 MySQL&quot;); </div><div class="line">        rnysql_select_db(&quot;members&quot;) or die(&quot;无法连接数据库&quot;); </div><div class="line">        $query=&quot;select id from users where username=&apos;$PHP_AUTH_USER&apos; and </div><div class="line">        password=&apos;$PHP_AUTH_PW&apos;&quot;; </div><div class="line">        $result=mysql_query($query); </div><div class="line">        $n_rows=mysql_num_rows($result); </div><div class="line">        mysql_close(); </div><div class="line">        // 当row&lt;1时，用户账号与密码有错，重新登陆</div><div class="line">        if($n_rows &lt; 1)&#123; </div><div class="line">            header(&apos;WWW_Authenticate: Basic realm=&quot;请输入账号和密码&quot;&apos;); </div><div class="line">            header(&apos;HTTP/1.0 401 Unauthorized&apos;); </div><div class="line">            echo &quot;刷新重新登陆&quot;; </div><div class="line">            exit(); </div><div class="line">        &#125; </div><div class="line">    &#125; </div><div class="line">?&gt;</div></pre></td></tr></table></figure>
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="数据库系统-数据库管理系统-数据库"><a href="#数据库系统-数据库管理系统-数据库" class="headerlink" title="数据库系统 = 数据库管理系统 + 数据库"></a>数据库系统 = 数据库管理系统 + 数据库</h3><h4 id="DBMS（数据库管理系统）：database-management-system"><a href="#DBMS（数据库管理系统）：database-management-system" class="headerlink" title="DBMS（数据库管理系统）：database management system"></a>DBMS（数据库管理系统）：database management system</h4><ul>
+<li>只是一个软件</li>
+<li>作用：资料的管理和维护</li>
+</ul>
+<h4 id="DB（数据库）：database"><a href="#DB（数据库）：database" class="headerlink" title="DB（数据库）：database"></a>DB（数据库）：database</h4><h3 id="SQL（structure-query-language）：结构化查询语句"><a href="#SQL（structure-query-language）：结构化查询语句" class="headerlink" title="SQL（structure query language）：结构化查询语句"></a>SQL（structure query language）：结构化查询语句</h3><ul>
+<li>第一代：89</li>
+<li>第二代：92（绝大部分数据库所遵循的规则）</li>
+<li>第三代：99（没有成立）</li>
+</ul>
+<h4 id="DDL（data-definition-language）：数据库和数据表定义语言"><a href="#DDL（data-definition-language）：数据库和数据表定义语言" class="headerlink" title="DDL（data definition language）：数据库和数据表定义语言"></a>DDL（data definition language）：数据库和数据表定义语言</h4><ul>
+<li>create<ul>
+<li>database</li>
+<li>table</li>
+</ul>
+</li>
+<li>drop<ul>
+<li>database</li>
+<li>table</li>
+</ul>
+</li>
+<li>alter（改变数据库的结构）<ul>
+<li>table</li>
+</ul>
+</li>
+</ul>
+<h4 id="DML（data-manipulation-language）：数据处理语言"><a href="#DML（data-manipulation-language）：数据处理语言" class="headerlink" title="DML（data manipulation language）：数据处理语言"></a>DML（data manipulation language）：数据处理语言</h4><ul>
+<li>select（查询）</li>
+<li>insert [into]（添加）</li>
+<li>delete（删除）</li>
+<li>updata（单个属性的改变）</li>
+</ul>
+<h4 id="DCL（data-control-language）：数据库控制语言"><a href="#DCL（data-control-language）：数据库控制语言" class="headerlink" title="DCL（data control language）：数据库控制语言"></a>DCL（data control language）：数据库控制语言</h4><ul>
+<li>grant（授权）</li>
+<li>revoke（取消授权）</li>
+</ul>
+<h3 id="使用者"><a href="#使用者" class="headerlink" title="使用者"></a>使用者</h3><ul>
+<li>DBO（database operater）</li>
+<li>DBA（database administrator）：root/password</li>
+</ul>
+<h3 id="简单的结构"><a href="#简单的结构" class="headerlink" title="简单的结构"></a>简单的结构</h3><pre><code>DB Server（数据库服务器）
+ DB（数据库）
+  table（数据表）
+   record（）
+    field
+     charset
+</code></pre><h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><ol>
+<li>链接数据库</li>
+<li>use/create：database</li>
+<li>create：table/改变资料表里面的数据</li>
+</ol>
+<h3 id="数据库操作方法"><a href="#数据库操作方法" class="headerlink" title="数据库操作方法"></a>数据库操作方法</h3><ul>
+<li>通过程式（php）</li>
+<li>通过命令行<ul>
+<li>-u：使用者</li>
+<li>-h：主机</li>
+<li>-p：密码</li>
+</ul>
+</li>
+<li>通过图形界面（软件）</li>
+</ul>
+<h3 id="PHP-amp-数据库"><a href="#PHP-amp-数据库" class="headerlink" title="PHP &amp; 数据库"></a>PHP &amp; 数据库</h3><h4 id="1-连接数据库"><a href="#1-连接数据库" class="headerlink" title="1. 连接数据库"></a>1. 连接数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$db = mysql_connect（数据库主机名称或ip,数据库账号,数据库密码）;</div><div class="line">      or die(&quot;无法连接数据库服务器&quot;);</div></pre></td></tr></table></figure>
+<h4 id="2-使用数据库"><a href="#2-使用数据库" class="headerlink" title="2. 使用数据库"></a>2. 使用数据库</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mysql_ select_db(名称,$db);</div><div class="line">    or die(&quot;无法连接数据库&quot;);</div></pre></td></tr></table></figure>
+<h4 id="3-对数据进行操作"><a href="#3-对数据进行操作" class="headerlink" title="3. 对数据进行操作"></a>3. 对数据进行操作</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$sql = &quot;(此处就是SQL指令)&quot;;</div></pre></td></tr></table></figure>
+<h4 id="4-用变量对数据进行存取"><a href="#4-用变量对数据进行存取" class="headerlink" title="4. 用变量对数据进行存取"></a>4. 用变量对数据进行存取</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$result = mysql_query($sql,$db);</div></pre></td></tr></table></figure>
+<h4 id="5-最后关闭数据库"><a href="#5-最后关闭数据库" class="headerlink" title="5. 最后关闭数据库"></a>5. 最后关闭数据库</h4><blockquote>
+<p>当取到数据的时候就可以关掉了，这样可以降低数据库风险。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mysql_close($db);</div></pre></td></tr></table></figure>
+<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><ul>
+<li>sql指令可以大小写，但各种数据库名称和数据表名称要区别大小写。</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://otn4ut2th.bkt.clouddn.com/wechatqrcode_for_gh_647bbb94d79f_258.jpg" alt="杨坤怡 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎关注我的公众号，看看不一样的生活</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+            <a href="/tags/PHP/" rel="tag"># PHP</a>
+          
+            <a href="/tags/验证/" rel="tag"># 验证</a>
+          
+            <a href="/tags/数据库/" rel="tag"># 数据库</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/03/坎帕斯学院日常讨论-2/" rel="next" title="坎帕斯学院讨论日常-2">
+                <i class="fa fa-chevron-left"></i> 坎帕斯学院讨论日常-2
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23172898_147614172637953_1889825038122566657_n.jpg?oh=071d058ee323bcf8d3805d7edd0c1dbc&oe=5AABCCA7"
+                alt="杨坤怡" />
+            
+              <p class="site-author-name" itemprop="name">杨坤怡</p>
+              <p class="site-description motion-element" itemprop="description">愿你一世清高 两鬓斑白艳阳照</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          <div class="links-of-author motion-element">
+            
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/FrannieYi" target="_blank" title="GitHub">
+                    
+                      <i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="frannieyi99@gmail.com" target="_blank" title="E-Mail">
+                    
+                      <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://plus.google.com/Frannie" target="_blank" title="Google">
+                    
+                      <i class="fa fa-fw fa-google"></i>Google</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://www.facebook.com/杨坤怡" target="_blank" title="FB Page">
+                    
+                      <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                </span>
+              
+            
+          </div>
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#验证用户方法"><span class="nav-number">1.</span> <span class="nav-text">验证用户方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-HTTP自带的验证"><span class="nav-number">1.1.</span> <span class="nav-text">1. HTTP自带的验证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-htaccess方式的验证"><span class="nav-number">1.2.</span> <span class="nav-text">2. htaccess方式的验证</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#首先建立用户数据（授权的动作）"><span class="nav-number">1.2.1.</span> <span class="nav-text">首先建立用户数据（授权的动作）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）"><span class="nav-number">1.2.2.</span> <span class="nav-text">然后在需要权限才可以进入的路径中建.htaccess文档（将已授权和访问地址联系到一起）</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-数据库存储用户数据"><span class="nav-number">1.3.</span> <span class="nav-text">3. 数据库存储用户数据</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#准备工作"><span class="nav-number">1.3.1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#步骤"><span class="nav-number">1.3.2.</span> <span class="nav-text">步骤</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数据库"><span class="nav-number">2.</span> <span class="nav-text">数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库系统-数据库管理系统-数据库"><span class="nav-number">2.1.</span> <span class="nav-text">数据库系统 = 数据库管理系统 + 数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DBMS（数据库管理系统）：database-management-system"><span class="nav-number">2.1.1.</span> <span class="nav-text">DBMS（数据库管理系统）：database management system</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DB（数据库）：database"><span class="nav-number">2.1.2.</span> <span class="nav-text">DB（数据库）：database</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SQL（structure-query-language）：结构化查询语句"><span class="nav-number">2.2.</span> <span class="nav-text">SQL（structure query language）：结构化查询语句</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#DDL（data-definition-language）：数据库和数据表定义语言"><span class="nav-number">2.2.1.</span> <span class="nav-text">DDL（data definition language）：数据库和数据表定义语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DML（data-manipulation-language）：数据处理语言"><span class="nav-number">2.2.2.</span> <span class="nav-text">DML（data manipulation language）：数据处理语言</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#DCL（data-control-language）：数据库控制语言"><span class="nav-number">2.2.3.</span> <span class="nav-text">DCL（data control language）：数据库控制语言</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用者"><span class="nav-number">2.3.</span> <span class="nav-text">使用者</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简单的结构"><span class="nav-number">2.4.</span> <span class="nav-text">简单的结构</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#流程"><span class="nav-number">2.4.1.</span> <span class="nav-text">流程</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据库操作方法"><span class="nav-number">2.5.</span> <span class="nav-text">数据库操作方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-amp-数据库"><span class="nav-number">2.6.</span> <span class="nav-text">PHP & 数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-连接数据库"><span class="nav-number">2.6.1.</span> <span class="nav-text">1. 连接数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-使用数据库"><span class="nav-number">2.6.2.</span> <span class="nav-text">2. 使用数据库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-对数据进行操作"><span class="nav-number">2.6.3.</span> <span class="nav-text">3. 对数据进行操作</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-用变量对数据进行存取"><span class="nav-number">2.6.4.</span> <span class="nav-text">4. 用变量对数据进行存取</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-最后关闭数据库"><span class="nav-number">2.6.5.</span> <span class="nav-text">5. 最后关闭数据库</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注"><span class="nav-number">2.7.</span> <span class="nav-text">注</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨坤怡</span>
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yangkunyi.com/2017/12/06/用户验证与数据库/';
+          this.page.identifier = '2017/12/06/用户验证与数据库/';
+          this.page.title = '用户验证与数据库';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
