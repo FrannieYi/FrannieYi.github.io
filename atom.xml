@@ -96,6 +96,32 @@
   </entry>
   
   <entry>
+    <title>WeeklyMind-2</title>
+    <link href="http://yangkunyi.com/2017/12/02/WeeklyMind-3/"/>
+    <id>http://yangkunyi.com/2017/12/02/WeeklyMind-3/</id>
+    <published>2017-12-02T04:29:09.000Z</published>
+    <updated>2017-12-10T11:25:01.021Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。</p></blockquote><h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul><li>各科课程进行正常</li><li>但并没有完成本校作业</li><li>完成了第一次不动产小组报告，虽然内容很尬，但是表现自己还算满意</li><li>关于人际关系的人际圈，自己在课堂上画出不同的圈也让自己十分的意外，但这也是自己本身的看法罢了，或许这才是最真实的自己</li><li>让自己丧了一天的财务管理期中成绩也是真的令自己心碎啊</li><li>了解了一些数据库的知识，应该叫复习了，毕竟之前还是多少学了一点</li><li>node要努力了，时间的零碎学起来也是很零碎</li></ul><h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul><li>这一周缺乏锻炼，怎么感觉又长胖了。。。</li><li>稍微一点混沌，可能躺太多</li><li>手臂在乒乓球课崴了，一直一点酸疼</li><li>吃饭特别不规律！！！这一点下个周一定得改了</li><li>对了，微信终于开始了，不过进度貌似不能保证每天，所以自己准备改一下，暂时上学期间频率保持一周两篇吧，如果空闲的周可以多做一点</li></ul><h4 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h4><ul><li>通信作业的问题回答</li><li>还是抽时间把毛概的论文写了吧，毕竟回去可能还真的可以考试呢</li><li>node</li><li>php继续学习</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;学习&quot;&gt;&lt;a href=&quot;#学习&quot; class=&quot;h
+      
+    
+    </summary>
+    
+    
+      <category term="周记" scheme="http://yangkunyi.com/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>WeeklyMind-1</title>
     <link href="http://yangkunyi.com/2017/11/19/WeeklyMind-1/"/>
     <id>http://yangkunyi.com/2017/11/19/WeeklyMind-1/</id>
@@ -297,9 +323,9 @@
     
       <category term="Javascript" scheme="http://yangkunyi.com/tags/Javascript/"/>
     
-      <category term="vue" scheme="http://yangkunyi.com/tags/vue/"/>
-    
       <category term="分享" scheme="http://yangkunyi.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="vue" scheme="http://yangkunyi.com/tags/vue/"/>
     
   </entry>
   
@@ -470,28 +496,6 @@
       <category term="笔记" scheme="http://yangkunyi.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="分享" scheme="http://yangkunyi.com/tags/%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>FirstPassage</title>
-    <link href="http://yangkunyi.com/2017/03/20/FirstPassage/"/>
-    <id>http://yangkunyi.com/2017/03/20/FirstPassage/</id>
-    <published>2017-03-20T13:20:46.000Z</published>
-    <updated>2017-12-02T06:41:40.102Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="第一篇博文（搭建博客的坑！！！）"><a href="#第一篇博文（搭建博客的坑！！！）" class="headerlink" title="第一篇博文（搭建博客的坑！！！）"></a>第一篇博文（搭建博客的坑！！！）</h2><a id="more"></a><h3 id="1-关于Hexo"><a href="#1-关于Hexo" class="headerlink" title="1.关于Hexo"></a>1.关于Hexo</h3><ul><li>nmp安装Hexo</li></ul><p>打开命令行工具，执行如下命令：</p><pre><code>$ npm install -g hexo</code></pre><ul><li>创建文件夹</li></ul><p>本人是直接在D盘创建了一个名叫blog的文件夹，在blog中创建了Hexo文件夹。（这个看个人喜好吧，用命令行也未尝不可。）</p><ul><li>初始化</li></ul><p>在Hexo目录下打开命令行工具，执行：</p><pre><code>hexo init</code></pre><p>之后执行：</p><pre><code>hexo server</code></pre><p>会看到：</p><pre><code>INFO  Start processingINFO  Hexo is running at http://localhost:4000/. Press Ctrl+C to stop.</code></pre><p>访问：<a href="http://localhost:4000/" title="初始页面" target="_blank" rel="external">http://localhost:4000/</a>就可以看到Hexo的初始页面了。</p><h3 id="2-关于个人设置"><a href="#2-关于个人设置" class="headerlink" title="2.关于个人设置"></a>2.关于个人设置</h3><ul><li>基本信息</li></ul><p>本人修改了title、subtitle、author的内容，如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"># Site</div><div class="line">title: YangKunyi的博客</div><div class="line">subtitle: 爱看书的杨杨</div><div class="line">description:</div><div class="line">author: FrannieYi</div><div class="line">language:</div><div class="line">timezone:</div></pre></td></tr></table></figure><p><strong><em>第一个坑</em></strong><br><strong>注意每一个冒号后面都有一个空格</strong></p><blockquote><p>无法生效的写法：title:Drubear的博客<br>有效的写法：title:[空格]Drubear的博客</p></blockquote><ul><li>主题</li></ul><blockquote><p>知乎 - <a href="https://www.zhihu.com/question/24422335" target="_blank" rel="external">好看的主题！</a></p></blockquote><p>使用git命令在github上clone下自己喜欢的主题，本人使用的是litten的yilia。</p><ul><li><p>配置主题<br>根据clone下来的主题将页面进行个性化设置。可以参考博主给的各种参数。</p></li><li><p>部署设置</p></li></ul><p>只需简单的执行</p><pre><code>hexo d</code></pre><h3 id="But，重点来了"><a href="#But，重点来了" class="headerlink" title="But，重点来了"></a><strong>But，重点来了</strong></h3><p><strong><em>前方巨坑请注意</em></strong></p><ol><li>首先在github上建立一个仓库，名字叫做：<code>[你的用户名].github.io</code><strong>注意，你的用户名必须与你实际的用户名一字不差！</strong></li><li>拥有了个人的GitHubPages后，再回到Hexo的_config.yml文件，找到Deployment章节，做以下修改：（以FrannieYi为用户名为例）<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"># Deployment</div><div class="line">## Docs: http://hexo.io/docs/deployment.html</div><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/FrannieYi/FrannieYi.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></li></ol><p>以上两步做完后，执行 hexo d<br>如果没有报错，你是幸运的。<br>本人在这个坑里栽了无数次，系统报错</p><pre><code>ERROR Deployer not found: Git</code></pre><p>最后发现这个错误是因为少运行了一行代码：</p><pre><code>npm install hexo-deployer-git --save</code></pre><p>运行完以上代码终于，本人泪流满面的看到了自己亲手搭建的博客。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;第一篇博文（搭建博客的坑！！！）&quot;&gt;&lt;a href=&quot;#第一篇博文（搭建博客的坑！！！）&quot; class=&quot;headerlink&quot; title=&quot;第一篇博文（搭建博客的坑！！！）&quot;&gt;&lt;/a&gt;第一篇博文（搭建博客的坑！！！）&lt;/h2&gt;
-    
-    </summary>
-    
-    
-      <category term="hexo" scheme="http://yangkunyi.com/tags/hexo/"/>
-    
-      <category term="github" scheme="http://yangkunyi.com/tags/github/"/>
     
   </entry>
   
