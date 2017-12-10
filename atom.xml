@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2017-12-10T11:31:39.562Z</updated>
+  <updated>2017-12-10T11:35:18.462Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -21,19 +21,15 @@
     <link href="http://yangkunyi.com/2017/12/10/WeeklyMind-3/"/>
     <id>http://yangkunyi.com/2017/12/10/WeeklyMind-3/</id>
     <published>2017-12-10T09:30:09.000Z</published>
-    <updated>2017-12-10T11:31:39.562Z</updated>
+    <updated>2017-12-10T11:35:18.462Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。</p></blockquote><h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul><li>各科课程进行正常</li><li>但并没有完成本校作业</li><li>完成了第一次不动产小组报告，虽然内容很尬，但是表现自己还算满意</li><li>关于人际关系的人际圈，自己在课堂上画出不同的圈也让自己十分的意外，但这也是自己本身的看法罢了，或许这才是最真实的自己</li><li>让自己丧了一天的财务管理期中成绩也是真的令自己心碎啊</li><li>了解了一些数据库的知识，应该叫复习了，毕竟之前还是多少学了一点</li><li>node要努力了，时间的零碎学起来也是很零碎</li></ul><h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul><li>这一周缺乏锻炼，怎么感觉又长胖了。。。</li><li>稍微一点混沌，可能躺太多</li><li>手臂在乒乓球课崴了，一直一点酸疼</li><li>吃饭特别不规律！！！这一点下个周一定得改了</li><li>对了，微信终于开始了，不过进度貌似不能保证每天，所以自己准备改一下，暂时上学期间频率保持一周两篇吧，如果空闲的周可以多做一点</li></ul><h4 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h4><ul><li>通信作业的问题回答</li><li>还是抽时间把毛概的论文写了吧，毕竟回去可能还真的可以考试呢</li><li>node</li><li>php继续学习</li></ul>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。</p></blockquote><a id="more"></a><h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul><li>各科课程进行正常</li><li>但并没有完成本校作业</li><li>完成了第一次不动产小组报告，虽然内容很尬，但是表现自己还算满意</li><li>关于人际关系的人际圈，自己在课堂上画出不同的圈也让自己十分的意外，但这也是自己本身的看法罢了，或许这才是最真实的自己</li><li>让自己丧了一天的财务管理期中成绩也是真的令自己心碎啊</li><li>了解了一些数据库的知识，应该叫复习了，毕竟之前还是多少学了一点</li><li>node要努力了，时间的零碎学起来也是很零碎</li></ul><h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul><li>这一周缺乏锻炼，怎么感觉又长胖了。。。</li><li>稍微一点混沌，可能躺太多</li><li>手臂在乒乓球课崴了，一直一点酸疼</li><li>吃饭特别不规律！！！这一点下个周一定得改了</li><li>对了，微信终于开始了，不过进度貌似不能保证每天，所以自己准备改一下，暂时上学期间频率保持一周两篇吧，如果空闲的周可以多做一点</li></ul><h4 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h4><ul><li>通信作业的问题回答</li><li>还是抽时间把毛概的论文写了吧，毕竟回去可能还真的可以考试呢</li><li>node</li><li>php继续学习</li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;blockquote&gt;
+      &lt;blockquote&gt;
 &lt;p&gt;本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h4 id=&quot;学习&quot;&gt;&lt;a href=&quot;#学习&quot; class=&quot;h
-      
     
     </summary>
     
@@ -397,11 +393,11 @@
     </summary>
     
     
-      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
-    
       <category term="DOM" scheme="http://yangkunyi.com/tags/DOM/"/>
     
       <category term="JS" scheme="http://yangkunyi.com/tags/JS/"/>
+    
+      <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
@@ -421,9 +417,9 @@
     </summary>
     
     
-      <category term="BOM" scheme="http://yangkunyi.com/tags/BOM/"/>
-    
       <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="BOM" scheme="http://yangkunyi.com/tags/BOM/"/>
     
       <category term="笔记" scheme="http://yangkunyi.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
