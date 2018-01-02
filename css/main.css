@@ -1051,7 +1051,7 @@ pre .javascript .function {
 }
 .tag-cloud {
   text-align: center;
-  color: #fff;
+  color: #000;
 }
 .tag-cloud a {
   display: inline-block;
@@ -1458,12 +1458,12 @@ pre .javascript .function {
   text-align: center;
   word-break: break-word;
   font-weight: 400;
-  color: #fff;
+  color: #000;
 }
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: #555;
+  color: #fff;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -1475,7 +1475,7 @@ pre .javascript .function {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #fff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -1828,7 +1828,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff0ad2;
+  background: #ff47ad;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2911,7 +2911,7 @@ hr {
 }
 body {
   background-color: #000;
-  background: url("http://otn4ut2th.bkt.clouddn.com/blog-bgwallhaven-594141.jpg") center 0;
+  background: url("http://otn4ut2th.bkt.clouddn.com/blog%E6%88%91%E8%87%AA%E6%98%AF%E5%B9%B4%E5%B0%91%20%E9%9F%B6%E5%8D%8E%E5%80%BE%E8%B4%9F.jpg") center 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -2920,18 +2920,18 @@ body {
   border-radius: 20px;
   margin-top: 60px;
   padding: 60px 60px 60px 60px;
-  background: rgba(245,245,245,0.3);
+  background: rgba(245,245,245,0.7);
   min-height: 500px;
   width: 65%;
 }
 .header {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
 .site-title {
   color: #fff;
 }
 .footer {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.7);
 }
 .post-title-link {
   color: #fff;
