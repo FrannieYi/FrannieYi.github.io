@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2018-01-07T15:48:06.429Z</updated>
+  <updated>2018-01-09T06:02:33.948Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>深层理解GET与POST</title>
+    <link href="http://yangkunyi.com/2018/01/09/%E6%B7%B1%E5%B1%82%E7%90%86%E8%A7%A3GET%E4%B8%8EPOST/"/>
+    <id>http://yangkunyi.com/2018/01/09/深层理解GET与POST/</id>
+    <published>2018-01-09T06:00:39.000Z</published>
+    <updated>2018-01-09T06:02:33.948Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>推荐文章中，再次理解了GET与POST。</p></blockquote><a id="more"></a><p>GET与POST是HTTP请求的两种方式，每次谈到，不免都是想说这两者的区别嘛，之前自己也只是模糊的知道POST方法好一点，为什么，自己也只能回答一句，安全一点嘛，觉得说得太少了，于是去搜索了一下，以下是w3schools给出的答案：</p><ul><li>GET在浏览器回退时是无害的，而POST会再次提交请求。</li><li>GET产生的URL地址可以被Bookmark，而POST不可以。</li><li>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</li><li>GET请求只能进行url编码，而POST支持多种编码方式。</li><li>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</li><li>GET请求在URL中传送的参数是有长度限制的，而POST么有。</li><li>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</li><li>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</li><li>GET参数通过URL传递，POST放在Request body中。</li></ul><p>说得真是有道理，没错啊，这就是区别啊，但是这样的答案大家背一背什么的就都会说了，但是这就完了吗？以上的自己都能理解，但是我觉得都只是现象，并不是原因啊！于是继续懵逼，直到看到下面的解释，自己好像慢慢开始理解了。</p><p>原文链接<a href="https://mp.weixin.qq.com/s?__biz=MzI3NzIzMzg3Mw==&amp;mid=100000054&amp;idx=1&amp;sn=71f6c214f3833d9ca20b9f7dcd9d33e4" target="_blank" rel="external">99%的人都理解错了GET与POST</a></p><p>既然说GET与POST是HTTP请求的两种方式，那什么是HTTP？</p><p>学过一点计算机网络的我有点印象，但是也不记得官方咋说的了，于是借鉴一下别人的话：</p><blockquote><p>HTTP是基于TCP/IP的关于数据如何在万维网中如何通信的协议。</p></blockquote><p>那既然HTTP的底层是TCP/IP，GET与POST自然也是基于TCP/IP咯，那GET与POST就是TCP/IP的两种链接方式了，那它们的区别到底在哪里呢？</p><p>借助原文的比喻：</p><blockquote><p>在我大万维网世界中，TCP就像汽车，我们用TCP来运输数据，它很可靠，从来不会发生丢件少件的现象。但是如果路上跑的全是看起来一模一样的汽车，那这个世界看起来是一团混乱，送急件的汽车可能被前面满载货物的汽车拦堵在路上，整个交通系统一定会瘫痪。为了避免这种情况发生，交通规则HTTP诞生了。HTTP给汽车运输设定了好几个服务类别，有GET, POST, PUT, DELETE等等，HTTP规定，当执行GET请求的时候，要给汽车贴上GET的标签（设置method为GET），而且要求把传送的数据放在车顶上（url中）以方便记录。如果是POST请求，就要在车上贴上POST的标签，并把货物放在车厢里。当然，你也可以在GET的时候往车厢内偷偷藏点货物，但是这是很不光彩；也可以在POST的时候在车顶上也放一些数据，让人觉得傻乎乎的。HTTP只是个行为准则，而TCP才是GET和POST怎么实现的基本。</p></blockquote><p>既然只是对传输数据的方式有要求，那关于参数的大小要求又从哪里来的？</p><p>这就是“运输公司”——浏览器和服务器不同导致的，业界不成文的规定是，（大多数）浏览器通常都会限制url长度在2K个字节，而（大多数）服务器最多处理64K大小的url。如果你用GET服务，在request body偷偷藏了数据，不同服务器的处理方式也是不同的，有些服务器会帮你卸货，读出数据，有些服务器直接忽略，所以，虽然GET可以带request body，也不能保证一定能被接收到。</p><p>现在，我知道了，GET和POST本质上就是TCP链接，并无差别。但是由于HTTP的规定和浏览器/服务器的限制，导致他们在应用过程中体现出一些不同。这个时候我觉得标准答案的现象我都可以解释了。</p><p>紧接着，我又看到了一个令我目瞪口呆的区别：</p><blockquote><p>简单的说：<br><strong>GET产生一个TCP数据包；POST产生两个TCP数据包。</strong></p></blockquote><p>这是什么情况，我难道睡觉的时候老师讲重点了！！！？？？反正就是现在才知道这么重要的知识点。</p><p>好吧，了解之后明白了，GET在请求的时候会一次性将header和data发出去，然后服务器响应200（返回数据）；而POST会先发header，等到服务器响应100（continue）的时候再发送data，然后服务器返回200（返回数据）。</p><p>POST两次发送骤导致时间上消耗要多一点，那GET看起来就更有效了，于是Yahoo团队推荐将所有的POST请求用GET请求替换，以此来优化网页性能，无可厚非这可以达到一定效果，但很明显也是一个坑啊！</p><p>为什么？</p><ul><li>存在即合理啊！（GET与POST都有自己的语义，不能随便混用。）</li><li>网速够快这点时间可以忽略（据研究，在网络环境好的情况下，发一次包的时间和发两次包的时间差别基本可以无视。），而在网络环境差的情况下，两次包的TCP在验证数据包完整性上，有非常大的优点。</li><li>并不是所有“运输公司”（浏览器）都会在POST中发送两次包，Firefox就只发送一次。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;推荐文章中，再次理解了GET与POST。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="http://yangkunyi.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="web" scheme="http://yangkunyi.com/tags/web/"/>
+    
+      <category term="GET" scheme="http://yangkunyi.com/tags/GET/"/>
+    
+      <category term="POST" scheme="http://yangkunyi.com/tags/POST/"/>
+    
+  </entry>
   
   <entry>
     <title>WeeklyMind-7</title>
@@ -467,26 +495,6 @@
       <category term="Javascript" scheme="http://yangkunyi.com/tags/Javascript/"/>
     
       <category term="分享" scheme="http://yangkunyi.com/tags/%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>JavaSccript语言精粹</title>
-    <link href="http://yangkunyi.com/2017/07/20/JavaSccript%E8%AF%AD%E8%A8%80%E7%B2%BE%E7%B2%B9/"/>
-    <id>http://yangkunyi.com/2017/07/20/JavaSccript语言精粹/</id>
-    <published>2017-07-20T07:01:07.000Z</published>
-    <updated>2017-12-02T06:41:53.610Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h3><a id="more"></a><ul><li>字符串是不可变的。一旦被创建就永远无法改变。</li><li>typeof运算符产生的值有‘number’ ‘string’ ‘boolean’ ‘undefined’ ‘function’ ‘object’。</li><li>一个属性存取表达式用于指定一个对象或数值的属性或元素。</li><li>原型连接只有在检索值的时候才被用到。如果我们尝试弃获取对象的某个属性值，但该对象没有此属性名，那么JavaScript会试着从原型对象中获取属性值。如果那个原型对象也没有该属性，那么再从它的原型中寻找，依次类推，只到该过程最后到达终点Object.prototype。如果想要的属性完全不存在于原型练中，那么结果就是undefined值。这个过程为<strong>委托</strong>。</li><li>用for in的方法来遍历一个对象中的所有属性名，属性名出现的顺序是不确定的，因此要对任何可能出现的顺序有所准备。若想自定义顺序最好的方式是避免使用for in，而是通过建立数组的形式将属性存入，然后用for循环从数组中依次获取属性。这样也不用担心可能发掘出原型链中的属性，并且我们按正常的顺序取得了它的值。</li><li>最小化使用全局变量的方法之一是为你的应用只创建一个唯一的全局变量。资源都纳入一个名称空间之下，你的程序与其他应用程序、组件或类库之间发生冲突的可能性就会显著降低。</li><li>函数对参数值不会进行类型检查：任何类型的值都可以被传递给任何参数。</li><li>apply方法让我们构建一个参数数组传递给调用函数。</li><li>因为语言的一个设计错误，arguments并不是一个真正的数组。它只是一个“类似数组（array-like）”的对象。arguments拥有一个length属性，但它没有任何数组的方法。</li><li><strong>尾递归</strong>是一种在函数的最后执行递归调用语句的特殊形式的递归。</li><li>作用域的好处是内部函数可以访问定义它们外部函数的参数和变量（除了this和arguments）。</li><li><strong>继承</strong>的两种服务：<ul><li>是代码重用的一种形式。（如果一个新的类与一个已经存在的类大部分相似，那么你只需要具体说明其不同点即可。代码重用的模式极为重要，因为它们可以显著的减少软件开发的成本。）</li><li>另一个好处是引入了一套类型系统的规范。（由于程序员无需编写显式类型转换的代码，他们的工作量将大大减轻，这是一件很好的事情，因为类型转换会丧失类型系统在安全上的优势。）</li></ul></li><li>构造一个生成对象的函数：<ul><li>1.创建一个新的对象。</li><li>2.有选择地定义私有的实例变量和放方法。</li><li>3.给这个新对象扩充方法。</li><li>4.返回那个新对象。</li></ul></li><li>数组的length属性的值是这个数组的最大整数属性名加上1，它不一定等于数组里属性的个数。</li><li>for in 用来遍历数组的所有属性，但遗憾的是，for in 无法保证属性的顺序。</li><li>数组和对象的使用区别：当属性名是小而连续的整数时，你应该使用数组；否则，使用数组。</li><li>排序的稳定性是指排序后的数组中相等值的相对位置没有发生改变，而不稳定性排序则会改变相等值的相对位置。</li></ul><h3 id="方法篇"><a href="#方法篇" class="headerlink" title="方法篇"></a>方法篇</h3><h5 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h5><ul><li>array.concat(item…):产生新的数组，和它类似功能的array.push(item)。</li><li>array.join(separator):把一个array构造成一个字符串。</li><li>array.pop():移除数组的最后一个元素，并返回这个元素。</li><li>array.push(item…):把一个或多个参数item附加到一个数组的尾部。</li><li>array.reverse():反转array里的元素的顺序，并返回array本身。</li><li>array.shift():移除数组array中的第一个元素，并返回该元素。</li><li>array.slice(start,end):对array中的一段做浅复制。</li><li>array.sort(comparefn):对array中的内容进行排序。</li><li>array.splice(start,deleteCount,item…):从array中移除一个或多个元素，并用新的item替换它们。</li><li>array.unshift(item…):像push方法一样，用于把元素添加到数组中，但它是把item插入到array的开始部分，不是尾部。返回array的新的length。</li></ul><h4 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h4><ul><li>function.apply(thisArg,argArray):调用function，传递一个会被绑定到this上的对象和一个可选的数组作为参数。</li></ul><h4 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h4><ul><li>number.toExponential(fractionDigits):把这个number转换成一个指数形式的字符串。</li><li>number.toFixed(fractionDigits):把这个number转换成为一个十进制数形式的字符串。可选择参数控制其小数点后的数字位数。</li><li>number.toPrecision(precision):把这个number转换成一个十进制数形式的字符串。可选择参数控制数字的精度（0~21）。</li><li>number.toString(radix):把这个number转换成字符串。可选择参数控制基数（2~36，默认是10）。</li></ul><h4 id="Object"><a href="#Object" class="headerlink" title="Object"></a>Object</h4><ul><li>object.hasOwnProperty(name):判断属性是否存在，不会检查原型链中的同名属性。</li></ul><h4 id="RegExp"><a href="#RegExp" class="headerlink" title="RegExp"></a>RegExp</h4><ul><li>regexp.exec(string):最强大（和最慢），看书理解。</li><li>regexp.test(string):最简单（和最快），匹配就返回true，否则返回false，不要对这个方法使用g标识。</li></ul><h4 id="String"><a href="#String" class="headerlink" title="String"></a>String</h4><ul><li>string.charAt(pos):返回在string中pos位置处的字符。</li><li>string。charCodeAt(pos):返回在string中pos位置的字符的字符码位（以整数形式表示）。</li><li>string.conecat(string…):把其他的字符串连接在一起来构造一个新的字符串。</li><li>string.indexOf(searchString,postion):在string中查找另一个字符串searchString。找到就返回第一个匹配字符的位置，否则返回-1。可选参数position从字符串的哪个位置开始查找。</li><li>string.lastIndexOf(searchString,position):从字符串的末尾开始查找。</li><li>string.lacaleCompare(that):比较两个字符串。</li><li>string.match(regexp):让字符串和一个正则表达式进行匹配。</li><li>string.replace(searchValue,replaceValue):对string进行查找和替换操作，并返回一个新的字符串（如果searchValue不是一个带有g标识的正则表达式那就只会替换第一个）。</li><li>string.search(regexp):接收一个正则表达式作为对象参数返回匹配的首字符位置。</li><li>string.slice(start,end):复制string的一部分来构造一个新的字符串。</li><li>string.split(separator,limit):把这个string分割成片段来创建一个字符串数组。</li><li>string.substring(start,end):和slice方法一样，只是他不能处理负数参数。</li><li>string.toLocaleLowerCase():返回一个新字符串，使用本地化的规则将这个string中所有字母转换成小写格式。</li><li>string.toLacaleUpperCase():返回一个新字符串，使用本地化的规则将这个string中所有字母转换成大写格式。</li><li>string.toLowerCase():返回一个新的字符串，这个string中所有字母都被转换为小写格式。</li><li>string.toUpperCase():返回一个新的字符串，这个strnig中所有字母都被转换为大写格式。</li><li>string.fromCharCode(char…):函数根据一串数字编码返回一个字符串。</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;知识点&quot;&gt;&lt;a href=&quot;#知识点&quot; class=&quot;headerlink&quot; title=&quot;知识点&quot;&gt;&lt;/a&gt;知识点&lt;/h3&gt;
-    
-    </summary>
-    
-    
-      <category term="笔记" scheme="http://yangkunyi.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
