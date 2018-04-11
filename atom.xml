@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2018-03-12T16:17:40.878Z</updated>
+  <updated>2018-04-11T06:40:45.520Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NodePPT</title>
+    <link href="http://yangkunyi.com/2018/04/11/NodePPT/"/>
+    <id>http://yangkunyi.com/2018/04/11/NodePPT/</id>
+    <published>2018-04-11T06:38:20.000Z</published>
+    <updated>2018-04-11T06:40:45.520Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>用了好几次这个ppt，自己确实觉得这是用过的ppt中最简洁，B格最高的ppt，但是每次做都要去看原文档，十分的不方便，因此自己写一篇文章，将经常使用的一些命令和参数记录下来。<br>例子：<a href="https://yangkunyi.com/Share/ppt.html">https://yangkunyi.com/Share/ppt.html</a><br>原文：<a href="https://github.com/ksky521/nodeppt" target="_blank" rel="external">https://github.com/ksky521/nodeppt</a></p></blockquote><a id="more"></a><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote><p>这是一款网页ppt库，只需要编辑相应的md文档就可以做出演示ppt，支持markdown,html,css,js等不同的语言，十分的方便。</p></blockquote><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="本地跑md文档"><a href="#本地跑md文档" class="headerlink" title="本地跑md文档"></a>本地跑md文档</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// port是端口号</div><div class="line">nodeppt start -p &lt;port&gt;</div></pre></td></tr></table></figure><h4 id="生成html文档"><a href="#生成html文档" class="headerlink" title="生成html文档"></a>生成html文档</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// 默认生成publish文件夹</div><div class="line">nodeppt generate filename -a</div></pre></td></tr></table></figure><h3 id="常用主题和动画"><a href="#常用主题和动画" class="headerlink" title="常用主题和动画"></a>常用主题和动画</h3><h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p><code>colors</code>-<code>moon</code>-<code>blue</code>-<code>dark</code>-<code>green</code>-<code>light</code></p><h4 id="翻页动画"><a href="#翻页动画" class="headerlink" title="翻页动画"></a>翻页动画</h4><ul><li>kontext</li><li>vkontext</li><li>circle</li><li>earthquake</li><li>cards</li><li>glue</li><li>stick</li><li>move</li><li>newspaper</li><li>slide</li><li>slide2</li><li>slide3</li><li>horizontal3d</li><li>horizontal</li><li>vertical3d</li><li>zoomin</li><li>zoomout</li><li>pulse</li></ul><h4 id="单页动画语法"><a href="#单页动画语法" class="headerlink" title="单页动画语法"></a>单页动画语法</h4><blockquote><p><code>{:&amp;.动画}</code></p></blockquote><hr><blockquote><p>因为自己又经常将ppt放到GitHub上去，所以也顺便记一下git的常用指令</p></blockquote><h2 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h2><h4 id="从本地上传到仓库的步骤"><a href="#从本地上传到仓库的步骤" class="headerlink" title="从本地上传到仓库的步骤"></a>从本地上传到仓库的步骤</h4><ol><li><code>git init</code></li><li><code>git add .</code></li><li><code>git commit -m &#39;备注&#39;</code></li><li><code>git remote origin add 仓库地址</code></li><li><code>git pull</code> //当仓库不为空的时候需要做的工作</li><li><code>git push</code></li><li><code>git status</code> //查询状态</li></ol><p><img src="http://otn4ut2th.bkt.clouddn.com/bloggithub.png" alt="git指令"></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;用了好几次这个ppt，自己确实觉得这是用过的ppt中最简洁，B格最高的ppt，但是每次做都要去看原文档，十分的不方便，因此自己写一篇文章，将经常使用的一些命令和参数记录下来。&lt;br&gt;例子：&lt;a href=&quot;https://yangkunyi.com/Share/ppt.html&quot;&gt;https://yangkunyi.com/Share/ppt.html&lt;/a&gt;&lt;br&gt;原文：&lt;a href=&quot;https://github.com/ksky521/nodeppt&quot;&gt;https://github.com/ksky521/nodeppt&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="nodeppt" scheme="http://yangkunyi.com/tags/nodeppt/"/>
+    
+      <category term="学习" scheme="http://yangkunyi.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>Day-1</title>
@@ -348,9 +372,9 @@
     
       <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="讨论" scheme="http://yangkunyi.com/tags/%E8%AE%A8%E8%AE%BA/"/>
-    
       <category term="问题" scheme="http://yangkunyi.com/tags/%E9%97%AE%E9%A2%98/"/>
+    
+      <category term="讨论" scheme="http://yangkunyi.com/tags/%E8%AE%A8%E8%AE%BA/"/>
     
       <category term="浏览器缓存" scheme="http://yangkunyi.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98/"/>
     
@@ -467,30 +491,6 @@
     
     
       <category term="域名" scheme="http://yangkunyi.com/tags/%E5%9F%9F%E5%90%8D/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>学习PHP之环境搭建</title>
-    <link href="http://yangkunyi.com/2017/09/30/%E5%AD%A6%E4%B9%A0PHP%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yangkunyi.com/2017/09/30/学习PHP之环境搭建/</id>
-    <published>2017-09-30T04:02:08.000Z</published>
-    <updated>2017-12-02T06:46:21.999Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。</p></blockquote><a id="more"></a><h3 id="一、注册域名"><a href="#一、注册域名" class="headerlink" title="一、注册域名"></a>一、注册域名</h3><ol><li>这是一个免费域名的注册地址<a href="https://www.noip.com/" target="_blank" rel="external">www.noip.com</a>，这种网站有很多，只是本人用的这一个，可自由选择。<br><img src="http://otn4ut2th.bkt.clouddn.com/blogwebsite.PNG" alt="此处输入图片的描述"></li><li>注册登录即可。（一个简单的域名注册申请，就不再赘述了）</li><li>根据自己的ip注册后的结果是这样（要特别注意的是ip地址的填写，不知道自己此刻的ip地址可以用命令行查询；<strong><em>此处的ip地址会根据你使用的网络而改变</em></strong>）：<br><img src="http://otn4ut2th.bkt.clouddn.com/blogresult.PNG" alt="此处输入图片的描述"></li></ol><h3 id="二、架构包的安装"><a href="#二、架构包的安装" class="headerlink" title="二、架构包的安装"></a>二、架构包的安装</h3><ol><li>下载架构包（架构包当然也有很多种，本人使用的是链接中的这个）<a href="https://www.appservnetwork.com/en/" target="_blank" rel="external">AppSever8.6.0</a></li><li>安装架构包（跟着流程走就好了，规则就是两个键按左边，三个键按中间，一个键就只能按它咯~）<strong><em>注意安装目录的选择！</em></strong>安装完之后，会有一个这样的目录：<br><img src="http://otn4ut2th.bkt.clouddn.com/blogfile.PNG" alt="此处输入图片的描述"></li><li>测试：在浏览器地址栏中输入你之前申请的并且与ip地址对应的域名，当看到以下结果，说明你ok了，否则请从头开始=_=（嘿嘿，有问题肯定是某个步骤出了问题，仔细检查）：<br><img src="http://otn4ut2th.bkt.clouddn.com/blogifo.png" alt="此处输入图片的描述"></li><li>此处显示的是，文件夹<code>www</code>中的index.php文件<blockquote><p>当然我们希望这些关于服务器的各种信息只有我们自己能看到，而别人看不到，很简单，将文档的名字改成只有你自己知道就好了:<br><img src="http://otn4ut2th.bkt.clouddn.com/blogfilename.png" alt="此处输入图片的描述"></p></blockquote></li><li>既然index文件已经被我们改掉了，因此可以开始写第一个index文件了，此刻网页会自动显示该文件（之后就可以开始写自己的网页了）：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">// index.html</div><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">&lt;head&gt;</div><div class="line">&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">&lt;title&gt;index&lt;/title&gt;</div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;p style=&quot;font-size: 50px;color: #66ccff;&quot;&gt;啦啦啦&lt;/p&gt;</div><div class="line">&lt;p style=&quot;font-size: 40px;color: red&quot;&gt;完了&lt;/p&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure><p><img src="http://otn4ut2th.bkt.clouddn.com/blogover.png" alt="此处输入图片的描述"></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="PHP" scheme="http://yangkunyi.com/tags/PHP/"/>
-    
-      <category term="学习" scheme="http://yangkunyi.com/tags/%E5%AD%A6%E4%B9%A0/"/>
     
   </entry>
   
