@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2018-04-11T06:40:45.520Z</updated>
+  <updated>2018-07-25T13:52:05.222Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>斐波那契数列学习</title>
+    <link href="http://yangkunyi.com/2018/07/25/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E5%AD%A6%E4%B9%A0/"/>
+    <id>http://yangkunyi.com/2018/07/25/斐波那契数列学习/</id>
+    <published>2018-07-25T13:50:38.000Z</published>
+    <updated>2018-07-25T13:52:05.222Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>复习过程中涉及到计算算法的时间复杂度，课后例题中的“计算斐波那契数列时间复杂度”引起了自己的思考，通过学习，总结出好集中不同的方式。</p></blockquote><a id="more"></a><h2 id="斐波那契数列简介"><a href="#斐波那契数列简介" class="headerlink" title="斐波那契数列简介"></a>斐波那契数列简介</h2><blockquote><p>斐波那契数列（意大利语：Successione di Fibonacci），又译为菲波拿契数列、菲波那西数列、斐波那契数列、黄金分割数列。<br>在数学上，费波那契数列是以递归的方法来定义：</p></blockquote><ul><li>F[0] = 0</li><li>F[1] = 0</li><li>F[n] = F[n-1] + F<a href="n&gt;=2">n-2</a></li></ul><blockquote><p>用文字来说，就是费波那契数列由0和1开始，之后的费波那契系数就是由之前的两数相加而得出。首几个费波那契系数是：</p></blockquote><ul><li>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233……</li></ul><blockquote><p>特别指出：0不是第一项，而是第零项。</p></blockquote><h2 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h2><h4 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h4><p>递归计算斐波那契数列的JavaScript如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">function Fibonacci1(n)&#123;</div><div class="line">    if(n==0)</div><div class="line">        return 0;</div><div class="line">    if(n==1)</div><div class="line">        return 1;</div><div class="line">    return Fibonacci1(n-1) + Fibonacci1(n-2);</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>递归的方法很简单，但是显然十分显然存在大量的重复运算，效率低下很低，还会占用大量的内存。</p><ul><li>时间复杂度：T(n) = O(2^n)</li></ul><h4 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h4><p>为了避免递归的低效率，我们可以采取累加的方式，一项一项的计算，JavaScript代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">function Fibonacci2(n)&#123;</div><div class="line">    a = 0;</div><div class="line">    b = 1;</div><div class="line">    if(n==0)</div><div class="line">        return a;</div><div class="line">    for(i = 1;i &lt;= n;i++)&#123;</div><div class="line">        c = a + b;</div><div class="line">        a = b;</div><div class="line">        b = c;</div><div class="line">    &#125;</div><div class="line">    return c;</div><div class="line">&#125;</div></pre></td></tr></table></figure><ul><li>时间复杂度：T(n) = O(n)</li><li>空间复杂度：O(n)</li></ul><h4 id="公式法"><a href="#公式法" class="headerlink" title="公式法"></a>公式法</h4><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><p>以下是斐波那契数列的常见递推公式：</p><p>$$ F_{n}=\dfrac {1}{\sqrt {5}}\times \left[ \left( \dfrac {1+\sqrt {5}}{2}\right) ^{n}-\left( \dfrac {1-\sqrt {5}}{2}\right) ^{n}\right] $$</p><p>公式法的JavaScript代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">function Fibonacci3(n)&#123;</div><div class="line">    root_five = sqrt(5);</div><div class="line">    f1=f2=1;</div><div class="line">    for(i=1;i&lt;=n;i++)&#123;</div><div class="line">        f1 *= (1+root_five)/2;</div><div class="line">        f2 *= (1-root_five)/2;</div><div class="line">    &#125;</div><div class="line">    result = (f1 - f2)/root_five;</div><div class="line">    return int(result);</div><div class="line">&#125;</div></pre></td></tr></table></figure><p>虽然公式看起来不是很复杂，但是当中有很多的浮点运算，返回的结果也会因为n越来越大而不断产生更大的误差，因此并不可靠。</p><h4 id="矩阵法"><a href="#矩阵法" class="headerlink" title="矩阵法"></a>矩阵法</h4><p>$$ \begin{bmatrix} F<em>{n} \ F</em>{n-1} \end{bmatrix}=\begin{bmatrix} F<em>{n-1}+F</em>{n-2} \ F<em>{n-1} \end{bmatrix}=\begin{bmatrix} 1\times f</em>{n-1}+1\times F<em>{n}-2 \ 1\times f</em>{n-1}+0\times F_{n-2} \end{bmatrix}=\begin{bmatrix}<br>1 &amp; 1 \<br>1 &amp; 0<br>\end{bmatrix} $$</p><p>由此可推得：</p><p>$$ \begin{bmatrix} F<em>{n} \ F</em>{n-1} \end{bmatrix}=\begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \end{bmatrix}^{n-1}\times \begin{bmatrix} F<em>{1} \ F</em>{0} \end{bmatrix}=\begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \end{bmatrix}^{n-1}\times \begin{bmatrix} 1 \ 0 \end{bmatrix} $$</p><p>那这里就把问题转换为了求矩阵的n-1次幂，利用快速幂的方式来计算：</p><p>$$ a_{n}=\begin{cases}a^{\dfrac {n}{2}}a^{\dfrac {n}{2}},ifniseven\ a^{\dfrac {n-1}{2}}a^{\dfrac {n-1}{2}}a,ifnisodd\end{cases} $$</p><p>以上方法的JavaScript代码如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">// 矩阵乘法</div><div class="line">function multiMatrix(int[][] m1,int[][] m2) &#123;</div><div class="line">//参数判断什么的就不给了，如果矩阵是n*m和m*p,那结果是n*p</div><div class="line">    int[][] res = new int[m1.length][m2[0].length];</div><div class="line">    for (int i = 0; i &lt; m1.length; i++) &#123;</div><div class="line">        for (int j = 0; j &lt; m2[0].length; j++) &#123;</div><div class="line">            for (int k = 0; k &lt; m2.length; k++) &#123;</div><div class="line">                res[i][j] += m1[i][k] * m2[k][j];</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    return res;</div><div class="line">&#125;</div><div class="line">// 矩阵快速幂</div><div class="line">function Fibonacci4(int n) &#123;</div><div class="line">    if (n &lt; 1) &#123;</div><div class="line">        return 0;</div><div class="line">    &#125;</div><div class="line">    if (n == 1 || n == 2) &#123; </div><div class="line">        return 1;</div><div class="line">    &#125;</div><div class="line">    //底</div><div class="line">    int[][] base = &#123;&#123;1,1&#125;,</div><div class="line">                    &#123;1,0&#125;&#125;;</div><div class="line">    //求底为base矩阵的n-2次幂</div><div class="line">    int[][] res = matrixPower(base, n - 2);</div><div class="line">    //根据[f(n),f(n-1)] = [1,1] * &#123;[1,1],[1,0]&#125;^(n-2)，f(n)就是</div><div class="line">    //1*res[0][0] + 1*res[1][0]</div><div class="line">    return res[0][0] + res[1][0];</div><div class="line">&#125;</div></pre></td></tr></table></figure><ul><li>时间复杂度：T(n) = O(log(n)) </li></ul><blockquote><p>今天的学习过程中并不是全部都理解透彻了，关于时间复杂度也还有更长的路去学习，本文仅关于一道课后题延伸出这些内容。<br>未完待续~~~</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;复习过程中涉及到计算算法的时间复杂度，课后例题中的“计算斐波那契数列时间复杂度”引起了自己的思考，通过学习，总结出好集中不同的方式。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="学习" scheme="http://yangkunyi.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+      <category term="数据结构" scheme="http://yangkunyi.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
   
   <entry>
     <title>NodePPT</title>
@@ -372,9 +396,9 @@
     
       <category term="前端" scheme="http://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
     
-      <category term="问题" scheme="http://yangkunyi.com/tags/%E9%97%AE%E9%A2%98/"/>
-    
       <category term="讨论" scheme="http://yangkunyi.com/tags/%E8%AE%A8%E8%AE%BA/"/>
+    
+      <category term="问题" scheme="http://yangkunyi.com/tags/%E9%97%AE%E9%A2%98/"/>
     
       <category term="浏览器缓存" scheme="http://yangkunyi.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98/"/>
     
@@ -469,28 +493,6 @@
     
     
       <category term="Javascript" scheme="http://yangkunyi.com/tags/Javascript/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>域名的购买和绑定</title>
-    <link href="http://yangkunyi.com/2017/11/15/%E5%9F%9F%E5%90%8D%E7%9A%84%E8%B4%AD%E4%B9%B0%E5%92%8C%E7%BB%91%E5%AE%9A/"/>
-    <id>http://yangkunyi.com/2017/11/15/域名的购买和绑定/</id>
-    <published>2017-11-15T09:42:30.000Z</published>
-    <updated>2017-12-02T06:46:26.217Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>终于下定决心，自己在阿里云上购买了域名，开始将自己的博客放到一个更大的“池塘”里面了，之后的学习，希望自己能继续坚持。</p></blockquote><a id="more"></a><h3 id="购买域名"><a href="#购买域名" class="headerlink" title="购买域名"></a>购买域名</h3><ul><li><p>前期翻看了很多关于在哪里购买域名的博文，最后还是决定就在阿里云买了，原因如下：（其实很早就想买了，但是之前还是觉得自己技术不成熟吧，买了也是浪费，不过现在觉得，买了就有更大的动力学习了）</p><ul><li><strong>为了让自己的博客更有识别度</strong></li><li>作为一个新手，阿里云的性能已经很够用了</li><li>价格一般，作为大学生，还是能负担</li><li>阿里云在国内也算有名了吧</li></ul></li><li><p>购买方法很简单啊，只要去官网就好了<strong><a href="https://cn.aliyun.com/" target="_blank" rel="external">阿里云</a></strong></p></li></ul><h3 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h3><blockquote><p>之前自己的博客是挂在github上面直接用的免费的github pages，为了更有识别度，便买了域名，因为还没有购买服务器，（准备在接下来一年内完成这任务）所以之后项目还是会放在github上。</p></blockquote><p>因此这样的话，绑定域名就很简单了。</p><ul><li>域名的解析，在阿里云的后台管理进行如下设置</li></ul><p><img src="http://otn4ut2th.bkt.clouddn.com/blogdns.PNG" alt="dnsSetting"></p><ul><li>然后是github项目的重定向<ul><li>用过github pages的都知道，github赠送的域名是<code>yourgithubname.github.io</code>，而我们现在要做的就是将这个页面重定向到我们申请的域名上去</li></ul></li></ul><h4 id="方法如下："><a href="#方法如下：" class="headerlink" title="方法如下："></a>方法如下：</h4><ul><li>方法1. 直接更改项目设置中的pages设置，如图：</li></ul><p><img src="http://otn4ut2th.bkt.clouddn.com/bloggithubpage.PNG" alt="githubpages"></p><ul><li>方法2.在项目的根目录中新建一个<code>CNAME</code>文件，文件的内容就是我们申请的域名：</li></ul><p><img src="http://otn4ut2th.bkt.clouddn.com/blogcname.PNG" alt="cname"></p><p>最后就是等待了（时间长短不定，本人感觉并没有等很久），就可以通过我们自己申请的域名访问项目页面了。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;终于下定决心，自己在阿里云上购买了域名，开始将自己的博客放到一个更大的“池塘”里面了，之后的学习，希望自己能继续坚持。&lt;/p&gt;
-&lt;/blockquote&gt;
-    
-    </summary>
-    
-    
-      <category term="域名" scheme="http://yangkunyi.com/tags/%E5%9F%9F%E5%90%8D/"/>
     
   </entry>
   
