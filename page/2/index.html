@@ -2,26 +2,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
 <html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-<meta name="theme-color" content="#222">
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
 
 
 
@@ -38,9 +36,6 @@
 
 
 
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -48,65 +43,43 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
 
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/css/main.css?v=7.0.0"/>
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
 
 
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
 
 
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
 
-  <link rel="alternate" href="/atom.xml" title="杨坤怡" type="application/atom+xml" />
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
 
 
 
 
 
 
-<meta name="description" content="愿你一世清高 两鬓斑白艳阳照">
-<meta property="og:type" content="website">
-<meta property="og:title" content="杨坤怡">
-<meta property="og:url" content="http://yangkunyi.com/page/2/index.html">
-<meta property="og:site_name" content="杨坤怡">
-<meta property="og:description" content="愿你一世清高 两鬓斑白艳阳照">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="杨坤怡">
-<meta name="twitter:description" content="愿你一世清高 两鬓斑白艳阳照">
 
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
     scheme: 'Muse',
-    version: '5.1.4',
+    version: '7.0.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -118,12 +91,37 @@
 </script>
 
 
+  
+
+
+
+
+  <meta name="description" content="愿你一世清高 两鬓斑白艳阳照">
+<meta property="og:type" content="website">
+<meta property="og:title" content="杨坤怡">
+<meta property="og:url" content="http://yangkunyi.com/page/2/index.html">
+<meta property="og:site_name" content="杨坤怡">
+<meta property="og:description" content="愿你一世清高 两鬓斑白艳阳照">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="杨坤怡">
+<meta name="twitter:description" content="愿你一世清高 两鬓斑白艳阳照">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="杨坤怡" type="application/atom+xml"/>
+
+
+
 
   <link rel="canonical" href="http://yangkunyi.com/page/2/"/>
 
 
 
-
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>杨坤怡</title>
   
@@ -134,6 +132,35 @@
 
 
 
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
@@ -150,23 +177,22 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
+      <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
         <span class="site-title">杨坤怡</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="Toggle navigation bar">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -174,35 +200,55 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Accueil</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
+  
+    
+
   
 
   
@@ -210,12 +256,20 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -228,21 +282,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/30/WeeklyMind-6/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/30/WeeklyMind-6/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -252,31 +308,58 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/30/WeeklyMind-6/" itemprop="url">WeeklyMind-6</a></h1>
+                
+                <a href="/2017/12/30/WeeklyMind-6/" class="post-title-link" itemprop="url">WeeklyMind-6</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-30T23:11:06+08:00">
-                2017-12-30
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-30 23:11:06" itemprop="dateCreated datePublished" datetime="2017-12-30T23:11:06+08:00">2017-12-30</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2018-01-01 23:12:33" itemprop="dateModified" datetime="2018-01-01T23:12:33+08:00">2018-01-01</time>
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -307,21 +390,29 @@
 <p>2017就这样过了，今天已经是2018年了，想来这一年确实发生了太多的事情，自己的价值观也在这些事情中一次次的改变和塑造着，未来的路在昨天的铺垫中慢慢成型，在今天的过程中慢慢延伸，在明天的憧憬理慢慢向前。这个周开始进入考试复习周，下周三就开始考试了，但自己在假期里显得十分的懒散，可能是因为自己这两天一直在想这一年自己到底干了什么，事情太多，整整两个日记本了，这应该就是自己的成长吧，在这里还是不想太多，就说说这个周。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/30/WeeklyMind-6/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/30/WeeklyMind-6/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -354,21 +445,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/24/PHP绘图/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/24/PHP绘图/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -378,31 +471,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/24/PHP绘图/" itemprop="url">PHP绘图</a></h1>
+                
+                <a href="/2017/12/24/PHP绘图/" class="post-title-link" itemprop="url">PHP绘图</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-24T12:25:09+08:00">
-                2017-12-24
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-24 12:25:09 / Updated at: 12:27:16" itemprop="dateCreated datePublished" datetime="2017-12-24T12:25:09+08:00">2017-12-24</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -433,21 +541,29 @@
 <p>web课程的笔记和一些实例代码。还有一份自定义图形作业，感觉还不错，简单做了一个二维码。（全是画矩形，确实有点无聊了，有空画点有趣的图）</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/24/PHP绘图/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/24/PHP绘图/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -480,21 +596,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/24/WeeklyMind-5/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/24/WeeklyMind-5/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -504,31 +622,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/24/WeeklyMind-5/" itemprop="url">WeeklyMind-5</a></h1>
+                
+                <a href="/2017/12/24/WeeklyMind-5/" class="post-title-link" itemprop="url">WeeklyMind-5</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-24T12:23:09+08:00">
-                2017-12-24
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-24 12:23:09 / Updated at: 12:24:03" itemprop="dateCreated datePublished" datetime="2017-12-24T12:23:09+08:00">2017-12-24</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -558,21 +691,29 @@
           <blockquote>
 <p>本周开始学习都开始进入最后的报告和复习阶段，不动产报告， 人际关系报告，以及接下来的行销报告和各种总结，然后是期末考试复习，所以这两个周不太有时间自学了。<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/24/WeeklyMind-5/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/24/WeeklyMind-5/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -605,21 +746,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/17/WeeklyMind-4/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/17/WeeklyMind-4/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -629,31 +772,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/17/WeeklyMind-4/" itemprop="url">WeeklyMind-4</a></h1>
+                
+                <a href="/2017/12/17/WeeklyMind-4/" class="post-title-link" itemprop="url">WeeklyMind-4</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-17T12:52:37+08:00">
-                2017-12-17
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-17 12:52:37 / Updated at: 12:54:01" itemprop="dateCreated datePublished" datetime="2017-12-17T12:52:37+08:00">2017-12-17</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -684,21 +842,29 @@
 <p>这个周开始都开始准备各科的报告和总结了，所以不是在写报告就是在做ppt，周五下午有抽空学习node，看了N-blog项目的大概，但是困难出在MongoDB，虽然连上了，项目跑起来了，但是并没有懂其中的原理，之后会继续理解。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/17/WeeklyMind-4/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/17/WeeklyMind-4/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -731,21 +897,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/14/NeverLimitYourself/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/14/NeverLimitYourself/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -755,31 +923,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/14/NeverLimitYourself/" itemprop="url">NeverLimitYourself</a></h1>
+                
+                <a href="/2017/12/14/NeverLimitYourself/" class="post-title-link" itemprop="url">NeverLimitYourself</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-14T21:01:57+08:00">
-                2017-12-14
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-14 21:01:57 / Updated at: 21:10:43" itemprop="dateCreated datePublished" datetime="2017-12-14T21:01:57+08:00">2017-12-14</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -810,21 +993,29 @@
 <p>看完C菌的视频有感而发，想说一些话！</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/14/NeverLimitYourself/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/14/NeverLimitYourself/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -857,21 +1048,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/10/WeeklyMind-3/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/10/WeeklyMind-3/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -881,31 +1074,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/10/WeeklyMind-3/" itemprop="url">WeeklyMind-3</a></h1>
+                
+                <a href="/2017/12/10/WeeklyMind-3/" class="post-title-link" itemprop="url">WeeklyMind-3</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-10T17:30:09+08:00">
-                2017-12-10
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-10 17:30:09 / Updated at: 19:35:18" itemprop="dateCreated datePublished" datetime="2017-12-10T17:30:09+08:00">2017-12-10</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -936,21 +1144,29 @@
 <p>本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/10/WeeklyMind-3/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/10/WeeklyMind-3/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -983,21 +1199,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/06/用户验证与数据库/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/06/用户验证与数据库/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -1007,31 +1225,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/06/用户验证与数据库/" itemprop="url">用户验证与数据库</a></h1>
+                
+                <a href="/2017/12/06/用户验证与数据库/" class="post-title-link" itemprop="url">用户验证与数据库</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-06T20:22:28+08:00">
-                2017-12-06
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-06 20:22:28 / Updated at: 20:25:46" itemprop="dateCreated datePublished" datetime="2017-12-06T20:22:28+08:00">2017-12-06</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -1062,21 +1295,29 @@
 <p>这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/06/用户验证与数据库/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/06/用户验证与数据库/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1109,21 +1350,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/03/坎帕斯学院日常讨论-2/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/03/坎帕斯学院日常讨论-2/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -1133,31 +1376,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/03/坎帕斯学院日常讨论-2/" itemprop="url">坎帕斯学院讨论日常-2</a></h1>
+                
+                <a href="/2017/12/03/坎帕斯学院日常讨论-2/" class="post-title-link" itemprop="url">坎帕斯学院讨论日常-2</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-03T21:23:28+08:00">
-                2017-12-03
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-03 21:23:28 / Updated at: 21:25:19" itemprop="dateCreated datePublished" datetime="2017-12-03T21:23:28+08:00">2017-12-03</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -1187,21 +1445,29 @@
           <blockquote>
 <p>这是第二次整理讨论的内容，本次内容有点深奥，值得细嚼慢咽。<br>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/03/坎帕斯学院日常讨论-2/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/03/坎帕斯学院日常讨论-2/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1234,21 +1500,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/02/WeeklyMind-2/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/12/02/WeeklyMind-2/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -1258,31 +1526,46 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/12/02/WeeklyMind-2/" itemprop="url">WeeklyMind-2</a></h1>
+                
+                <a href="/2017/12/02/WeeklyMind-2/" class="post-title-link" itemprop="url">WeeklyMind-2</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-02T12:29:09+08:00">
-                2017-12-02
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-12-02 12:29:09 / Updated at: 14:43:47" itemprop="dateCreated datePublished" datetime="2017-12-02T12:29:09+08:00">2017-12-02</time>
             
 
             
+              
 
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -1313,21 +1596,29 @@
 <p>忙碌的一周，这都是浪三天的后遗症。上周的周记都在浪中忘记了，但是心情还是很开心的。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/12/02/WeeklyMind-2/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/12/02/WeeklyMind-2/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1360,21 +1651,23 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/11/19/WeeklyMind-1/">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/11/19/WeeklyMind-1/"/>
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="杨坤怡">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="杨坤怡"/>
+      <meta itemprop="description" content="愿你一世清高 两鬓斑白艳阳照"/>
+      <meta itemprop="image" content="/images/avatar.gif"/>
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="name" content="杨坤怡"/>
     </span>
 
     
@@ -1384,31 +1677,58 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/11/19/WeeklyMind-1/" itemprop="url">WeeklyMind-1</a></h1>
+                
+                <a href="/2017/11/19/WeeklyMind-1/" class="post-title-link" itemprop="url">WeeklyMind-1</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">发表于</span>
+                <span class="post-meta-item-text">Posté le</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-19T14:11:30+08:00">
-                2017-11-19
-              </time>
+
+              
+                
+              
+
+              <time title="Post created: 2017-11-19 14:11:30" itemprop="dateCreated datePublished" datetime="2017-11-19T14:11:30+08:00">2017-11-19</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Updated at: 2017-12-02 14:43:35" itemprop="dateModified" datetime="2017-12-02T14:43:35+08:00">2017-12-02</time>
+              
             
           </span>
 
           
 
           
+            
             
           
 
@@ -1439,21 +1759,29 @@
 <p>寻常的一周，不过做了许多的决定，之后每一周也希望自己能坚持做一下简单的总结。</p>
 </blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/11/19/WeeklyMind-1/#thêm" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2017/11/19/WeeklyMind-1/#more" rel="contents">
+                Lire la suite &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -1482,15 +1810,12 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 
 
           </div>
-          
-
-
           
 
         </div>
@@ -1513,7 +1838,7 @@
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1521,33 +1846,121 @@
               <p class="site-description motion-element" itemprop="description">愿你一世清高 两鬓斑白艳阳照</p>
           </div>
 
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
+          
+            <nav class="site-state motion-element">
               
-                <a href="/archives/">
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">36</span>
+                    <span class="site-state-item-name">articles</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">36</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
-
-            
               
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">43</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
 
-          </nav>
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">43</span>
+                    <span class="site-state-item-name">tags</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
 
           
             <div class="feed-link motion-element">
@@ -1561,15 +1974,17 @@
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -1586,16 +2001,18 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">杨坤怡</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.2.2</div>
 
 
 
@@ -1603,12 +2020,13 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Thème – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.0.0</div>
 
 
 
 
         
+
 
 
 
@@ -1629,11 +2047,14 @@
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -1647,92 +2068,11 @@
 
 
 
-  
 
 
 
 
 
-
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
 
 
 
@@ -1746,7 +2086,46 @@
 
 
   
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=7.0.0"></script>
+
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+
+
+
+  
+
+
+
+  
 
 
 
@@ -1758,6 +2137,17 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
