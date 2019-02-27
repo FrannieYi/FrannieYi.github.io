@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.3" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.3">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.3">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.3" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="学习,新媒体,App分析," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="杨坤怡" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="微众银行App用户体验报告">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微众银行App体验">
+<meta property="og:url" content="http://yangkunyi.com/2017/05/27/微众银行App体验/index.html">
+<meta property="og:site_name" content="杨坤怡">
+<meta property="og:description" content="微众银行App用户体验报告">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8CAPP%E6%A1%86%E6%9E%B6.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A7%882.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A7%881.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E7%90%86%E8%B4%A23.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E7%90%86%E8%B4%A22.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E7%90%86%E8%B4%A21.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%8A%95%E8%B5%842.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%8A%95%E8%B5%841.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E8%BD%AC%E8%B4%A6.png?raw=true">
+<meta property="og:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%88%91%E7%9A%84.png?raw=true">
+<meta property="og:updated_time" content="2019-02-27T07:30:44.056Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="微众银行App体验">
+<meta name="twitter:description" content="微众银行App用户体验报告">
+<meta name="twitter:image" content="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8CAPP%E6%A1%86%E6%9E%B6.png?raw=true">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Mist',
+    version: '5.1.3',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yangkunyi.com/2017/05/27/微众银行App体验/"/>
+
+
+
+
+
+  <title>微众银行App体验 | 杨坤怡</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/FrannieYi" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#fff; color:#151513; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">杨坤怡</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yangkunyi.com/2017/05/27/微众银行App体验/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="杨坤怡">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23172898_147614172637953_1889825038122566657_n.jpg?oh=071d058ee323bcf8d3805d7edd0c1dbc&oe=5AABCCA7">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="杨坤怡">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">微众银行App体验</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-27T15:29:10+08:00">
+                2017-05-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/05/27/微众银行App体验/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2017/05/27/微众银行App体验/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>微众银行App用户体验报告</p>
+</blockquote>
+<a id="more"></a>
+<h3 id="体验环境"><a href="#体验环境" class="headerlink" title="体验环境"></a>体验环境</h3><ul>
+<li>手机：iPhone 6</li>
+<li>操作系统：ios 9.1</li>
+<li>软件版本：微众银行1.9.2</li>
+<li>时间：2017年3月2日</li>
+</ul>
+<h3 id="市场定位"><a href="#市场定位" class="headerlink" title="市场定位"></a>市场定位</h3><p>&nbsp;&nbsp;微众银行由腾讯公司及百业源、立业集团等知名民营企业发起设立，2014年12月经监管机构批准开业，是国内首家民营银行和互联网银行。微众银行App是为微众银行客户提供的移动端产品。它为客户提供了线上理财，线上投资，线上转账等功能，相比于传统银行更加的方便快捷，且无需线下经营，使得互联网银行的成本低于传统银行，有很大的竞争优势。<br><br>&nbsp;&nbsp;微众银行的用户定位是对互联网理财有接触或俩节，同时有理财和投资需求的个体及微小型企业。因此</p>
+<h3 id="产品设计"><a href="#产品设计" class="headerlink" title="产品设计"></a>产品设计</h3><h4 id="功能结构图"><a href="#功能结构图" class="headerlink" title="功能结构图"></a>功能结构图</h4><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8CAPP%E6%A1%86%E6%9E%B6.png?raw=true" alt="微众银行App产品功能结构图"></p>
+<blockquote>
+<p>微信银行App整体有四个tag在底部，第一个tag是总体信息，剩下三个分别代表了微众银行的三大核心业务：理财，投资和存取转账。</p>
+</blockquote>
+<hr>
+<h4 id="交互界面"><a href="#交互界面" class="headerlink" title="交互界面"></a>交互界面</h4><hr>
+<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A7%882.png?raw=true" alt="总览界面"><br><img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%80%BB%E8%A7%881.png?raw=true" alt="总览界面"></p>
+<hr>
+<h5 id="总览（首页）"><a href="#总览（首页）" class="headerlink" title="总览（首页）"></a>总览（首页）</h5><blockquote>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开户前显示登录引导项引导客户登录帐号，登录的方式可以是QQ帐号登录，也可以是微信帐号登录；开户后显示客户的总资产，资产可以选择隐藏和显示，这让客户在公共场所不必担心自己的财务信息泄漏出去。另外，不管开户是否都会显示微众银行的机构代码即是由腾讯牵头等信息，是为了使客户更加信任微众银行，毕竟是首家互联网银行，客户会有所担心，是否安全、真实都是客户十分关心的，所以以这样醒目的方式给客户安全感，吸引客户，获得客户的信任。<br><br>&nbsp;&nbsp;紧跟着显示活期，短期，定期，基金等理财方式的产品推荐，通过利率进一步吸引客户，同时用不同的颜色也区分了产品的性质，深色代表安全性高；浅一定的颜色代表风险较高，但利率相对也高。<br><br>&nbsp;&nbsp;在最后一栏显示了用户使用数据，进一步给用户安全感，留住客户。</p>
+</blockquote>
+<hr>
+<p> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E7%90%86%E8%B4%A23.png?raw=true" alt="理财"><br> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E7%90%86%E8%B4%A22.png?raw=true" alt="理财"><br> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E7%90%86%E8%B4%A21.png?raw=true" alt="理财"></p>
+<hr>
+<h5 id="理财"><a href="#理财" class="headerlink" title="理财"></a>理财</h5><blockquote>
+<p>&nbsp;&nbsp;顶部的图文十分醒目，能够吸引顾客的眼球，跟着是各种业务，用鲜艳的颜色体现出收益，同时还为客户推荐精选产品；紧接着是保险服务“一次缴费，终生领取”，宣传语极大的吸引了客户；最后的即将开售板块对即将开售的产品进行了宣传。</p>
+</blockquote>
+<hr>
+<p> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%8A%95%E8%B5%842.png?raw=true" alt="投资"><br> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%8A%95%E8%B5%841.png?raw=true" alt="投资"></p>
+<hr>
+<h5 id="投资"><a href="#投资" class="headerlink" title="投资"></a>投资</h5><blockquote>
+<p>&nbsp;&nbsp;基金，微众金，结构化投资产品类型板块让用户对投资产品一目了然。中间最醒目的板块是一个专门针对基金的投资引导，对普通债券型基金，或者混合型基金的现状进行分析和引导购买。紧接着是热门的投资，给用户更多的选择。<br>&nbsp;&nbsp;底部是一些投资相关资料的普及，例如外汇投资更划算，或者是新手入门的教学。</p>
+</blockquote>
+<hr>
+<p> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E8%BD%AC%E8%B4%A6.png?raw=true" alt="转账"></p>
+<hr>
+<h5 id="转账"><a href="#转账" class="headerlink" title="转账"></a>转账</h5><blockquote>
+<p>&nbsp;&nbsp;为开户的就没有管理银行卡的板块。存取计划是用户自定义设置每月存取的时间，数额，卡号等，进行每月定时存取款。</p>
+</blockquote>
+<hr>
+<p> <img src="https://github.com/FrannieYi/Blogimage/blob/master/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8C%E6%88%91%E7%9A%84.png?raw=true" alt="我"></p>
+<hr>
+<h5 id="我板块"><a href="#我板块" class="headerlink" title="我板块"></a>我板块</h5><blockquote>
+<p>&nbsp;&nbsp;我板块按钮在顶部头像处，类似于QQ。我板块的各种功能都是为了让客户享受高质量的客户服务，给客户人性化的体验，让用户了解微众银行，获得客户的信任。（个人觉得我板块虽然类似于QQ，可是打开和关闭都只能点击不能滑动，也可能是使用智能手机的习惯，突然滑动不了，感觉不是很方便。）</p>
+</blockquote>
+
+      
+    </div>
+    
+    
+    
+
+    
+      <div>
+        <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="http://otn4ut2th.bkt.clouddn.com/wechatqrcode_for_gh_647bbb94d79f_258.jpg" alt="杨坤怡 wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎关注我的公众号，看看不一样的生活</div>
+</div>
+
+      </div>
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <href="/tags/学习/" rel="tag"><i class="fa fa-tag"></i> 学习</a>
+          
+            <href="/tags/新媒体/" rel="tag"><i class="fa fa-tag"></i> 新媒体</a>
+          
+            <href="/tags/App分析/" rel="tag"><i class="fa fa-tag"></i> App分析</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/04/27/换届题目/" rel="next" title="换届题目">
+                <i class="fa fa-chevron-left"></i> 换届题目
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/06/02/vue2-0生命周期/" rel="prev" title="vue2.0生命周期">
+                vue2.0生命周期 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-1/p160x160/23172898_147614172637953_1889825038122566657_n.jpg?oh=071d058ee323bcf8d3805d7edd0c1dbc&oe=5AABCCA7"
+                alt="杨坤怡" />
+            
+              <p class="site-author-name" itemprop="name">杨坤怡</p>
+              <p class="site-description motion-element" itemprop="description">愿你一世清高 两鬓斑白艳阳照</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">45</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">50</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/FrannieYi" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="frannieyi99@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://plus.google.com/Frannie" target="_blank" title="Google">
+                      
+                        <i class="fa fa-fw fa-google"></i>Google</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.facebook.com/杨坤怡" target="_blank" title="FB Page">
+                      
+                        <i class="fa fa-fw fa-facebook"></i>FB Page</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#体验环境"><span class="nav-number">1.</span> <span class="nav-text">体验环境</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#市场定位"><span class="nav-number">2.</span> <span class="nav-text">市场定位</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#产品设计"><span class="nav-number">3.</span> <span class="nav-text">产品设计</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#功能结构图"><span class="nav-number">3.1.</span> <span class="nav-text">功能结构图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#交互界面"><span class="nav-number">3.2.</span> <span class="nav-text">交互界面</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#总览（首页）"><span class="nav-number">3.2.1.</span> <span class="nav-text">总览（首页）</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#理财"><span class="nav-number">3.2.2.</span> <span class="nav-text">理财</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#投资"><span class="nav-number">3.2.3.</span> <span class="nav-text">投资</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#转账"><span class="nav-number">3.2.4.</span> <span class="nav-text">转账</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#我板块"><span class="nav-number">3.2.5.</span> <span class="nav-text">我板块</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">杨坤怡</span>
+
+  
+</div>
+
+<div class="powered-by">
+<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+  访问用户(uv) : <span id="busuanzi_value_site_uv"></span>
+</span>
+</div>
+<div class="powered-by">
+<i class="fa fa-eye"></i><span id="busuanzi_container_site_pv">
+  访问量(pv) : <span id="busuanzi_value_site_pv"></span>
+</span>
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/canvas_lines.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.3"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.3"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.3"></script>
+
+
+
+  
+
+
+  
+
+    
+      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+      <script type="text/javascript">
+        var disqus_config = function () {
+          this.page.url = 'http://yangkunyi.com/2017/05/27/微众银行App体验/';
+          this.page.identifier = '2017/05/27/微众银行App体验/';
+          this.page.title = '微众银行App体验';
+        };
+        var d = document, s = d.createElement('script');
+        s.src = 'https://.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', '' + +new Date());
+        (d.head || d.body).appendChild(s);
+      </script>
+    
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
