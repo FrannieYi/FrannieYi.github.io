@@ -1955,7 +1955,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #67d513;
+  background: #524ad5;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3039,7 +3039,7 @@ hr {
 }
 body {
   background-color: #000;
-  background: url("https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-747189.jpg") center 0;
+  background: url("https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/background1.jpg?raw=true") center 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
