@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2019-07-07T15:10:55.643Z</updated>
+  <updated>2019-07-08T14:49:23.523Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Daily1</title>
+    <link href="http://yangkunyi.com/2019/07/08/Daily1/"/>
+    <id>http://yangkunyi.com/2019/07/08/Daily1/</id>
+    <published>2019-07-08T14:44:09.000Z</published>
+    <updated>2019-07-08T14:49:23.523Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面，今天雨，我希望我们在一起。</p></blockquote><a id="more"></a><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul><li>今天结束了在线的工作，总的来说在线的工作其实没有热线那么累，热线自己还会将嗓子说哑了，但是在线就是开心的在聊天，不能解决也还有疑难可以提，嘿嘿。</li><li>项目的话，只能说自己考虑的方面还是不够全面，能想的确实是想了，但是能做到却不一定能做，但是自己只要把自己能做的做到就可以了。</li><li>这个月就有一个述职了，所以要开始准备了。</li><li>其他好像没什么了吧，就是自己接触到行业的知识还不够吧。</li></ul><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="检索数据-SELECT语句"><a href="#检索数据-SELECT语句" class="headerlink" title="检索数据(SELECT语句)"></a>检索数据(SELECT语句)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">//检索单个列表</div><div class="line">SELECT prod_name</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//检索多个列表</div><div class="line">SELECT prod_name,prod_id，prod_price</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//检索所有列</div><div class="line">SELECT *</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//检索不同的值</div><div class="line">SELECT DISTINCT vend_id</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//限制结果</div><div class="line">(SQL\Access)</div><div class="line">SELECT top 5 prod_name</div><div class="line">FROM Products;</div><div class="line">(DB2)</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">FETCH FIRST 5 ROWS ONLY;</div><div class="line">(Oracle)</div><div class="line">SELECT prod_name</div><div class="line">FROM Product</div><div class="line">WHERE ROWNUM &lt;＝5</div><div class="line">（MySQL\MariaDB\PostgreSQL\SQLite）</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">LIMIT 5;</div><div class="line"></div><div class="line">//为了得到后五行数据</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">LIMIT 5 OFFSET 5;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;说在前面，今天雨，我希望我们在一起。&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="日报" scheme="http://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+  </entry>
   
   <entry>
     <title>WeeklyMind-9</title>
@@ -469,28 +491,6 @@
     
       &lt;blockquote&gt;
 &lt;p&gt;本周开始学习都开始进入最后的报告和复习阶段，不动产报告， 人际关系报告，以及接下来的行销报告和各种总结，然后是期末考试复习，所以这两个周不太有时间自学了。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="周记" scheme="http://yangkunyi.com/tags/%E5%91%A8%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WeeklyMind-4</title>
-    <link href="http://yangkunyi.com/2017/12/17/WeeklyMind-4/"/>
-    <id>http://yangkunyi.com/2017/12/17/WeeklyMind-4/</id>
-    <published>2017-12-17T04:52:37.000Z</published>
-    <updated>2017-12-17T04:54:01.515Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>这个周开始都开始准备各科的报告和总结了，所以不是在写报告就是在做ppt，周五下午有抽空学习node，看了N-blog项目的大概，但是困难出在MongoDB，虽然连上了，项目跑起来了，但是并没有懂其中的原理，之后会继续理解。</p></blockquote><a id="more"></a><h3 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h3><ul><li>web学了PHP的绘画，还画了一个二维码。</li><li>不动产管理报告</li><li>人际关系报告</li><li>完成了毛概</li><li>不定期更新微信</li></ul><h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><ul><li>进入自己想要的规律状态，但是每天运动量还是太少了，可能是气温太低了，自己也没有想出门。</li><li>今天晚上准备去买水果，维生素还是不能少</li><li>真的不是很喜欢这边的食物，吃的不是很开心，开始想奶奶做得菜了</li><li>昨晚和一个同龄的妹子聊到了父母的期望和自己想做的有偏差，自己将自己想做的都告诉了她，那是因为自己也想像自己所说的那么坚持，坚持做自己想做的事情，父母的期望并不想辜负，尽自己最大的努力去达到他们想看到的样子，但是这并不意味着我不能做自己，这并不是矛盾的关系，很多情况下自己的想法和父母的想法是可以共存的。父母希望自己把心思放在学习上，只不过想自己的成绩能够过得去，那自己在保证了成绩的前提下做的事情父母也会接受的，获许还更可能得到支持。所以我觉得不能把自己的想法和父母的想法完全对立起来吧，换一种看法，就像前面所说的，是可以共存的。</li></ul><h3 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h3><ul><li>西方哲学整理复习</li><li>财务管理复习（考课后题，我就把课后题全做一遍总可以了吧！死记硬背我都给你过了。。。）</li><li>行销管理报告，视频，ppt</li><li>继续学习英语</li></ul><blockquote><p>已经开始倒数着回去的日子了，是真的想家了吧！</p></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;这个周开始都开始准备各科的报告和总结了，所以不是在写报告就是在做ppt，周五下午有抽空学习node，看了N-blog项目的大概，但是困难出在MongoDB，虽然连上了，项目跑起来了，但是并没有懂其中的原理，之后会继续理解。&lt;/p&gt;
-&lt;/blockquote&gt;
     
     </summary>
     
