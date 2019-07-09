@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yangkunyi.com/"/>
-  <updated>2019-07-08T14:49:23.523Z</updated>
+  <updated>2019-07-09T15:26:54.359Z</updated>
   <id>http://yangkunyi.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Daily2</title>
+    <link href="http://yangkunyi.com/2019/07/09/Daily2/"/>
+    <id>http://yangkunyi.com/2019/07/09/Daily2/</id>
+    <published>2019-07-09T15:25:16.000Z</published>
+    <updated>2019-07-09T15:26:54.359Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面，社会主义的一块砖，哪里需要哪里搬</p></blockquote><a id="more"></a><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>今日份工作接线支撑，中间抽空了解了线下工作。无异常</p><h2 id="小组瞎聊"><a href="#小组瞎聊" class="headerlink" title="小组瞎聊"></a>小组瞎聊</h2><ul><li>累了之后脑袋一片空白</li><li>接快了之后觉得自己就是一个机器</li><li>智能知识库暂时毫无作用 </li><li>不要太刻意的去模仿，遇到事情多想想就好了</li><li>措施：人力调度；增加话术（没有及时更新新的话术，场景已经变化了，但是还是只有一个话术）；时时关注现状；培养一线的能力，就是为了解决这种问题；线下工单情况，工作强度强了很多。</li></ul><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="排序检索数据"><a href="#排序检索数据" class="headerlink" title="排序检索数据"></a>排序检索数据</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">//按照产品名称排序</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">ORDER BY prod_name;(一定要放到最后)</div><div class="line"></div><div class="line">//按多个排序</div><div class="line">SELECT prod_name,prod_id,prod_price</div><div class="line">FROM Products</div><div class="line">ORDER BY prod_price,prod_name;</div><div class="line"></div><div class="line">//按列位置排序</div><div class="line">SELECT prod_name,prod_id,prod_price</div><div class="line">FROM Products</div><div class="line">ORDER BY 2,3;</div><div class="line"></div><div class="line">//指定排序方向</div><div class="line">//(升序ASC或者ASCENDING是默认的，降序是DESC或者DESCENDING)</div><div class="line">SELECT prod_name,prod_id,prod_price</div><div class="line">FROM Products</div><div class="line">ORDER BY prod_price DESC;</div><div class="line"></div><div class="line">//多个列排序</div><div class="line">SELECT prod_name,prod_id,prod_price</div><div class="line">FROM Products</div><div class="line">ORDER BY prod_price DESC,prod_name;</div></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;说在前面，社会主义的一块砖，哪里需要哪里搬&lt;/p&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+    
+      <category term="日报" scheme="http://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="SQL" scheme="http://yangkunyi.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Daily1</title>
     <link href="http://yangkunyi.com/2019/07/08/Daily1/"/>
     <id>http://yangkunyi.com/2019/07/08/Daily1/</id>
     <published>2019-07-08T14:44:09.000Z</published>
-    <updated>2019-07-08T14:49:23.523Z</updated>
+    <updated>2019-07-09T15:26:56.372Z</updated>
     
     <content type="html"><![CDATA[<blockquote><p>说在前面，今天雨，我希望我们在一起。</p></blockquote><a id="more"></a><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul><li>今天结束了在线的工作，总的来说在线的工作其实没有热线那么累，热线自己还会将嗓子说哑了，但是在线就是开心的在聊天，不能解决也还有疑难可以提，嘿嘿。</li><li>项目的话，只能说自己考虑的方面还是不够全面，能想的确实是想了，但是能做到却不一定能做，但是自己只要把自己能做的做到就可以了。</li><li>这个月就有一个述职了，所以要开始准备了。</li><li>其他好像没什么了吧，就是自己接触到行业的知识还不够吧。</li></ul><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="检索数据-SELECT语句"><a href="#检索数据-SELECT语句" class="headerlink" title="检索数据(SELECT语句)"></a>检索数据(SELECT语句)</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">//检索单个列表</div><div class="line">SELECT prod_name</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//检索多个列表</div><div class="line">SELECT prod_name,prod_id，prod_price</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//检索所有列</div><div class="line">SELECT *</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//检索不同的值</div><div class="line">SELECT DISTINCT vend_id</div><div class="line">FROM Products;</div><div class="line"></div><div class="line">//限制结果</div><div class="line">(SQL\Access)</div><div class="line">SELECT top 5 prod_name</div><div class="line">FROM Products;</div><div class="line">(DB2)</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">FETCH FIRST 5 ROWS ONLY;</div><div class="line">(Oracle)</div><div class="line">SELECT prod_name</div><div class="line">FROM Product</div><div class="line">WHERE ROWNUM &lt;＝5</div><div class="line">（MySQL\MariaDB\PostgreSQL\SQLite）</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">LIMIT 5;</div><div class="line"></div><div class="line">//为了得到后五行数据</div><div class="line">SELECT prod_name</div><div class="line">FROM Products</div><div class="line">LIMIT 5 OFFSET 5;</div></pre></td></tr></table></figure>]]></content>
     
@@ -35,6 +59,8 @@
     
     
       <category term="日报" scheme="http://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+      <category term="SQL" scheme="http://yangkunyi.com/tags/SQL/"/>
     
   </entry>
   
@@ -475,27 +501,6 @@
       <category term="笔记" scheme="http://yangkunyi.com/tags/%E7%AC%94%E8%AE%B0/"/>
     
       <category term="PHP" scheme="http://yangkunyi.com/tags/PHP/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>WeeklyMind-5</title>
-    <link href="http://yangkunyi.com/2017/12/24/WeeklyMind-5/"/>
-    <id>http://yangkunyi.com/2017/12/24/WeeklyMind-5/</id>
-    <published>2017-12-24T04:23:09.000Z</published>
-    <updated>2019-02-28T13:54:24.825Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>本周开始学习都开始进入最后的报告和复习阶段，不动产报告， 人际关系报告，以及接下来的行销报告和各种总结，然后是期末考试复习，所以这两个周不太有时间自学了。<br><a id="more"></a></p></blockquote><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><ul><li><p>不动产管理小组报告：可能因为对这边的一些名词不太熟悉，所以报告的时候自己有一点说不清楚，不知道该如何表达自己的想法；不过也是没有准备充分的表现。</p></li><li><p>人际关系小组报告：我们小组的主题是社交软件对大学生人际关系的影响，自己准备的ying<br>影响的好坏部分，这次就好很多了，自己有事先练习自己不熟悉的稿子，报告的时候就能很顺利的讲下来。</p></li><li><p>行销管理小组讨论：这样的小组讨论是很重要的我觉得，以后作为一个想要在互联网公司工作的人，这种小组讨论的能力是必须具备的，而自己在讨论中的表现还算行，队友们也很给力，最后分工也很快敲定下来，希望最后的小组报告也能一切顺利。</p></li><li><p>财务管理和西方哲学史也都剩下最后一节课了，所以要抓紧时间复习了啊！</p></li></ul><h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul><li>本周的天气都不错，前两天很冷，后面都有着充足的阳光。</li><li>周四人际关系报告完回寝室的路上，在马路中间和它相遇了，它就好像在那里等我一样，我当时还在看手机，却不经意的一个转头，看见它就那样安静的躺在马路上，心里当时唯一的想法就是不要让来往的车辆压着它了，于是把它带了回来。<br><img src="http://otn4ut2th.bkt.clouddn.com/blogTIM%E5%9B%BE%E7%89%8720171224121759.jpg" alt="此处输入图片的描述"></li><li>今天是平安夜，明天是圣诞节，作为一个不怎么过圣诞节的我来说，吃一个苹果就足够了，还有就是今晚和室友约着去吃火（tang）锅，这可能是自己在这边的最后一顿火锅了吧！</li><li>周五去看了旁边的交大，只是去吃了有名的松饼，所以也没有来得及细看整个学校，唯一的感觉就是看到的建筑都很有设计感。</li></ul><h2 id="待更新事项"><a href="#待更新事项" class="headerlink" title="待更新事项"></a>待更新事项</h2><ul><li>不动产管理上节课的评价和学期总结</li><li>关于台湾的三千字</li><li>复习</li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;本周开始学习都开始进入最后的报告和复习阶段，不动产报告， 人际关系报告，以及接下来的行销报告和各种总结，然后是期末考试复习，所以这两个周不太有时间自学了。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="周记" scheme="http://yangkunyi.com/tags/%E5%91%A8%E8%AE%B0/"/>
     
   </entry>
   
