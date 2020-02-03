@@ -112,7 +112,7 @@
 
 
 
-  <meta name="keywords" content="前端,分享,笔记," />
+  <meta name="keywords" content="前端,笔记,分享," />
 
 
 
@@ -687,9 +687,9 @@
           
             <href="/tags/前端/" rel="tag"><i class="fa fa-tag"></i> 前端</a>
           
-            <href="/tags/分享/" rel="tag"><i class="fa fa-tag"></i> 分享</a>
-          
             <href="/tags/笔记/" rel="tag"><i class="fa fa-tag"></i> 笔记</a>
+          
+            <href="/tags/分享/" rel="tag"><i class="fa fa-tag"></i> 分享</a>
           
         </div>
       
@@ -903,7 +903,19 @@
         
       </div>
     </main>
-
+<canvas id="live2dcanvas" width="300" height="600" class="live2d"></canvas>
+  <%- live2d("live2dcanvas") %>
+  <style>
+  .live2d{
+    position: fixed;
+    bottom: -30px;
+    right: 0px;
+    z-index: 999;
+    width: 150px;
+    height: 300px;
+    pointer-events: none;
+  }
+</style>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>

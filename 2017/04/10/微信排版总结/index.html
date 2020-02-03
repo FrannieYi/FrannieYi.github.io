@@ -765,7 +765,19 @@
         
       </div>
     </main>
-
+<canvas id="live2dcanvas" width="300" height="600" class="live2d"></canvas>
+  <%- live2d("live2dcanvas") %>
+  <style>
+  .live2d{
+    position: fixed;
+    bottom: -30px;
+    right: 0px;
+    z-index: 999;
+    width: 150px;
+    height: 300px;
+    pointer-events: none;
+  }
+</style>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
