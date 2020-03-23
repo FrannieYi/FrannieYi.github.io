@@ -1937,7 +1937,7 @@ pre .javascript .function {
   color: #fff;
 }
 .links-of-author {
-  margin-top: 0px;
+  margin-top: 200px;
 }
 .links-of-author a {
   display: inline-block;
@@ -1955,7 +1955,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c645a3;
+  background: #a761e5;
 }
 .links-of-blogroll {
   font-size: 13px;
