@@ -1814,7 +1814,7 @@ pre .javascript .function {
 .sidebar-inner {
   position: relative;
   padding: 20px 10px;
-  color: #fff;
+  color: #666;
   text-align: center;
 }
 .site-overview-wrap {
@@ -1955,7 +1955,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #2df6ff;
+  background: #f5f2ee;
 }
 .links-of-blogroll {
   font-size: 13px;

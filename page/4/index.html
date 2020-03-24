@@ -437,7 +437,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/10/WeeklyMind-3/#more" rel="contents">
+            <a class="btn" href="/2017/12/10/WeeklyMind-3/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -617,7 +617,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/06/用户验证与数据库/#more" rel="contents">
+            <a class="btn" href="/2017/12/06/用户验证与数据库/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -796,7 +796,7 @@
 <p>这是第二次整理讨论的内容，本次内容有点深奥，值得细嚼慢咽。<br>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/03/坎帕斯学院日常讨论-2/#more" rel="contents">
+            <a class="btn" href="/2017/12/03/坎帕斯学院日常讨论-2/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -976,7 +976,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/12/02/WeeklyMind-2/#more" rel="contents">
+            <a class="btn" href="/2017/12/02/WeeklyMind-2/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1156,7 +1156,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/11/19/WeeklyMind-1/#more" rel="contents">
+            <a class="btn" href="/2017/11/19/WeeklyMind-1/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1336,7 +1336,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/11/17/PHP学习笔记/#more" rel="contents">
+            <a class="btn" href="/2017/11/17/PHP学习笔记/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1516,7 +1516,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/11/16/JavaScript调试/#more" rel="contents">
+            <a class="btn" href="/2017/11/16/JavaScript调试/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1696,7 +1696,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/11/15/域名的购买和绑定/#more" rel="contents">
+            <a class="btn" href="/2017/11/15/域名的购买和绑定/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -1876,7 +1876,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/09/30/学习PHP之环境搭建/#more" rel="contents">
+            <a class="btn" href="/2017/09/30/学习PHP之环境搭建/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2056,7 +2056,7 @@
 </blockquote>
           <!--noindex-->
           <div class="post-button text-center">
-            <a class="btn" href="/2017/08/04/画地为牢/#more" rel="contents">
+            <a class="btn" href="/2017/08/04/画地为牢/#espandi" rel="contents">
               阅读全文 &raquo;
             </a>
           </div>
@@ -2177,6 +2177,12 @@
               </a>
             </div>
           
+          
+          <!-- 音乐播放器-->
+          <link rel="stylesheet" href="/dist/APlayer.min.css">
+          <div id="aplayer"></div>
+          <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+          <script type="text/javascript" src="/dist/music.js"></script>
 
           
             <div class="links-of-author motion-element">
@@ -2218,12 +2224,11 @@
 
         </div>
       </section>
-
+      
       
 
       
 
-    </div>
   </aside>
 
 
@@ -2243,22 +2248,24 @@
   
 </div>
 
-<!-- <div class="powered-by">
-<i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
+<div class="powered-by">
+<i class="fa fa-user-md"></i><tip id="busuanzi_container_site_uv">
   访问用户(uv) : <span id="busuanzi_value_site_uv"></span>
-</span>
+</tip>
 </div>
 <div class="powered-by">
-<i class="fa fa-eye"></i><span id="busuanzi_container_site_pv">
+<i class="fa fa-eye"></i><tip id="busuanzi_container_site_pv">
   访问量(pv) : <span id="busuanzi_value_site_pv"></span>
-</span>
-</div> -->
+</tip>
+</div>
 
+<!-- 
 <div class="powered-by">
 <i class="fa fa-user-md"></i><span id="busuanzi_container_site_uv">
   本站访客数:<span id="busuanzi_value_site_uv"></span>
 </span>
 </div>
+-->
 
 
 
@@ -2267,6 +2274,8 @@
 
 
 
+
+<!-- 访问数量代码 -->
 
         
 
@@ -2557,12 +2566,15 @@
   
 
 
-  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":"flase"},"react":{"opacity":0.7},"log":false});</script>
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":true,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":"flase"},"react":{"opacity":0.7},"log":false});</script>
 
+
+<!-- 音乐播放器
   <link rel="stylesheet" href="/dist/APlayer.min.css">
   <div id="aplayer"></div>
   <script type="text/javascript" src="/dist/APlayer.min.js"></script>
   <script type="text/javascript" src="/dist/music.js"></script>
+-->
 
 </html>
 <!-- 页面点击小红心 -->
