@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>人间一趟</title>
+  
+  
+  <link href="https://yangkunyi.com/atom.xml" rel="self"/>
+  
+  <link href="https://yangkunyi.com/"/>
+  <updated>2022-06-06T11:59:04.662Z</updated>
+  <id>https://yangkunyi.com/</id>
+  
+  <author>
+    <name>FrannieYang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://yangkunyi.com/2022/06/06/test/"/>
+    <id>https://yangkunyi.com/2022/06/06/test/</id>
+    <published>2022-06-06T11:59:04.000Z</published>
+    <updated>2022-06-06T11:59:04.662Z</updated>
+    
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>服务产品思维</title>
+    <link href="https://yangkunyi.com/2022/04/20/%E6%9C%8D%E5%8A%A1%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/"/>
+    <id>https://yangkunyi.com/2022/04/20/%E6%9C%8D%E5%8A%A1%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</id>
+    <published>2022-04-20T02:14:58.000Z</published>
+    <updated>2022-06-06T11:49:30.972Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="服务产品思维"><a href="#服务产品思维" class="headerlink" title="服务产品思维"></a>服务产品思维</h1><blockquote><p>说在前面：服务产品这个词自己已经不陌生了，之前的大部分工作都是在服务产品的设计上，但是概念上的理解，还是过于陌生，因此记下来加深印象的同时，让自己的认识更加深刻。</p></blockquote><hr><h3 id="服务产品定义"><a href="#服务产品定义" class="headerlink" title="服务产品定义"></a>服务产品定义</h3><blockquote><p>服务产品是指不具有实体，而以各种劳务形式表现出来的无形产品。如旅游业、信息咨询、法律服务、金融服务等。菲利普·科特勒认为：服务是一方能够向另一方提供的基本上是无形的任何功效和利益，并且不导致任何所有权的发生。它的生产可能与某种有形产品密切联系在一起，也可能毫无联系。</p></blockquote><p>很表象的理解就是服务产品不同于实体的可见性，流程、规则等服务元素虽然可以文档可视化，但是实际最终整体的服务结果并不是一个规则或者一个流程就足够的，而是多流程、多规则的组合结果。并且该组合过程的随机性根据用户需求是完全不一样的，所以服务对于不同的个体来说都是个性化的。</p><blockquote><p>据此，服务产品又可区分为以设备为基础的服务产品和以人为基础的服务产品两部分。服务产品就有无形性、不可分离性、易逝性、可变性、相互替代性等。因此，提供此类产品的企业应加强服务质量管理，提高服务人员综合素质，以提高企业的知名度和美誉度；定价更为灵活；多倾向于顾客导向定价；直销和经由中介机构销售较多采用；正确利用人员推销和广告。</p></blockquote><p>与其说服务产品的区分，不如说是服务产品的简单组成元素，包含上图所示的内容。（ps：后文会通过服务产品的设计过程描述，更准确的去定义服务产品的组成。）</p><p>理论参考：<a href="https://wiki.mbalib.com/wiki/%E6%9C%8D%E5%8A%A1%E4%BA%A7%E5%93%81#.E6.9C.8D.E5.8A.A1.E4.BA.A7.E5.93.81.E7.9A.84.E7.89.B9.E5.BE.81.07UNIQ22b6dfce4dcbe419-nowiki-0000000D-QINU3.07UNIQ22b6dfce4dcbe419-nowiki-0000000E-QINU">服务产品（servicing products)</a>。</p><hr><h3 id="服务产品案例【搭建质量服务产品的心路历程】"><a href="#服务产品案例【搭建质量服务产品的心路历程】" class="headerlink" title="服务产品案例【搭建质量服务产品的心路历程】"></a>服务产品案例【搭建质量服务产品的心路历程】</h3><blockquote><p>这里引入一个工作中的例子来更深刻的理解以上的理论内容。</p></blockquote><h4 id="老规矩，一切想法的源头都是故事。"><a href="#老规矩，一切想法的源头都是故事。" class="headerlink" title="老规矩，一切想法的源头都是故事。"></a>老规矩，一切想法的源头都是故事。</h4><h5 id="【第一个故事】"><a href="#【第一个故事】" class="headerlink" title="【第一个故事】"></a>【第一个故事】</h5><p>质量管理部门牵头完成了“极端红一高危范围”的拟定、评审和确认。评审确认会议在上周就已经完成，但是业务应用团队还是会一直不确认实际应用时间和范围。该处的不确认的体现：</p><p>1、 是否已经生效？<br>2、 我在哪里可以查到？会议之后还有变更吗？<br>3、 隐藏的问题：如有不清楚的地方，是否可以清楚明白的获得解答（最好是白纸黑字，易懂无歧义，能触达到每个人）</p><p>由此，!!#cc0000 <strong>业务的担忧实际是对信息的不确认，那是不是所有此类信息都会存在这种同步困难？应该怎么同步呢？</strong>!!</p><h4 id="【第二个故事】"><a href="#【第二个故事】" class="headerlink" title="【第二个故事】"></a>【第二个故事】</h4><p>质量管理组的同学天天都会收到各种各样的问题，当然质量组同学是期望所有的问题都支持、协助去解决，但同样的问题被反复问到多次，还是没有完全普及到所有业务同学这就样质量组的同学为难了。</p><p>小A：我上传的数据表有12条数据，为什么已上传数据只展示了8条？【质量数据】–涉及指标和考核的信息对齐<br>小B：我在平台上操作质检提交完成后为什么短时间内还能查出来呢？【质量平台】–工具平台与工作效率<br>小C：【抽样理论】–方法论和质量知识<br>小D：质检对标准有疑问或与人工理解存在偏差时，是否提出问题并与标准团队拉齐执行尺度，单点案例反馈是否可以以点盖面作为质检出错结果？【质量标准】–与日常执行相关的依据<br>…….</p><p><strong>以上问题可以看出，!!#cc0000 业务侧对质量信息的需求有很多，包含咨询、学习、协助等。那针对这些信息每次都要解答一遍是不是太费力了？应该如何让一个问题同步到所有需要知晓的同学呢？!!质量管理组针对该类问题都有自己的解答，只是每次回答的仅仅是一个人的问题，不是一群人的问题。</strong></p><h4 id="“咀嚼”故事"><a href="#“咀嚼”故事" class="headerlink" title="“咀嚼”故事"></a>“咀嚼”故事</h4><p>故事讲完了，可相同的问题却一直存在，我们可以理解以上故事里我们迫切<strong>需要一个大家公认的地方，实时更新此类信息，并且提供咨询、支撑和协助等横向支撑业务的能力。</strong>一方面为了解决业务侧对质量信息的咨询需求；另一方面也是为了让质量管理组有一个与业务互动交流的渠道。</p><p>我知道这一整套服务目前是每个人或者每个小团队独立支撑的，如何才能整合这一些独立的支撑能力，形成完整的一个质量支撑面呢？</p><p>这个时候我想到了服务号，作为1-3个服务人员与整个部门同学互动的枢纽，它起到了至关重要的作用。它之所以被大家共识的原因：</p><ol><li>官方承认的渠道</li><li>24小时服务的支持</li><li>降低了社交成本（特别针对社恐人士的心理层面）</li></ol><h3 id="构思一个服务产品"><a href="#构思一个服务产品" class="headerlink" title="构思一个服务产品"></a>构思一个服务产品</h3><p>故事“咀嚼”到这里，我们开始思考，是不是也可以建立这样一条通道来横向支撑所有部门同学对质量的需求？</p><h5 id="1、底层服务需要的内容支撑从哪里来？【信息源】"><a href="#1、底层服务需要的内容支撑从哪里来？【信息源】" class="headerlink" title="1、底层服务需要的内容支撑从哪里来？【信息源】"></a>1、底层服务需要的内容支撑从哪里来？【信息源】</h5><p>在常用的办公场景中，wiki作为业务知识库而存在，因此所有的服务内容，我们可以依赖该平台来实现信息的承载和知识的沉淀。</p><h5 id="2、如何打通横向沟通的渠道？【信息的传递】"><a href="#2、如何打通横向沟通的渠道？【信息的传递】" class="headerlink" title="2、如何打通横向沟通的渠道？【信息的传递】"></a>2、如何打通横向沟通的渠道？【信息的传递】</h5><p>沟通即存在交互与信息的传递，目前企业微信是最便捷的渠道，学习成本最低且能与每一位同学都能随时建立联系。因此企业微信服务号是一条不错的途径来打通该渠道，实现期望的信息传递和交互。</p><h5 id="3、长线运营的便利性如何实现？【交互的高效和便捷】"><a href="#3、长线运营的便利性如何实现？【交互的高效和便捷】" class="headerlink" title="3、长线运营的便利性如何实现？【交互的高效和便捷】"></a>3、长线运营的便利性如何实现？【交互的高效和便捷】</h5><p>服务上为了提高效率，也减少内部的重复工作，沉淀的内容可以转化为知识点由机器人【智能开放平台的能力】直接解答，让该部分重复工作的精力得到解放。另一方面，知识的沉淀持续下去在未来的应用中可以去发现和挖掘更多的场景。</p><p>综上，那我们可以利用wiki+企业微信服务号+智能开放平台的能力来组建一套完整的平台和互动机制。</p><h3 id="理论存在，开始实践。"><a href="#理论存在，开始实践。" class="headerlink" title="理论存在，开始实践。"></a>理论存在，开始实践。</h3><h5 id="1、信息整理"><a href="#1、信息整理" class="headerlink" title="1、信息整理"></a>1、信息整理</h5><p>确认利用!!#cc0000 <strong>当前客观存在的，且有一定公信力的平台-iwiki</strong>!!来作为服务内容的信息承载和知识沉淀之后，就需要整理出整体信息的架构，并协同各知识层面的同学对内容进行补充完善。</p><h5 id="2、渠道打通"><a href="#2、渠道打通" class="headerlink" title="2、渠道打通"></a>2、渠道打通</h5><ol><li>企业微信服务号申请</li><li>企业微信与智能开放平台对接</li><li>企业微信服务号服务窗搭建</li></ol><h5 id="3、智能服务的建设"><a href="#3、智能服务的建设" class="headerlink" title="3、智能服务的建设"></a>3、智能服务的建设</h5><p>（1）智能服务与企业微信服务号的打通</p><p>实现在企业微信上应用已经完成配置的机器人，且采用机器人优先服务的方式，当机器人无法解答的时候再由人工直接受理相关咨询或需求。</p><p>（2）智能服务的知识体系建设 </p><ul><li>根据wiki内容沉淀对应的知识体系【持续沉淀、运营】</li></ul><p> <em>注意：所有业务时效性信息需要根据业务实时更新。</em> </p><hr><blockquote><p>说在最后：质量服务产品初步建设已经基本完成，运营才刚刚开始，产品的建设是离不开运营的，因此在整个产品设计与实现过程中没有完全融入运营的概念是本次质量服务产品设计完成的不足之处，但好在整体设计都没有完全限定业务的适用范围，也没有过于定制化的实现某个功能，都可以根据业务运营来进行对应的调整，期待后续的应用与实践。</p></blockquote>]]></content>
+    
+    
+    <summary type="html">这是一种产品思维的分支，逻辑上自己想学习更多</summary>
+    
+    
+    
+    <category term="工作" scheme="https://yangkunyi.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="服务产品" scheme="https://yangkunyi.com/tags/%E6%9C%8D%E5%8A%A1%E4%BA%A7%E5%93%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于微信服务号的窗口页面搭建</title>
+    <link href="https://yangkunyi.com/2022/04/02/%E5%9F%BA%E4%BA%8E%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%8F%B7%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B5%E9%9D%A2/"/>
+    <id>https://yangkunyi.com/2022/04/02/%E5%9F%BA%E4%BA%8E%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%8F%B7%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B5%E9%9D%A2/</id>
+    <published>2022-04-02T06:21:37.000Z</published>
+    <updated>2022-06-06T11:49:30.970Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基于微信服务号的窗口页面搭建"><a href="#基于微信服务号的窗口页面搭建" class="headerlink" title="基于微信服务号的窗口页面搭建"></a>基于微信服务号的窗口页面搭建</h1><blockquote><p>说在前面：工作需要，在服务号的建立过程中，除了关联底层智能ai服务以外，更希望有一个web面板提供直观的服务，因此期望搭建一个web应用来支撑，该文档记录起实现过程。</p></blockquote><hr><h4 id="大致的实现逻辑"><a href="#大致的实现逻辑" class="headerlink" title="大致的实现逻辑"></a>大致的实现逻辑</h4><p>在实现之前咨询和确认了大量的信息，如下：<br><strong>1、服务号的申请流程<br>2、服务号web窗口的实现方式【web链接配置即可】<br>3、底层智能服务的支撑：微信智能开放平台&amp;腾讯云智能对话平台TBP</strong></p><blockquote><p>注意：说明下微信对话开放平台和腾讯云智能对话平台TBP的区别，功能上差别并不大，且微信对话开放平台关于bot的延展功能和数据观测功能会更加完善，但是TBP的转人工拉群功能实用性较高，因此在对bot功能要求不高的场景下，还是选用TBP来应用。</p></blockquote><h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><h4 id="bot与服务号的绑定"><a href="#bot与服务号的绑定" class="headerlink" title="bot与服务号的绑定"></a>bot与服务号的绑定</h4><blockquote><p>其实这个步骤根据官网文档的指引完成对应的配置就能关联上了，而机器人是否能按照想象中那样去服务，属于机器人运营的知识，后续希望有机会继续记录和分享该部分内容，本篇内容主要说明web服务窗的搭建过程。</p></blockquote><p>所以，烦请参考企业微信官方文档：<a href="https://developers.weixin.qq.com/doc/aispeech/platform/INTRODUCTION.html">微信对话开放平台</a>、<a href="https://cloud.tencent.com/document/product/1060">腾讯云智能对话平台TBP</a></p><h4 id="前端大致效果"><a href="#前端大致效果" class="headerlink" title="前端大致效果"></a>前端大致效果</h4><p>页面效果图<br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/qa_littlesix.png?raw=true" alt="页面效果图"></p><blockquote><p>内容详情说明，因为所有信息都存在对应的页面支持，因此仅仅需要一个前端展示页面，再通过超链接跳转对应页面即可。</p></blockquote><h4 id="前端框架的搭建与实现"><a href="#前端框架的搭建与实现" class="headerlink" title="前端框架的搭建与实现"></a>前端框架的搭建与实现</h4><blockquote><p>为了让体现更加友好，选择了用一个框架去实现，而不是简单的一个html文档。</p></blockquote><p>因为电脑还咩有vue环境，所以走一套，并且完成简单的手脚架之后。<br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vue-web.png?raw=true" alt="vue2.0的初始界面"></p><blockquote><p>为了页面的排版合理，也引入了<code>element-ui</code>来实现页面组件的展示。</p></blockquote><p>废话不说，直接安装</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i element-ui -S</span><br></pre></td></tr></table></figure><p>在main.js中引入element组件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*引入element组件*/</span><br><span class="line">import ElementUI from &#x27;element-ui&#x27;;</span><br><span class="line">import &#x27;element-ui/lib/theme-chalk/index.css&#x27;;</span><br><span class="line">Vue.use(ElementUI);</span><br></pre></td></tr></table></figure><p>其他使用细节及组件参考官网：<a href="https://element.eleme.io/#/zh-CN/component/installation">https://element.eleme.io/#/zh-CN/component/installation</a></p><h4 id="后端发布"><a href="#后端发布" class="headerlink" title="后端发布"></a>后端发布</h4><p>就直接用<code>vue</code>手脚架自带的打包功能对项目进行打包</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure><p>生成<code>dist</code>文件，打包文件放到对应的服务器上即可访问</p><blockquote><p>不过在此处自己遇到了一个放到服务器上无法访问的问题，最终定位是文件的引用方式不当造成的，最终解决方案是在<code>vue.config.js</code>文件中增加了以下代码，已实现<code>dist</code>文件的正确使用。</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">const &#123; defineConfig &#125; = require(&#x27;@vue/cli-service&#x27;)</span><br><span class="line">module.exports = defineConfig(&#123;</span><br><span class="line">  transpileDependencies: true,</span><br><span class="line">  /*新增publishPath配置*/</span><br><span class="line">  publicPath: process.env.NODE_ENV === &#x27;production&#x27; ? &#x27;./&#x27; : &#x27;/&#x27;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>得到最后发布到服务器之后的访问链接，基本上就已经完成了，最后只需完成服务号的对应配置即可。</p><hr><blockquote><p>说在最后：这段时间的工作比较emo，该篇文章的完成心情上发生了很大的变化，但是还是期望能继续坚持下去。既然选择的完成这篇文章，我认为自己已经度过了最emo的过程，期望明天早上的风再吹到我脸上的时候，我能微笑以对。2022&#x2F;4&#x2F;20</p></blockquote>]]></content>
+    
+    
+    <summary type="html">为了让门户增加更多的快捷方式，用VUE搭建一个web应用</summary>
+    
+    
+    
+    <category term="工作" scheme="https://yangkunyi.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="前端" scheme="https://yangkunyi.com/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="工作" scheme="https://yangkunyi.com/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+    <category term="VUE" scheme="https://yangkunyi.com/tags/VUE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我在天堂遇到的五个人</title>
+    <link href="https://yangkunyi.com/2022/03/21/%E6%88%91%E5%9C%A8%E5%A4%A9%E5%A0%82%E9%81%87%E5%88%B0%E7%9A%84%E4%BA%94%E4%B8%AA%E4%BA%BA/"/>
+    <id>https://yangkunyi.com/2022/03/21/%E6%88%91%E5%9C%A8%E5%A4%A9%E5%A0%82%E9%81%87%E5%88%B0%E7%9A%84%E4%BA%94%E4%B8%AA%E4%BA%BA/</id>
+    <published>2022-03-21T02:48:47.000Z</published>
+    <updated>2022-06-06T11:49:30.971Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面：与小伙伴一起参与读书活动，第一本书是《我在天堂遇到的五个人》，治愈的过程以此记录下来。【ps：听说是一本治愈向的书籍，目前感觉是比较清新的】</p></blockquote><h3 id="一些句子摘要"><a href="#一些句子摘要" class="headerlink" title="一些句子摘要"></a>一些句子摘要</h3><ul><li>世上没有偶然的行为。我们都是联系在一起的。你无法将一个生命和另一个分割开来，就像风和微风紧密相连一样。</li><li>我们每一个人都会影响到另一个人，另一个人又回影响到下一个人，世界上充满了各式各样的故事，但是，所有的故事都连成了一个故事。</li></ul><hr><p>待更新～～～</p>]]></content>
+    
+    
+    <summary type="html">一本书的读后感</summary>
+    
+    
+    
+    <category term="生活" scheme="https://yangkunyi.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="随笔记" scheme="https://yangkunyi.com/tags/%E9%9A%8F%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="读书" scheme="https://yangkunyi.com/tags/%E8%AF%BB%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>迎春的周末</title>
+    <link href="https://yangkunyi.com/2022/03/14/%E8%BF%8E%E6%98%A5%E7%9A%84%E5%91%A8%E6%9C%AB/"/>
+    <id>https://yangkunyi.com/2022/03/14/%E8%BF%8E%E6%98%A5%E7%9A%84%E5%91%A8%E6%9C%AB/</id>
+    <published>2022-03-14T07:23:37.000Z</published>
+    <updated>2022-06-06T11:49:30.974Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="春的味道花知道"><a href="#春的味道花知道" class="headerlink" title="春的味道花知道"></a>春的味道花知道</h1><p>2022.3.12<br>樱花繁盛伴出行🌸<br>芸薹纷飞半边天🌼<br>nice～nice～nice～</p><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/flower01.jpg?raw=true" alt="flower01"><br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/flower02.jpg?raw=true" alt="flower02"><br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/flower03.jpg?raw=true" alt="flower03"><br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/flower04.jpg?raw=true" alt="flower04"><br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/flower05.jpg?raw=true" alt="flower05"><br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/flower06.jpg?raw=true" alt="flower06"></p><blockquote><p>设备：佳能200d+苹果滤镜参数调整，个人都是凭感觉调整，没有系统学习过</p></blockquote><p>【地点1：成都黄龙溪旁边的一座小山坡，有风车，很多油菜花，最近几周都适合去逛逛，再不去油菜花就没有啦～】<br>【地点2：大源地铁站旁边的樱花，白的，红的，差点看到就不想走了，快出来看～】</p>]]></content>
+    
+    
+    <summary type="html">春天的周末与两三好友的闲逛</summary>
+    
+    
+    
+    <category term="生活" scheme="https://yangkunyi.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="随笔记" scheme="https://yangkunyi.com/tags/%E9%9A%8F%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="春天" scheme="https://yangkunyi.com/tags/%E6%98%A5%E5%A4%A9/"/>
+    
+    <category term="花" scheme="https://yangkunyi.com/tags/%E8%8A%B1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>DjangoStudy1Day</title>
+    <link href="https://yangkunyi.com/2022/03/02/DjangoStudy1Day/"/>
+    <id>https://yangkunyi.com/2022/03/02/DjangoStudy1Day/</id>
+    <published>2022-03-02T06:57:14.000Z</published>
+    <updated>2022-06-06T11:49:30.965Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Django项目学习"><a href="#Django项目学习" class="headerlink" title="Django项目学习"></a>Django项目学习</h1><blockquote><p>说在前面：为了能快速学习该框架的项目发布过程，再重新将流程用该篇文章梳理一遍。</p></blockquote><span id="more"></span><h3 id="1-首先创建一个项目vote"><a href="#1-首先创建一个项目vote" class="headerlink" title="1.首先创建一个项目vote"></a>1.首先创建一个项目vote</h3><p>在对应的文件下打开终端窗口执行以下命令即可创建一个新的Django项目</p><pre><code>django-admin startproject vote</code></pre><p>对应的项目文档就创建好了</p><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-file.png?raw=true" alt="项目文档截图"></p><h3 id="2-为项目添加对应的虚拟环境"><a href="#2-为项目添加对应的虚拟环境" class="headerlink" title="2.为项目添加对应的虚拟环境"></a>2.为项目添加对应的虚拟环境</h3><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-virtural.png?raw=true" alt="配置截图"></p><h3 id="3-启动Django自带的服务器运行项目"><a href="#3-启动Django自带的服务器运行项目" class="headerlink" title="3.启动Django自带的服务器运行项目"></a>3.启动Django自带的服务器运行项目</h3><p>在pycharm终端运行以下代码</p><pre><code>python manage.py runserver</code></pre><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-run.png?raw=true" alt="运行截图"></p><h3 id="4-修改一些配置"><a href="#4-修改一些配置" class="headerlink" title="4.修改一些配置"></a>4.修改一些配置</h3><p>修改项目的配置文件<code>settings.py</code>，改为中文，时区改为重庆</p><pre><code>LANGUAGE_CODE = &#39;zh-hans&#39;TIME_ZONE = &#39;Asia/Chongqing&#39;</code></pre><h4 id="5-创建自己的应用"><a href="#5-创建自己的应用" class="headerlink" title="5.创建自己的应用"></a>5.创建自己的应用</h4><h6 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h6><p>在pycharm的终端中创建新的应用</p><pre><code>python manage.py startapp polls</code></pre><h6 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h6><p>修改应用目录下的视图文件<code>views.py</code></p><pre><code>from django.http import HttpResponsedef show_index(request):    return HttpResponse(&#39;&lt;h1&gt;Hello, Django!&lt;/h1&gt;&#39;)</code></pre><p>修改Django项目目录下的<code>urls.py</code>文件，将视图函数和用户在浏览器中请求的路径对应</p><pre><code>from django.contrib import adminfrom django.urls import pathfrom polls.views import show_indexurlpatterns = [    path(&#39;admin/&#39;, admin.site.urls),    path(&#39;hello/&#39;, show_index),]</code></pre><p>应用模版的配置修改<code>settings.py</code>文件，找到TEMPLATES配置，修改其中的DIRS配置</p><pre><code>TEMPLATES = [&#123;    &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,    &#39;DIRS&#39;: [os.path.join(BASE_DIR, &#39;templates&#39;), ],    &#39;APP_DIRS&#39;: True,    &#39;OPTIONS&#39;: &#123;        &#39;context_processors&#39;: [            &#39;django.template.context_processors.debug&#39;,            &#39;django.template.context_processors.request&#39;,            &#39;django.contrib.auth.context_processors.auth&#39;,            &#39;django.contrib.messages.context_processors.messages&#39;,        ],    &#125;,&#125;,]</code></pre>]]></content>
+    
+    
+    <summary type="html">python学习记录</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="笔记" scheme="https://yangkunyi.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="python" scheme="https://yangkunyi.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>生辰乐</title>
+    <link href="https://yangkunyi.com/2020/12/13/%E7%94%9F%E8%BE%B0%E4%B9%90/"/>
+    <id>https://yangkunyi.com/2020/12/13/%E7%94%9F%E8%BE%B0%E4%B9%90/</id>
+    <published>2020-12-13T14:08:14.000Z</published>
+    <updated>2022-06-06T11:49:30.972Z</updated>
+    
+    <content type="html"><![CDATA[<p>《生辰乐·寄尤安》<br>九月秋风送爽，浓郁红茶飘香;<br>离别一年有余，思念由心满溢。<br>留念闹市橱窗，留下美好时光；<br>无数擦肩拥抱，交换彼此心跳。<br>世道慌乱无措，人心险恶难测；<br>生活漫漫且过，莫要在意太多。<br>十月悄然来临，生辰无奈遥距；<br>愿卿如初微笑，如吾梦里骄傲。</p><p>《生辰乐·寄嘉艺》<br>雪落京城映故宫，寒意滚滚过秦岭；<br>风吹山城染丘林，落叶翩翩盖行径。<br>生于春而归于秋，岁岁年年；<br>辰时起而落于酉，朝朝暮暮。<br>乐享清净半日闲，只与十一论逍遥；<br>怡然自得笑嫣然，亦如初遇仍年少。</p><p>《生辰乐·余生为期》<br>九九重阳秋高气爽，微凉;<br>默默出现凝聚焦点，画面。<br>年轻的热度，感受生命在今夕;<br>选择的方向，聆听结果去目击;<br>八个三岁的小孩，余生为期。</p>]]></content>
+    
+    
+    <summary type="html">友人生辰祝愿</summary>
+    
+    
+    
+    <category term="生活" scheme="https://yangkunyi.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="日常" scheme="https://yangkunyi.com/tags/%E6%97%A5%E5%B8%B8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>八年</title>
+    <link href="https://yangkunyi.com/2020/02/13/%E5%85%AB%E5%B9%B4/"/>
+    <id>https://yangkunyi.com/2020/02/13/%E5%85%AB%E5%B9%B4/</id>
+    <published>2020-02-13T06:53:40.000Z</published>
+    <updated>2022-06-06T11:49:30.969Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面，我还记得那些快乐时光。</p></blockquote><span id="more"></span><p>第一堂课叫遇见<br>最后一堂课叫离别</p><p>一人戏一人陪<br>两人戏互相随<br>一人乏一人追<br>两相交无处回</p><p>是以任性而不为，也惧人言可畏，<br>骤醒眼角泪为谁？狼狈。</p><p>疫时也曾都无谓，但却孤赏景美，<br>妄想伴卿迎春辉，不悔。</p>]]></content>
+    
+    
+    <summary type="html">某位人生旅途的朋友</summary>
+    
+    
+    
+    <category term="心情" scheme="https://yangkunyi.com/categories/%E5%BF%83%E6%83%85/"/>
+    
+    
+    <category term="随笔记" scheme="https://yangkunyi.com/tags/%E9%9A%8F%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>那一场即将醒来的梦</title>
+    <link href="https://yangkunyi.com/2020/02/06/%E9%82%A3%E4%B8%80%E5%9C%BA%E5%8D%B3%E5%B0%86%E9%86%92%E6%9D%A5%E7%9A%84%E6%A2%A6/"/>
+    <id>https://yangkunyi.com/2020/02/06/%E9%82%A3%E4%B8%80%E5%9C%BA%E5%8D%B3%E5%B0%86%E9%86%92%E6%9D%A5%E7%9A%84%E6%A2%A6/</id>
+    <published>2020-02-06T06:08:11.000Z</published>
+    <updated>2022-06-06T11:49:30.974Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面：这一年注定不凡，但却没想到不凡的开始带着如此多的意外。</p></blockquote><span id="more"></span><p>猪年的结束，最后一天除夕终是回到家中……<br>新年的爆竹不再响彻除夕<br>拥挤的车厢没了笑颜<br>团聚的话题变得沉重<br>空荡的街道<br>繁华的夜景孤自耀眼</p><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/dream.jpg?raw=true" alt="除夕的夜晚"></p><p>鼠年的开始，第一天上班竟是在家中……<br>没离开家的自己总是觉得假期还未结束，总是想着哪天醒来能接到通知:<br>“今天所有员工必须回公司上班。”<br>然后我背上行囊再次走上自己的路<br>路上行人纷纷，打车还要排队<br>幸然我抢到票，还有车送我到车站<br>挤上早高峰一般拥挤的地铁……</p><p>生肖到鼠，是一个轮回<br>作为轮回的结束，平安喜乐<br>作为轮回的开始，既然注定不凡<br>那想必这一轮定然超乎所有人的预料<br>黎明固然黑暗<br>但也是离光最近的时刻<br>到时影子都只能跑到你的身后<br>还有何所惧呢？</p><p>愿各自安好~<br>愿平安喜乐~<br>更愿无所畏~</p>]]></content>
+    
+    
+    <summary type="html">疫情的感慨</summary>
+    
+    
+    
+    <category term="生活" scheme="https://yangkunyi.com/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="随笔记" scheme="https://yangkunyi.com/tags/%E9%9A%8F%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Daily5</title>
+    <link href="https://yangkunyi.com/2019/07/18/Daily5/"/>
+    <id>https://yangkunyi.com/2019/07/18/Daily5/</id>
+    <published>2019-07-17T16:20:42.000Z</published>
+    <updated>2022-06-06T11:49:30.965Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面：加班开的会还是挺有意思的，项目了解更多了，但是个人之后的定位，自己还是需要思考。</p></blockquote><span id="more"></span><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul><li>学习了快一个周的投诉内容了，趁着这个机会将自己理解的投诉在梳理一番</li></ul><ol><li>首先要明白为什么会被投诉？</li></ol><ul><li>服务问题</li><li>产品问题（包括业务）</li><li>客户误解</li></ul><ol start="2"><li>其次投诉的组成有哪些？</li></ol><ul><li>对象</li><li>事件</li><li>诉求</li></ul><ol start="3"><li>个人对投诉的定义</li></ol><ul><li>用户的各种不满（包括有理和无理）</li></ul><blockquote><p>其实一个部门要优化，很多的需求都可以从投诉来寻找，因为正是客户投诉的点也正好是我们需要去优化的点。对投诉客户进行分类，分析诉求共同点，提出优化方案，一步一步完善流程和产品，这就是一条优化自身的道路。</p></blockquote><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="SQL各种函数"><a href="#SQL各种函数" class="headerlink" title="SQL各种函数"></a>SQL各种函数</h4><ul><li><code>Concat</code>：连接字符串函数</li><li><code>Concat(vend_name,&#39;(&#39;,vend_country,&#39;)&#39;)</code></li><li><code>RIRIM</code>：去掉字段右边的空格</li><li><code>LIRIM</code>：去掉字段左边的空格</li><li><code>IRIM</code>：去掉字段左右两边的空格</li><li><code>RIRIM(vend_name)</code></li><li><code>AS</code>：赋予别名</li><li><code>RIRIM(vend_name)＋&#39;(&#39;＋RIRIM(vend_country)＋&#39;)&#39; AS vend_title</code></li><li><code>Now()/CURRENT_DATE/CURDATE()/SYSDATE/GETDATE()/DATE()</code>：返回当前时间</li><li><code>SUBSTR()/SUBSTRING()</code>：提取字符串的组成部分</li><li><code>CAST()/CONVERT()</code>：数据类型转换</li><li><code>LEFT()</code>：返回字符串左边的字符</li><li><code>RIGHT()</code>：返回字符串有变动的字符</li><li><code>LENGTH()</code>：返回字符串长度</li><li><code>LOWER()</code>：将字符串转换为小写</li><li><code>UPPER()</code>：将字符串转换为大写</li><li><code>SOUNDEX()</code>：返回字符串的SOUNDEX值</li></ul>]]></content>
+    
+    
+    <summary type="html">sql学习记录</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="日报" scheme="https://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+    <category term="SQL" scheme="https://yangkunyi.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Daily4</title>
+    <link href="https://yangkunyi.com/2019/07/15/Daily4/"/>
+    <id>https://yangkunyi.com/2019/07/15/Daily4/</id>
+    <published>2019-07-15T14:44:58.000Z</published>
+    <updated>2022-06-06T11:49:30.965Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面：今天上了一堂自己觉得十分有用的课，是来自于部门的经理的，很能感受到人与人的区别。</p></blockquote><span id="more"></span><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul><li>学习投诉相关的流程和知识，可能跟天气有关，一天都感觉闷闷的，没什么精神，就跟同事说的那样，知识就是不进脑子，感觉一直在脑子外面徘徊。</li></ul><h2 id="分享（有效的职场“开启模式”）"><a href="#分享（有效的职场“开启模式”）" class="headerlink" title="分享（有效的职场“开启模式”）"></a>分享（有效的职场“开启模式”）</h2><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/%E6%9C%89%E6%95%88%E7%9A%84%E8%81%8C%E5%9C%BA%E5%BC%80%E5%90%AF%E6%A8%A1%E5%BC%8F.jpg?raw=true" alt="有效的职场“开启模式”"></p><ul><li>你最满意今年完成的哪一项任务？</li><li>你今年做的最有价值的一件事是什么？</li></ul><h4 id="雇主的思维方式："><a href="#雇主的思维方式：" class="headerlink" title="雇主的思维方式："></a><strong>雇主的思维方式：</strong></h4><ul><li>你的工作对<strong>部门</strong>产生了什么价值，有结果吗？有数据吗？你能创造什么价值？</li><li>你的过去不错，但<strong>未来</strong>还有多少价值可言挖掘呢？</li></ul><h4 id="个人：学习思维-amp-职场思维"><a href="#个人：学习思维-amp-职场思维" class="headerlink" title="个人：学习思维&amp;职场思维"></a><strong>个人：学习思维&amp;职场思维</strong></h4><h4 id="影响晋升的三个角色："><a href="#影响晋升的三个角色：" class="headerlink" title="影响晋升的三个角色："></a><strong>影响晋升的三个角色：</strong></h4><ul><li>评估者（HR）</li><li>决策者（BOSS）</li><li>影响者（COLLEAGUE）</li></ul><h4 id="影响因素："><a href="#影响因素：" class="headerlink" title="影响因素："></a><strong>影响因素：</strong></h4><ul><li>职场“能见度”</li><li>职场领导力</li><li>工作能力</li></ul><h3 id="一、学会聪明的工作（做一个靠谱的人）"><a href="#一、学会聪明的工作（做一个靠谱的人）" class="headerlink" title="一、学会聪明的工作（做一个靠谱的人）"></a>一、学会聪明的工作（做一个靠谱的人）</h3><blockquote><p>前言：①工作来了不能直接拒绝 ②三思而后行 ③行必果（反馈）</p></blockquote><h4 id="（1）做“正确”的事"><a href="#（1）做“正确”的事" class="headerlink" title="（1）做“正确”的事"></a>（1）做“正确”的事</h4><ul><li>目标管理</li><li>掌握重点</li><li>及时反馈</li></ul><h4 id="（2）正确的做事"><a href="#（2）正确的做事" class="headerlink" title="（2）正确的做事"></a>（2）正确的做事</h4><ul><li>不重新造轮子</li><li>成为改进者</li><li>学会复盘</li></ul><h4 id="（3）做一个靠谱的人"><a href="#（3）做一个靠谱的人" class="headerlink" title="（3）做一个靠谱的人"></a><strong>（3）做一个靠谱的人</strong></h4><ul><li>结论先行，强有力的数据支撑，例证强化大家的印象，重申论点</li><li>善用逻辑树，把难题拆成很多小问题，一个一个解决</li><li>不断超越对方的预期，合理地作出承诺，一旦承诺就要完成</li></ul><h4 id="（4）如何摆脱无意义的事情"><a href="#（4）如何摆脱无意义的事情" class="headerlink" title="（4）如何摆脱无意义的事情"></a>（4）如何摆脱无意义的事情</h4><ul><li>真正重要的事情：</li><li>影响时间长</li><li>影响范围广</li></ul><h3 id="二、领导力的自我养成"><a href="#二、领导力的自我养成" class="headerlink" title="二、领导力的自我养成"></a>二、领导力的自我养成</h3><h4 id="（1）方向感"><a href="#（1）方向感" class="headerlink" title="（1）方向感"></a>（1）方向感</h4><ul><li>大局观（阳台理论）</li><li>阳台理论：当你站在十字路口看到的东西是什么？“退一步”当你站在30楼的阳台上，你又看到了什么？</li><li>更深一层思考</li></ul><h4 id="（2）能量感"><a href="#（2）能量感" class="headerlink" title="（2）能量感"></a>（2）能量感</h4><ul><li>赞美（并不是一个好就可以概括的）</li><li>驱动</li></ul><h4 id="（3）信任感"><a href="#（3）信任感" class="headerlink" title="（3）信任感"></a>（3）信任感</h4><ul><li>一味退让不可取（根据事情的性质来判断）</li><li>好合作，有原则，感反击</li></ul><h4 id="（4）OKR"><a href="#（4）OKR" class="headerlink" title="（4）OKR"></a>（4）OKR</h4><blockquote><p>OKR（Objectives and Key Results）全称「目标和关键成果」，是一套明确和跟踪目标及其完成情况的管理工具和方法。</p></blockquote><h3 id="三、提升职场“能见度”"><a href="#三、提升职场“能见度”" class="headerlink" title="三、提升职场“能见度”"></a>三、提升职场“能见度”</h3><ul><li>给自己贴正面标签</li><li>做跨部门合作项目</li><li>找到职场导师</li><li>穿得更高级一点</li><li>“营销”自己的业绩（结果）</li><li>利用外部曝光度</li></ul><h3 id="四、开放的职场心态"><a href="#四、开放的职场心态" class="headerlink" title="四、开放的职场心态"></a>四、开放的职场心态</h3><blockquote><p>“巧者劳，智者忧，无能者，无所求，饱食而遨游。    ——庄子”</p></blockquote><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/%E5%9B%9B%E8%B1%A1%E9%99%90%E5%8E%9F%E5%88%99.PNG?raw=true" alt="四象限原则"><br>流程：平庸层——&gt;潜力层——&gt;奋斗层——&gt;精英层<br>（四象限原则）</p><ul><li>“变”：</li><li>摆脱职业发展线性思维（如：只要…就…）</li><li>做好职场隐形晋升</li><li>这个世界上唯一不变的就是变化</li></ul><h2 id="分享待跟进事项"><a href="#分享待跟进事项" class="headerlink" title="分享待跟进事项"></a>分享待跟进事项</h2><ul><li><p>建立自己的“优势银行”</p></li><li><p>微信文案</p></li></ul>]]></content>
+    
+    
+    <summary type="html">sql学习记录</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="日报" scheme="https://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+    <category term="分享" scheme="https://yangkunyi.com/tags/%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WeeklyMind-10</title>
+    <link href="https://yangkunyi.com/2019/07/14/WeeklyMind-10/"/>
+    <id>https://yangkunyi.com/2019/07/14/WeeklyMind-10/</id>
+    <published>2019-07-14T14:47:35.000Z</published>
+    <updated>2022-06-06T11:49:30.967Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面：前天看了一个数据提取的sql，发现自己的差距还很大呀，所以这个周末会继续学习。</p></blockquote><span id="more"></span><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul><li>保证自己的心态没有问题就好了，一切都在开始慢慢步入正轨，跟同事的第一次聚餐也结束了，大家这两个月的实习生活也十分的精彩，希望在每个小伙伴在接下来的工作里都能有所成长和发展。</li><li>收到一个可以写点东西的消息，这个周末会思考一下，如果能有所展现也是不错的。</li></ul><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="一、何为战略设计思维（看书）"><a href="#一、何为战略设计思维（看书）" class="headerlink" title="一、何为战略设计思维（看书）"></a>一、何为战略设计思维（看书）</h4><h3 id="二、SQL"><a href="#二、SQL" class="headerlink" title="二、SQL"></a>二、SQL</h3><h5 id="组合WHERE子句"><a href="#组合WHERE子句" class="headerlink" title="组合WHERE子句"></a>组合WHERE子句</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">//AND 操操作符</span><br><span class="line">SELECT prod_name,prod_price,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id＝&#x27;DLL01&#x27; AND prod_price&lt;＝4;</span><br><span class="line"></span><br><span class="line">//OR 操作符</span><br><span class="line">SELECT prod_name,prod_price,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id＝&#x27;DLL01&#x27; OR vend_id＝&#x27;BRS01&#x27;;</span><br><span class="line"></span><br><span class="line">//求值顺序（AND先于OR）</span><br><span class="line">SELECT prod_name,prod_price,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE (vend_id＝&#x27;DLL01&#x27; OR vend_id＝&#x27;BRS01&#x27;)</span><br><span class="line">      AND prod_price&gt;＝10;</span><br><span class="line"></span><br><span class="line">//IN操作符</span><br><span class="line">SELECT prod_name,prod_price,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id IN (&#x27;DLL01&#x27;,&#x27;BRS01&#x27;)</span><br><span class="line">ORDER BY prod_name;</span><br><span class="line"></span><br><span class="line">//同上功能</span><br><span class="line">SELECT prod_name,prod_price,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id ＝ &#x27;DLL01&#x27; OR vend_id ＝ &#x27;BRS01&#x27;</span><br><span class="line">ORDER BY prod_name;</span><br><span class="line"></span><br><span class="line">//NOT操作符(等通于不等于的功能)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">WHERE NOT vend_id ＝ &#x27;DLL01&#x27;</span><br><span class="line">ORDER BY prod_name;</span><br></pre></td></tr></table></figure><ul><li>为什么要用IN操作符？</li><li>在很多合法选项时，IN操作符的语法更清晰，更直观</li><li>在与其他AND和OR操作符组合使用IN的时候，求值顺序更加容易管理</li><li>IN操作符一般比一组OR操作符执行得更快</li><li>IN最大的优点是可以包含其他SELECT语句，能够更动态地建立WHERE子句</li></ul><h5 id="用通配符进行过滤"><a href="#用通配符进行过滤" class="headerlink" title="用通配符进行过滤"></a>用通配符进行过滤</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">//LIKE操作符</span><br><span class="line">// % 表示任何字符出现任意次数</span><br><span class="line">SELECT prod_name,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_name LIKE &#x27;Fish%&#x27;;</span><br><span class="line"></span><br><span class="line">SELECT prod_name,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_name LIKE &#x27;%bean bag%&#x27;;</span><br><span class="line"></span><br><span class="line">SELECT prod_name,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_name LIKE &#x27;F%y&#x27;;</span><br><span class="line"></span><br><span class="line">// _ 与 % 类似，但只匹配单个字符</span><br><span class="line">SELECT prod_name,prod_id</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_name LIKE &#x27;__ inch teddy bear&#x27;;</span><br><span class="line"></span><br><span class="line">// [] 用来指定一个字符集</span><br><span class="line">SELECT cust_contact</span><br><span class="line">FROM Customers</span><br><span class="line">WHERE cust_contact LIKE &#x27;[JM]%&#x27;</span><br><span class="line">ORDER BY cust_contact;</span><br><span class="line"></span><br><span class="line">// 反义用^来表示(或者用NOT来表示)</span><br><span class="line">SELECT cust_contact</span><br><span class="line">FROM Customers</span><br><span class="line">WHERE cust_contact LIKE &#x27;[^JM]%&#x27;</span><br><span class="line">ORDER BY cust_contact;</span><br></pre></td></tr></table></figure><ul><li>使用通配符的技巧：</li><li>不要过度使用通配符</li><li>在确实需要使用通配符的时候，也尽量不要把它用在搜索模式的开始处。将通配符放在开始，搜索是最慢的。</li><li>仔细注意通配符的位置。</li></ul>]]></content>
+    
+    
+    <summary type="html">日常记录</summary>
+    
+    
+    
+    <category term="工作" scheme="https://yangkunyi.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="SQL" scheme="https://yangkunyi.com/tags/SQL/"/>
+    
+    <category term="周报" scheme="https://yangkunyi.com/tags/%E5%91%A8%E6%8A%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Daily3</title>
+    <link href="https://yangkunyi.com/2019/07/11/Daily3/"/>
+    <id>https://yangkunyi.com/2019/07/11/Daily3/</id>
+    <published>2019-07-11T14:54:57.000Z</published>
+    <updated>2022-06-06T11:49:30.965Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>写在前面：人啊，总是对自己求而不得的东西有着无比的向往，一旦得到了又会是怎么样呢？</p></blockquote><span id="more"></span><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>比较轻松的一天，工作是自己喜欢又沉浸其中的，我很高兴自己还保持着那样一颗平常心，尽管周遭事物与人都在改变。</p><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//相等检验，使用WHERE子句</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price＝3.49;</span><br><span class="line"></span><br><span class="line">//检查单个值</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price&lt;10;</span><br><span class="line"></span><br><span class="line">//不匹配检查</span><br><span class="line">SELECT vend_id,prod_name</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id&lt;&gt;&#x27;DLL01&#x27;;(or !＝)</span><br><span class="line"></span><br><span class="line">//范围值检查</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price BETWEEN 5 AND 10;</span><br><span class="line"></span><br><span class="line">//空值检查</span><br><span class="line">SELECT cust_name</span><br><span class="line">FROM Customers</span><br><span class="line">WHERE cust_email IS MULL;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">sql学习记录</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="日报" scheme="https://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+    <category term="SQL" scheme="https://yangkunyi.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Daily2</title>
+    <link href="https://yangkunyi.com/2019/07/09/Daily2/"/>
+    <id>https://yangkunyi.com/2019/07/09/Daily2/</id>
+    <published>2019-07-09T15:25:16.000Z</published>
+    <updated>2022-06-06T11:49:30.965Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面，社会主义的一块砖，哪里需要哪里搬</p></blockquote><span id="more"></span><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>今日份工作接线支撑，中间抽空了解了线下工作。无异常</p><h2 id="小组瞎聊"><a href="#小组瞎聊" class="headerlink" title="小组瞎聊"></a>小组瞎聊</h2><ul><li>累了之后脑袋一片空白</li><li>接快了之后觉得自己就是一个机器</li><li>智能知识库暂时毫无作用 </li><li>不要太刻意的去模仿，遇到事情多想想就好了</li><li>措施：人力调度；增加话术（没有及时更新新的话术，场景已经变化了，但是还是只有一个话术）；时时关注现状；培养一线的能力，就是为了解决这种问题；线下工单情况，工作强度强了很多。</li></ul><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="排序检索数据"><a href="#排序检索数据" class="headerlink" title="排序检索数据"></a>排序检索数据</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//按照产品名称排序</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_name;(一定要放到最后)</span><br><span class="line"></span><br><span class="line">//按多个排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price,prod_name;</span><br><span class="line"></span><br><span class="line">//按列位置排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY 2,3;</span><br><span class="line"></span><br><span class="line">//指定排序方向</span><br><span class="line">//(升序ASC或者ASCENDING是默认的，降序是DESC或者DESCENDING)</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price DESC;</span><br><span class="line"></span><br><span class="line">//多个列排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price DESC,prod_name;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">sql学习记录</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="日报" scheme="https://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+    <category term="SQL" scheme="https://yangkunyi.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Daily1</title>
+    <link href="https://yangkunyi.com/2019/07/08/Daily1/"/>
+    <id>https://yangkunyi.com/2019/07/08/Daily1/</id>
+    <published>2019-07-08T14:44:09.000Z</published>
+    <updated>2022-06-06T11:49:30.965Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面，今天雨，我希望我们在一起。</p></blockquote><span id="more"></span><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul><li>今天结束了在线的工作，总的来说在线的工作其实没有热线那么累，热线自己还会将嗓子说哑了，但是在线就是开心的在聊天，不能解决也还有疑难可以提，嘿嘿。</li><li>项目的话，只能说自己考虑的方面还是不够全面，能想的确实是想了，但是能做到却不一定能做，但是自己只要把自己能做的做到就可以了。</li><li>这个月就有一个述职了，所以要开始准备了。</li><li>其他好像没什么了吧，就是自己接触到行业的知识还不够吧。</li></ul><h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="检索数据-SELECT语句"><a href="#检索数据-SELECT语句" class="headerlink" title="检索数据(SELECT语句)"></a>检索数据(SELECT语句)</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">//检索单个列表</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索多个列表</span><br><span class="line">SELECT prod_name,prod_id，prod_price</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索所有列</span><br><span class="line">SELECT *</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索不同的值</span><br><span class="line">SELECT DISTINCT vend_id</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//限制结果</span><br><span class="line">(SQL\Access)</span><br><span class="line">SELECT top 5 prod_name</span><br><span class="line">FROM Products;</span><br><span class="line">(DB2)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">FETCH FIRST 5 ROWS ONLY;</span><br><span class="line">(Oracle)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Product</span><br><span class="line">WHERE ROWNUM &lt;＝5</span><br><span class="line">（MySQL\MariaDB\PostgreSQL\SQLite）</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">LIMIT 5;</span><br><span class="line"></span><br><span class="line">//为了得到后五行数据</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">LIMIT 5 OFFSET 5;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">sql学习记录</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="日报" scheme="https://yangkunyi.com/tags/%E6%97%A5%E6%8A%A5/"/>
+    
+    <category term="SQL" scheme="https://yangkunyi.com/tags/SQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WeeklyMind-9</title>
+    <link href="https://yangkunyi.com/2019/07/07/WeeklyMind-9/"/>
+    <id>https://yangkunyi.com/2019/07/07/WeeklyMind-9/</id>
+    <published>2019-07-07T14:58:01.000Z</published>
+    <updated>2022-06-06T11:49:30.968Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>说在前面：这个周开始，自己就正式开始了上班的生活，上个周还在和各位同学依依不舍，这个周一切都切换到了不同的轨道，就简单说一下这个周发生的事情吧。</p></blockquote><span id="more"></span><h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>总之，一切都还是那么生疏，但是自己在开始慢慢转变自己的观念了，从一个在学校只有输入的学生（或许有少量的输出），慢慢转变为一个需要每天都有输出的工作者。</p><h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>刚刚搬到这个地方，住了大概两个周了吧，周边环境还是很不错，现状唯一的不好就是还没有锅，不能自己做东西吃，这是很不方便的，所以先定下个月去购买厨房用品，这个月先坚持过去。</p><h3 id="随心"><a href="#随心" class="headerlink" title="随心"></a>随心</h3><p>自己除了工作以外的时间安排还不够合理，没有主动的push自己，不管是心理上还是身体上，都不是自己理想中的工作生活，尽管现在可能是累了一点，但是学习这个事情，还是不能放到玩耍的前面，所以接下来这个周，自己要开始慢慢调整。</p><h3 id="调整待跟进事项"><a href="#调整待跟进事项" class="headerlink" title="调整待跟进事项"></a>调整待跟进事项</h3><ul><li>每天简单的更新自己的微博（工作和学习内容），有机会要更新自己的微信公众号（想法和当下情感）。</li><li>每天看至少二十页的书，需要给自己充电。</li><li>马上教师资格证就要开始考试了，自己要开始准备，既然答应了就要做到。</li><li>英语不应该放下，自己每天应抽出半个小时，看看英语。</li></ul>]]></content>
+    
+    
+    <summary type="html">日常记录</summary>
+    
+    
+    
+    <category term="工作" scheme="https://yangkunyi.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="周记" scheme="https://yangkunyi.com/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+    <category term="工作" scheme="https://yangkunyi.com/tags/%E5%B7%A5%E4%BD%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VIDEO IDER</title>
+    <link href="https://yangkunyi.com/2019/06/15/VIDEO-IDER/"/>
+    <id>https://yangkunyi.com/2019/06/15/VIDEO-IDER/</id>
+    <published>2019-06-15T14:51:39.000Z</published>
+    <updated>2022-06-06T11:49:30.967Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>写在前面：公司四周年运营部需要拍摄视频，以下是自己和小伙伴们的想法。</p></blockquote><span id="more"></span><h2 id="运营人的一天"><a href="#运营人的一天" class="headerlink" title="运营人的一天"></a>运营人的一天</h2><h3 id="表达主题"><a href="#表达主题" class="headerlink" title="表达主题"></a>表达主题</h3><ol><li>客户至上</li><li>团队协作</li><li>团队陪伴</li><li>坚持</li></ol><h3 id="视频框架"><a href="#视频框架" class="headerlink" title="视频框架"></a>视频框架</h3><blockquote><p>背景：一位本月生日的客服小伙伴，生日仍然在工作。</p></blockquote><ul><li>您好，请问有什么可以帮您？（获取用户需求）</li><li>遇到困难时，有组长支撑（组长是一位准妈妈）</li><li>以需求为导向对接各个部门（解决用户问题过程）</li><li>中午吃饭，心情不太好（担心客户的问题没有解决）</li><li>下午参与生日会（之前的某一个客户问题解决了，生日会来送锦旗）</li></ul><h3 id="需要拍摄的场景"><a href="#需要拍摄的场景" class="headerlink" title="需要拍摄的场景"></a>需要拍摄的场景</h3><ul><li>客服接到电话收到需求的场景</li><li>组长帮助的场景</li><li>各部门解决问题的场景</li><li>吃饭的场景</li><li>下午生日会的场景（包括锦旗）</li><li>之前客户的回忆场景</li></ul>]]></content>
+    
+    
+    <summary type="html">视频剪辑</summary>
+    
+    
+    
+    <category term="工作" scheme="https://yangkunyi.com/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+    <category term="视频剪辑" scheme="https://yangkunyi.com/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信历史文章（持续更新）</title>
+    <link href="https://yangkunyi.com/2019/02/25/%E5%BE%AE%E4%BF%A1%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"/>
+    <id>https://yangkunyi.com/2019/02/25/%E5%BE%AE%E4%BF%A1%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</id>
+    <published>2019-02-25T02:19:04.000Z</published>
+    <updated>2022-06-06T11:49:30.971Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>自己将所写的微信文章以及排版的微信文章都整理到这里，以便查看。</p></blockquote><span id="more"></span><blockquote><p>学院公众号</p></blockquote><ol><li><a href="https://mp.weixin.qq.com/s/fEt7XXyzBgUi7oBp1ApflQ">（【新媒体一岁啦】幸会，有你~）</a></li><li><a href="https://mp.weixin.qq.com/s/BRnjtDIPNbFY2uBGYb1EWA">（你的端午已到，请查收）</a></li><li><a href="https://mp.weixin.qq.com/s/5D7t8GwXeZswA5iYMqRAVg">（放假了小视频）</a></li><li><a href="https://mp.weixin.qq.com/s/nC4lN-MrkeRYGdCzwMSz4A">（达康书记给你发了一张“三下乡”体验卡，快来领取）</a></li><li><a href="https://mp.weixin.qq.com/s/D9A9z9xL2hRc2FamQK3Plg">（经济管理学院积极开展“学习总书记讲话 做合格共青团员”系列活动）</a></li><li><a href="https://mp.weixin.qq.com/s/qUFZHdQXeuwTMvMEZHioHg">（“不忘初心跟党走”入团仪式篇）</a></li><li><a href="https://mp.weixin.qq.com/s/yUhM3s-V0U8luRJ37TLz1Q">（【PK赢大奖】1000元大奖！团体赛、个人赛！这个主题网络活动这么嗨）</a></li><li><a href="https://mp.weixin.qq.com/s/hpmvRX98NeCEcIqrq6txQw">（【重邮征集令】现代邮政学院LOGO、经管学院吉祥物征集）</a></li><li><a href="https://mp.weixin.qq.com/s/_prI-1Lqu21PzfkHAj6wQA">（经管RADIO第十期|我们的圣诞礼）</a></li><li><a href="https://mp.weixin.qq.com/s/KzdTND_wI5a1Whc6T-5zoA">（经管小奥运之奥运小达人评选开始啦！）</a></li><li><a href="https://mp.weixin.qq.com/s/tPEuVB_CxpO6ddrf_ojgwQ">（【投票】曲艺大赛参赛节目微信投票）</a></li><li><a href="https://mp.weixin.qq.com/s/J42xzTIUr29qrFASHYvnCA">（【经济管理学院十佳科技之星线上票选】）</a></li><li><a href="https://mp.weixin.qq.com/s/kF6CorIDWlEdZaWv8GqZcQ">（主曲艺新声绝代 持经管至尚风华）</a></li><li><a href="https://mp.weixin.qq.com/s/DAQsFp29zEWAQ_CAzZhMig">（科创理想浩瀚 科技之星璀璨）</a></li><li><a href="https://mp.weixin.qq.com/s/lvG0BSFSSJHnyj07YMjzgg">（支教第四课：带不走的支教情怀）</a></li><li><a href="https://mp.weixin.qq.com/s/jnT7Eltu12MLOucoc2qb5g">（经管法学专场报告人先进事迹简介）</a></li><li><a href="https://mp.weixin.qq.com/s/V132eluNDzUKkDO97fcZYw">（【活动报名】曲艺大赛终极夜主持人线上海选）</a></li><li><a href="https://mp.weixin.qq.com/s/tMJC3bTTHyllyYvJSWv4YQ">（经管小奥运开始报名啦！！！）</a></li><li><a href="https://mp.weixin.qq.com/s/Kqd91W2emkr5v60k6yxMFQ">（新起点，新征程—记经济管理学院“团学工作一体化”运营启动大会）</a></li><li><a href="https://mp.weixin.qq.com/s/q1uviEgtax1933SyUUFTKw">（【经管RADIO第五期】从你的全重庆路过）</a></li><li><a href="https://mp.weixin.qq.com/s/iSKCuA2iMWJF75rJGGYsyQ">（蓝瘦，香菇！为什么我那么忙！）</a></li><li><a href="https://mp.weixin.qq.com/s/mnyzeAqSkc_U4WTOfud45g">（铲屎官带你看可爱又迷人的汪星人）</a></li><li><a href="https://mp.weixin.qq.com/s/-bzmdHX56vPTElo6l9Vygg">（生活服务中心成立暨第一期培训大会，我们拭目以待）</a></li><li><a href="https://mp.weixin.qq.com/s/8g2wPy_sxMl2_BCz7ImkTQ">（重邮经管今日速报）</a></li><li><a href="https://mp.weixin.qq.com/s/fkPvuMrURbNjqE836yMqnw">（经济管理学院学生事务管理体系介绍）</a></li><li><a href="https://mp.weixin.qq.com/s/ioHgXNHzBvV4NgjkoGF-MA">（情系重邮 相约经管）</a></li><li><a href="https://mp.weixin.qq.com/s/YLwhNNCtzO9QeRXi-RB_RA">（微微一笑，在经管遇见那个Ta）</a></li><li><a href="https://mp.weixin.qq.com/s/YZLg-_UPaP5n1x9OX2dwqA">（重庆邮电大学丨经济管理学院欢迎你）</a></li><li><a href="https://mp.weixin.qq.com/s/m-IBvXZeZwUyQH2IYLJsBw">（青春三下乡 美丽中国行||三下乡回顾—“助V邮我”实践服务队）</a></li><li><a href="https://mp.weixin.qq.com/s/qNUtUeMllYIVDH8q4QiJLg">（青春三下乡 美丽中国行||三下乡回顾—小平的后“忆”国情观察团）</a></li><li><a href="https://mp.weixin.qq.com/s/N8UKwDAZCkv2sYqcabqOzw">（青春三下乡 美丽中国行||三下乡回顾—e行·益童）</a></li><li><a href="https://mp.weixin.qq.com/s/2GV-izgWv2njVym2cJXdiw">（青春三下乡 美丽中国行||三下乡回顾—闪闪红星）</a></li><li><a href="https://mp.weixin.qq.com/s/NP3eHnNheqKAtrsyg_TUmA">（【青春三下乡，美丽中国行】“共系柚乡情”向你扔来一个柚子，快接住）</a></li><li><a href="https://mp.weixin.qq.com/s/5BV6FYge98w2fclZqC01vw">（【青春三下乡，美丽中国行】“闪闪红星”体验敬老院日常，发挥专业特长）</a></li><li><a href="https://mp.weixin.qq.com/s/RIVblZSooAhUB9EgSpXH7Q">（【青春三下乡，美丽中国行】追寻小平足迹，调研红色经济）</a></li><li><a href="https://mp.weixin.qq.com/s/JF-vfPURXwuzdnwI2LJZzA">（军训汇演预热丨小编带你抢先看）</a></li><li><a href="https://mp.weixin.qq.com/s/SnVDcq0vsHchWvXlFnsbPA">（如果你跟着追风筝的人团队，那么你将体验…….）</a></li><li><a href="https://mp.weixin.qq.com/s/YRAA5mbcMQxLBNpIP38X3w">（【夜读】你的问题主要在于想的太多）</a></li><li><a href="https://mp.weixin.qq.com/s/Wb-hPR1lw1-c5YkskcdN9g">（青春三下乡，美丽中国行）</a></li><li><a href="https://mp.weixin.qq.com/s/v_x0TgZaDCeAWyY_uOQBiw">（2015级军训，我们来了！）</a></li><li><a href="https://mp.weixin.qq.com/s/VsBUnPh-qcymGeMsjQFyAw">（经济管理学院2016年 第二专业招生简章）</a></li><li><a href="https://mp.weixin.qq.com/s/lYojKW2Nx3SFtBf1ctgRKQ">（带上诚信，共赴考场）</a></li><li><a href="https://mp.weixin.qq.com/s/zq1QaY1M1L0k7Qvl2eGdnw">（毕业季丨经济管理学院2016届毕业典礼暨授位仪式）</a></li><li><a href="https://mp.weixin.qq.com/s/cGw9BO5QXDsbZrpOU0icOw">（万晓榆院长在毕业典礼上的讲话）</a></li><li><a href="https://mp.weixin.qq.com/s/-KWQZdrFGGKt4WkFIP5qSg">（在大学，期末备考给你带来了哪些折磨……）</a></li><li><a href="https://mp.weixin.qq.com/s/UADsIQxtqN-7CJMHcbr2zg">（经管RADIO第四期|火车旅行）</a></li><li><a href="https://mp.weixin.qq.com/s/xk6Lie3rncCJUnOqA1MhPw">（【六一投稿】还记得你小时候的样子吗？……）</a></li></ol><blockquote><p>以下文章来自自己的公众号</p></blockquote><ol><li><a href="https://mp.weixin.qq.com/s/3LuBDj__mpdC_1ZqVcrIAQ">（做朋友是不可能的）</a></li><li><a href="https://mp.weixin.qq.com/s/DMsASqPl2JdZl6vthZ8SJQ">（旅行首长 | | 台湾花莲）</a></li><li><a href="https://mp.weixin.qq.com/s/n4zp7vcItlzZbI7isyA1vw">（所有热爱的事情都要不留余力）</a></li><li><a href="https://mp.weixin.qq.com/s/xVS010QXJJD-0Xw19WhvOQ">（一路回望，继续前行【第二篇】）</a></li><li><a href="https://mp.weixin.qq.com/s/YGBtFslWzBDYWg1YLl5PLA">（一路回望，继续前行【第一篇】）</a></li><li><a href="https://mp.weixin.qq.com/s/3_8Y4Nwy3giNvZsg86uoCA">（初来乍到）</a></li><li><a href="https://mp.weixin.qq.com/s/g0YY6-UWtYxhXv1PZNzEgg">（懒癌晚期的老杨终于推文了）</a></li></ol>]]></content>
+    
+    
+    <summary type="html">公众号文章</summary>
+    
+    
+    
+    <category term="公众号" scheme="https://yangkunyi.com/categories/%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
+    
+    
+    <category term="新媒体" scheme="https://yangkunyi.com/tags/%E6%96%B0%E5%AA%92%E4%BD%93/"/>
+    
+    <category term="微信公众号" scheme="https://yangkunyi.com/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>英语阅读技巧</title>
+    <link href="https://yangkunyi.com/2018/09/27/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E6%8A%80%E5%B7%A7/"/>
+    <id>https://yangkunyi.com/2018/09/27/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E6%8A%80%E5%B7%A7/</id>
+    <published>2018-09-27T04:35:41.000Z</published>
+    <updated>2022-06-06T11:49:30.974Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>这是根据老师上课整理的，一天的课程其实有很多的东西都需要在后续的练习中去体会，毕竟这是老师根据自己的经验总结的，自己只能作为参考，需要总结的是自己的经验，我这才是最后能把题做对的方法。</p></blockquote><span id="more"></span><h2 id="Day1-Reading-Skills"><a href="#Day1-Reading-Skills" class="headerlink" title="Day1 Reading Skills"></a>Day1 Reading Skills</h2><h3 id="Topic（主题）"><a href="#Topic（主题）" class="headerlink" title="Topic（主题）:"></a>Topic（主题）:</h3><ul><li>内容：2-3 key words (对象，话题)</li><li>位置：1st+2nd (开局)</li><li>特点：</li><li>1.一篇文章的主题有且仅有一个(Only One)</li><li>2.复现频率高</li></ul><blockquote><p>英语为了避免重复，总是用隐形再现，以下是隐形再现的方式。</p></blockquote><p>①同一置换<br>Eg: animalscreaturesspeciesindividualscommunity</p><p>②主题省略<br>Eg: the (height) trend in sports (NBA) may obscure an unrecognized reality.</p><p>③暗喻借代（逆向思维）</p><p>④逻辑暗示<br>A.change(改变):比如时间的改变<br>B.impact(影响)<br>C.relationship(关系)</p><h3 id="Thesis-statement-主旨"><a href="#Thesis-statement-主旨" class="headerlink" title="Thesis statement(主旨)"></a>Thesis statement(主旨)</h3><ul><li><p>内容：One sentence(主旨句)</p></li><li><p>位置：1st+2nd</p></li><li><p>寻找步骤与方式：</p></li><li><p>1.第二段的开头是否有转折标志。</p></li><li><p>2.若没有则看第一段最后是否有总结句。</p></li><li><p>3.若没有则自行总结。（合二为一）</p></li><li><p>特点：它是全文的中心思想，是全文的话题、观点、看法、结论。</p></li></ul><h3 id="Topic-sentence-每一段的主旨句"><a href="#Topic-sentence-每一段的主旨句" class="headerlink" title="Topic sentence (每一段的主旨句)"></a>Topic sentence (每一段的主旨句)</h3><ul><li><p>特点：</p></li><li><p>1.与Topic相关（key words）</p></li><li><p>2.支持主旨句</p></li><li><p>3.有着语篇标志</p></li><li><p>4.拥有三个标准</p></li><li><p>5.拥有三种逻辑结构</p></li></ul><h4 id="六种语篇标志"><a href="#六种语篇标志" class="headerlink" title="六种语篇标志"></a>六种语篇标志</h4><p>(一)    三种转承连词&#x2F;副词</p><ul><li><ol><li>转折对比</li></ol></li><li><ol start="2"><li>因果总结</li></ol></li><li><ol start="3"><li>强调排他</li></ol></li></ul><p>(二)    表达观点&#x2F;结论<br>(三)    特殊标点</p><ul><li><ol><li>：</li></ol></li><li><ol start="2"><li>——</li></ol></li><li><ol start="3"><li>”“</li></ol></li><li><ol start="4"><li>()</li></ol></li></ul><p>(四)    情态动词（2.5个）</p><ul><li><ol><li>Must</li></ol></li><li><ol start="2"><li>Should</li></ol></li><li><ol start="3"><li>Need(当应该的时候)</li></ol></li></ul><p>(五)    特殊结构句型<br>(六)    平铺直叙（首末句，以第一句为主）</p><h4 id="三个标准"><a href="#三个标准" class="headerlink" title="三个标准"></a>三个标准</h4><p>(一)    关联法：主题、主旨、上段主题句<br>(二)    数量法：标志的数量<br>(三)    顺序法：最后一次转承连词出现，标志级别的顺序</p><h4 id="三种逻辑结构"><a href="#三种逻辑结构" class="headerlink" title="三种逻辑结构"></a>三种逻辑结构</h4><p>(一)    重叠性<br>(二)    对立性<br>(三)    互补性</p><h3 id="阅读文章的四大框架"><a href="#阅读文章的四大框架" class="headerlink" title="阅读文章的四大框架"></a>阅读文章的四大框架</h3><p>(一)    描述现象+分析现象+得出结论<br>(二)    提出对象+支持观点or反驳观点or讨论观点+归纳总结<br>(三)    提出问题+分析问题（原因+后果）+解决问题（提出建议方法）<br>(四)    对比对照+分项对比+总体结论</p><h3 id="做题步骤"><a href="#做题步骤" class="headerlink" title="做题步骤"></a>做题步骤</h3><p>(一)    通读开局，把握文章主题主旨（2分钟以内）<br>(二)    浏览题干（选项），文中定位（1-2分钟之间）<br>(三)    程序答题，辨析干扰（15分钟）</p><h2 id="Day2-Selecting-Skills"><a href="#Day2-Selecting-Skills" class="headerlink" title="Day2 Selecting Skills"></a>Day2 Selecting Skills</h2><h3 id="六大题型Testing-items-选择题目"><a href="#六大题型Testing-items-选择题目" class="headerlink" title="六大题型Testing items(选择题目)"></a>六大题型Testing items(选择题目)</h3><p>(一)    步骤</p><ul><li>1.定位有匹配，定位段落</li><li>2.查看中心句</li><li>3.关联主旨</li><li>4.匹配选项</li></ul><p>(二)    步骤</p><ul><li>1.定位无匹配，定位段落</li><li>2.关联上段中心句</li><li>3.寻找下段有无指示代词</li><li>4.理解匹配选项</li></ul><p>(三)    问以下何者正确</p><ul><li>1.第一题：定位在1st+2nd</li><li>2.不是第一题：上题答案之后便是本题出处。</li></ul><p>(四)    作者观点态度</p><ul><li>1.无人认领的观点即为作者的观点</li><li>2.must&#x2F;should</li><li>3.连词&#x2F;副词&#x2F;介词短语观点句子</li><li>4.形式主语的形容词色彩</li></ul><p>(五)    文章大意主旨</p><ul><li>1.主旨句</li><li>2.各段中心句</li><li>3.利用十字交叉法</li><li>4.注意主语宾语</li></ul><p>(六)    定位查找</p><ul><li>1.本题考查词汇量</li><li>2.上下句推理</li><li>3.定位在哪一句答案就在哪一句</li></ul><h3 id="四大干扰选项辨析"><a href="#四大干扰选项辨析" class="headerlink" title="四大干扰选项辨析"></a>四大干扰选项辨析</h3><p>(一)    偷换概念</p><ul><li>1.与原文信息高度相似</li><li>2.替换词或句导致意思变异</li><li>3.增加或减少词句导致意思变异</li><li>4.颠倒因果&#x2F;条件导致逻辑变异</li><li>排除步骤：</li><li><ol><li>why？与原文相似</li></ol></li><li><ol start="2"><li>where different？</li></ol></li><li><ol start="3"><li>how？变异× 一致√</li></ol></li></ul><p>(二)    主次混淆</p><ul><li>1.与原文完全一致（照抄原文）</li><li>2.但是只是detail 不是point</li></ul><p>(三)    观念错误</p><ul><li>1.对象不对</li></ul><p>(四)    过度推理</p><ul><li>1.选项中包含比较级或者最高级</li><li>2.极端排他词（only&#x2F;unless&#x2F;no one&#x2F;no one else…）</li></ul><h2 id="Day3-Reading-Tips-x2F-Strategies"><a href="#Day3-Reading-Tips-x2F-Strategies" class="headerlink" title="Day3 Reading Tips&#x2F;Strategies"></a>Day3 Reading Tips&#x2F;Strategies</h2><h3 id="给标题匹配段落"><a href="#给标题匹配段落" class="headerlink" title="给标题匹配段落"></a>给标题匹配段落</h3><ul><li>1.通读文章开局，把握文章主题背景</li><li>2.关联文章主题，准确理解标题</li><li>3.归纳各段的中心，比对选取标题</li></ul><h3 id="段落排序"><a href="#段落排序" class="headerlink" title="段落排序"></a>段落排序</h3><ul><li>1.交叉阅读，把握文章主题和背景</li><li>两段复现率Topic</li><li>2.段落标志&#x2F;功能，进行大致定位</li><li>3.六种关联证据，段落精准排序</li><li><ol><li>在哪找？<br>a)    90%首尾关联<br>b)    10%首首关联平行段落</li></ol></li><li><ol start="2"><li>找什么关联？<br>a)    指代关联<br>b)    词义关联<br>c)    转承关联<br>d)    数字关联<br>e)    时地关联<br>f)    专有名词关联</li></ol></li><li><ol start="3"><li>怎么找？<br>a)    指代（指示代词）<br>b)    词义：上下文，同根，同义，原词<br>c)    转承：逻辑<br>d)    数字：计算，顺序<br>e)    时地：点对点，日对日，月对月，年对年，地点归属…<br>f)    专有名词：专有名词是否指的同一对象</li></ol></li></ul><h3 id="信息补全题"><a href="#信息补全题" class="headerlink" title="信息补全题"></a>信息补全题</h3><ul><li>1.通读文章开局，把握文章的主旨背景</li><li>2.上下文推理，确定文中缺失信息的大意</li><li><ol><li>归纳中心</li></ol></li><li><ol start="2"><li>上下句推理</li></ol></li><li>3.关联证据，确定答案</li></ul>]]></content>
+    
+    
+    <summary type="html">英语笔记</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="英语" scheme="https://yangkunyi.com/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>排序（数据结构）</title>
+    <link href="https://yangkunyi.com/2018/08/23/%E6%8E%92%E5%BA%8F%EF%BC%88%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%89/"/>
+    <id>https://yangkunyi.com/2018/08/23/%E6%8E%92%E5%BA%8F%EF%BC%88%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%EF%BC%89/</id>
+    <published>2018-08-23T02:22:23.000Z</published>
+    <updated>2022-06-06T11:49:30.971Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>同样是复习总结。</p></blockquote><span id="more"></span><h2 id="基本概念"><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2><ul><li><p>概念：就是重新排列列表中的元素，使表中的元素满足按关键字递增或递减的过程。</p></li><li><p>算法的稳定性：简单来说就是原本列表中的两个相同元素经过排序算法后，如果没有发生位置变化，则称该算法是<strong>稳定</strong>的；反之则<strong>不稳定</strong>。</p></li><li><p>注：</p></li><li><p>1.算法是否具有稳定性并不能衡量一个算法的优劣，它主要是对算法的性质进行描述。</p></li><li><p>2.对于不稳定的排序算法，只需举出一组关键字的实例，说明它的不稳定性即可。</p></li><li><p>排序根据数据元素是否完全在内存中，可分为<strong>内部排序</strong>和<strong>外部排序</strong>。</p></li><li><p>内部排序：在排序期间元素全部存放在内存中的排序。</p></li><li><p>外部排序：在排序期间元素无法全部同时存放在内存中，必须在排序过程中根据要求不断地在内、外存之间移动的排序。</p></li></ul><blockquote><p>在今天只是对内部排序进行复习。</p></blockquote><ul><li>内部排序的操作：比较和移动。（并不是所有的内部排序算法都要基于比较，例如：基数排序）</li><li>内部排序算法的性能却决于算法的<strong>时间复杂度</strong>和<strong>空间复杂度</strong>，而时间复杂度一般是由移动的次数来决定的。</li></ul><h2 id="直接插入排序（插入排序）"><a href="#直接插入排序（插入排序）" class="headerlink" title="直接插入排序（插入排序）"></a>直接插入排序（插入排序）</h2><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//直接插入排序</span><br><span class="line">void InsertSort(ElemType A[],int n)&#123;</span><br><span class="line">    int i,j;</span><br><span class="line">    for(i=2;i&lt;=n;i++)&#123;                           //依次将A[2]~A[n]插入到前面已排序序列</span><br><span class="line">        if(A[i].key&lt;A[i-1].key)&#123;                 //若A[i]的关键码小于其前驱，需将A[i]插入有序表</span><br><span class="line">            A[0]=A[i];                           //复制为哨兵，A[0]不存放元素</span><br><span class="line">            for(j=i-1;A[0].key&lt;A[j].key;--j)&#123;    //从后往前查找待插入位置</span><br><span class="line">                A[j+1]=A[j];                     //向后挪位</span><br><span class="line">            &#125;</span><br><span class="line">            A[j+1]=A[0];                         //复制到插入位置</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析"><a href="#性能分析" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(1)</code></li><li>时间效率：<code>O(n²)</code></li><li>稳定性：<strong>稳定</strong></li><li>适用性：<strong>顺序储存和链式储存</strong></li></ul><h2 id="折半插入排序（插入排序）"><a href="#折半插入排序（插入排序）" class="headerlink" title="折半插入排序（插入排序）"></a>折半插入排序（插入排序）</h2><h3 id="算法-1"><a href="#算法-1" class="headerlink" title="算法"></a>算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">//折半插入排序</span><br><span class="line">void InsertSort(ElemType A[],int n)&#123;</span><br><span class="line">    int i,j,low,high,mid;</span><br><span class="line">    for(i=2;i&lt;=n;i++)&#123;                          //依次将A[2]~A[n]插入到前面已排序序列</span><br><span class="line">        A[0] = A[i];                            //将A[i]暂存到A[0]</span><br><span class="line">        low = 1;</span><br><span class="line">        high = i - 1;                           //设置折半查找的范围</span><br><span class="line">        while(low&lt;=high)&#123;                       //折半查找（默认递增序列）</span><br><span class="line">            mid = (low + high) / 2;             //取中间点</span><br><span class="line">            if(A[mid].key&gt;A[0].key)&#123;            //查找左半子表         </span><br><span class="line">                high = mid - 1;</span><br><span class="line">            &#125;</span><br><span class="line">            else low = mid + 1;                 //查找右半子表</span><br><span class="line">        &#125;</span><br><span class="line">        for(j=i-1;j&gt;=high+1;--i)&#123;</span><br><span class="line">            A[j+1]=A[j];                        //统一后移元素，空出插入位置</span><br><span class="line">        &#125;</span><br><span class="line">        A[high+1] = A[0];                       //插入操作</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-1"><a href="#性能分析-1" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(1)</code></li><li>时间效率：<code>O(n²)</code></li><li>稳定性：<strong>稳定</strong></li><li>适用性：<strong>顺序储存</strong></li></ul><h2 id="希尔排序（插入排序）"><a href="#希尔排序（插入排序）" class="headerlink" title="希尔排序（插入排序）"></a>希尔排序（插入排序）</h2><h3 id="算法-2"><a href="#算法-2" class="headerlink" title="算法"></a>算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//希尔排序</span><br><span class="line">void ShellSort(ElemType A[],int n)&#123;</span><br><span class="line">    //对顺序表作写入插入排序，本算法和直接插入排序相比，做了以下修改：</span><br><span class="line">    //1.券后记录位置的增量是dk，不是1</span><br><span class="line">    //2.r[0]只是暂存单元，不是哨兵，当j&lt;=0时，插入位置已到</span><br><span class="line">    for(dk=n/2;dk&gt;=1;dk=dk/2)&#123;                  //步长变化</span><br><span class="line">        for(i=dk+1;i&lt;=n;kd=dk/2)&#123;</span><br><span class="line">            if(A[i].key&lt;A[i-dk].key)&#123;           //需将A[i]插入有序增量子表</span><br><span class="line">                A[0] = A[i];                    //暂存在A[0]</span><br><span class="line">                for(j=i-dk;j&gt;0&amp;&amp;A[0].key&lt;A[j].key;j-=dk)&#123;</span><br><span class="line">                    A[j+dk] = A[j];</span><br><span class="line">                &#125;</span><br><span class="line">                A[j+dk] = A[j];</span><br><span class="line">            &#125;//if</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-2"><a href="#性能分析-2" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(1)</code></li><li>时间效率：<code>O(n²)</code></li><li>稳定性：<strong>不稳定</strong></li><li>适用性：<strong>顺序储存</strong></li></ul><h2 id="冒泡排序（交换排序）"><a href="#冒泡排序（交换排序）" class="headerlink" title="冒泡排序（交换排序）"></a>冒泡排序（交换排序）</h2><h3 id="算法-3"><a href="#算法-3" class="headerlink" title="算法"></a>算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//冒泡排序</span><br><span class="line">void BubbleSort(ElemType A[],int n)&#123;</span><br><span class="line">    for(i=0;i&lt;n-1;i++)&#123;</span><br><span class="line">        flag = false;</span><br><span class="line">        for(j=n-1;j&gt;i;j--)&#123;</span><br><span class="line">            if(A[j-1].key&gt;A[j].key)&#123;</span><br><span class="line">                swap(A[j-1],A[j]);</span><br><span class="line">                flag = true;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        if(flag==false)&#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-3"><a href="#性能分析-3" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(1)</code></li><li>时间效率：<code>O(n²)</code></li><li>稳定性：<strong>稳定</strong></li><li>适用性：<strong>顺序储存</strong></li><li>特点：每一趟排序都会将一个元素放置到其最终的位置上。</li></ul><h2 id="快速排序（交换排序）"><a href="#快速排序（交换排序）" class="headerlink" title="快速排序（交换排序）"></a>快速排序（交换排序）</h2><h3 id="算法-4"><a href="#算法-4" class="headerlink" title="算法"></a>算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">//快速排序</span><br><span class="line">void QuickSort(Element A[],int low;int high)&#123;</span><br><span class="line">    if(low&lt;high)&#123;</span><br><span class="line">        int pivotpos = Partition(A,low,high);    //划分</span><br><span class="line">        QuickSort(A,low,pivotpos-1);             //依次对两个子表进行递归排序</span><br><span class="line">        QuickSort(A,pivotpos-1,high);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//快速排序中的一分二为操作</span><br><span class="line">int Partition(ElemType A[],int low,int high)&#123;</span><br><span class="line">    //一趟排序过程</span><br><span class="line">    ElemType  pivot = A[low];                    //将当前表中第一个元素设为枢轴值，对表进行划分</span><br><span class="line">    while(low&lt;high)&#123;                             //跳出循环</span><br><span class="line">        while(low&lt;high&amp;&amp;A[high]&gt;=pivot)&#123;</span><br><span class="line">            --high;</span><br><span class="line">        &#125;</span><br><span class="line">        A[low] = A[high];                        //将比枢轴值小的元素移动到左边</span><br><span class="line">        while(low&lt;high&amp;&amp;A[low]&lt;=pivot)&#123;</span><br><span class="line">            ++low;</span><br><span class="line">        &#125;</span><br><span class="line">        A[high] = A[low];                        //将比枢轴值大的元素移动到右边</span><br><span class="line">    &#125;</span><br><span class="line">    A[low] = pivot;                              //枢轴值元素存放到最终位置</span><br><span class="line">    return low;                                  //返回存放数轴的最终位置</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-4"><a href="#性能分析-4" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：最坏情况<code>O(n)</code>；平均情况<code>O(log2n)</code></li><li>时间效率：<code>O(n²)</code></li><li>稳定性：<strong>不稳定</strong></li><li>适用性：<strong>顺序储存</strong></li><li>特点：每一趟排序都会将一个元素放置到其最终的位置上。</li></ul><h2 id="简单选择排序（选择排序）"><a href="#简单选择排序（选择排序）" class="headerlink" title="简单选择排序（选择排序）"></a>简单选择排序（选择排序）</h2><h3 id="算法-5"><a href="#算法-5" class="headerlink" title="算法"></a>算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">//简单选择排序</span><br><span class="line">void SelectSort(ElemType A[],int n)&#123;</span><br><span class="line">    //对表A作简单选择排序，A[]从0开始存放元素</span><br><span class="line">    For(i=0,i&lt;n-1;i++)&#123;                         //一共进行n-1趟</span><br><span class="line">        min = i;                                //记录最小元素位置</span><br><span class="line">        for(j=i+1;j&lt;n;j++)                      //在A[1···n-1]中选择最小的元素</span><br><span class="line">            if(A[j]&lt;A[min])</span><br><span class="line">                min = j;</span><br><span class="line">        if(min!=i)</span><br><span class="line">            swap(A[i],A[min]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-5"><a href="#性能分析-5" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(1)</code></li><li>时间效率：<code>O(n²)</code></li><li>稳定性：<strong>不稳定</strong></li><li>适用性：<strong>顺序储存</strong></li></ul><h2 id="堆排序（选择排序）"><a href="#堆排序（选择排序）" class="headerlink" title="堆排序（选择排序）"></a>堆排序（选择排序）</h2><ul><li>这是一种树形选择排序方法，特点：子啊排序过程中，将L[1…n]看成是一棵完全二叉树的顺序储存结构，利用完全二叉树中双亲结点和孩子节点之间的内在关系，在当前无序区中选择关键字最大（或最小）的元素。</li><li>小根堆（小定堆）</li><li>大根堆（大定堆）</li></ul><h3 id="建立大根堆的算法"><a href="#建立大根堆的算法" class="headerlink" title="建立大根堆的算法"></a>建立大根堆的算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//建立大根堆</span><br><span class="line">void BuildMaxHeap(ElemType A[],int len)&#123;</span><br><span class="line">    for(int i=len/2;i&gt;0;i--)&#123;                     //从i=[n/2]~1,反复调整堆</span><br><span class="line">        AdjustDown(A,i,len);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="向下调整算法"><a href="#向下调整算法" class="headerlink" title="向下调整算法"></a>向下调整算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">//向下调整算法</span><br><span class="line">void AdjustDown(ElemType A[],int k,int len)&#123;</span><br><span class="line">    A[0] = A[k];                                  //A[0]暂存</span><br><span class="line">    for(i=2*k;i&lt;=len;i*=2)&#123;                       //沿key较大的子结点向下筛选</span><br><span class="line">        if(i&lt;len&amp;&amp;A[i]&lt;A[i+1])</span><br><span class="line">            i++;                                  //取key值较大的子结点的下标</span><br><span class="line">        if(A[0]&gt;=A[i])</span><br><span class="line">            break;                                //筛选结束</span><br><span class="line">        else&#123;</span><br><span class="line">            A[k] = A[i];                          //将A[i]调整到双亲结点上</span><br><span class="line">            k = i;                                //修改k值，以便继续向下筛选</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;//for</span><br><span class="line">    A[k] = A[0];                                  //被筛选结点的值放入最终位置</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="向上调整算法"><a href="#向上调整算法" class="headerlink" title="向上调整算法"></a>向上调整算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">//向上调整算法</span><br><span class="line">void AdjustUp(ElemType A[],int k)&#123;</span><br><span class="line">    A[0] = A[k];</span><br><span class="line">    int i = k/2;                                  //若结点值大于双亲结点，则将双亲结点向下调，并继续向上比较</span><br><span class="line">    while(i&gt;0&amp;&amp;A[i]&lt;A[0])&#123;                        //循环跳出条件</span><br><span class="line">        A[k] = A[i];                              //双亲结点下调</span><br><span class="line">        k = i;</span><br><span class="line">        i = k/2;                                  //继续向上比较</span><br><span class="line">    &#125;//while</span><br><span class="line">    A[k] = A[0];                                  //复制到最终位置</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="堆排序的算法"><a href="#堆排序的算法" class="headerlink" title="堆排序的算法"></a>堆排序的算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// 堆排序算法</span><br><span class="line">void HeapSort(ElemType A[],int len)&#123;</span><br><span class="line">    BuildMaxHeap(A,len);                          //初始创建</span><br><span class="line">    for(i=len;i&gt;1;i--)&#123;                           //n-1趟的交换和建堆过程</span><br><span class="line">        swap(A[i],A[1]);                          //输出堆顶元素（和堆低元素交换）</span><br><span class="line">        AdjustDown(A,1,i-1);                      //整理，把剩余的i-1个元素整理成堆</span><br><span class="line">    &#125;//for</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-6"><a href="#性能分析-6" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(1)</code></li><li>时间效率：<code>O(nlog2n)</code></li><li>稳定性：<strong>不稳定</strong></li><li>适用性：<strong>顺序储存</strong></li></ul><h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><h3 id="Merge算法"><a href="#Merge算法" class="headerlink" title="Merge算法"></a>Merge算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//Merge函数</span><br><span class="line">ElemType *B = (ElemType *)malloc((n + 1) * sizeof(ElemType));      //辅助数组B</span><br><span class="line">void Merge(ElemType A[],int low,int mid,int high)&#123;</span><br><span class="line">    //表A的两段各自有序，将它们合成一个有序表</span><br><span class="line">    for(int k=low;k&lt;=high;k++)&#123;</span><br><span class="line">        B[k] = A[k];                              //将A中所有元素复制到B中</span><br><span class="line">    &#125;</span><br><span class="line">    for(i=low,j=mid+1,k=i;i&lt;=mid&amp;&amp;j&lt;=high;k++)&#123;</span><br><span class="line">        if(B[i]&lt;=b[j])                            //比较B的左右两段中的元素</span><br><span class="line">            A[k] = B[i++];                        //将较小值复制到A中</span><br><span class="line">        else</span><br><span class="line">            A[k] = B[j++];</span><br><span class="line">    &#125;//for</span><br><span class="line">    while(j&lt;=mid)</span><br><span class="line">        A[k++] = B[i++];                          //若第一个表未检测完，复制</span><br><span class="line">    while(j&lt;=high)</span><br><span class="line">        A[k++] = B[j++];                          //若第二个表未检测完，复制</span><br><span class="line">&#125;//注：这里最后的两个while循环只有一个会执行</span><br></pre></td></tr></table></figure><h3 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">//排序算法（2路）</span><br><span class="line">void MergeSort(ElemType A[],int low,int high)&#123;</span><br><span class="line">    if(low&lt;high)&#123;</span><br><span class="line">        int mid = (low + high)/2;                 //从中间划分两个子序列 </span><br><span class="line">        MergeSort(A,low,high);                    //对左侧子序列进行递归排序</span><br><span class="line">        MergeSort(A,mid+1,high);                  //对右侧子序列进行递归排序</span><br><span class="line">        Merge(A,low,mig,high);                    //归并</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="性能分析-7"><a href="#性能分析-7" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(n)</code></li><li>时间效率：<code>O(nlog2n)</code></li><li>稳定性：<strong>稳定</strong></li><li>适用性：<strong>顺序储存</strong></li></ul><h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2><h3 id="性能分析-8"><a href="#性能分析-8" class="headerlink" title="性能分析"></a>性能分析</h3><ul><li>空间效率：<code>O(r)</code>（r是队列的个数）</li><li>时间效率：<code>O(d(n+r))</code>（特点：跟序列的初始状态无关）</li><li>稳定性：<strong>稳定</strong></li><li>适用性：<strong>顺序储存</strong></li></ul><h2 id="各种排序的比较及应用"><a href="#各种排序的比较及应用" class="headerlink" title="各种排序的比较及应用"></a>各种排序的比较及应用</h2><h3 id="各种排序算法的性质"><a href="#各种排序算法的性质" class="headerlink" title="各种排序算法的性质"></a>各种排序算法的性质</h3><table>        <tr>            <td rowspan="2">算法种类</td>            <td colspan="3">时间复杂度</td>            <td rowspan="2">空间复杂度</td>            <td rowspan="2">是否稳定</td>        </tr>        <tr>            <td>最好情况</td>            <td>平均情况</td>            <td>最坏情况</td>        </tr>        <tr>            <td>直接插入排序</td>            <td>O(n)</td>            <td>O(n²)</td>            <td>O(n²)</td>            <td>O(1)</td>            <td>是</td>        </tr>        <tr>            <td>冒泡排序</td>            <td>O(n)</td>            <td>O(n²)</td>            <td>O(n²)</td>            <td>O(1)</td>            <td>是</td>        </tr>        <tr>            <td>简单选择排序</td>            <td>O(n²)</td>            <td>O(n²)</td>            <td>O(n²)</td>            <td>O(1)</td>            <td>否</td>        </tr>        <tr>            <td>希尔排序</td>            <td>O(n²)</td>            <td>O(n²)</td>            <td>O(n²)</td>            <td>O(1)</td>            <td>否</td>        </tr>        <tr>            <td>快速排序</td>            <td>O(nlog2n)</td>            <td>O(nlog2n)</td>            <td>O(n²)</td>            <td>O(log2n)</td>            <td>否</td>        </tr>        <tr>            <td>堆排序</td>            <td>O(nlog2n)</td>            <td>O(nlog2n)</td>            <td>O(nlog2n)</td>            <td>O(1)</td>            <td>否</td>        </tr>        <tr>            <td>2-路归并排序</td>            <td>O(nlog2n)</td>            <td>O(nlog2n)</td>            <td>O(nlog2n)</td>            <td>O(n)</td>            <td>是</td>        </tr>        <tr>            <td>基数排序</td>            <td>O(d(n+r))</td>            <td>O(d(n+r))</td>            <td>O(d(n+r))</td>            <td>O(r)</td>            <td>是</td>        </tr>    </table><h3 id="排序算法的应用"><a href="#排序算法的应用" class="headerlink" title="排序算法的应用"></a>排序算法的应用</h3><h4 id="（1）选取排序方法需要考虑的因素："><a href="#（1）选取排序方法需要考虑的因素：" class="headerlink" title="（1）选取排序方法需要考虑的因素："></a>（1）选取排序方法需要考虑的因素：</h4><ul><li>待排序的元素数目n</li><li>元素本身信息量的大小</li><li>关键自结构及其分布情况</li><li>稳定性的要求</li><li>语言工具的条件，存储结构及辅助空间的大小</li></ul><h4 id="（2）排序算法小结："><a href="#（2）排序算法小结：" class="headerlink" title="（2）排序算法小结："></a>（2）排序算法小结：</h4><ul><li><p>若n（n&lt;&#x3D;50）较小，则可以采用<strong>直接插入排序</strong>和<strong>简单选择排序</strong>。当记录本身信息量较大的时候，用<strong>简单选择排序较好</strong>。</p></li><li><p>若文件的初始状态已关键字基本有序，则选用<strong>直接插入</strong>或<strong>冒泡排序</strong>为宜。</p></li><li><p>若n较大，则采用时间复杂度为<code>O(nlog2n)</code>的排序方法：<strong>快速排序、堆排序、归并排序</strong>。</p></li><li><p>快速排序被认为是目前基于比骄傲的每部排序法中最好的方法。（不稳定）</p></li><li><p>堆排序所需的辅助空间少于快速排序，并且不会出现快速排序可能出现的最坏情况。（稳定）</p></li><li><p>当追求稳定时，可以采用归并排序。但通常不提倡2-路归并，而是将它和直接插入排序结合在一起使用。直接插入排序是稳定的，因此改进后的归并排序仍是稳定的。</p></li><li><p>当文件的n个关键字随机分布时，任何借助“比较”的排序算法，至少需要<code>O(nlog2n)</code>的时间。</p></li><li><p>当n很大，记录的关键字位数较少且可以分解时，采用基数排序较好。</p></li><li><p>当记录本身信息量较大时，为避免耗费大量时间移动记录，可用链表作为存储结构。</p></li></ul>]]></content>
+    
+    
+    <summary type="html">数据结构学习</summary>
+    
+    
+    
+    <category term="学习" scheme="https://yangkunyi.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="复习" scheme="https://yangkunyi.com/tags/%E5%A4%8D%E4%B9%A0/"/>
+    
+    <category term="博客" scheme="https://yangkunyi.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+    <category term="数据结构" scheme="https://yangkunyi.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+</feed>
