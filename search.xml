@@ -1,56 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>DOM知识点</title>
-    <url>/2017/04/10/DOM%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
-    <content><![CDATA[<h3 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h3><span id="more"></span>
-<p>D：document（文档）<br>O：object（对象）：用户定义对象，内建对象，宿主对象<br>M：model（模型）：“map”，树</p>
-<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><ul>
-<li>元素节点（element node）：body，ul，li……<br>获取元素节点的方法：</li>
-<li>通过元素id（getElementById ）</li>
-<li>通过标签名（getElementsByTagName）</li>
-<li>通过类名（getElementsByClassName）</li>
-<li>属性节点（attribute node）<br><code>&lt;p title=&quot;yang&quot;&gt;hahahahahahha&lt;/p&gt; </code><br>title&#x3D;”yang”是一个属性节点<br>属性节点总是包含在元素节点中</li>
-<li>文本节点<h4 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h4></li>
-<li>getAttribute（获取）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//例子</span><br><span class="line">var paras=document.getElementsByTagName(&quot;p&quot;);</span><br><span class="line">for(var i=0;i&lt;paras.lengeh;i++)&#123;</span><br><span class="line">    alert(paras[i].getAttribute(&quot;title&quot;));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>setAttribute（设置）<br>若属性本不存在，实际就将完成两项操作：1.创建属性，2.设置值。<br>注：并不会改变源文件扽静态内容。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//例子</span><br><span class="line">var shopping=document.getElementById(&quot;purchases&quot;);</span><br><span class="line">shopping.setAttribute(&quot;title&quot;,&quot;a list of goods&quot;);</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h3 id="实例：JavaScript图片库"><a href="#实例：JavaScript图片库" class="headerlink" title="实例：JavaScript图片库"></a>实例：JavaScript图片库</h3><ul>
-<li>childNodes属性<br>用来获取任何一个元素的所有子元素。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//获取body所有子元素个数的函数例子</span><br><span class="line">function countBodyChildren()&#123;</span><br><span class="line">    var body_element=document.getElementsByTagName(&quot;body&quot;)[0];</span><br><span class="line">    alert(body_element.childNodes.length);</span><br><span class="line">&#125;</span><br><span class="line">window.onload=countBodyChildren;</span><br></pre></td></tr></table></figure></li>
-<li>nodeType属性</li>
-<li>元素节点的nodeType属性值是1。</li>
-<li>属性节点的nodeType属性值是2。</li>
-<li>文本节点的nodeType属性值是3。<br><code>alert(body_element.nodeType); </code></li>
-<li>nodeValue属性<br>得到和设置一个节点的值。<br><code>alert(discription.nodeValue); </code></li>
-<li>firstChild和lastChild属性<br>这两个属性都是为了个简便且直观的获取对应的元素。</li>
-</ul>
-<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ul>
-<li>DOM是一套对文档内容进行抽象和概念化的方法。</li>
-<li>变量名中不能包含空格和标点符号（美元$符号除外）。</li>
-<li>变量名允许包含字母，数字，美元符号和下划线（但第一个字符不能是数字）。</li>
-<li>变量申明实例：my_mood或者myMood（峰驼式camel case：首选）。</li>
-<li>Javascript是弱类型语言，不需要对变量进行类型声明。</li>
-<li>变量可以包含操作。</li>
-<li>字符串可以做拼接操作。</li>
-<li>innerHTML属性和documen.write方法都是HTML的专有属性。<br><code>var message=&quot;I am feeling&quot;+&quot;happy&quot;;</code></li>
-<li>每个元素节点都是一个对象。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>DOM</tag>
-        <tag>JS</tag>
-        <tag>前端</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>2022的6月</title>
     <url>/2022/11/22/2022%E7%9A%846%E6%9C%88/</url>
     <content><![CDATA[<blockquote>
 <p>梳理中，记忆深刻，但不知道从何开始下笔。</p>
 </blockquote>
+<p><img src="https://frannie-img.oss-cn-hangzhou.aliyuncs.com/Blogimage/blog_top_img14.jpg" alt="imgtest"></p>
 ]]></content>
       <categories>
         <category>工作</category>
@@ -58,6 +14,56 @@
       <tags>
         <tag>夏天</tag>
         <tag>工作</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Daily1</title>
+    <url>/2019/07/08/Daily1/</url>
+    <content><![CDATA[<blockquote>
+<p>说在前面，今天雨，我希望我们在一起。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul>
+<li>今天结束了在线的工作，总的来说在线的工作其实没有热线那么累，热线自己还会将嗓子说哑了，但是在线就是开心的在聊天，不能解决也还有疑难可以提，嘿嘿。</li>
+<li>项目的话，只能说自己考虑的方面还是不够全面，能想的确实是想了，但是能做到却不一定能做，但是自己只要把自己能做的做到就可以了。</li>
+<li>这个月就有一个述职了，所以要开始准备了。</li>
+<li>其他好像没什么了吧，就是自己接触到行业的知识还不够吧。</li>
+</ul>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="检索数据-SELECT语句"><a href="#检索数据-SELECT语句" class="headerlink" title="检索数据(SELECT语句)"></a>检索数据(SELECT语句)</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//检索单个列表</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索多个列表</span><br><span class="line">SELECT prod_name,prod_id，prod_price</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索所有列</span><br><span class="line">SELECT *</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索不同的值</span><br><span class="line">SELECT DISTINCT vend_id</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//限制结果</span><br><span class="line">(SQL\Access)</span><br><span class="line">SELECT top 5 prod_name</span><br><span class="line">FROM Products;</span><br><span class="line">(DB2)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">FETCH FIRST 5 ROWS ONLY;</span><br><span class="line">(Oracle)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Product</span><br><span class="line">WHERE ROWNUM &lt;＝5</span><br><span class="line">（MySQL\MariaDB\PostgreSQL\SQLite）</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">LIMIT 5;</span><br><span class="line"></span><br><span class="line">//为了得到后五行数据</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">LIMIT 5 OFFSET 5;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>日报</tag>
+        <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Daily2</title>
+    <url>/2019/07/09/Daily2/</url>
+    <content><![CDATA[<blockquote>
+<p>说在前面，社会主义的一块砖，哪里需要哪里搬</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>今日份工作接线支撑，中间抽空了解了线下工作。无异常</p>
+<h2 id="小组瞎聊"><a href="#小组瞎聊" class="headerlink" title="小组瞎聊"></a>小组瞎聊</h2><ul>
+<li>累了之后脑袋一片空白</li>
+<li>接快了之后觉得自己就是一个机器</li>
+<li>智能知识库暂时毫无作用 </li>
+<li>不要太刻意的去模仿，遇到事情多想想就好了</li>
+<li>措施：人力调度；增加话术（没有及时更新新的话术，场景已经变化了，但是还是只有一个话术）；时时关注现状；培养一线的能力，就是为了解决这种问题；线下工单情况，工作强度强了很多。</li>
+</ul>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="排序检索数据"><a href="#排序检索数据" class="headerlink" title="排序检索数据"></a>排序检索数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//按照产品名称排序</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_name;(一定要放到最后)</span><br><span class="line"></span><br><span class="line">//按多个排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price,prod_name;</span><br><span class="line"></span><br><span class="line">//按列位置排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY 2,3;</span><br><span class="line"></span><br><span class="line">//指定排序方向</span><br><span class="line">//(升序ASC或者ASCENDING是默认的，降序是DESC或者DESCENDING)</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price DESC;</span><br><span class="line"></span><br><span class="line">//多个列排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price DESC,prod_name;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>日报</tag>
+        <tag>SQL</tag>
       </tags>
   </entry>
   <entry>
@@ -165,94 +171,9 @@
         <category>学习</category>
       </categories>
       <tags>
-        <tag>前端</tag>
         <tag>BOM</tag>
+        <tag>前端</tag>
         <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DjangoStudy1Day</title>
-    <url>/2022/03/02/DjangoStudy1Day/</url>
-    <content><![CDATA[<h1 id="Django项目学习"><a href="#Django项目学习" class="headerlink" title="Django项目学习"></a>Django项目学习</h1><blockquote>
-<p>说在前面：为了能快速学习该框架的项目发布过程，再重新将流程用该篇文章梳理一遍。</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="1-首先创建一个项目vote"><a href="#1-首先创建一个项目vote" class="headerlink" title="1.首先创建一个项目vote"></a>1.首先创建一个项目vote</h3><p>在对应的文件下打开终端窗口执行以下命令即可创建一个新的Django项目</p>
-<pre><code>django-admin startproject vote
-</code></pre>
-<p>对应的项目文档就创建好了</p>
-<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-file.png?raw=true" alt="项目文档截图"></p>
-<h3 id="2-为项目添加对应的虚拟环境"><a href="#2-为项目添加对应的虚拟环境" class="headerlink" title="2.为项目添加对应的虚拟环境"></a>2.为项目添加对应的虚拟环境</h3><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-virtural.png?raw=true" alt="配置截图"></p>
-<h3 id="3-启动Django自带的服务器运行项目"><a href="#3-启动Django自带的服务器运行项目" class="headerlink" title="3.启动Django自带的服务器运行项目"></a>3.启动Django自带的服务器运行项目</h3><p>在pycharm终端运行以下代码</p>
-<pre><code>python manage.py runserver
-</code></pre>
-<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-run.png?raw=true" alt="运行截图"></p>
-<h3 id="4-修改一些配置"><a href="#4-修改一些配置" class="headerlink" title="4.修改一些配置"></a>4.修改一些配置</h3><p>修改项目的配置文件<code>settings.py</code>，改为中文，时区改为重庆</p>
-<pre><code>LANGUAGE_CODE = &#39;zh-hans&#39;
-TIME_ZONE = &#39;Asia/Chongqing&#39;
-</code></pre>
-<h4 id="5-创建自己的应用"><a href="#5-创建自己的应用" class="headerlink" title="5.创建自己的应用"></a>5.创建自己的应用</h4><h6 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h6><p>在pycharm的终端中创建新的应用</p>
-<pre><code>python manage.py startapp polls
-</code></pre>
-<h6 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h6><p>修改应用目录下的视图文件<code>views.py</code></p>
-<pre><code>from django.http import HttpResponse
-def show_index(request):
-    return HttpResponse(&#39;&lt;h1&gt;Hello, Django!&lt;/h1&gt;&#39;)
-</code></pre>
-<p>修改Django项目目录下的<code>urls.py</code>文件，将视图函数和用户在浏览器中请求的路径对应</p>
-<pre><code>from django.contrib import admin
-from django.urls import path
-
-from polls.views import show_index
-urlpatterns = [
-    path(&#39;admin/&#39;, admin.site.urls),
-    path(&#39;hello/&#39;, show_index),
-]
-</code></pre>
-<p>应用模版的配置修改<code>settings.py</code>文件，找到TEMPLATES配置，修改其中的DIRS配置</p>
-<pre><code>TEMPLATES = [
-&#123;
-    &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
-    &#39;DIRS&#39;: [os.path.join(BASE_DIR, &#39;templates&#39;), ],
-    &#39;APP_DIRS&#39;: True,
-    &#39;OPTIONS&#39;: &#123;
-        &#39;context_processors&#39;: [
-            &#39;django.template.context_processors.debug&#39;,
-            &#39;django.template.context_processors.request&#39;,
-            &#39;django.contrib.auth.context_processors.auth&#39;,
-            &#39;django.contrib.messages.context_processors.messages&#39;,
-        ],
-    &#125;,
-&#125;,
-]
-</code></pre>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>python</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Daily3</title>
-    <url>/2019/07/11/Daily3/</url>
-    <content><![CDATA[<blockquote>
-<p>写在前面：人啊，总是对自己求而不得的东西有着无比的向往，一旦得到了又会是怎么样呢？</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>比较轻松的一天，工作是自己喜欢又沉浸其中的，我很高兴自己还保持着那样一颗平常心，尽管周遭事物与人都在改变。</p>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相等检验，使用WHERE子句</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price＝3.49;</span><br><span class="line"></span><br><span class="line">//检查单个值</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price&lt;10;</span><br><span class="line"></span><br><span class="line">//不匹配检查</span><br><span class="line">SELECT vend_id,prod_name</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id&lt;&gt;&#x27;DLL01&#x27;;(or !＝)</span><br><span class="line"></span><br><span class="line">//范围值检查</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price BETWEEN 5 AND 10;</span><br><span class="line"></span><br><span class="line">//空值检查</span><br><span class="line">SELECT cust_name</span><br><span class="line">FROM Customers</span><br><span class="line">WHERE cust_email IS MULL;</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>日报</tag>
-        <tag>SQL</tag>
       </tags>
   </entry>
   <entry>
@@ -317,6 +238,87 @@ urlpatterns = [
       <tags>
         <tag>日报</tag>
         <tag>SQL</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Day-1</title>
+    <url>/2018/03/12/Day-1/</url>
+    <content><![CDATA[<blockquote>
+<p>这是自己游戏开始的第一天。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="今日游戏进度"><a href="#今日游戏进度" class="headerlink" title="今日游戏进度"></a>今日游戏进度</h2><ul>
+<li>完成英语的记忆</li>
+</ul>
+<blockquote>
+<p>今天因为课程和学分的事情，未完成数学的学习，明天除了代课以外，应该能够完成自己定的计划。</p>
+</blockquote>
+<h2 id="今日完成事项"><a href="#今日完成事项" class="headerlink" title="今日完成事项"></a>今日完成事项</h2><ul>
+<li>通信课程学分认定</li>
+<li>课表课程</li>
+<li>再次思考学校（电子科技大学 VS 四川大学）</li>
+</ul>
+<h2 id="明日安排"><a href="#明日安排" class="headerlink" title="明日安排"></a>明日安排</h2><ul>
+<li>代课</li>
+</ul>
+<h2 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h2><ul>
+<li>思想报告（2016年11月-2018年3月）</li>
+<li>微信订阅号</li>
+<li>博客更新</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>游戏攻略</tag>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>DOM知识点</title>
+    <url>/2017/04/10/DOM%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <content><![CDATA[<h3 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h3><span id="more"></span>
+<p>D：document（文档）<br>O：object（对象）：用户定义对象，内建对象，宿主对象<br>M：model（模型）：“map”，树</p>
+<h4 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h4><ul>
+<li>元素节点（element node）：body，ul，li……<br>获取元素节点的方法：</li>
+<li>通过元素id（getElementById ）</li>
+<li>通过标签名（getElementsByTagName）</li>
+<li>通过类名（getElementsByClassName）</li>
+<li>属性节点（attribute node）<br><code>&lt;p title=&quot;yang&quot;&gt;hahahahahahha&lt;/p&gt; </code><br>title&#x3D;”yang”是一个属性节点<br>属性节点总是包含在元素节点中</li>
+<li>文本节点<h4 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h4></li>
+<li>getAttribute（获取）<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//例子</span><br><span class="line">var paras=document.getElementsByTagName(&quot;p&quot;);</span><br><span class="line">for(var i=0;i&lt;paras.lengeh;i++)&#123;</span><br><span class="line">    alert(paras[i].getAttribute(&quot;title&quot;));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>setAttribute（设置）<br>若属性本不存在，实际就将完成两项操作：1.创建属性，2.设置值。<br>注：并不会改变源文件扽静态内容。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//例子</span><br><span class="line">var shopping=document.getElementById(&quot;purchases&quot;);</span><br><span class="line">shopping.setAttribute(&quot;title&quot;,&quot;a list of goods&quot;);</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h3 id="实例：JavaScript图片库"><a href="#实例：JavaScript图片库" class="headerlink" title="实例：JavaScript图片库"></a>实例：JavaScript图片库</h3><ul>
+<li>childNodes属性<br>用来获取任何一个元素的所有子元素。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//获取body所有子元素个数的函数例子</span><br><span class="line">function countBodyChildren()&#123;</span><br><span class="line">    var body_element=document.getElementsByTagName(&quot;body&quot;)[0];</span><br><span class="line">    alert(body_element.childNodes.length);</span><br><span class="line">&#125;</span><br><span class="line">window.onload=countBodyChildren;</span><br></pre></td></tr></table></figure></li>
+<li>nodeType属性</li>
+<li>元素节点的nodeType属性值是1。</li>
+<li>属性节点的nodeType属性值是2。</li>
+<li>文本节点的nodeType属性值是3。<br><code>alert(body_element.nodeType); </code></li>
+<li>nodeValue属性<br>得到和设置一个节点的值。<br><code>alert(discription.nodeValue); </code></li>
+<li>firstChild和lastChild属性<br>这两个属性都是为了个简便且直观的获取对应的元素。</li>
+</ul>
+<h3 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h3><ul>
+<li>DOM是一套对文档内容进行抽象和概念化的方法。</li>
+<li>变量名中不能包含空格和标点符号（美元$符号除外）。</li>
+<li>变量名允许包含字母，数字，美元符号和下划线（但第一个字符不能是数字）。</li>
+<li>变量申明实例：my_mood或者myMood（峰驼式camel case：首选）。</li>
+<li>Javascript是弱类型语言，不需要对变量进行类型声明。</li>
+<li>变量可以包含操作。</li>
+<li>字符串可以做拼接操作。</li>
+<li>innerHTML属性和documen.write方法都是HTML的专有属性。<br><code>var message=&quot;I am feeling&quot;+&quot;happy&quot;;</code></li>
+<li>每个元素节点都是一个对象。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>DOM</tag>
+        <tag>JS</tag>
       </tags>
   </entry>
   <entry>
@@ -394,6 +396,72 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
+    <title>DjangoStudy1Day</title>
+    <url>/2022/03/02/DjangoStudy1Day/</url>
+    <content><![CDATA[<h1 id="Django项目学习"><a href="#Django项目学习" class="headerlink" title="Django项目学习"></a>Django项目学习</h1><blockquote>
+<p>说在前面：为了能快速学习该框架的项目发布过程，再重新将流程用该篇文章梳理一遍。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="1-首先创建一个项目vote"><a href="#1-首先创建一个项目vote" class="headerlink" title="1.首先创建一个项目vote"></a>1.首先创建一个项目vote</h3><p>在对应的文件下打开终端窗口执行以下命令即可创建一个新的Django项目</p>
+<pre><code>django-admin startproject vote
+</code></pre>
+<p>对应的项目文档就创建好了</p>
+<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-file.png?raw=true" alt="项目文档截图"></p>
+<h3 id="2-为项目添加对应的虚拟环境"><a href="#2-为项目添加对应的虚拟环境" class="headerlink" title="2.为项目添加对应的虚拟环境"></a>2.为项目添加对应的虚拟环境</h3><p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-virtural.png?raw=true" alt="配置截图"></p>
+<h3 id="3-启动Django自带的服务器运行项目"><a href="#3-启动Django自带的服务器运行项目" class="headerlink" title="3.启动Django自带的服务器运行项目"></a>3.启动Django自带的服务器运行项目</h3><p>在pycharm终端运行以下代码</p>
+<pre><code>python manage.py runserver
+</code></pre>
+<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vote-run.png?raw=true" alt="运行截图"></p>
+<h3 id="4-修改一些配置"><a href="#4-修改一些配置" class="headerlink" title="4.修改一些配置"></a>4.修改一些配置</h3><p>修改项目的配置文件<code>settings.py</code>，改为中文，时区改为重庆</p>
+<pre><code>LANGUAGE_CODE = &#39;zh-hans&#39;
+TIME_ZONE = &#39;Asia/Chongqing&#39;
+</code></pre>
+<h4 id="5-创建自己的应用"><a href="#5-创建自己的应用" class="headerlink" title="5.创建自己的应用"></a>5.创建自己的应用</h4><h6 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h6><p>在pycharm的终端中创建新的应用</p>
+<pre><code>python manage.py startapp polls
+</code></pre>
+<h6 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h6><p>修改应用目录下的视图文件<code>views.py</code></p>
+<pre><code>from django.http import HttpResponse
+def show_index(request):
+    return HttpResponse(&#39;&lt;h1&gt;Hello, Django!&lt;/h1&gt;&#39;)
+</code></pre>
+<p>修改Django项目目录下的<code>urls.py</code>文件，将视图函数和用户在浏览器中请求的路径对应</p>
+<pre><code>from django.contrib import admin
+from django.urls import path
+
+from polls.views import show_index
+urlpatterns = [
+    path(&#39;admin/&#39;, admin.site.urls),
+    path(&#39;hello/&#39;, show_index),
+]
+</code></pre>
+<p>应用模版的配置修改<code>settings.py</code>文件，找到TEMPLATES配置，修改其中的DIRS配置</p>
+<pre><code>TEMPLATES = [
+&#123;
+    &#39;BACKEND&#39;: &#39;django.template.backends.django.DjangoTemplates&#39;,
+    &#39;DIRS&#39;: [os.path.join(BASE_DIR, &#39;templates&#39;), ],
+    &#39;APP_DIRS&#39;: True,
+    &#39;OPTIONS&#39;: &#123;
+        &#39;context_processors&#39;: [
+            &#39;django.template.context_processors.debug&#39;,
+            &#39;django.template.context_processors.request&#39;,
+            &#39;django.contrib.auth.context_processors.auth&#39;,
+            &#39;django.contrib.messages.context_processors.messages&#39;,
+        ],
+    &#125;,
+&#125;,
+]
+</code></pre>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>JSON相关内容</title>
     <url>/2017/03/22/JSON%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/</url>
     <content><![CDATA[<h2 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h2><span id="more"></span>
@@ -444,65 +512,95 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>JavaScript调试</title>
-    <url>/2017/11/16/JavaScript%E8%B0%83%E8%AF%95/</url>
+    <title></title>
+    <url>/2018/04/11/NodePPT/</url>
     <content><![CDATA[<blockquote>
-<p>本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。</p>
+<p>用了好几次这个ppt，自己确实觉得这是用过的ppt中最简洁，B格最高的ppt，但是每次做都要去看原文档，十分的不方便，因此自己写一篇文章，将经常使用的一些命令和参数记录下来。<br>例子：<a href="https://yangkunyi.com/Share/ppt.html">https://yangkunyi.com/Share/ppt.html</a><br>原文：<a href="https://github.com/ksky521/nodeppt">https://github.com/ksky521/nodeppt</a></p>
 </blockquote>
 <span id="more"></span>
 
-<h3 id="1、最常用console-log（简单数据输出）"><a href="#1、最常用console-log（简单数据输出）" class="headerlink" title="1、最常用console.log（简单数据输出）"></a>1、最常用<code>console.log</code>（简单数据输出）</h3><ul>
-<li>这就没有什么好解释的，不过输出也是有技巧的，那就是要格式化，简单说就是要有标志性，只有数据或许会让人不理解，最好是加上前缀</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// example</span><br><span class="line">console.log(&quot;fun&#x27;s result---&quot; + fun(2));</span><br><span class="line">console.log(&quot;value of a---&quot; + a);</span><br></pre></td></tr></table></figure>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>这是一款网页ppt库，只需要编辑相应的md文档就可以做出演示ppt，支持markdown,html,css,js等不同的语言，十分的方便。</p>
+</blockquote>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="本地跑md文档"><a href="#本地跑md文档" class="headerlink" title="本地跑md文档"></a>本地跑md文档</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// port是端口号</span><br><span class="line">nodeppt start -p &lt;port&gt;</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li>当然可以改变颜色和字体等</li>
+<h4 id="生成html文档"><a href="#生成html文档" class="headerlink" title="生成html文档"></a>生成html文档</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 默认生成publish文件夹</span><br><span class="line">nodeppt generate filename -a</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用主题和动画"><a href="#常用主题和动画" class="headerlink" title="常用主题和动画"></a>常用主题和动画</h3><h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p><code>colors</code>-<code>moon</code>-<code>blue</code>-<code>dark</code>-<code>green</code>-<code>light</code></p>
+<h4 id="翻页动画"><a href="#翻页动画" class="headerlink" title="翻页动画"></a>翻页动画</h4><ul>
+<li>kontext</li>
+<li>vkontext</li>
+<li>circle</li>
+<li>earthquake</li>
+<li>cards</li>
+<li>glue</li>
+<li>stick</li>
+<li>move</li>
+<li>newspaper</li>
+<li>slide</li>
+<li>slide2</li>
+<li>slide3</li>
+<li>horizontal3d</li>
+<li>horizontal</li>
+<li>vertical3d</li>
+<li>zoomin</li>
+<li>zoomout</li>
+<li>pulse</li>
 </ul>
-<h3 id="2、debugger：断点"><a href="#2、debugger：断点" class="headerlink" title="2、debugger：断点"></a>2、debugger：断点</h3><ul>
-<li>与<code>console.log</code>相比，debugger会在执行的过程中停在你想的地方，能够更加直接的看到执行过程。</li>
-</ul>
-<h3 id="3、将对象以表格的形式展示console-table"><a href="#3、将对象以表格的形式展示console-table" class="headerlink" title="3、将对象以表格的形式展示console.table()"></a>3、将对象以表格的形式展示<code>console.table()</code></h3><ul>
-<li>将对象强制用表格打出来，这样展开的对象键值对应更加清晰</li>
-<li>注意firefox有限制，最多显示1000行</li>
-</ul>
-<h3 id="4、尝试适配各种机型屏幕大小"><a href="#4、尝试适配各种机型屏幕大小" class="headerlink" title="4、尝试适配各种机型屏幕大小"></a>4、尝试适配各种机型屏幕大小</h3><ul>
-<li>这个对开发手机页面很有帮助</li>
-<li>其次是可以检查布局问题</li>
-</ul>
-<h3 id="5、如何快速找到对应的DOM元素"><a href="#5、如何快速找到对应的DOM元素" class="headerlink" title="5、如何快速找到对应的DOM元素"></a>5、如何快速找到对应的DOM元素</h3><ul>
-<li>方法1浏览器的快速选择工具</li>
-<li>方法2是通过参数访问，浏览器有将DOM元素进行编号，可以通过$x的方式去访问。（具体后续补充）</li>
-</ul>
-<h3 id="6、使用console-time-和console-timeEnd-来记录时间"><a href="#6、使用console-time-和console-timeEnd-来记录时间" class="headerlink" title="6、使用console.time()和console.timeEnd()来记录时间"></a>6、使用<code>console.time()</code>和<code>console.timeEnd()</code>来记录时间</h3><ul>
-<li>关注函数运行的时间是提高效率的方法之一</li>
-</ul>
-<h3 id="获取某个函数的Stacktrace"><a href="#获取某个函数的Stacktrace" class="headerlink" title="获取某个函数的Stacktrace"></a>获取某个函数的Stacktrace</h3><ul>
-<li>console.trace()</li>
-<li>向Web控制台输出一个堆栈跟踪</li>
-</ul>
-<h3 id="将minify的代码还原"><a href="#将minify的代码还原" class="headerlink" title="将minify的代码还原"></a>将minify的代码还原</h3><ul>
-<li>{}</li>
-</ul>
-<h3 id="快速定位需要debug的函数"><a href="#快速定位需要debug的函数" class="headerlink" title="快速定位需要debug的函数"></a>快速定位需要debug的函数</h3><ul>
-<li>debug(funName)</li>
-<li>会在执行函数的地方停下来</li>
-</ul>
-<h3 id="屏蔽不相关的脚本"><a href="#屏蔽不相关的脚本" class="headerlink" title="屏蔽不相关的脚本"></a>屏蔽不相关的脚本</h3><ul>
-<li>注释掉</li>
-</ul>
-<h3 id="查看某个函数调用和其参数"><a href="#查看某个函数调用和其参数" class="headerlink" title="查看某个函数调用和其参数"></a>查看某个函数调用和其参数</h3><ul>
-<li>monitor(funName)</li>
-</ul>
-<h3 id="Postman很好用，不过传说Firefox更快"><a href="#Postman很好用，不过传说Firefox更快" class="headerlink" title="Postman很好用，不过传说Firefox更快"></a>Postman很好用，不过传说Firefox更快</h3><ul>
-<li>但由于本人喜欢用chrome，所以没有用尝试firefox</li>
-</ul>
+<h4 id="单页动画语法"><a href="#单页动画语法" class="headerlink" title="单页动画语法"></a>单页动画语法</h4><blockquote>
+<p><code>&#123;:&amp;.动画&#125;</code></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>因为自己又经常将ppt放到GitHub上去，所以也顺便记一下git的常用指令</p>
+</blockquote>
+<h2 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h2><h4 id="从本地上传到仓库的步骤"><a href="#从本地上传到仓库的步骤" class="headerlink" title="从本地上传到仓库的步骤"></a>从本地上传到仓库的步骤</h4><ol>
+<li><code>git init</code></li>
+<li><code>git add .</code></li>
+<li><code>git commit -m &#39;备注&#39;</code></li>
+<li><code>git remote origin add 仓库地址</code></li>
+<li><code>git pull</code> &#x2F;&#x2F;当仓库不为空的时候需要做的工作</li>
+<li><code>git push</code></li>
+<li><code>git status</code> &#x2F;&#x2F;查询状态</li>
+</ol>
+<p><img src="http://otn4ut2th.bkt.clouddn.com/bloggithub.png" alt="git指令"></p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>大学</category>
       </categories>
       <tags>
-        <tag>Javascript</tag>
+        <tag>nodeppt</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NeverLimitYourself</title>
+    <url>/2017/12/14/NeverLimitYourself/</url>
+    <content><![CDATA[<blockquote>
+<p>看完C菌的视频有感而发，想说一些话！</p>
+</blockquote>
+<span id="more"></span>
+
+<p>自己正是出于这样的原因选择来到台湾交流学习，我想看看那远离我的生活的地方有什么不一样，那里的生活是怎么样的？那里的人是怎么样的？那里的猫也是那么懒吗？…</p>
+<p>于是九月四日踏上里人生的第一次飞机之旅，短短三个小时，来到了这个离家一千多千米的岛上。一切都是那么好奇，现在的我已经在这里快四个月了，学习生活也都很顺手了，该体验的自己也都体验到了，再也不会像刚来的前几周那样充满不安的焦虑，或许这就是成长吧。</p>
+<p>在申请这个交换机会的时候，自己曾给自己找各种理由，但最后还是只能说：我就是想看看。</p>
+<p>自己在最开始的时候焦虑一个是因为陌生环境的压力；另一个原因是自己看到了自己相看的东西之后，心里突然之间有一瞬间感觉空空的，不知道自己之后该做什么了，整个人好像在这里生活着没什么意思了，同时本校也开学了，看着同学们开学的动态，那种叫做孤独的东西一下子就从心里冒了出来。可是别人还在“羡慕”的“恭维”和祝贺自己来到这里，所以自己还要打起精神来应付，为了来这里之前说下的那句：“我想去看看！”没错，那个时候每天都很丧，过得很混沌。</p>
+<p>那个时候只有父母算生活动力，想着他们为了让自己出来看看所做的努力，自己真的没理由就这样混沌的过，但同时这种压抑的感觉又让自己整个人感觉很紧绷，所以也是压力吧。自己没有自觉与他们联系的习惯，在本校的时候一个月也是要回家的时候才会联系一下，所以根本不知道平时有什么好跟他们说的。不过为了让他们不担心自己的生活和学习，自己还是学会了每隔两天报告一下平安，是真的只有一个“报”字的报平安。不过母上大人还是想自己的，偶尔会在晚上和自己视频一下，说一下家里的情况，自己也会简单的报告一下自己的近况，虽然自己初中以来就是住校，但这次毕竟隔得比较远，所以其实真的是有些想他们了。</p>
+<p>然后终于那句：“意义这种事情只有在做过之后才知道，之前说的意义都是肤浅的认知罢了！”解决了让自己失眠一个周的问题，终于将急躁的心放到了肚子里，开始慢慢享受每一天的生活，早起，看书，上课，写作业，跑步…终于生活算是步入了正轨。</p>
+<p>正式抱着这样的心态，中间出去短途旅行了三次，那才叫真的看到了自己看到的，由于马上要期末考试了，所以之后应该不会再出去了。不过这三次的记忆就足以抵上前三个月的努力了，接下来就好好准备课程相关报告和考试吧。</p>
+<p>经过这四个月的生活后，那种不知名意义好像快要浮出水面的时候，看到了C菌的Nerver Limit Yourself，自己终于找到了可以表达自己心情的句子：</p>
+<blockquote>
+<p>Never limit yourself because of others’ limited imagination; never limit others because of your own limited imagination.<br>— MAE JEMISON</p>
+</blockquote>
+<p>ps:如果想了解本人在台湾的更多近况，可以扫描下面的公众号二维码。（可能这就是广告吧。）</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
+        <tag>随笔记</tag>
+        <tag>观后感</tag>
       </tags>
   </entry>
   <entry>
@@ -591,63 +689,65 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>Daily1</title>
-    <url>/2019/07/08/Daily1/</url>
+    <title>JavaScript调试</title>
+    <url>/2017/11/16/JavaScript%E8%B0%83%E8%AF%95/</url>
     <content><![CDATA[<blockquote>
-<p>说在前面，今天雨，我希望我们在一起。</p>
+<p>本文就想总结一些调试的方法，其实调试是提高效率的重要方法之一，会用正确高效的调试方法，可以事半功倍。</p>
 </blockquote>
 <span id="more"></span>
 
-<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><ul>
-<li>今天结束了在线的工作，总的来说在线的工作其实没有热线那么累，热线自己还会将嗓子说哑了，但是在线就是开心的在聊天，不能解决也还有疑难可以提，嘿嘿。</li>
-<li>项目的话，只能说自己考虑的方面还是不够全面，能想的确实是想了，但是能做到却不一定能做，但是自己只要把自己能做的做到就可以了。</li>
-<li>这个月就有一个述职了，所以要开始准备了。</li>
-<li>其他好像没什么了吧，就是自己接触到行业的知识还不够吧。</li>
+<h3 id="1、最常用console-log（简单数据输出）"><a href="#1、最常用console-log（简单数据输出）" class="headerlink" title="1、最常用console.log（简单数据输出）"></a>1、最常用<code>console.log</code>（简单数据输出）</h3><ul>
+<li>这就没有什么好解释的，不过输出也是有技巧的，那就是要格式化，简单说就是要有标志性，只有数据或许会让人不理解，最好是加上前缀</li>
 </ul>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="SQL"><a href="#SQL" class="headerlink" title="SQL"></a>SQL</h4><h5 id="检索数据-SELECT语句"><a href="#检索数据-SELECT语句" class="headerlink" title="检索数据(SELECT语句)"></a>检索数据(SELECT语句)</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//检索单个列表</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索多个列表</span><br><span class="line">SELECT prod_name,prod_id，prod_price</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索所有列</span><br><span class="line">SELECT *</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//检索不同的值</span><br><span class="line">SELECT DISTINCT vend_id</span><br><span class="line">FROM Products;</span><br><span class="line"></span><br><span class="line">//限制结果</span><br><span class="line">(SQL\Access)</span><br><span class="line">SELECT top 5 prod_name</span><br><span class="line">FROM Products;</span><br><span class="line">(DB2)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">FETCH FIRST 5 ROWS ONLY;</span><br><span class="line">(Oracle)</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Product</span><br><span class="line">WHERE ROWNUM &lt;＝5</span><br><span class="line">（MySQL\MariaDB\PostgreSQL\SQLite）</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">LIMIT 5;</span><br><span class="line"></span><br><span class="line">//为了得到后五行数据</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">LIMIT 5 OFFSET 5;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// example</span><br><span class="line">console.log(&quot;fun&#x27;s result---&quot; + fun(2));</span><br><span class="line">console.log(&quot;value of a---&quot; + a);</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>当然可以改变颜色和字体等</li>
+</ul>
+<h3 id="2、debugger：断点"><a href="#2、debugger：断点" class="headerlink" title="2、debugger：断点"></a>2、debugger：断点</h3><ul>
+<li>与<code>console.log</code>相比，debugger会在执行的过程中停在你想的地方，能够更加直接的看到执行过程。</li>
+</ul>
+<h3 id="3、将对象以表格的形式展示console-table"><a href="#3、将对象以表格的形式展示console-table" class="headerlink" title="3、将对象以表格的形式展示console.table()"></a>3、将对象以表格的形式展示<code>console.table()</code></h3><ul>
+<li>将对象强制用表格打出来，这样展开的对象键值对应更加清晰</li>
+<li>注意firefox有限制，最多显示1000行</li>
+</ul>
+<h3 id="4、尝试适配各种机型屏幕大小"><a href="#4、尝试适配各种机型屏幕大小" class="headerlink" title="4、尝试适配各种机型屏幕大小"></a>4、尝试适配各种机型屏幕大小</h3><ul>
+<li>这个对开发手机页面很有帮助</li>
+<li>其次是可以检查布局问题</li>
+</ul>
+<h3 id="5、如何快速找到对应的DOM元素"><a href="#5、如何快速找到对应的DOM元素" class="headerlink" title="5、如何快速找到对应的DOM元素"></a>5、如何快速找到对应的DOM元素</h3><ul>
+<li>方法1浏览器的快速选择工具</li>
+<li>方法2是通过参数访问，浏览器有将DOM元素进行编号，可以通过$x的方式去访问。（具体后续补充）</li>
+</ul>
+<h3 id="6、使用console-time-和console-timeEnd-来记录时间"><a href="#6、使用console-time-和console-timeEnd-来记录时间" class="headerlink" title="6、使用console.time()和console.timeEnd()来记录时间"></a>6、使用<code>console.time()</code>和<code>console.timeEnd()</code>来记录时间</h3><ul>
+<li>关注函数运行的时间是提高效率的方法之一</li>
+</ul>
+<h3 id="获取某个函数的Stacktrace"><a href="#获取某个函数的Stacktrace" class="headerlink" title="获取某个函数的Stacktrace"></a>获取某个函数的Stacktrace</h3><ul>
+<li>console.trace()</li>
+<li>向Web控制台输出一个堆栈跟踪</li>
+</ul>
+<h3 id="将minify的代码还原"><a href="#将minify的代码还原" class="headerlink" title="将minify的代码还原"></a>将minify的代码还原</h3><ul>
+<li>{}</li>
+</ul>
+<h3 id="快速定位需要debug的函数"><a href="#快速定位需要debug的函数" class="headerlink" title="快速定位需要debug的函数"></a>快速定位需要debug的函数</h3><ul>
+<li>debug(funName)</li>
+<li>会在执行函数的地方停下来</li>
+</ul>
+<h3 id="屏蔽不相关的脚本"><a href="#屏蔽不相关的脚本" class="headerlink" title="屏蔽不相关的脚本"></a>屏蔽不相关的脚本</h3><ul>
+<li>注释掉</li>
+</ul>
+<h3 id="查看某个函数调用和其参数"><a href="#查看某个函数调用和其参数" class="headerlink" title="查看某个函数调用和其参数"></a>查看某个函数调用和其参数</h3><ul>
+<li>monitor(funName)</li>
+</ul>
+<h3 id="Postman很好用，不过传说Firefox更快"><a href="#Postman很好用，不过传说Firefox更快" class="headerlink" title="Postman很好用，不过传说Firefox更快"></a>Postman很好用，不过传说Firefox更快</h3><ul>
+<li>但由于本人喜欢用chrome，所以没有用尝试firefox</li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
       <tags>
-        <tag>日报</tag>
-        <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Day-1</title>
-    <url>/2018/03/12/Day-1/</url>
-    <content><![CDATA[<blockquote>
-<p>这是自己游戏开始的第一天。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="今日游戏进度"><a href="#今日游戏进度" class="headerlink" title="今日游戏进度"></a>今日游戏进度</h2><ul>
-<li>完成英语的记忆</li>
-</ul>
-<blockquote>
-<p>今天因为课程和学分的事情，未完成数学的学习，明天除了代课以外，应该能够完成自己定的计划。</p>
-</blockquote>
-<h2 id="今日完成事项"><a href="#今日完成事项" class="headerlink" title="今日完成事项"></a>今日完成事项</h2><ul>
-<li>通信课程学分认定</li>
-<li>课表课程</li>
-<li>再次思考学校（电子科技大学 VS 四川大学）</li>
-</ul>
-<h2 id="明日安排"><a href="#明日安排" class="headerlink" title="明日安排"></a>明日安排</h2><ul>
-<li>代课</li>
-</ul>
-<h2 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h2><ul>
-<li>思想报告（2016年11月-2018年3月）</li>
-<li>微信订阅号</li>
-<li>博客更新</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>游戏攻略</tag>
-        <tag>日记</tag>
+        <tag>Javascript</tag>
       </tags>
   </entry>
   <entry>
@@ -750,6 +850,25 @@ urlpatterns = [
       <tags>
         <tag>日报</tag>
         <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Daily3</title>
+    <url>/2019/07/11/Daily3/</url>
+    <content><![CDATA[<blockquote>
+<p>写在前面：人啊，总是对自己求而不得的东西有着无比的向往，一旦得到了又会是怎么样呢？</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>比较轻松的一天，工作是自己喜欢又沉浸其中的，我很高兴自己还保持着那样一颗平常心，尽管周遭事物与人都在改变。</p>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="筛选数据"><a href="#筛选数据" class="headerlink" title="筛选数据"></a>筛选数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//相等检验，使用WHERE子句</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price＝3.49;</span><br><span class="line"></span><br><span class="line">//检查单个值</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price&lt;10;</span><br><span class="line"></span><br><span class="line">//不匹配检查</span><br><span class="line">SELECT vend_id,prod_name</span><br><span class="line">FROM Products</span><br><span class="line">WHERE vend_id&lt;&gt;&#x27;DLL01&#x27;;(or !＝)</span><br><span class="line"></span><br><span class="line">//范围值检查</span><br><span class="line">SELECT prod_name,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">WHERE prod_price BETWEEN 5 AND 10;</span><br><span class="line"></span><br><span class="line">//空值检查</span><br><span class="line">SELECT cust_name</span><br><span class="line">FROM Customers</span><br><span class="line">WHERE cust_email IS MULL;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>日报</tag>
+        <tag>SQL</tag>
       </tags>
   </entry>
   <entry>
@@ -864,33 +983,103 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>NeverLimitYourself</title>
-    <url>/2017/12/14/NeverLimitYourself/</url>
+    <title>VIDEO IDER</title>
+    <url>/2019/06/15/VIDEO-IDER/</url>
     <content><![CDATA[<blockquote>
-<p>看完C菌的视频有感而发，想说一些话！</p>
+<p>写在前面：公司四周年运营部需要拍摄视频，以下是自己和小伙伴们的想法。</p>
 </blockquote>
 <span id="more"></span>
 
-<p>自己正是出于这样的原因选择来到台湾交流学习，我想看看那远离我的生活的地方有什么不一样，那里的生活是怎么样的？那里的人是怎么样的？那里的猫也是那么懒吗？…</p>
-<p>于是九月四日踏上里人生的第一次飞机之旅，短短三个小时，来到了这个离家一千多千米的岛上。一切都是那么好奇，现在的我已经在这里快四个月了，学习生活也都很顺手了，该体验的自己也都体验到了，再也不会像刚来的前几周那样充满不安的焦虑，或许这就是成长吧。</p>
-<p>在申请这个交换机会的时候，自己曾给自己找各种理由，但最后还是只能说：我就是想看看。</p>
-<p>自己在最开始的时候焦虑一个是因为陌生环境的压力；另一个原因是自己看到了自己相看的东西之后，心里突然之间有一瞬间感觉空空的，不知道自己之后该做什么了，整个人好像在这里生活着没什么意思了，同时本校也开学了，看着同学们开学的动态，那种叫做孤独的东西一下子就从心里冒了出来。可是别人还在“羡慕”的“恭维”和祝贺自己来到这里，所以自己还要打起精神来应付，为了来这里之前说下的那句：“我想去看看！”没错，那个时候每天都很丧，过得很混沌。</p>
-<p>那个时候只有父母算生活动力，想着他们为了让自己出来看看所做的努力，自己真的没理由就这样混沌的过，但同时这种压抑的感觉又让自己整个人感觉很紧绷，所以也是压力吧。自己没有自觉与他们联系的习惯，在本校的时候一个月也是要回家的时候才会联系一下，所以根本不知道平时有什么好跟他们说的。不过为了让他们不担心自己的生活和学习，自己还是学会了每隔两天报告一下平安，是真的只有一个“报”字的报平安。不过母上大人还是想自己的，偶尔会在晚上和自己视频一下，说一下家里的情况，自己也会简单的报告一下自己的近况，虽然自己初中以来就是住校，但这次毕竟隔得比较远，所以其实真的是有些想他们了。</p>
-<p>然后终于那句：“意义这种事情只有在做过之后才知道，之前说的意义都是肤浅的认知罢了！”解决了让自己失眠一个周的问题，终于将急躁的心放到了肚子里，开始慢慢享受每一天的生活，早起，看书，上课，写作业，跑步…终于生活算是步入了正轨。</p>
-<p>正式抱着这样的心态，中间出去短途旅行了三次，那才叫真的看到了自己看到的，由于马上要期末考试了，所以之后应该不会再出去了。不过这三次的记忆就足以抵上前三个月的努力了，接下来就好好准备课程相关报告和考试吧。</p>
-<p>经过这四个月的生活后，那种不知名意义好像快要浮出水面的时候，看到了C菌的Nerver Limit Yourself，自己终于找到了可以表达自己心情的句子：</p>
-<blockquote>
-<p>Never limit yourself because of others’ limited imagination; never limit others because of your own limited imagination.<br>— MAE JEMISON</p>
+<h2 id="运营人的一天"><a href="#运营人的一天" class="headerlink" title="运营人的一天"></a>运营人的一天</h2><h3 id="表达主题"><a href="#表达主题" class="headerlink" title="表达主题"></a>表达主题</h3><ol>
+<li>客户至上</li>
+<li>团队协作</li>
+<li>团队陪伴</li>
+<li>坚持</li>
+</ol>
+<h3 id="视频框架"><a href="#视频框架" class="headerlink" title="视频框架"></a>视频框架</h3><blockquote>
+<p>背景：一位本月生日的客服小伙伴，生日仍然在工作。</p>
 </blockquote>
-<p>ps:如果想了解本人在台湾的更多近况，可以扫描下面的公众号二维码。（可能这就是广告吧。）</p>
+<ul>
+<li>您好，请问有什么可以帮您？（获取用户需求）</li>
+<li>遇到困难时，有组长支撑（组长是一位准妈妈）</li>
+<li>以需求为导向对接各个部门（解决用户问题过程）</li>
+<li>中午吃饭，心情不太好（担心客户的问题没有解决）</li>
+<li>下午参与生日会（之前的某一个客户问题解决了，生日会来送锦旗）</li>
+</ul>
+<h3 id="需要拍摄的场景"><a href="#需要拍摄的场景" class="headerlink" title="需要拍摄的场景"></a>需要拍摄的场景</h3><ul>
+<li>客服接到电话收到需求的场景</li>
+<li>组长帮助的场景</li>
+<li>各部门解决问题的场景</li>
+<li>吃饭的场景</li>
+<li>下午生日会的场景（包括锦旗）</li>
+<li>之前客户的回忆场景</li>
+</ul>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>日常</tag>
-        <tag>随笔记</tag>
-        <tag>观后感</tag>
+        <tag>视频剪辑</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WeeklyMind-1</title>
+    <url>/2017/11/19/WeeklyMind-1/</url>
+    <content><![CDATA[<blockquote>
+<p>寻常的一周，不过做了许多的决定，之后每一周也希望自己能坚持做一下简单的总结。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="总结上周"><a href="#总结上周" class="headerlink" title="总结上周"></a>总结上周</h3><h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul>
+<li>新买的T恤很喜欢</li>
+<li>吃得很随便，但不失营养，老年人一样的生活，哈哈哈</li>
+<li>住的寝室，还是比较宅，之后希望有时间，还是多出去走走看看</li>
+<li>这周没怎么出门，最近在准备各种考试和期中报告</li>
+</ul>
+<h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul>
+<li><p>课程：</p>
+</li>
+<li><p>人际考试</p>
+</li>
+<li><p>周三运动会放假</p>
+</li>
+<li><p>复习财管</p>
+</li>
+<li><p>其它课程一切照常进行</p>
+</li>
+<li><p>完成日常作业</p>
+</li>
+<li><p>其它</p>
+</li>
+<li><p>申请和绑定了域名</p>
+</li>
+<li><p>博客主题修改</p>
+</li>
+<li><p>了解nodeppt</p>
+</li>
+<li><p>简单的看了一下网易云api（有准备做一个音乐播放器）</p>
+</li>
+</ul>
+<h2 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h2><ul>
+<li>复习财管（周三考试）</li>
+<li>电商案例分析</li>
+<li>人际期中报告</li>
+<li>不动产课堂报告</li>
+<li>课程小节论文</li>
+<li>通信英语ppt</li>
+<li>继续学习php</li>
+<li>更新博客</li>
+<li>日常作业</li>
+</ul>
+<blockquote>
+<p>最后还有锻炼，这个事情还是比较重要的。按照自己的计划腾出锻炼的时间，保持健康，毕竟在这个遥远的地方没有买保险。。。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>大学</category>
+      </categories>
+      <tags>
+        <tag>周记</tag>
       </tags>
   </entry>
   <entry>
@@ -929,72 +1118,6 @@ urlpatterns = [
       <tags>
         <tag>SQL</tag>
         <tag>周报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Daily2</title>
-    <url>/2019/07/09/Daily2/</url>
-    <content><![CDATA[<blockquote>
-<p>说在前面，社会主义的一块砖，哪里需要哪里搬</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>今日份工作接线支撑，中间抽空了解了线下工作。无异常</p>
-<h2 id="小组瞎聊"><a href="#小组瞎聊" class="headerlink" title="小组瞎聊"></a>小组瞎聊</h2><ul>
-<li>累了之后脑袋一片空白</li>
-<li>接快了之后觉得自己就是一个机器</li>
-<li>智能知识库暂时毫无作用 </li>
-<li>不要太刻意的去模仿，遇到事情多想想就好了</li>
-<li>措施：人力调度；增加话术（没有及时更新新的话术，场景已经变化了，但是还是只有一个话术）；时时关注现状；培养一线的能力，就是为了解决这种问题；线下工单情况，工作强度强了很多。</li>
-</ul>
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><h4 id="排序检索数据"><a href="#排序检索数据" class="headerlink" title="排序检索数据"></a>排序检索数据</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//按照产品名称排序</span><br><span class="line">SELECT prod_name</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_name;(一定要放到最后)</span><br><span class="line"></span><br><span class="line">//按多个排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price,prod_name;</span><br><span class="line"></span><br><span class="line">//按列位置排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY 2,3;</span><br><span class="line"></span><br><span class="line">//指定排序方向</span><br><span class="line">//(升序ASC或者ASCENDING是默认的，降序是DESC或者DESCENDING)</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price DESC;</span><br><span class="line"></span><br><span class="line">//多个列排序</span><br><span class="line">SELECT prod_name,prod_id,prod_price</span><br><span class="line">FROM Products</span><br><span class="line">ORDER BY prod_price DESC,prod_name;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>日报</tag>
-        <tag>SQL</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>VIDEO IDER</title>
-    <url>/2019/06/15/VIDEO-IDER/</url>
-    <content><![CDATA[<blockquote>
-<p>写在前面：公司四周年运营部需要拍摄视频，以下是自己和小伙伴们的想法。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="运营人的一天"><a href="#运营人的一天" class="headerlink" title="运营人的一天"></a>运营人的一天</h2><h3 id="表达主题"><a href="#表达主题" class="headerlink" title="表达主题"></a>表达主题</h3><ol>
-<li>客户至上</li>
-<li>团队协作</li>
-<li>团队陪伴</li>
-<li>坚持</li>
-</ol>
-<h3 id="视频框架"><a href="#视频框架" class="headerlink" title="视频框架"></a>视频框架</h3><blockquote>
-<p>背景：一位本月生日的客服小伙伴，生日仍然在工作。</p>
-</blockquote>
-<ul>
-<li>您好，请问有什么可以帮您？（获取用户需求）</li>
-<li>遇到困难时，有组长支撑（组长是一位准妈妈）</li>
-<li>以需求为导向对接各个部门（解决用户问题过程）</li>
-<li>中午吃饭，心情不太好（担心客户的问题没有解决）</li>
-<li>下午参与生日会（之前的某一个客户问题解决了，生日会来送锦旗）</li>
-</ul>
-<h3 id="需要拍摄的场景"><a href="#需要拍摄的场景" class="headerlink" title="需要拍摄的场景"></a>需要拍摄的场景</h3><ul>
-<li>客服接到电话收到需求的场景</li>
-<li>组长帮助的场景</li>
-<li>各部门解决问题的场景</li>
-<li>吃饭的场景</li>
-<li>下午生日会的场景（包括锦旗）</li>
-<li>之前客户的回忆场景</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>视频剪辑</tag>
       </tags>
   </entry>
   <entry>
@@ -1078,57 +1201,35 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>WeeklyMind-1</title>
-    <url>/2017/11/19/WeeklyMind-1/</url>
+    <title>WeeklyMind-3</title>
+    <url>/2017/12/10/WeeklyMind-3/</url>
     <content><![CDATA[<blockquote>
-<p>寻常的一周，不过做了许多的决定，之后每一周也希望自己能坚持做一下简单的总结。</p>
+<p>本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。</p>
 </blockquote>
 <span id="more"></span>
 
-<h3 id="总结上周"><a href="#总结上周" class="headerlink" title="总结上周"></a>总结上周</h3><h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul>
-<li>新买的T恤很喜欢</li>
-<li>吃得很随便，但不失营养，老年人一样的生活，哈哈哈</li>
-<li>住的寝室，还是比较宅，之后希望有时间，还是多出去走走看看</li>
-<li>这周没怎么出门，最近在准备各种考试和期中报告</li>
-</ul>
 <h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul>
-<li><p>课程：</p>
-</li>
-<li><p>人际考试</p>
-</li>
-<li><p>周三运动会放假</p>
-</li>
-<li><p>复习财管</p>
-</li>
-<li><p>其它课程一切照常进行</p>
-</li>
-<li><p>完成日常作业</p>
-</li>
-<li><p>其它</p>
-</li>
-<li><p>申请和绑定了域名</p>
-</li>
-<li><p>博客主题修改</p>
-</li>
-<li><p>了解nodeppt</p>
-</li>
-<li><p>简单的看了一下网易云api（有准备做一个音乐播放器）</p>
-</li>
+<li>各科课程进行正常</li>
+<li>但并没有完成本校作业</li>
+<li>完成了第一次不动产小组报告，虽然内容很尬，但是表现自己还算满意</li>
+<li>关于人际关系的人际圈，自己在课堂上画出不同的圈也让自己十分的意外，但这也是自己本身的看法罢了，或许这才是最真实的自己</li>
+<li>让自己丧了一天的财务管理期中成绩也是真的令自己心碎啊</li>
+<li>了解了一些数据库的知识，应该叫复习了，毕竟之前还是多少学了一点</li>
+<li>node要努力了，时间的零碎学起来也是很零碎</li>
 </ul>
-<h2 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h2><ul>
-<li>复习财管（周三考试）</li>
-<li>电商案例分析</li>
-<li>人际期中报告</li>
-<li>不动产课堂报告</li>
-<li>课程小节论文</li>
-<li>通信英语ppt</li>
-<li>继续学习php</li>
-<li>更新博客</li>
-<li>日常作业</li>
+<h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul>
+<li>这一周缺乏锻炼，怎么感觉又长胖了。。。</li>
+<li>稍微一点混沌，可能躺太多</li>
+<li>手臂在乒乓球课崴了，一直一点酸疼</li>
+<li>吃饭特别不规律！！！这一点下个周一定得改了</li>
+<li>对了，微信终于开始了，不过进度貌似不能保证每天，所以自己准备改一下，暂时上学期间频率保持一周两篇吧，如果空闲的周可以多做一点</li>
 </ul>
-<blockquote>
-<p>最后还有锻炼，这个事情还是比较重要的。按照自己的计划腾出锻炼的时间，保持健康，毕竟在这个遥远的地方没有买保险。。。</p>
-</blockquote>
+<h4 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h4><ul>
+<li>通信作业的问题回答</li>
+<li>还是抽时间把毛概的论文写了吧，毕竟回去可能还真的可以考试呢</li>
+<li>node</li>
+<li>php继续学习</li>
+</ul>
 ]]></content>
       <categories>
         <category>大学</category>
@@ -1208,40 +1309,103 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>WeeklyMind-3</title>
-    <url>/2017/12/10/WeeklyMind-3/</url>
+    <title>WeeklyMind-6</title>
+    <url>/2017/12/30/WeeklyMind-6/</url>
     <content><![CDATA[<blockquote>
-<p>本周很日常，只是感觉自己有点缺乏锻炼，所以显得不是特别的精神，可能也和天气有关系，开始凉了，自己也没带什么厚衣服，所以没课都不怎么出门的那种。</p>
+<p>2017就这样过了，今天已经是2018年了，想来这一年确实发生了太多的事情，自己的价值观也在这些事情中一次次的改变和塑造着，未来的路在昨天的铺垫中慢慢成型，在今天的过程中慢慢延伸，在明天的憧憬理慢慢向前。这个周开始进入考试复习周，下周三就开始考试了，但自己在假期里显得十分的懒散，可能是因为自己这两天一直在想这一年自己到底干了什么，事情太多，整整两个日记本了，这应该就是自己的成长吧，在这里还是不想太多，就说说这个周。</p>
 </blockquote>
 <span id="more"></span>
 
-<h4 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h4><ul>
-<li>各科课程进行正常</li>
-<li>但并没有完成本校作业</li>
-<li>完成了第一次不动产小组报告，虽然内容很尬，但是表现自己还算满意</li>
-<li>关于人际关系的人际圈，自己在课堂上画出不同的圈也让自己十分的意外，但这也是自己本身的看法罢了，或许这才是最真实的自己</li>
-<li>让自己丧了一天的财务管理期中成绩也是真的令自己心碎啊</li>
-<li>了解了一些数据库的知识，应该叫复习了，毕竟之前还是多少学了一点</li>
-<li>node要努力了，时间的零碎学起来也是很零碎</li>
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><ul>
+<li>web课程已经结束了。下周三期末考试，作为自己最不担心的一门课程，只希望自己不要粗心吧。</li>
+<li>行销管理的小组报告自己有想好好做出来，做一个成品，之后也可以拿得出手，所以自己把自己当作这个小组的组长，一直在拉着整个报告的进度，但是这个假期还是懈怠了很多，不过假期嘛，大家都没有将心思放在这上面，所以打算回来后继续。</li>
+<li>不动产管理课程也结束了，因为元旦下周的课程放掉了，下下周直接考试，这门课也希望自己能不留遗憾的完成，毕竟是缘分让自己选了这门课。</li>
+<li>财务管理一直是自己不喜欢又带有些害怕的课程，考试范围也算是出来了，所以只能说努力吧。</li>
+<li>西方哲学史也因为假期结课了，最后仍是考试，这门课自己倒不是很担心。</li>
+<li>体育课已经结课了，从来不担心的课程，应该是一个不错的成绩。</li>
+<li>人际管理课程报告也结束了，还有最后两节课和与一个期末总结就完成了，成绩应该也算理想，报告自己觉得做得也不错。</li>
 </ul>
-<h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><ul>
-<li>这一周缺乏锻炼，怎么感觉又长胖了。。。</li>
-<li>稍微一点混沌，可能躺太多</li>
-<li>手臂在乒乓球课崴了，一直一点酸疼</li>
-<li>吃饭特别不规律！！！这一点下个周一定得改了</li>
-<li>对了，微信终于开始了，不过进度貌似不能保证每天，所以自己准备改一下，暂时上学期间频率保持一周两篇吧，如果空闲的周可以多做一点</li>
+<blockquote>
+<p>所有课程都进入尾声，自己在这边的学习生活也只剩下最后的15天了。来到这里就说自己要做点什么，然后度过前一周的新鲜期之后陷入深深的迷茫期，感觉不知道做什么，课程前期比较轻松，大把的时间让自己思考，突然不知道该做些什么，直到找到真正的目的——体验，才真正算是投入了这边的生活，这时候在想这五个多月自己没有辜负，完成了这一次体验的行程，自己也清楚的感受到，除了知识，这一次的体验拓展了自己的太多，就想自己开始说的那样，这段经历也是自己人生路的铺垫。</p>
+</blockquote>
+<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul>
+<li>因为小组报告，自己又认识了一群来自不同地方的朋友。一双眼睛只能看到一个世界，但不同双眼睛就能看到不同的世界，自己在这些朋友的眼睛里又看到了不同的世界，那是自己不曾接触过的，却充满智慧，充满乐趣。</li>
+<li>不动产管理的老师请全班的同学吃了披萨，虽然不是老师第一次请吃东西，但是这种氛围自己是第一次感受。从小，在自己的眼里，老师都是要尊敬的，这样自己和老师之间从来都没有向朋友一样亲近过，因为自己在老师面前就是无法将自己视为老师的朋友，但是那个时候我真的没有把筱蓉当作老师来看待，当然不仅仅是因为一顿批萨，而是筱蓉身上散发出来的气场，那种亲和的态度，我也不是说之前的老师不亲和，反正就是个人觉得自己是真的很喜欢筱蓉，也很喜欢她不拘小节的课程。</li>
+<li>原校下周就要选课了，自己想来其实也没有太困难，就是物流的课程需要补回来，其余都还好，所以没必要那么担心。</li>
 </ul>
-<h4 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h4><ul>
-<li>通信作业的问题回答</li>
-<li>还是抽时间把毛概的论文写了吧，毕竟回去可能还真的可以考试呢</li>
-<li>node</li>
-<li>php继续学习</li>
-</ul>
+<blockquote>
+<p>人间一趟，看看太阳。</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>大学</category>
       </categories>
       <tags>
+        <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WeeklyMind-7</title>
+    <url>/2018/01/07/WeeklyMind-7/</url>
+    <content><![CDATA[<blockquote>
+<p>期末周真的很崩溃，赶各种报告，还要复习，命天要考不动产管理和西方哲学史，不动产管理自己都快要放弃了，今天下午又整理出二十页pdf的知识点，也是选择随缘了，反正这个周就是很忙碌就对了，为了复习自己周末都去图书馆了，真是不敢相信！！！</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><ul>
+<li>web网页程序设计已经结课了，这个对有基础的自己来说，不难，也没有担心什么，成绩也在自己的规划之中。</li>
+<li>行销管理的报告初步形态也基本完成，明天早起去把名片打印出来就行了。</li>
+<li>再来是明天要考试的两门，脑子已经不够用了！</li>
+<li>周三的财务管理也算复习了三个单元了，但还是不算有底，主要是有一个数据不会算！！！这个问题要在明天和后天晚上的时间里面解决了。</li>
+<li>最后周四还有一门课堂的期末报告，不过时间还够，所以不用太担心。</li>
+<li>还有就是自己的博客有改一些个性化设置，更新了主题。</li>
+</ul>
+<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul>
+<li>明明前两天都还是清空万里，到考试就大雨滂沱，自己不太喜欢雨天，所以有点点影响心情吧。</li>
+<li>这个周都睡得比较晚，生物钟感觉都已经变了，不过自己也能接受。</li>
+<li>其实就是很普通的一个周，所以自己也想不起太多想写的东西。</li>
+</ul>
+<h2 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h2><ul>
+<li>走之前给自己写一封信</li>
+<li>走之前给家里写一封信</li>
+<li>思想报告</li>
+<li>期末报告</li>
+<li>联系老师商量考试安排</li>
+</ul>
+<blockquote>
+<p>今天雨，可是我们在一起</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>大学</category>
+      </categories>
+      <tags>
+        <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WeeklyMind-9</title>
+    <url>/2019/07/07/WeeklyMind-9/</url>
+    <content><![CDATA[<blockquote>
+<p>说在前面：这个周开始，自己就正式开始了上班的生活，上个周还在和各位同学依依不舍，这个周一切都切换到了不同的轨道，就简单说一下这个周发生的事情吧。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>总之，一切都还是那么生疏，但是自己在开始慢慢转变自己的观念了，从一个在学校只有输入的学生（或许有少量的输出），慢慢转变为一个需要每天都有输出的工作者。</p>
+<h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>刚刚搬到这个地方，住了大概两个周了吧，周边环境还是很不错，现状唯一的不好就是还没有锅，不能自己做东西吃，这是很不方便的，所以先定下个月去购买厨房用品，这个月先坚持过去。</p>
+<h3 id="随心"><a href="#随心" class="headerlink" title="随心"></a>随心</h3><p>自己除了工作以外的时间安排还不够合理，没有主动的push自己，不管是心理上还是身体上，都不是自己理想中的工作生活，尽管现在可能是累了一点，但是学习这个事情，还是不能放到玩耍的前面，所以接下来这个周，自己要开始慢慢调整。</p>
+<h3 id="调整待跟进事项"><a href="#调整待跟进事项" class="headerlink" title="调整待跟进事项"></a>调整待跟进事项</h3><ul>
+<li>每天简单的更新自己的微博（工作和学习内容），有机会要更新自己的微信公众号（想法和当下情感）。</li>
+<li>每天看至少二十页的书，需要给自己充电。</li>
+<li>马上教师资格证就要开始考试了，自己要开始准备，既然答应了就要做到。</li>
+<li>英语不应该放下，自己每天应抽出半个小时，看看英语。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
         <tag>周记</tag>
       </tags>
   </entry>
@@ -1384,209 +1548,6 @@ urlpatterns = [
       </categories>
       <tags>
         <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>NodePPT</title>
-    <url>/2018/04/11/NodePPT/</url>
-    <content><![CDATA[<blockquote>
-<p>用了好几次这个ppt，自己确实觉得这是用过的ppt中最简洁，B格最高的ppt，但是每次做都要去看原文档，十分的不方便，因此自己写一篇文章，将经常使用的一些命令和参数记录下来。<br>例子：<a href="https://yangkunyi.com/Share/ppt.html">https://yangkunyi.com/Share/ppt.html</a><br>原文：<a href="https://github.com/ksky521/nodeppt">https://github.com/ksky521/nodeppt</a></p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>这是一款网页ppt库，只需要编辑相应的md文档就可以做出演示ppt，支持markdown,html,css,js等不同的语言，十分的方便。</p>
-</blockquote>
-<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><h4 id="本地跑md文档"><a href="#本地跑md文档" class="headerlink" title="本地跑md文档"></a>本地跑md文档</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// port是端口号</span><br><span class="line">nodeppt start -p &lt;port&gt;</span><br></pre></td></tr></table></figure>
-
-<h4 id="生成html文档"><a href="#生成html文档" class="headerlink" title="生成html文档"></a>生成html文档</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 默认生成publish文件夹</span><br><span class="line">nodeppt generate filename -a</span><br></pre></td></tr></table></figure>
-
-<h3 id="常用主题和动画"><a href="#常用主题和动画" class="headerlink" title="常用主题和动画"></a>常用主题和动画</h3><h4 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h4><p><code>colors</code>-<code>moon</code>-<code>blue</code>-<code>dark</code>-<code>green</code>-<code>light</code></p>
-<h4 id="翻页动画"><a href="#翻页动画" class="headerlink" title="翻页动画"></a>翻页动画</h4><ul>
-<li>kontext</li>
-<li>vkontext</li>
-<li>circle</li>
-<li>earthquake</li>
-<li>cards</li>
-<li>glue</li>
-<li>stick</li>
-<li>move</li>
-<li>newspaper</li>
-<li>slide</li>
-<li>slide2</li>
-<li>slide3</li>
-<li>horizontal3d</li>
-<li>horizontal</li>
-<li>vertical3d</li>
-<li>zoomin</li>
-<li>zoomout</li>
-<li>pulse</li>
-</ul>
-<h4 id="单页动画语法"><a href="#单页动画语法" class="headerlink" title="单页动画语法"></a>单页动画语法</h4><blockquote>
-<p><code>&#123;:&amp;.动画&#125;</code></p>
-</blockquote>
-<hr>
-<blockquote>
-<p>因为自己又经常将ppt放到GitHub上去，所以也顺便记一下git的常用指令</p>
-</blockquote>
-<h2 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h2><h4 id="从本地上传到仓库的步骤"><a href="#从本地上传到仓库的步骤" class="headerlink" title="从本地上传到仓库的步骤"></a>从本地上传到仓库的步骤</h4><ol>
-<li><code>git init</code></li>
-<li><code>git add .</code></li>
-<li><code>git commit -m &#39;备注&#39;</code></li>
-<li><code>git remote origin add 仓库地址</code></li>
-<li><code>git pull</code> &#x2F;&#x2F;当仓库不为空的时候需要做的工作</li>
-<li><code>git push</code></li>
-<li><code>git status</code> &#x2F;&#x2F;查询状态</li>
-</ol>
-<p><img src="http://otn4ut2th.bkt.clouddn.com/bloggithub.png" alt="git指令"></p>
-]]></content>
-      <categories>
-        <category>大学</category>
-      </categories>
-      <tags>
-        <tag>nodeppt</tag>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WeeklyMind-9</title>
-    <url>/2019/07/07/WeeklyMind-9/</url>
-    <content><![CDATA[<blockquote>
-<p>说在前面：这个周开始，自己就正式开始了上班的生活，上个周还在和各位同学依依不舍，这个周一切都切换到了不同的轨道，就简单说一下这个周发生的事情吧。</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>总之，一切都还是那么生疏，但是自己在开始慢慢转变自己的观念了，从一个在学校只有输入的学生（或许有少量的输出），慢慢转变为一个需要每天都有输出的工作者。</p>
-<h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>刚刚搬到这个地方，住了大概两个周了吧，周边环境还是很不错，现状唯一的不好就是还没有锅，不能自己做东西吃，这是很不方便的，所以先定下个月去购买厨房用品，这个月先坚持过去。</p>
-<h3 id="随心"><a href="#随心" class="headerlink" title="随心"></a>随心</h3><p>自己除了工作以外的时间安排还不够合理，没有主动的push自己，不管是心理上还是身体上，都不是自己理想中的工作生活，尽管现在可能是累了一点，但是学习这个事情，还是不能放到玩耍的前面，所以接下来这个周，自己要开始慢慢调整。</p>
-<h3 id="调整待跟进事项"><a href="#调整待跟进事项" class="headerlink" title="调整待跟进事项"></a>调整待跟进事项</h3><ul>
-<li>每天简单的更新自己的微博（工作和学习内容），有机会要更新自己的微信公众号（想法和当下情感）。</li>
-<li>每天看至少二十页的书，需要给自己充电。</li>
-<li>马上教师资格证就要开始考试了，自己要开始准备，既然答应了就要做到。</li>
-<li>英语不应该放下，自己每天应抽出半个小时，看看英语。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>工作</tag>
-        <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WeeklyMind-7</title>
-    <url>/2018/01/07/WeeklyMind-7/</url>
-    <content><![CDATA[<blockquote>
-<p>期末周真的很崩溃，赶各种报告，还要复习，命天要考不动产管理和西方哲学史，不动产管理自己都快要放弃了，今天下午又整理出二十页pdf的知识点，也是选择随缘了，反正这个周就是很忙碌就对了，为了复习自己周末都去图书馆了，真是不敢相信！！！</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><ul>
-<li>web网页程序设计已经结课了，这个对有基础的自己来说，不难，也没有担心什么，成绩也在自己的规划之中。</li>
-<li>行销管理的报告初步形态也基本完成，明天早起去把名片打印出来就行了。</li>
-<li>再来是明天要考试的两门，脑子已经不够用了！</li>
-<li>周三的财务管理也算复习了三个单元了，但还是不算有底，主要是有一个数据不会算！！！这个问题要在明天和后天晚上的时间里面解决了。</li>
-<li>最后周四还有一门课堂的期末报告，不过时间还够，所以不用太担心。</li>
-<li>还有就是自己的博客有改一些个性化设置，更新了主题。</li>
-</ul>
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul>
-<li>明明前两天都还是清空万里，到考试就大雨滂沱，自己不太喜欢雨天，所以有点点影响心情吧。</li>
-<li>这个周都睡得比较晚，生物钟感觉都已经变了，不过自己也能接受。</li>
-<li>其实就是很普通的一个周，所以自己也想不起太多想写的东西。</li>
-</ul>
-<h2 id="待更进事项"><a href="#待更进事项" class="headerlink" title="待更进事项"></a>待更进事项</h2><ul>
-<li>走之前给自己写一封信</li>
-<li>走之前给家里写一封信</li>
-<li>思想报告</li>
-<li>期末报告</li>
-<li>联系老师商量考试安排</li>
-</ul>
-<blockquote>
-<p>今天雨，可是我们在一起</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>大学</category>
-      </categories>
-      <tags>
-        <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>不动产管理复习</title>
-    <url>/2018/01/03/%E4%B8%8D%E5%8A%A8%E4%BA%A7%E7%AE%A1%E7%90%86%E5%A4%8D%E4%B9%A0/</url>
-    <content><![CDATA[<blockquote>
-<p>今天抽空整理了上个星期的不动产管理的复习题，当作复习吧，毕竟下个周就要考试了。</p>
-</blockquote>
-<span id="more"></span>
-
-<ol>
-<li>样品屋不是不动产。</li>
-<li>不是定着物的特点：继续附着在建筑物上。</li>
-<li>不动产的定义未包含<strong>预售屋</strong>。</li>
-<li>要销售预售屋必须要有<strong>建造执照</strong>。</li>
-<li>不动产物权只要签约就生效(X)；需要登记。</li>
-<li>物权优先于债权。</li>
-<li>关于地上权：不以支付地租为必要,不以订定租期为必要,地上权之目标为土地。</li>
-<li>一坪 &#x3D; 3.3058平方公尺</li>
-<li>一平方公尺 &#x3D; 0.3025坪</li>
-<li>描述土地的词语：面积，位置，形状（密度不是）。</li>
-<li>都市计划法包括的内容：乡镇计划，乡街计划，特定区计划。</li>
-<li>基地面积100平方公尺,建蔽率50%,总楼地板面积25000平方公尺,容积率为多少?(<strong>容积率:楼地板面积除以建蔽率</strong>) <strong>500%</strong></li>
-<li>容积率500%,基地面积100平方公尺,建蔽率50%,可盖几楼? (<strong>容积率除以建蔽率</strong>)10楼</li>
-<li>从地籍图无法知道市价。</li>
-<li>土地的性质不包括：异质性。</li>
-<li>预售屋：<strong>高风险高报酬</strong>（自备款比中古屋少，总价负担重）。</li>
-<li>房地产的特性：不可移动性，消费性，投资性。产品一致性不是房地产的特性。</li>
-<li>在非都市土地中,山坡地保育区所兴建的房屋会属于何者用地?丙（老丙建）(甲:乡村 乙:乡村 丙:山坡 丁:工业)</li>
-<li>所有权类型： 单独持有，分别共有，共同共有。</li>
-<li>分别共有的特性：应有部分均等，着重应有部分，可自由处分应有部分。</li>
-<li>房地产的声明周期：<strong>投资-&gt;生产-&gt;交易-&gt;使用</strong>。</li>
-<li>共同共有：合伙财产（合伙人），共同财产（夫妻），未分割的遗产（继承）。</li>
-<li>不是市地重划的原因：使用为公共交通促进土地合理之需要者（非都市）。</li>
-<li>市地重划：经政府选定指定范围办理市地重划；人民申请优先办理；奖励私人自办重划。</li>
-<li>市地重划描述错误的：重划后的土地按抽签的方式分配给原土地所有权人（按原位）。</li>
-<li>市地重划中,土地所有权人共同负担不可超过?  <strong>45%</strong></li>
-<li>市地重划的效益：增加土地供给，促进土地利用，提高土地价值。不是为了增进当地人口数。</li>
-<li>市地重划（一定是都市土地）的原因：新设都市地区的全部或一部分，实施开发建设；旧都市地区为公共安全促进土地合理需要者；都市土地开发新社区者。</li>
-<li>市地重划后土地所有人最少可领回? <strong>55%</strong></li>
-<li>桃园航空城属于哪一种征收？ 区段征收</li>
-<li>有关区段征收的描述，错误的是：仅适用于都市土地</li>
-<li>区段征收：国家因公益需要的征收私有土地；土地征收程序第一步是举办公听会；新设都市地区的全部或一部分，实施开发者可以进行区段征收。</li>
-<li>区段征收与市地重划的比较何者错误? 区段征收较公平（区段征收不公平）</li>
-<li>一般征收与区段征收之描述何者错误?一般征收之原因不一定要为公共事业需要者（征收的土地一定要用于公共事业）–正确的：区段征收执行较为困难；区段征收公共设施较多样性；市地重划民众参与较多；区段征收的原因是开发建设或者促进土地利用；区段征收以现金、抵债地予以补偿；区段征收就是一定区域内的土地全部征收。</li>
-<li>国泰禾</li>
-<li>定型化契约是根据<strong>消费者保护法</strong>定下的。</li>
-<li>登记面积超过3%就可以解约了。</li>
-<li>预售屋定型化契约不得记载事项：广告仅供参考&#x2F;使用面积销售等</li>
-<li>公寓大厦管理条理的适用描述：建物形态相关</li>
-<li>住户权益义务说法错误：不须负担共同壁的管线维修费用（需要）</li>
-<li>物业管理范围不包括个人财务管理。</li>
-<li>消费者保护法和公平交易法的描述错误的是：广告不实无法依据公交法向业者开罚。</li>
-<li>适用于公平交易法：先付订金才可看契约,没有接露重要信息（违反了市场交易秩序）</li>
-<li>社会住宅的用意：只租不卖；帮助经济弱势；协助社会弱势。</li>
-<li>都市更新不包括：合建。</li>
-<li>约定专用部分说明正确的：经约定将共享部分给特定区分所有权人使用</li>
-<li>权利变换正确的是：（都市更新）立体分配的概念，重新分配土地和建物</li>
-<li>物权具有排他性,请求权,追及性</li>
-<li>凉亭是建筑物，门框铁窗是固定物，售票亭不是不动产</li>
-<li>使用执照是卖之后才有</li>
-<li>区段征收执行比较困难也应该是最后一个手段,公共设施比较多样性(因为政府拿比较多)所以市地重划的公社是比较少的。</li>
-<li>保留增收:还不知道做甚么用先保留</li>
-<li>区段征收:大规模大面积征收</li>
-<li>一并征收:我要征收这边这边有小块一并征收</li>
-<li>区段增收:<strong>抽签</strong> 市地重划:<strong>原位</strong></li>
-<li>公同共有:双方因法律关系共同持有这个东西</li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>复习</tag>
-        <tag>不动产</tag>
       </tags>
   </entry>
   <entry>
@@ -1780,6 +1741,158 @@ urlpatterns = [
         <tag>前端</tag>
         <tag>笔记</tag>
         <tag>分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>不动产管理复习</title>
+    <url>/2018/01/03/%E4%B8%8D%E5%8A%A8%E4%BA%A7%E7%AE%A1%E7%90%86%E5%A4%8D%E4%B9%A0/</url>
+    <content><![CDATA[<blockquote>
+<p>今天抽空整理了上个星期的不动产管理的复习题，当作复习吧，毕竟下个周就要考试了。</p>
+</blockquote>
+<span id="more"></span>
+
+<ol>
+<li>样品屋不是不动产。</li>
+<li>不是定着物的特点：继续附着在建筑物上。</li>
+<li>不动产的定义未包含<strong>预售屋</strong>。</li>
+<li>要销售预售屋必须要有<strong>建造执照</strong>。</li>
+<li>不动产物权只要签约就生效(X)；需要登记。</li>
+<li>物权优先于债权。</li>
+<li>关于地上权：不以支付地租为必要,不以订定租期为必要,地上权之目标为土地。</li>
+<li>一坪 &#x3D; 3.3058平方公尺</li>
+<li>一平方公尺 &#x3D; 0.3025坪</li>
+<li>描述土地的词语：面积，位置，形状（密度不是）。</li>
+<li>都市计划法包括的内容：乡镇计划，乡街计划，特定区计划。</li>
+<li>基地面积100平方公尺,建蔽率50%,总楼地板面积25000平方公尺,容积率为多少?(<strong>容积率:楼地板面积除以建蔽率</strong>) <strong>500%</strong></li>
+<li>容积率500%,基地面积100平方公尺,建蔽率50%,可盖几楼? (<strong>容积率除以建蔽率</strong>)10楼</li>
+<li>从地籍图无法知道市价。</li>
+<li>土地的性质不包括：异质性。</li>
+<li>预售屋：<strong>高风险高报酬</strong>（自备款比中古屋少，总价负担重）。</li>
+<li>房地产的特性：不可移动性，消费性，投资性。产品一致性不是房地产的特性。</li>
+<li>在非都市土地中,山坡地保育区所兴建的房屋会属于何者用地?丙（老丙建）(甲:乡村 乙:乡村 丙:山坡 丁:工业)</li>
+<li>所有权类型： 单独持有，分别共有，共同共有。</li>
+<li>分别共有的特性：应有部分均等，着重应有部分，可自由处分应有部分。</li>
+<li>房地产的声明周期：<strong>投资-&gt;生产-&gt;交易-&gt;使用</strong>。</li>
+<li>共同共有：合伙财产（合伙人），共同财产（夫妻），未分割的遗产（继承）。</li>
+<li>不是市地重划的原因：使用为公共交通促进土地合理之需要者（非都市）。</li>
+<li>市地重划：经政府选定指定范围办理市地重划；人民申请优先办理；奖励私人自办重划。</li>
+<li>市地重划描述错误的：重划后的土地按抽签的方式分配给原土地所有权人（按原位）。</li>
+<li>市地重划中,土地所有权人共同负担不可超过?  <strong>45%</strong></li>
+<li>市地重划的效益：增加土地供给，促进土地利用，提高土地价值。不是为了增进当地人口数。</li>
+<li>市地重划（一定是都市土地）的原因：新设都市地区的全部或一部分，实施开发建设；旧都市地区为公共安全促进土地合理需要者；都市土地开发新社区者。</li>
+<li>市地重划后土地所有人最少可领回? <strong>55%</strong></li>
+<li>桃园航空城属于哪一种征收？ 区段征收</li>
+<li>有关区段征收的描述，错误的是：仅适用于都市土地</li>
+<li>区段征收：国家因公益需要的征收私有土地；土地征收程序第一步是举办公听会；新设都市地区的全部或一部分，实施开发者可以进行区段征收。</li>
+<li>区段征收与市地重划的比较何者错误? 区段征收较公平（区段征收不公平）</li>
+<li>一般征收与区段征收之描述何者错误?一般征收之原因不一定要为公共事业需要者（征收的土地一定要用于公共事业）–正确的：区段征收执行较为困难；区段征收公共设施较多样性；市地重划民众参与较多；区段征收的原因是开发建设或者促进土地利用；区段征收以现金、抵债地予以补偿；区段征收就是一定区域内的土地全部征收。</li>
+<li>国泰禾</li>
+<li>定型化契约是根据<strong>消费者保护法</strong>定下的。</li>
+<li>登记面积超过3%就可以解约了。</li>
+<li>预售屋定型化契约不得记载事项：广告仅供参考&#x2F;使用面积销售等</li>
+<li>公寓大厦管理条理的适用描述：建物形态相关</li>
+<li>住户权益义务说法错误：不须负担共同壁的管线维修费用（需要）</li>
+<li>物业管理范围不包括个人财务管理。</li>
+<li>消费者保护法和公平交易法的描述错误的是：广告不实无法依据公交法向业者开罚。</li>
+<li>适用于公平交易法：先付订金才可看契约,没有接露重要信息（违反了市场交易秩序）</li>
+<li>社会住宅的用意：只租不卖；帮助经济弱势；协助社会弱势。</li>
+<li>都市更新不包括：合建。</li>
+<li>约定专用部分说明正确的：经约定将共享部分给特定区分所有权人使用</li>
+<li>权利变换正确的是：（都市更新）立体分配的概念，重新分配土地和建物</li>
+<li>物权具有排他性,请求权,追及性</li>
+<li>凉亭是建筑物，门框铁窗是固定物，售票亭不是不动产</li>
+<li>使用执照是卖之后才有</li>
+<li>区段征收执行比较困难也应该是最后一个手段,公共设施比较多样性(因为政府拿比较多)所以市地重划的公社是比较少的。</li>
+<li>保留增收:还不知道做甚么用先保留</li>
+<li>区段征收:大规模大面积征收</li>
+<li>一并征收:我要征收这边这边有小块一并征收</li>
+<li>区段增收:<strong>抽签</strong> 市地重划:<strong>原位</strong></li>
+<li>公同共有:双方因法律关系共同持有这个东西</li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>复习</tag>
+        <tag>不动产</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>互联网金融了解</title>
+    <url>/2017/02/27/%E4%BA%92%E8%81%94%E7%BD%91%E9%87%91%E8%9E%8D%E4%BA%86%E8%A7%A3/</url>
+    <content><![CDATA[<blockquote>
+<p>互联网金融学习报告</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="学习方式"><a href="#学习方式" class="headerlink" title="学习方式"></a>学习方式</h3><ul>
+<li>查看百度百科</li>
+<li>查看知乎话题精华问题</li>
+<li>查看精华博文</li>
+</ul>
+<h3 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h3><blockquote>
+<p>互联网金融（ITFIN）就是互联网技术和金融功能的有机结合，依托大数据和云计算在开放的互联网平台上形成的功能化金融业态及其服务体系，包括基于网络平台的金融市场体系、金融服务体系、金融组织体系、金融产品体系以及互联网金融监管体系等，并具有普惠金融、平台金融、信息金融和碎片金融等相异于传统金融的金融模式。</p>
+</blockquote>
+<h3 id="发展模式"><a href="#发展模式" class="headerlink" title="发展模式"></a>发展模式</h3><ul>
+<li>众筹</li>
+<li>P2P网贷<blockquote>
+<p>P2P：对等网络，即对等计算机网络，是一种在对等者（Peer）之间分配任务和工作负载的分布式应用架构，是对等计算模型在应用层形成的一种组网或网络形式。</p>
+</blockquote>
+</li>
+<li>第三方支付</li>
+<li>数字货币（比特币）</li>
+<li>大数据金融</li>
+<li>信息化金融机构</li>
+<li>互联网金融门户</li>
+</ul>
+<h3 id="经典案例"><a href="#经典案例" class="headerlink" title="经典案例"></a>经典案例</h3><ul>
+<li><p>融资</p>
+<blockquote>
+<p>四大商业银行推出的网上银行，腾讯推出的微信联合人保财险的手机端支付，淘宝联合天弘基金开发的余额宝，还有包括：易付宝、百付宝、快钱等多家第三方支付平台。</p>
+</blockquote>
+</li>
+<li><p>微金融</p>
+<blockquote>
+<p>微金融又称微信金，是2012年左右新兴的一种金融模式。即借助微信等典型的社交媒体平台，为用户提供相对理财，投资，贷款等规模较小的金融行为环境，一般情况下，指的是为中小微企业、创业者、个体工商户、小额投资者等提供的金融服务。日前有第三方平台发布了微信金融平台排名，以其中名列前位的“闪电借款”为例，2015年第三季度财报显示，其闪电借款平台7、8、9三个月撮合交易额分别有1.95亿、2.28亿、2.67亿，增长极其迅猛。</p>
+</blockquote>
+</li>
+<li><p>移动支付</p>
+</li>
+</ul>
+<blockquote>
+<p>以规模庞大的线下POS收单市场来说，越来越多的第三方支付企业对线下收单市场的拓展，未来线下支付将给整个综合支付市场格局带来重要影响。最经典的肯定是支付宝啦。</p>
+</blockquote>
+<h3 id="互联网金融方面的产品"><a href="#互联网金融方面的产品" class="headerlink" title="互联网金融方面的产品"></a>互联网金融方面的产品</h3><h4 id="网络支付"><a href="#网络支付" class="headerlink" title="网络支付"></a>网络支付</h4><ul>
+<li>支付宝</li>
+<li>微信</li>
+<li>财付通</li>
+<li>百度钱包</li>
+<li>微博钱包</li>
+<li>盛付通</li>
+<li>国付宝</li>
+</ul>
+<h4 id="网络理财"><a href="#网络理财" class="headerlink" title="网络理财"></a>网络理财</h4><ul>
+<li>支付宝.余额宝</li>
+<li>招财宝</li>
+<li>挖财</li>
+<li>点融网</li>
+<li>拍拍货</li>
+<li>安心贷</li>
+<li>翼龙贷款</li>
+<li>有利网</li>
+<li>人人贷</li>
+<li>……</li>
+</ul>
+<h3 id="互联网金融的形态与谱系"><a href="#互联网金融的形态与谱系" class="headerlink" title="互联网金融的形态与谱系"></a>互联网金融的形态与谱系</h3><h4 id="1-互联网支付"><a href="#1-互联网支付" class="headerlink" title="1.互联网支付"></a>1.互联网支付</h4><p>（1）互联网支付历程：Musk,Paypal与SpaceX<br>（2）支付宝：从支付工具到场景制造<br>（3）微信支付：从社交场景到支付工具<br>（4）汇付天下：从机票支付到金融布局<br>（5）互联网支付成功秘决：嵌入场景、专注本质</p>
+<h4 id="2-互联网货币"><a href="#2-互联网货币" class="headerlink" title="2.互联网货币"></a>2.互联网货币</h4><p>（1）互联网货币的理论基础：密码学与区块链技术<br>（2）比特币：疯狂炒作背后的深层次逻辑——去中心化<br>（3）区块链技术——下一场盛筵的基础</p>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>新媒体</tag>
       </tags>
   </entry>
   <entry>
@@ -1993,82 +2106,6 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>互联网金融了解</title>
-    <url>/2017/02/27/%E4%BA%92%E8%81%94%E7%BD%91%E9%87%91%E8%9E%8D%E4%BA%86%E8%A7%A3/</url>
-    <content><![CDATA[<blockquote>
-<p>互联网金融学习报告</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="学习方式"><a href="#学习方式" class="headerlink" title="学习方式"></a>学习方式</h3><ul>
-<li>查看百度百科</li>
-<li>查看知乎话题精华问题</li>
-<li>查看精华博文</li>
-</ul>
-<h3 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h3><blockquote>
-<p>互联网金融（ITFIN）就是互联网技术和金融功能的有机结合，依托大数据和云计算在开放的互联网平台上形成的功能化金融业态及其服务体系，包括基于网络平台的金融市场体系、金融服务体系、金融组织体系、金融产品体系以及互联网金融监管体系等，并具有普惠金融、平台金融、信息金融和碎片金融等相异于传统金融的金融模式。</p>
-</blockquote>
-<h3 id="发展模式"><a href="#发展模式" class="headerlink" title="发展模式"></a>发展模式</h3><ul>
-<li>众筹</li>
-<li>P2P网贷<blockquote>
-<p>P2P：对等网络，即对等计算机网络，是一种在对等者（Peer）之间分配任务和工作负载的分布式应用架构，是对等计算模型在应用层形成的一种组网或网络形式。</p>
-</blockquote>
-</li>
-<li>第三方支付</li>
-<li>数字货币（比特币）</li>
-<li>大数据金融</li>
-<li>信息化金融机构</li>
-<li>互联网金融门户</li>
-</ul>
-<h3 id="经典案例"><a href="#经典案例" class="headerlink" title="经典案例"></a>经典案例</h3><ul>
-<li><p>融资</p>
-<blockquote>
-<p>四大商业银行推出的网上银行，腾讯推出的微信联合人保财险的手机端支付，淘宝联合天弘基金开发的余额宝，还有包括：易付宝、百付宝、快钱等多家第三方支付平台。</p>
-</blockquote>
-</li>
-<li><p>微金融</p>
-<blockquote>
-<p>微金融又称微信金，是2012年左右新兴的一种金融模式。即借助微信等典型的社交媒体平台，为用户提供相对理财，投资，贷款等规模较小的金融行为环境，一般情况下，指的是为中小微企业、创业者、个体工商户、小额投资者等提供的金融服务。日前有第三方平台发布了微信金融平台排名，以其中名列前位的“闪电借款”为例，2015年第三季度财报显示，其闪电借款平台7、8、9三个月撮合交易额分别有1.95亿、2.28亿、2.67亿，增长极其迅猛。</p>
-</blockquote>
-</li>
-<li><p>移动支付</p>
-</li>
-</ul>
-<blockquote>
-<p>以规模庞大的线下POS收单市场来说，越来越多的第三方支付企业对线下收单市场的拓展，未来线下支付将给整个综合支付市场格局带来重要影响。最经典的肯定是支付宝啦。</p>
-</blockquote>
-<h3 id="互联网金融方面的产品"><a href="#互联网金融方面的产品" class="headerlink" title="互联网金融方面的产品"></a>互联网金融方面的产品</h3><h4 id="网络支付"><a href="#网络支付" class="headerlink" title="网络支付"></a>网络支付</h4><ul>
-<li>支付宝</li>
-<li>微信</li>
-<li>财付通</li>
-<li>百度钱包</li>
-<li>微博钱包</li>
-<li>盛付通</li>
-<li>国付宝</li>
-</ul>
-<h4 id="网络理财"><a href="#网络理财" class="headerlink" title="网络理财"></a>网络理财</h4><ul>
-<li>支付宝.余额宝</li>
-<li>招财宝</li>
-<li>挖财</li>
-<li>点融网</li>
-<li>拍拍货</li>
-<li>安心贷</li>
-<li>翼龙贷款</li>
-<li>有利网</li>
-<li>人人贷</li>
-<li>……</li>
-</ul>
-<h3 id="互联网金融的形态与谱系"><a href="#互联网金融的形态与谱系" class="headerlink" title="互联网金融的形态与谱系"></a>互联网金融的形态与谱系</h3><h4 id="1-互联网支付"><a href="#1-互联网支付" class="headerlink" title="1.互联网支付"></a>1.互联网支付</h4><p>（1）互联网支付历程：Musk,Paypal与SpaceX<br>（2）支付宝：从支付工具到场景制造<br>（3）微信支付：从社交场景到支付工具<br>（4）汇付天下：从机票支付到金融布局<br>（5）互联网支付成功秘决：嵌入场景、专注本质</p>
-<h4 id="2-互联网货币"><a href="#2-互联网货币" class="headerlink" title="2.互联网货币"></a>2.互联网货币</h4><p>（1）互联网货币的理论基础：密码学与区块链技术<br>（2）比特币：疯狂炒作背后的深层次逻辑——去中心化<br>（3）区块链技术——下一场盛筵的基础</p>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>新媒体</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>八年</title>
     <url>/2020/02/13/%E5%85%AB%E5%B9%B4/</url>
     <content><![CDATA[<blockquote>
@@ -2086,178 +2123,6 @@ urlpatterns = [
       </categories>
       <tags>
         <tag>随笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>WeeklyMind-6</title>
-    <url>/2017/12/30/WeeklyMind-6/</url>
-    <content><![CDATA[<blockquote>
-<p>2017就这样过了，今天已经是2018年了，想来这一年确实发生了太多的事情，自己的价值观也在这些事情中一次次的改变和塑造着，未来的路在昨天的铺垫中慢慢成型，在今天的过程中慢慢延伸，在明天的憧憬理慢慢向前。这个周开始进入考试复习周，下周三就开始考试了，但自己在假期里显得十分的懒散，可能是因为自己这两天一直在想这一年自己到底干了什么，事情太多，整整两个日记本了，这应该就是自己的成长吧，在这里还是不想太多，就说说这个周。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="学习"><a href="#学习" class="headerlink" title="学习"></a>学习</h2><ul>
-<li>web课程已经结束了。下周三期末考试，作为自己最不担心的一门课程，只希望自己不要粗心吧。</li>
-<li>行销管理的小组报告自己有想好好做出来，做一个成品，之后也可以拿得出手，所以自己把自己当作这个小组的组长，一直在拉着整个报告的进度，但是这个假期还是懈怠了很多，不过假期嘛，大家都没有将心思放在这上面，所以打算回来后继续。</li>
-<li>不动产管理课程也结束了，因为元旦下周的课程放掉了，下下周直接考试，这门课也希望自己能不留遗憾的完成，毕竟是缘分让自己选了这门课。</li>
-<li>财务管理一直是自己不喜欢又带有些害怕的课程，考试范围也算是出来了，所以只能说努力吧。</li>
-<li>西方哲学史也因为假期结课了，最后仍是考试，这门课自己倒不是很担心。</li>
-<li>体育课已经结课了，从来不担心的课程，应该是一个不错的成绩。</li>
-<li>人际管理课程报告也结束了，还有最后两节课和与一个期末总结就完成了，成绩应该也算理想，报告自己觉得做得也不错。</li>
-</ul>
-<blockquote>
-<p>所有课程都进入尾声，自己在这边的学习生活也只剩下最后的15天了。来到这里就说自己要做点什么，然后度过前一周的新鲜期之后陷入深深的迷茫期，感觉不知道做什么，课程前期比较轻松，大把的时间让自己思考，突然不知道该做些什么，直到找到真正的目的——体验，才真正算是投入了这边的生活，这时候在想这五个多月自己没有辜负，完成了这一次体验的行程，自己也清楚的感受到，除了知识，这一次的体验拓展了自己的太多，就想自己开始说的那样，这段经历也是自己人生路的铺垫。</p>
-</blockquote>
-<h2 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h2><ul>
-<li>因为小组报告，自己又认识了一群来自不同地方的朋友。一双眼睛只能看到一个世界，但不同双眼睛就能看到不同的世界，自己在这些朋友的眼睛里又看到了不同的世界，那是自己不曾接触过的，却充满智慧，充满乐趣。</li>
-<li>不动产管理的老师请全班的同学吃了披萨，虽然不是老师第一次请吃东西，但是这种氛围自己是第一次感受。从小，在自己的眼里，老师都是要尊敬的，这样自己和老师之间从来都没有向朋友一样亲近过，因为自己在老师面前就是无法将自己视为老师的朋友，但是那个时候我真的没有把筱蓉当作老师来看待，当然不仅仅是因为一顿批萨，而是筱蓉身上散发出来的气场，那种亲和的态度，我也不是说之前的老师不亲和，反正就是个人觉得自己是真的很喜欢筱蓉，也很喜欢她不拘小节的课程。</li>
-<li>原校下周就要选课了，自己想来其实也没有太困难，就是物流的课程需要补回来，其余都还好，所以没必要那么担心。</li>
-</ul>
-<blockquote>
-<p>人间一趟，看看太阳。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>大学</category>
-      </categories>
-      <tags>
-        <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>坎帕斯学院讨论日常-2</title>
-    <url>/2017/12/03/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-2/</url>
-    <content><![CDATA[<blockquote>
-<p>这是第二次整理讨论的内容，本次内容有点深奥，值得细嚼慢咽。</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><ul>
-<li>高并发(High Concurrency)</li>
-<li>指通过设计保证系统能够同时并行处理很多请求。</li>
-<li>是互联网分布式系统架构设计中必须考虑的因素之一。</li>
-<li>高性能(High performance)</li>
-<li>目前理解就是提高浏览网页的速度。</li>
-<li>高可用(High Availability)</li>
-<li>通常来描述一个系统经过专门的设计，从而减少停工时间，而保持其服务的高度可用性。</li>
-<li>高扩展性(High Extensibility)</li>
-<li>通常和可伸缩性混为一谈.在软件范畴上，是软件系统本身的属性，或者进一步说是设计的属性，代码的属性。 </li>
-<li>高可维护性(High Maintainability)</li>
-<li>是衡量一个系统的可修复(恢复)性和可改进性的难易程度。</li>
-</ul>
-<h3 id="接口的高可用性"><a href="#接口的高可用性" class="headerlink" title="接口的高可用性"></a>接口的高可用性</h3><blockquote>
-<p>保证这个接口在任何情况下都可以正确的取到数据。</p>
-</blockquote>
-<ul>
-<li>方案一：每次访问的时候将a接口的数据存在本地，第二次访问的时候接口如果gg了，可以直接在本地获取数据，然后渲染出来；（前提是访问过a接口）</li>
-<li>方案二：推oss或者cdn；每次访问了一个接口，然后服务器把返回的数据生成文件推送到一个静态资源服务器上去；</li>
-<li>好处：比如某人访问了接口，静态资源服务器就会缓存a里面的数据，这时候gg了，其他人依然可以请求到oss上的数据；（逻辑是前端做到的，但是数据推到oss上是从后台推上去的）</li>
-<li>oss几乎不可能gg，原因是它只是一个静态资源存储的地方；</li>
-<li>默认数据：（假数据）当接口不可用的时候，用这个自己做的数据；</li>
-</ul>
-<blockquote>
-<p>目前企业的解决方案是：先走服务器接口，若是gg了；再访问本地缓存；若没有，则访问oss。</p>
-</blockquote>
-<h3 id="本地缓存"><a href="#本地缓存" class="headerlink" title="本地缓存"></a>本地缓存</h3><ul>
-<li>优点：</li>
-<li>如果第一次没有访问对应的接口就没有本地缓存；</li>
-<li>数据的时效性不够；</li>
-<li>缺点：</li>
-<li>快，不用通过网络请求；</li>
-</ul>
-<h4 id="缓存地点"><a href="#缓存地点" class="headerlink" title="缓存地点"></a>缓存地点</h4><ul>
-<li>缓存类型：</li>
-<li><code>sessionStorage</code>：只在当次回话有效，不会带到每一个请求里面去；</li>
-<li><code>indexDB</code>：浏览器支持度很低，也就是说兼容问题很大；</li>
-<li><code>cookie</code>：过期时间可以设置，默认是浏览器当期回话结束失效；cookie很小；每次对应域名是会在每个请求头带过去，浪费资源，所以限制了大小，如果不限制，就会跟上传文件没有区别了，会导致特别慢；对于数据接口，我们不能保证内容有多大，而且每个接口数据都要缓存，所以不能用cookie。</li>
-<li><code>localstorage</code>：没有大小限制；</li>
-</ul>
-<blockquote>
-<p>以上都属于这两种类型：</p>
-</blockquote>
-<ol>
-<li>（私有）浏览器缓存：单个用户，你浏览过的页面浏览器缓存起来。</li>
-<li>（共享）代理缓存：多个用户，所在公司自己架构的，减少网络拥堵与延迟。</li>
-</ol>
-<h3 id="浏览器缓存机制"><a href="#浏览器缓存机制" class="headerlink" title="浏览器缓存机制"></a>浏览器缓存机制</h3><h4 id="浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？"><a href="#浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？" class="headerlink" title="浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？"></a>浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？</h4><p><img src="http://otn4ut2th.bkt.clouddn.com/blog201211281402438011.png" alt="浏览器缓存"></p>
-<h4 id="状态码304是怎么产生的？"><a href="#状态码304是怎么产生的？" class="headerlink" title="状态码304是怎么产生的？"></a>状态码304是怎么产生的？</h4><ul>
-<li>是因为本地文件设置的信息头部过期了，去服务器拉取，然后服务器告诉我，其实你的文件还尚未过期，让你回自己本地取资源；</li>
-</ul>
-<h4 id="状态码200（from-cache）是怎么产生的？"><a href="#状态码200（from-cache）是怎么产生的？" class="headerlink" title="状态码200（from cache）是怎么产生的？"></a>状态码200（from cache）是怎么产生的？</h4><ul>
-<li>一定是通过了请求并且成功然后返回的状态码，方式<code>get</code>或者<code>post</code>。</li>
-</ul>
-<blockquote>
-<p>以上的问题只是有所了解了，但是关于浏览器的缓存机制还没有系统的了解，自己在看官方文档的时候，感觉有点困惑，所以先在这里埋个种子。</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>讨论</tag>
-        <tag>问题</tag>
-        <tag>浏览器缓存</tag>
-        <tag>状态码</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>坎帕斯学院日常讨论</title>
-    <url>/2017/04/16/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-1/</url>
-    <content><![CDATA[<h2 id="话题：width：100-和width：auto的区别"><a href="#话题：width：100-和width：auto的区别" class="headerlink" title="话题：width：100%和width：auto的区别"></a>话题：width：100%和width：auto的区别</h2><span id="more"></span>
-<h4 id="width：100"><a href="#width：100" class="headerlink" title="width：100%"></a>width：100%</h4><ul>
-<li>元素宽度等于父级元素的宽度。</li>
-</ul>
-<h4 id="width：auto"><a href="#width：auto" class="headerlink" title="width：auto"></a>width：auto</h4><ul>
-<li>元素的宽度等于父元素的宽度减去margin，padding，border这些。</li>
-</ul>
-<h4 id="高度知识点"><a href="#高度知识点" class="headerlink" title="高度知识点"></a>高度知识点</h4><ul>
-<li>子元素的margin和padding百分比知识点根据父元素的width来算。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test1</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        width:500px;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-test width&#x3D;父元素width-margin-padding-border</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test2</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>test width&#x3D;123123123123123+margin+padding+border</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test3</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        font-size:20px;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">        width:500px;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>test width&#x3D;500-padding-margin-border<br>这里的500px并不是继承，而是因为div块级元素的影响而来的。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test4a</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	body&#123;</span><br><span class="line">		font-size: 20px;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	.first1&#123;</span><br><span class="line">		background: red;</span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 400px;</span><br><span class="line">		overflow: hidden;</span><br><span class="line">	&#125;</span><br><span class="line">	.second1&#123;</span><br><span class="line">		height: 25%;width: 25%;</span><br><span class="line">		margin-top: 10%;</span><br><span class="line">		background-color: green;</span><br><span class="line">		padding-left: 10%;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div class=&quot;first1&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;second1&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p>test width&#x3D;50,height&#x3D;100,margin-top&#x3D;20</p>
-<h5 id="2017-4-19-21-00"><a href="#2017-4-19-21-00" class="headerlink" title="2017.4.19 21:00"></a>2017.4.19 21:00</h5><h2 id="话题：document-getElementByClassName-返回的是什么？"><a href="#话题：document-getElementByClassName-返回的是什么？" class="headerlink" title="话题：document.getElementByClassName()返回的是什么？"></a>话题：document.getElementByClassName()返回的是什么？</h2><ul>
-<li>是一个HTML集合。</li>
-</ul>
-<h4 id="集合和数组的区别"><a href="#集合和数组的区别" class="headerlink" title="集合和数组的区别"></a>集合和数组的区别</h4><ul>
-<li>HTML集合：一直与文档保持着链接，每次你需要最新的信息时，都会重复执行查询的过程，哪怕只是获取集合里的元素个数，即集合的length属性也是这样。（简单的说就是这个集合会实时改变）</li>
-<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var alldivs document.getElementsByTagName(&#x27;div&#x27;);</span><br><span class="line">for(var i=0;i&lt;alldivs.length;i++)&#123;</span><br><span class="line">    document.body.appendChild(document.createElement(&#x27;div&#x27;));</span><br><span class="line">&#125;</span><br><span class="line">//该循环会一直循环下去，因为每次添加一个div之后，alldicvs.length的值也会改变，导致循环条件一直为true，一直循环。</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="关于闭包和词法作用域"><a href="#关于闭包和词法作用域" class="headerlink" title="关于闭包和词法作用域"></a>关于闭包和词法作用域</h4><ul>
-<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function foo()&#123;</span><br><span class="line">    concile.log(a);//2</span><br><span class="line">&#125;</span><br><span class="line">function bar()&#123;</span><br><span class="line">    var a=3;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line">var a=2;</span><br><span class="line">bar();</span><br><span class="line">//原理：js的运行原理是词法作用域，而非动态作用域，因此当foo函数被调用的时候，对a进行查询的时候会直接在全局作用域中查询。</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="话题：display：none和visibility：hidden区别？"><a href="#话题：display：none和visibility：hidden区别？" class="headerlink" title="话题：display：none和visibility：hidden区别？"></a>话题：display：none和visibility：hidden区别？</h2><ul>
-<li>display：none；有dom树，没有渲染树，也就是说js可以找到display：none。</li>
-<li>visibility：hidden；只是将内容隐藏起来了，还是要占位的。</li>
-</ul>
-<h2 id="话题：两个inline-block元素在同一行中间的那个间距是多少？"><a href="#话题：两个inline-block元素在同一行中间的那个间距是多少？" class="headerlink" title="话题：两个inline-block元素在同一行中间的那个间距是多少？"></a>话题：两个inline-block元素在同一行中间的那个间距是多少？</h2><ul>
-<li>每个浏览器间距不同。</li>
-<li>字体大小不同间距不同。</li>
-</ul>
-<h4 id="如何去掉这个空格？"><a href="#如何去掉这个空格？" class="headerlink" title="如何去掉这个空格？"></a>如何去掉这个空格？</h4><ul>
-<li>去掉最底层html标签的空格。</li>
-<li>margin为负值。（每个浏览器不同，值不同）</li>
-<li>将父级元素的字体大小设置为0。（推荐方案）</li>
-</ul>
-<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
-<li>这个间距不仅在水平方向有，在垂直方向也有！</li>
-<li>距离大概是字体大小的1&#x2F;8（可能会有叠加）。</li>
-<li>inline-block元素之间，block和inline-block和inline的元素之间都有间距。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>讨论</tag>
-        <tag>问题</tag>
-        <tag>记录</tag>
       </tags>
   </entry>
   <entry>
@@ -2337,6 +2202,65 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </tags>
   </entry>
   <entry>
+    <title>坎帕斯学院日常讨论</title>
+    <url>/2017/04/16/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-1/</url>
+    <content><![CDATA[<h2 id="话题：width：100-和width：auto的区别"><a href="#话题：width：100-和width：auto的区别" class="headerlink" title="话题：width：100%和width：auto的区别"></a>话题：width：100%和width：auto的区别</h2><span id="more"></span>
+<h4 id="width：100"><a href="#width：100" class="headerlink" title="width：100%"></a>width：100%</h4><ul>
+<li>元素宽度等于父级元素的宽度。</li>
+</ul>
+<h4 id="width：auto"><a href="#width：auto" class="headerlink" title="width：auto"></a>width：auto</h4><ul>
+<li>元素的宽度等于父元素的宽度减去margin，padding，border这些。</li>
+</ul>
+<h4 id="高度知识点"><a href="#高度知识点" class="headerlink" title="高度知识点"></a>高度知识点</h4><ul>
+<li>子元素的margin和padding百分比知识点根据父元素的width来算。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test1</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        width:500px;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+test width&#x3D;父元素width-margin-padding-border</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test2</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>test width&#x3D;123123123123123+margin+padding+border</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test3</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        font-size:20px;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">        width:500px;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>test width&#x3D;500-padding-margin-border<br>这里的500px并不是继承，而是因为div块级元素的影响而来的。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test4a</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	body&#123;</span><br><span class="line">		font-size: 20px;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	.first1&#123;</span><br><span class="line">		background: red;</span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 400px;</span><br><span class="line">		overflow: hidden;</span><br><span class="line">	&#125;</span><br><span class="line">	.second1&#123;</span><br><span class="line">		height: 25%;width: 25%;</span><br><span class="line">		margin-top: 10%;</span><br><span class="line">		background-color: green;</span><br><span class="line">		padding-left: 10%;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div class=&quot;first1&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;second1&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>test width&#x3D;50,height&#x3D;100,margin-top&#x3D;20</p>
+<h5 id="2017-4-19-21-00"><a href="#2017-4-19-21-00" class="headerlink" title="2017.4.19 21:00"></a>2017.4.19 21:00</h5><h2 id="话题：document-getElementByClassName-返回的是什么？"><a href="#话题：document-getElementByClassName-返回的是什么？" class="headerlink" title="话题：document.getElementByClassName()返回的是什么？"></a>话题：document.getElementByClassName()返回的是什么？</h2><ul>
+<li>是一个HTML集合。</li>
+</ul>
+<h4 id="集合和数组的区别"><a href="#集合和数组的区别" class="headerlink" title="集合和数组的区别"></a>集合和数组的区别</h4><ul>
+<li>HTML集合：一直与文档保持着链接，每次你需要最新的信息时，都会重复执行查询的过程，哪怕只是获取集合里的元素个数，即集合的length属性也是这样。（简单的说就是这个集合会实时改变）</li>
+<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var alldivs document.getElementsByTagName(&#x27;div&#x27;);</span><br><span class="line">for(var i=0;i&lt;alldivs.length;i++)&#123;</span><br><span class="line">    document.body.appendChild(document.createElement(&#x27;div&#x27;));</span><br><span class="line">&#125;</span><br><span class="line">//该循环会一直循环下去，因为每次添加一个div之后，alldicvs.length的值也会改变，导致循环条件一直为true，一直循环。</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="关于闭包和词法作用域"><a href="#关于闭包和词法作用域" class="headerlink" title="关于闭包和词法作用域"></a>关于闭包和词法作用域</h4><ul>
+<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function foo()&#123;</span><br><span class="line">    concile.log(a);//2</span><br><span class="line">&#125;</span><br><span class="line">function bar()&#123;</span><br><span class="line">    var a=3;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line">var a=2;</span><br><span class="line">bar();</span><br><span class="line">//原理：js的运行原理是词法作用域，而非动态作用域，因此当foo函数被调用的时候，对a进行查询的时候会直接在全局作用域中查询。</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="话题：display：none和visibility：hidden区别？"><a href="#话题：display：none和visibility：hidden区别？" class="headerlink" title="话题：display：none和visibility：hidden区别？"></a>话题：display：none和visibility：hidden区别？</h2><ul>
+<li>display：none；有dom树，没有渲染树，也就是说js可以找到display：none。</li>
+<li>visibility：hidden；只是将内容隐藏起来了，还是要占位的。</li>
+</ul>
+<h2 id="话题：两个inline-block元素在同一行中间的那个间距是多少？"><a href="#话题：两个inline-block元素在同一行中间的那个间距是多少？" class="headerlink" title="话题：两个inline-block元素在同一行中间的那个间距是多少？"></a>话题：两个inline-block元素在同一行中间的那个间距是多少？</h2><ul>
+<li>每个浏览器间距不同。</li>
+<li>字体大小不同间距不同。</li>
+</ul>
+<h4 id="如何去掉这个空格？"><a href="#如何去掉这个空格？" class="headerlink" title="如何去掉这个空格？"></a>如何去掉这个空格？</h4><ul>
+<li>去掉最底层html标签的空格。</li>
+<li>margin为负值。（每个浏览器不同，值不同）</li>
+<li>将父级元素的字体大小设置为0。（推荐方案）</li>
+</ul>
+<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
+<li>这个间距不仅在水平方向有，在垂直方向也有！</li>
+<li>距离大概是字体大小的1&#x2F;8（可能会有叠加）。</li>
+<li>inline-block元素之间，block和inline-block和inline的元素之间都有间距。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>记录</tag>
+        <tag>问题</tag>
+        <tag>讨论</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>域名的购买和绑定</title>
     <url>/2017/11/15/%E5%9F%9F%E5%90%8D%E7%9A%84%E8%B4%AD%E4%B9%B0%E5%92%8C%E7%BB%91%E5%AE%9A/</url>
     <content><![CDATA[<blockquote>
@@ -2385,6 +2309,41 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </categories>
       <tags>
         <tag>域名</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>学习PHP之环境搭建</title>
+    <url>/2017/09/30/%E5%AD%A6%E4%B9%A0PHP%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="一、注册域名"><a href="#一、注册域名" class="headerlink" title="一、注册域名"></a>一、注册域名</h3><ol>
+<li>这是一个免费域名的注册地址<a href="https://www.noip.com/">www.noip.com</a>，这种网站有很多，只是本人用的这一个，可自由选择。<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogwebsite.PNG" alt="此处输入图片的描述"></li>
+<li>注册登录即可。（一个简单的域名注册申请，就不再赘述了）</li>
+<li>根据自己的ip注册后的结果是这样（要特别注意的是ip地址的填写，不知道自己此刻的ip地址可以用命令行查询；<em><strong>此处的ip地址会根据你使用的网络而改变</strong></em>）：<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogresult.PNG" alt="此处输入图片的描述"></li>
+</ol>
+<h3 id="二、架构包的安装"><a href="#二、架构包的安装" class="headerlink" title="二、架构包的安装"></a>二、架构包的安装</h3><ol>
+<li>下载架构包（架构包当然也有很多种，本人使用的是链接中的这个）<a href="https://www.appservnetwork.com/en/">AppSever8.6.0</a></li>
+<li>安装架构包（跟着流程走就好了，规则就是两个键按左边，三个键按中间，一个键就只能按它咯~）<em><strong>注意安装目录的选择！</strong></em>安装完之后，会有一个这样的目录：<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogfile.PNG" alt="此处输入图片的描述"></li>
+<li>测试：在浏览器地址栏中输入你之前申请的并且与ip地址对应的域名，当看到以下结果，说明你ok了，否则请从头开始&#x3D;_&#x3D;（嘿嘿，有问题肯定是某个步骤出了问题，仔细检查）：<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogifo.png" alt="此处输入图片的描述"></li>
+<li>此处显示的是，文件夹<code>www</code>中的index.php文件<blockquote>
+<p>当然我们希望这些关于服务器的各种信息只有我们自己能看到，而别人看不到，很简单，将文档的名字改成只有你自己知道就好了:<br><img src="http://otn4ut2th.bkt.clouddn.com/blogfilename.png" alt="此处输入图片的描述"></p>
+</blockquote>
+</li>
+<li>既然index文件已经被我们改掉了，因此可以开始写第一个index文件了，此刻网页会自动显示该文件（之后就可以开始写自己的网页了）：</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// index.html</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;index&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;p style=&quot;font-size: 50px;color: #66ccff;&quot;&gt;啦啦啦&lt;/p&gt;</span><br><span class="line">	&lt;p style=&quot;font-size: 40px;color: red&quot;&gt;完了&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://otn4ut2th.bkt.clouddn.com/blogover.png" alt="此处输入图片的描述"></p>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>PHP</tag>
+        <tag>台湾交换学习</tag>
       </tags>
   </entry>
   <entry>
@@ -2475,6 +2434,62 @@ test width&#x3D;父元素width-margin-padding-border</li>
 ]]></content>
   </entry>
   <entry>
+    <title>基于微信服务号的窗口页面搭建</title>
+    <url>/2022/04/02/%E5%9F%BA%E4%BA%8E%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%8F%B7%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B5%E9%9D%A2/</url>
+    <content><![CDATA[<h1 id="基于微信服务号的窗口页面搭建"><a href="#基于微信服务号的窗口页面搭建" class="headerlink" title="基于微信服务号的窗口页面搭建"></a>基于微信服务号的窗口页面搭建</h1><blockquote>
+<p>说在前面：工作需要，在服务号的建立过程中，除了关联底层智能ai服务以外，更希望有一个web面板提供直观的服务，因此期望搭建一个web应用来支撑，该文档记录起实现过程。</p>
+</blockquote>
+<hr>
+<h4 id="大致的实现逻辑"><a href="#大致的实现逻辑" class="headerlink" title="大致的实现逻辑"></a>大致的实现逻辑</h4><p>在实现之前咨询和确认了大量的信息，如下：<br><strong>1、服务号的申请流程<br>2、服务号web窗口的实现方式【web链接配置即可】<br>3、底层智能服务的支撑：微信智能开放平台&amp;腾讯云智能对话平台TBP</strong></p>
+<blockquote>
+<p>注意：说明下微信对话开放平台和腾讯云智能对话平台TBP的区别，功能上差别并不大，且微信对话开放平台关于bot的延展功能和数据观测功能会更加完善，但是TBP的转人工拉群功能实用性较高，因此在对bot功能要求不高的场景下，还是选用TBP来应用。</p>
+</blockquote>
+<h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><h4 id="bot与服务号的绑定"><a href="#bot与服务号的绑定" class="headerlink" title="bot与服务号的绑定"></a>bot与服务号的绑定</h4><blockquote>
+<p>其实这个步骤根据官网文档的指引完成对应的配置就能关联上了，而机器人是否能按照想象中那样去服务，属于机器人运营的知识，后续希望有机会继续记录和分享该部分内容，本篇内容主要说明web服务窗的搭建过程。</p>
+</blockquote>
+<p>所以，烦请参考企业微信官方文档：<a href="https://developers.weixin.qq.com/doc/aispeech/platform/INTRODUCTION.html">微信对话开放平台</a>、<a href="https://cloud.tencent.com/document/product/1060">腾讯云智能对话平台TBP</a></p>
+<h4 id="前端大致效果"><a href="#前端大致效果" class="headerlink" title="前端大致效果"></a>前端大致效果</h4><p>页面效果图<br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/qa_littlesix.png?raw=true" alt="页面效果图"></p>
+<blockquote>
+<p>内容详情说明，因为所有信息都存在对应的页面支持，因此仅仅需要一个前端展示页面，再通过超链接跳转对应页面即可。</p>
+</blockquote>
+<h4 id="前端框架的搭建与实现"><a href="#前端框架的搭建与实现" class="headerlink" title="前端框架的搭建与实现"></a>前端框架的搭建与实现</h4><blockquote>
+<p>为了让体现更加友好，选择了用一个框架去实现，而不是简单的一个html文档。</p>
+</blockquote>
+<p>因为电脑还咩有vue环境，所以走一套，并且完成简单的手脚架之后。<br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vue-web.png?raw=true" alt="vue2.0的初始界面"></p>
+<blockquote>
+<p>为了页面的排版合理，也引入了<code>element-ui</code>来实现页面组件的展示。</p>
+</blockquote>
+<p>废话不说，直接安装</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i element-ui -S</span><br></pre></td></tr></table></figure>
+<p>在main.js中引入element组件</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*引入element组件*/</span><br><span class="line">import ElementUI from &#x27;element-ui&#x27;;</span><br><span class="line">import &#x27;element-ui/lib/theme-chalk/index.css&#x27;;</span><br><span class="line">Vue.use(ElementUI);</span><br></pre></td></tr></table></figure>
+
+<p>其他使用细节及组件参考官网：<a href="https://element.eleme.io/#/zh-CN/component/installation">https://element.eleme.io/#/zh-CN/component/installation</a></p>
+<h4 id="后端发布"><a href="#后端发布" class="headerlink" title="后端发布"></a>后端发布</h4><p>就直接用<code>vue</code>手脚架自带的打包功能对项目进行打包</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
+
+<p>生成<code>dist</code>文件，打包文件放到对应的服务器上即可访问</p>
+<blockquote>
+<p>不过在此处自己遇到了一个放到服务器上无法访问的问题，最终定位是文件的引用方式不当造成的，最终解决方案是在<code>vue.config.js</code>文件中增加了以下代码，已实现<code>dist</code>文件的正确使用。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const &#123; defineConfig &#125; = require(&#x27;@vue/cli-service&#x27;)</span><br><span class="line">module.exports = defineConfig(&#123;</span><br><span class="line">  transpileDependencies: true,</span><br><span class="line">  /*新增publishPath配置*/</span><br><span class="line">  publicPath: process.env.NODE_ENV === &#x27;production&#x27; ? &#x27;./&#x27; : &#x27;/&#x27;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>得到最后发布到服务器之后的访问链接，基本上就已经完成了，最后只需完成服务号的对应配置即可。</p>
+<hr>
+<blockquote>
+<p>说在最后：这段时间的工作比较emo，该篇文章的完成心情上发生了很大的变化，但是还是期望能继续坚持下去。既然选择的完成这篇文章，我认为自己已经度过了最emo的过程，期望明天早上的风再吹到我脸上的时候，我能微笑以对。2022&#x2F;4&#x2F;20</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>工作</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
+        <tag>前端</tag>
+        <tag>VUE</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>微众银行App体验</title>
     <url>/2017/05/27/%E5%BE%AE%E4%BC%97%E9%93%B6%E8%A1%8CApp%E4%BD%93%E9%AA%8C/</url>
     <content><![CDATA[<blockquote>
@@ -2535,115 +2550,85 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </tags>
   </entry>
   <entry>
-    <title>基于微信服务号的窗口页面搭建</title>
-    <url>/2022/04/02/%E5%9F%BA%E4%BA%8E%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%8F%B7%E7%9A%84%E7%AA%97%E5%8F%A3%E9%A1%B5%E9%9D%A2/</url>
-    <content><![CDATA[<h1 id="基于微信服务号的窗口页面搭建"><a href="#基于微信服务号的窗口页面搭建" class="headerlink" title="基于微信服务号的窗口页面搭建"></a>基于微信服务号的窗口页面搭建</h1><blockquote>
-<p>说在前面：工作需要，在服务号的建立过程中，除了关联底层智能ai服务以外，更希望有一个web面板提供直观的服务，因此期望搭建一个web应用来支撑，该文档记录起实现过程。</p>
-</blockquote>
-<hr>
-<h4 id="大致的实现逻辑"><a href="#大致的实现逻辑" class="headerlink" title="大致的实现逻辑"></a>大致的实现逻辑</h4><p>在实现之前咨询和确认了大量的信息，如下：<br><strong>1、服务号的申请流程<br>2、服务号web窗口的实现方式【web链接配置即可】<br>3、底层智能服务的支撑：微信智能开放平台&amp;腾讯云智能对话平台TBP</strong></p>
-<blockquote>
-<p>注意：说明下微信对话开放平台和腾讯云智能对话平台TBP的区别，功能上差别并不大，且微信对话开放平台关于bot的延展功能和数据观测功能会更加完善，但是TBP的转人工拉群功能实用性较高，因此在对bot功能要求不高的场景下，还是选用TBP来应用。</p>
-</blockquote>
-<h3 id="实现过程"><a href="#实现过程" class="headerlink" title="实现过程"></a>实现过程</h3><h4 id="bot与服务号的绑定"><a href="#bot与服务号的绑定" class="headerlink" title="bot与服务号的绑定"></a>bot与服务号的绑定</h4><blockquote>
-<p>其实这个步骤根据官网文档的指引完成对应的配置就能关联上了，而机器人是否能按照想象中那样去服务，属于机器人运营的知识，后续希望有机会继续记录和分享该部分内容，本篇内容主要说明web服务窗的搭建过程。</p>
-</blockquote>
-<p>所以，烦请参考企业微信官方文档：<a href="https://developers.weixin.qq.com/doc/aispeech/platform/INTRODUCTION.html">微信对话开放平台</a>、<a href="https://cloud.tencent.com/document/product/1060">腾讯云智能对话平台TBP</a></p>
-<h4 id="前端大致效果"><a href="#前端大致效果" class="headerlink" title="前端大致效果"></a>前端大致效果</h4><p>页面效果图<br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/qa_littlesix.png?raw=true" alt="页面效果图"></p>
-<blockquote>
-<p>内容详情说明，因为所有信息都存在对应的页面支持，因此仅仅需要一个前端展示页面，再通过超链接跳转对应页面即可。</p>
-</blockquote>
-<h4 id="前端框架的搭建与实现"><a href="#前端框架的搭建与实现" class="headerlink" title="前端框架的搭建与实现"></a>前端框架的搭建与实现</h4><blockquote>
-<p>为了让体现更加友好，选择了用一个框架去实现，而不是简单的一个html文档。</p>
-</blockquote>
-<p>因为电脑还咩有vue环境，所以走一套，并且完成简单的手脚架之后。<br><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/vue-web.png?raw=true" alt="vue2.0的初始界面"></p>
-<blockquote>
-<p>为了页面的排版合理，也引入了<code>element-ui</code>来实现页面组件的展示。</p>
-</blockquote>
-<p>废话不说，直接安装</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm i element-ui -S</span><br></pre></td></tr></table></figure>
-<p>在main.js中引入element组件</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/*引入element组件*/</span><br><span class="line">import ElementUI from &#x27;element-ui&#x27;;</span><br><span class="line">import &#x27;element-ui/lib/theme-chalk/index.css&#x27;;</span><br><span class="line">Vue.use(ElementUI);</span><br></pre></td></tr></table></figure>
-
-<p>其他使用细节及组件参考官网：<a href="https://element.eleme.io/#/zh-CN/component/installation">https://element.eleme.io/#/zh-CN/component/installation</a></p>
-<h4 id="后端发布"><a href="#后端发布" class="headerlink" title="后端发布"></a>后端发布</h4><p>就直接用<code>vue</code>手脚架自带的打包功能对项目进行打包</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm run build</span><br></pre></td></tr></table></figure>
-
-<p>生成<code>dist</code>文件，打包文件放到对应的服务器上即可访问</p>
-<blockquote>
-<p>不过在此处自己遇到了一个放到服务器上无法访问的问题，最终定位是文件的引用方式不当造成的，最终解决方案是在<code>vue.config.js</code>文件中增加了以下代码，已实现<code>dist</code>文件的正确使用。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">const &#123; defineConfig &#125; = require(&#x27;@vue/cli-service&#x27;)</span><br><span class="line">module.exports = defineConfig(&#123;</span><br><span class="line">  transpileDependencies: true,</span><br><span class="line">  /*新增publishPath配置*/</span><br><span class="line">  publicPath: process.env.NODE_ENV === &#x27;production&#x27; ? &#x27;./&#x27; : &#x27;/&#x27;,</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>得到最后发布到服务器之后的访问链接，基本上就已经完成了，最后只需完成服务号的对应配置即可。</p>
-<hr>
-<blockquote>
-<p>说在最后：这段时间的工作比较emo，该篇文章的完成心情上发生了很大的变化，但是还是期望能继续坚持下去。既然选择的完成这篇文章，我认为自己已经度过了最emo的过程，期望明天早上的风再吹到我脸上的时候，我能微笑以对。2022&#x2F;4&#x2F;20</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>工作</tag>
-        <tag>VUE</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我在天堂遇到的五个人</title>
-    <url>/2022/03/21/%E6%88%91%E5%9C%A8%E5%A4%A9%E5%A0%82%E9%81%87%E5%88%B0%E7%9A%84%E4%BA%94%E4%B8%AA%E4%BA%BA/</url>
+    <title>微信历史文章（持续更新）</title>
+    <url>/2019/02/25/%E5%BE%AE%E4%BF%A1%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
     <content><![CDATA[<blockquote>
-<p>说在前面：与小伙伴一起参与读书活动，第一本书是《我在天堂遇到的五个人》，治愈的过程以此记录下来。【ps：听说是一本治愈向的书籍，目前感觉是比较清新的】</p>
-</blockquote>
-<h3 id="一些句子摘要"><a href="#一些句子摘要" class="headerlink" title="一些句子摘要"></a>一些句子摘要</h3><ul>
-<li>世上没有偶然的行为。我们都是联系在一起的。你无法将一个生命和另一个分割开来，就像风和微风紧密相连一样。</li>
-<li>我们每一个人都会影响到另一个人，另一个人又回影响到下一个人，世界上充满了各式各样的故事，但是，所有的故事都连成了一个故事。</li>
-</ul>
-<hr>
-<p>待更新～～～</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>随笔记</tag>
-        <tag>读书</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>学习PHP之环境搭建</title>
-    <url>/2017/09/30/%E5%AD%A6%E4%B9%A0PHP%E4%B9%8B%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[<blockquote>
-<p>注：因为搭建的是本地的服务器，所以只有自己的电脑开着的时候，才能访问到。</p>
+<p>自己将所写的微信文章以及排版的微信文章都整理到这里，以便查看。</p>
 </blockquote>
 <span id="more"></span>
 
-<h3 id="一、注册域名"><a href="#一、注册域名" class="headerlink" title="一、注册域名"></a>一、注册域名</h3><ol>
-<li>这是一个免费域名的注册地址<a href="https://www.noip.com/">www.noip.com</a>，这种网站有很多，只是本人用的这一个，可自由选择。<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogwebsite.PNG" alt="此处输入图片的描述"></li>
-<li>注册登录即可。（一个简单的域名注册申请，就不再赘述了）</li>
-<li>根据自己的ip注册后的结果是这样（要特别注意的是ip地址的填写，不知道自己此刻的ip地址可以用命令行查询；<em><strong>此处的ip地址会根据你使用的网络而改变</strong></em>）：<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogresult.PNG" alt="此处输入图片的描述"></li>
-</ol>
-<h3 id="二、架构包的安装"><a href="#二、架构包的安装" class="headerlink" title="二、架构包的安装"></a>二、架构包的安装</h3><ol>
-<li>下载架构包（架构包当然也有很多种，本人使用的是链接中的这个）<a href="https://www.appservnetwork.com/en/">AppSever8.6.0</a></li>
-<li>安装架构包（跟着流程走就好了，规则就是两个键按左边，三个键按中间，一个键就只能按它咯~）<em><strong>注意安装目录的选择！</strong></em>安装完之后，会有一个这样的目录：<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogfile.PNG" alt="此处输入图片的描述"></li>
-<li>测试：在浏览器地址栏中输入你之前申请的并且与ip地址对应的域名，当看到以下结果，说明你ok了，否则请从头开始&#x3D;_&#x3D;（嘿嘿，有问题肯定是某个步骤出了问题，仔细检查）：<br> <img src="http://otn4ut2th.bkt.clouddn.com/blogifo.png" alt="此处输入图片的描述"></li>
-<li>此处显示的是，文件夹<code>www</code>中的index.php文件<blockquote>
-<p>当然我们希望这些关于服务器的各种信息只有我们自己能看到，而别人看不到，很简单，将文档的名字改成只有你自己知道就好了:<br><img src="http://otn4ut2th.bkt.clouddn.com/blogfilename.png" alt="此处输入图片的描述"></p>
-</blockquote>
-</li>
-<li>既然index文件已经被我们改掉了，因此可以开始写第一个index文件了，此刻网页会自动显示该文件（之后就可以开始写自己的网页了）：</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// index.html</span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">	&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">	&lt;title&gt;index&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;p style=&quot;font-size: 50px;color: #66ccff;&quot;&gt;啦啦啦&lt;/p&gt;</span><br><span class="line">	&lt;p style=&quot;font-size: 40px;color: red&quot;&gt;完了&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<p><img src="http://otn4ut2th.bkt.clouddn.com/blogover.png" alt="此处输入图片的描述"></p>
+<blockquote>
+<p>学院公众号</p>
+</blockquote>
+<ol>
+<li><a href="https://mp.weixin.qq.com/s/fEt7XXyzBgUi7oBp1ApflQ">（【新媒体一岁啦】幸会，有你~）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/BRnjtDIPNbFY2uBGYb1EWA">（你的端午已到，请查收）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/5D7t8GwXeZswA5iYMqRAVg">（放假了小视频）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/nC4lN-MrkeRYGdCzwMSz4A">（达康书记给你发了一张“三下乡”体验卡，快来领取）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/D9A9z9xL2hRc2FamQK3Plg">（经济管理学院积极开展“学习总书记讲话 做合格共青团员”系列活动）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/qUFZHdQXeuwTMvMEZHioHg">（“不忘初心跟党走”入团仪式篇）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/yUhM3s-V0U8luRJ37TLz1Q">（【PK赢大奖】1000元大奖！团体赛、个人赛！这个主题网络活动这么嗨）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/hpmvRX98NeCEcIqrq6txQw">（【重邮征集令】现代邮政学院LOGO、经管学院吉祥物征集）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/_prI-1Lqu21PzfkHAj6wQA">（经管RADIO第十期|我们的圣诞礼）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/KzdTND_wI5a1Whc6T-5zoA">（经管小奥运之奥运小达人评选开始啦！）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/tPEuVB_CxpO6ddrf_ojgwQ">（【投票】曲艺大赛参赛节目微信投票）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/J42xzTIUr29qrFASHYvnCA">（【经济管理学院十佳科技之星线上票选】）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/kF6CorIDWlEdZaWv8GqZcQ">（主曲艺新声绝代 持经管至尚风华）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/DAQsFp29zEWAQ_CAzZhMig">（科创理想浩瀚 科技之星璀璨）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/lvG0BSFSSJHnyj07YMjzgg">（支教第四课：带不走的支教情怀）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/jnT7Eltu12MLOucoc2qb5g">（经管法学专场报告人先进事迹简介）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/V132eluNDzUKkDO97fcZYw">（【活动报名】曲艺大赛终极夜主持人线上海选）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/tMJC3bTTHyllyYvJSWv4YQ">（经管小奥运开始报名啦！！！）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/Kqd91W2emkr5v60k6yxMFQ">（新起点，新征程—记经济管理学院“团学工作一体化”运营启动大会）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/q1uviEgtax1933SyUUFTKw">（【经管RADIO第五期】从你的全重庆路过）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/iSKCuA2iMWJF75rJGGYsyQ">（蓝瘦，香菇！为什么我那么忙！）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/mnyzeAqSkc_U4WTOfud45g">（铲屎官带你看可爱又迷人的汪星人）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/-bzmdHX56vPTElo6l9Vygg">（生活服务中心成立暨第一期培训大会，我们拭目以待）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/8g2wPy_sxMl2_BCz7ImkTQ">（重邮经管今日速报）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/fkPvuMrURbNjqE836yMqnw">（经济管理学院学生事务管理体系介绍）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/ioHgXNHzBvV4NgjkoGF-MA">（情系重邮 相约经管）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/YLwhNNCtzO9QeRXi-RB_RA">（微微一笑，在经管遇见那个Ta）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/YZLg-_UPaP5n1x9OX2dwqA">（重庆邮电大学丨经济管理学院欢迎你）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/m-IBvXZeZwUyQH2IYLJsBw">（青春三下乡 美丽中国行||三下乡回顾—“助V邮我”实践服务队）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/qNUtUeMllYIVDH8q4QiJLg">（青春三下乡 美丽中国行||三下乡回顾—小平的后“忆”国情观察团）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/N8UKwDAZCkv2sYqcabqOzw">（青春三下乡 美丽中国行||三下乡回顾—e行·益童）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/2GV-izgWv2njVym2cJXdiw">（青春三下乡 美丽中国行||三下乡回顾—闪闪红星）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/NP3eHnNheqKAtrsyg_TUmA">（【青春三下乡，美丽中国行】“共系柚乡情”向你扔来一个柚子，快接住）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/5BV6FYge98w2fclZqC01vw">（【青春三下乡，美丽中国行】“闪闪红星”体验敬老院日常，发挥专业特长）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/RIVblZSooAhUB9EgSpXH7Q">（【青春三下乡，美丽中国行】追寻小平足迹，调研红色经济）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/JF-vfPURXwuzdnwI2LJZzA">（军训汇演预热丨小编带你抢先看）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/SnVDcq0vsHchWvXlFnsbPA">（如果你跟着追风筝的人团队，那么你将体验…….）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/YRAA5mbcMQxLBNpIP38X3w">（【夜读】你的问题主要在于想的太多）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/Wb-hPR1lw1-c5YkskcdN9g">（青春三下乡，美丽中国行）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/v_x0TgZaDCeAWyY_uOQBiw">（2015级军训，我们来了！）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/VsBUnPh-qcymGeMsjQFyAw">（经济管理学院2016年 第二专业招生简章）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/lYojKW2Nx3SFtBf1ctgRKQ">（带上诚信，共赴考场）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/zq1QaY1M1L0k7Qvl2eGdnw">（毕业季丨经济管理学院2016届毕业典礼暨授位仪式）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/cGw9BO5QXDsbZrpOU0icOw">（万晓榆院长在毕业典礼上的讲话）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/-KWQZdrFGGKt4WkFIP5qSg">（在大学，期末备考给你带来了哪些折磨……）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/UADsIQxtqN-7CJMHcbr2zg">（经管RADIO第四期|火车旅行）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/xk6Lie3rncCJUnOqA1MhPw">（【六一投稿】还记得你小时候的样子吗？……）</a></li>
+</ol>
+<blockquote>
+<p>以下文章来自自己的公众号</p>
+</blockquote>
+<ol>
+<li><a href="https://mp.weixin.qq.com/s/3LuBDj__mpdC_1ZqVcrIAQ">（做朋友是不可能的）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/DMsASqPl2JdZl6vthZ8SJQ">（旅行首长 | | 台湾花莲）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/n4zp7vcItlzZbI7isyA1vw">（所有热爱的事情都要不留余力）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/xVS010QXJJD-0Xw19WhvOQ">（一路回望，继续前行【第二篇】）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/YGBtFslWzBDYWg1YLl5PLA">（一路回望，继续前行【第一篇】）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/3_8Y4Nwy3giNvZsg86uoCA">（初来乍到）</a></li>
+<li><a href="https://mp.weixin.qq.com/s/g0YY6-UWtYxhXv1PZNzEgg">（懒癌晚期的老杨终于推文了）</a></li>
+</ol>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>公众号</category>
       </categories>
       <tags>
-        <tag>PHP</tag>
-        <tag>台湾交换学习</tag>
+        <tag>新媒体</tag>
+        <tag>微信公众号</tag>
       </tags>
   </entry>
   <entry>
@@ -2724,6 +2709,154 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </categories>
       <tags>
         <tag>新媒体</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>坎帕斯学院讨论日常-2</title>
+    <url>/2017/12/03/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-2/</url>
+    <content><![CDATA[<blockquote>
+<p>这是第二次整理讨论的内容，本次内容有点深奥，值得细嚼慢咽。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h3><ul>
+<li>高并发(High Concurrency)</li>
+<li>指通过设计保证系统能够同时并行处理很多请求。</li>
+<li>是互联网分布式系统架构设计中必须考虑的因素之一。</li>
+<li>高性能(High performance)</li>
+<li>目前理解就是提高浏览网页的速度。</li>
+<li>高可用(High Availability)</li>
+<li>通常来描述一个系统经过专门的设计，从而减少停工时间，而保持其服务的高度可用性。</li>
+<li>高扩展性(High Extensibility)</li>
+<li>通常和可伸缩性混为一谈.在软件范畴上，是软件系统本身的属性，或者进一步说是设计的属性，代码的属性。 </li>
+<li>高可维护性(High Maintainability)</li>
+<li>是衡量一个系统的可修复(恢复)性和可改进性的难易程度。</li>
+</ul>
+<h3 id="接口的高可用性"><a href="#接口的高可用性" class="headerlink" title="接口的高可用性"></a>接口的高可用性</h3><blockquote>
+<p>保证这个接口在任何情况下都可以正确的取到数据。</p>
+</blockquote>
+<ul>
+<li>方案一：每次访问的时候将a接口的数据存在本地，第二次访问的时候接口如果gg了，可以直接在本地获取数据，然后渲染出来；（前提是访问过a接口）</li>
+<li>方案二：推oss或者cdn；每次访问了一个接口，然后服务器把返回的数据生成文件推送到一个静态资源服务器上去；</li>
+<li>好处：比如某人访问了接口，静态资源服务器就会缓存a里面的数据，这时候gg了，其他人依然可以请求到oss上的数据；（逻辑是前端做到的，但是数据推到oss上是从后台推上去的）</li>
+<li>oss几乎不可能gg，原因是它只是一个静态资源存储的地方；</li>
+<li>默认数据：（假数据）当接口不可用的时候，用这个自己做的数据；</li>
+</ul>
+<blockquote>
+<p>目前企业的解决方案是：先走服务器接口，若是gg了；再访问本地缓存；若没有，则访问oss。</p>
+</blockquote>
+<h3 id="本地缓存"><a href="#本地缓存" class="headerlink" title="本地缓存"></a>本地缓存</h3><ul>
+<li>优点：</li>
+<li>如果第一次没有访问对应的接口就没有本地缓存；</li>
+<li>数据的时效性不够；</li>
+<li>缺点：</li>
+<li>快，不用通过网络请求；</li>
+</ul>
+<h4 id="缓存地点"><a href="#缓存地点" class="headerlink" title="缓存地点"></a>缓存地点</h4><ul>
+<li>缓存类型：</li>
+<li><code>sessionStorage</code>：只在当次回话有效，不会带到每一个请求里面去；</li>
+<li><code>indexDB</code>：浏览器支持度很低，也就是说兼容问题很大；</li>
+<li><code>cookie</code>：过期时间可以设置，默认是浏览器当期回话结束失效；cookie很小；每次对应域名是会在每个请求头带过去，浪费资源，所以限制了大小，如果不限制，就会跟上传文件没有区别了，会导致特别慢；对于数据接口，我们不能保证内容有多大，而且每个接口数据都要缓存，所以不能用cookie。</li>
+<li><code>localstorage</code>：没有大小限制；</li>
+</ul>
+<blockquote>
+<p>以上都属于这两种类型：</p>
+</blockquote>
+<ol>
+<li>（私有）浏览器缓存：单个用户，你浏览过的页面浏览器缓存起来。</li>
+<li>（共享）代理缓存：多个用户，所在公司自己架构的，减少网络拥堵与延迟。</li>
+</ol>
+<h3 id="浏览器缓存机制"><a href="#浏览器缓存机制" class="headerlink" title="浏览器缓存机制"></a>浏览器缓存机制</h3><h4 id="浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？"><a href="#浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？" class="headerlink" title="浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？"></a>浏览器请求一个资源，是怎么判断取缓存还是找服务器下载？</h4><p><img src="http://otn4ut2th.bkt.clouddn.com/blog201211281402438011.png" alt="浏览器缓存"></p>
+<h4 id="状态码304是怎么产生的？"><a href="#状态码304是怎么产生的？" class="headerlink" title="状态码304是怎么产生的？"></a>状态码304是怎么产生的？</h4><ul>
+<li>是因为本地文件设置的信息头部过期了，去服务器拉取，然后服务器告诉我，其实你的文件还尚未过期，让你回自己本地取资源；</li>
+</ul>
+<h4 id="状态码200（from-cache）是怎么产生的？"><a href="#状态码200（from-cache）是怎么产生的？" class="headerlink" title="状态码200（from cache）是怎么产生的？"></a>状态码200（from cache）是怎么产生的？</h4><ul>
+<li>一定是通过了请求并且成功然后返回的状态码，方式<code>get</code>或者<code>post</code>。</li>
+</ul>
+<blockquote>
+<p>以上的问题只是有所了解了，但是关于浏览器的缓存机制还没有系统的了解，自己在看官方文档的时候，感觉有点困惑，所以先在这里埋个种子。</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>问题</tag>
+        <tag>讨论</tag>
+        <tag>浏览器缓存</tag>
+        <tag>状态码</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>斐波那契数列学习</title>
+    <url>/2018/07/25/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<blockquote>
+<p>复习过程中涉及到计算算法的时间复杂度，课后例题中的“计算斐波那契数列时间复杂度”引起了自己的思考，通过学习，总结出好集中不同的方式。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="斐波那契数列简介"><a href="#斐波那契数列简介" class="headerlink" title="斐波那契数列简介"></a>斐波那契数列简介</h2><blockquote>
+<p>斐波那契数列（意大利语：Successione di Fibonacci），又译为菲波拿契数列、菲波那西数列、斐波那契数列、黄金分割数列。<br>在数学上，费波那契数列是以递归的方法来定义：</p>
+</blockquote>
+<ul>
+<li>F[0] &#x3D; 0</li>
+<li>F[1] &#x3D; 0</li>
+<li>F[n] &#x3D; F[n-1] + F<a href="n%3E=2">n-2</a></li>
+</ul>
+<blockquote>
+<p>用文字来说，就是费波那契数列由0和1开始，之后的费波那契系数就是由之前的两数相加而得出。首几个费波那契系数是：</p>
+</blockquote>
+<ul>
+<li>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233……</li>
+</ul>
+<blockquote>
+<p>特别指出：0不是第一项，而是第零项。</p>
+</blockquote>
+<h2 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h2><h4 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h4><p>递归计算斐波那契数列的JavaScript如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Fibonacci1(n)&#123;</span><br><span class="line">    if(n==0)</span><br><span class="line">        return 0;</span><br><span class="line">    if(n==1)</span><br><span class="line">        return 1;</span><br><span class="line">    return Fibonacci1(n-1) + Fibonacci1(n-2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>递归的方法很简单，但是显然十分显然存在大量的重复运算，效率低下很低，还会占用大量的内存。</p>
+<ul>
+<li>时间复杂度：T(n) &#x3D; O(2^n)</li>
+</ul>
+<h4 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h4><p>为了避免递归的低效率，我们可以采取累加的方式，一项一项的计算，JavaScript代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Fibonacci2(n)&#123;</span><br><span class="line">    a = 0;</span><br><span class="line">    b = 1;</span><br><span class="line">    if(n==0)</span><br><span class="line">        return a;</span><br><span class="line">    for(i = 1;i &lt;= n;i++)&#123;</span><br><span class="line">        c = a + b;</span><br><span class="line">        a = b;</span><br><span class="line">        b = c;</span><br><span class="line">    &#125;</span><br><span class="line">    return c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>时间复杂度：T(n) &#x3D; O(n)</li>
+<li>空间复杂度：O(n)</li>
+</ul>
+<h4 id="公式法"><a href="#公式法" class="headerlink" title="公式法"></a>公式法</h4><script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+<p>以下是斐波那契数列的常见递推公式：</p>
+<p>$$ F_{n}&#x3D;\dfrac {1}{\sqrt {5}}\times \left[ \left( \dfrac {1+\sqrt {5}}{2}\right) ^{n}-\left( \dfrac {1-\sqrt {5}}{2}\right) ^{n}\right] $$</p>
+<p>公式法的JavaScript代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Fibonacci3(n)&#123;</span><br><span class="line">    root_five = sqrt(5);</span><br><span class="line">    f1=f2=1;</span><br><span class="line">    for(i=1;i&lt;=n;i++)&#123;</span><br><span class="line">        f1 *= (1+root_five)/2;</span><br><span class="line">        f2 *= (1-root_five)/2;</span><br><span class="line">    &#125;</span><br><span class="line">    result = (f1 - f2)/root_five;</span><br><span class="line">    return int(result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>虽然公式看起来不是很复杂，但是当中有很多的浮点运算，返回的结果也会因为n越来越大而不断产生更大的误差，因此并不可靠。</p>
+<h4 id="矩阵法"><a href="#矩阵法" class="headerlink" title="矩阵法"></a>矩阵法</h4><p>$$ \begin{bmatrix} F_{n} \ F_{n-1} \end{bmatrix}&#x3D;\begin{bmatrix} F_{n-1}+F_{n-2} \ F_{n-1} \end{bmatrix}&#x3D;\begin{bmatrix} 1\times f_{n-1}+1\times F_{n}-2 \ 1\times f_{n-1}+0\times F_{n-2} \end{bmatrix}&#x3D;\begin{bmatrix}<br>1 &amp; 1 \<br>1 &amp; 0<br>\end{bmatrix} $$</p>
+<p>由此可推得：</p>
+<p>$$ \begin{bmatrix} F_{n} \ F_{n-1} \end{bmatrix}&#x3D;\begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \end{bmatrix}^{n-1}\times \begin{bmatrix} F_{1} \ F_{0} \end{bmatrix}&#x3D;\begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \end{bmatrix}^{n-1}\times \begin{bmatrix} 1 \ 0 \end{bmatrix} $$</p>
+<p>那这里就把问题转换为了求矩阵的n-1次幂，利用快速幂的方式来计算：</p>
+<p>$$ a_{n}&#x3D;\begin{cases}a^{\dfrac {n}{2}}a^{\dfrac {n}{2}},ifniseven\ a^{\dfrac {n-1}{2}}a^{\dfrac {n-1}{2}}a,ifnisodd\end{cases} $$</p>
+<p>以上方法的JavaScript代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 矩阵乘法</span><br><span class="line">function multiMatrix(int[][] m1,int[][] m2) &#123;</span><br><span class="line">//参数判断什么的就不给了，如果矩阵是n*m和m*p,那结果是n*p</span><br><span class="line">    int[][] res = new int[m1.length][m2[0].length];</span><br><span class="line">    for (int i = 0; i &lt; m1.length; i++) &#123;</span><br><span class="line">        for (int j = 0; j &lt; m2[0].length; j++) &#123;</span><br><span class="line">            for (int k = 0; k &lt; m2.length; k++) &#123;</span><br><span class="line">                res[i][j] += m1[i][k] * m2[k][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br><span class="line">// 矩阵快速幂</span><br><span class="line">function Fibonacci4(int n) &#123;</span><br><span class="line">    if (n &lt; 1) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    if (n == 1 || n == 2) &#123; </span><br><span class="line">        return 1;</span><br><span class="line">    &#125;</span><br><span class="line">    //底</span><br><span class="line">    int[][] base = &#123;&#123;1,1&#125;,</span><br><span class="line">                    &#123;1,0&#125;&#125;;</span><br><span class="line">    //求底为base矩阵的n-2次幂</span><br><span class="line">    int[][] res = matrixPower(base, n - 2);</span><br><span class="line">    //根据[f(n),f(n-1)] = [1,1] * &#123;[1,1],[1,0]&#125;^(n-2)，f(n)就是</span><br><span class="line">    //1*res[0][0] + 1*res[1][0]</span><br><span class="line">    return res[0][0] + res[1][0];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>时间复杂度：T(n) &#x3D; O(log(n))</li>
+</ul>
+<blockquote>
+<p>今天的学习过程中并不是全部都理解透彻了，关于时间复杂度也还有更长的路去学习，本文仅关于一道课后题延伸出这些内容。<br>未完待续~~~</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -2955,8 +3088,89 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </categories>
       <tags>
         <tag>复习</tag>
-        <tag>博客</tag>
         <tag>数据结构</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我在天堂遇到的五个人</title>
+    <url>/2022/03/21/%E6%88%91%E5%9C%A8%E5%A4%A9%E5%A0%82%E9%81%87%E5%88%B0%E7%9A%84%E4%BA%94%E4%B8%AA%E4%BA%BA/</url>
+    <content><![CDATA[<blockquote>
+<p>说在前面：与小伙伴一起参与读书活动，第一本书是《我在天堂遇到的五个人》，治愈的过程以此记录下来。【ps：听说是一本治愈向的书籍，目前感觉是比较清新的】</p>
+</blockquote>
+<h3 id="一些句子摘要"><a href="#一些句子摘要" class="headerlink" title="一些句子摘要"></a>一些句子摘要</h3><ul>
+<li>世上没有偶然的行为。我们都是联系在一起的。你无法将一个生命和另一个分割开来，就像风和微风紧密相连一样。</li>
+<li>我们每一个人都会影响到另一个人，另一个人又回影响到下一个人，世界上充满了各式各样的故事，但是，所有的故事都连成了一个故事。</li>
+</ul>
+<hr>
+<p>待更新～～～</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>随笔记</tag>
+        <tag>读书</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数组</title>
+    <url>/2017/04/10/%E6%95%B0%E7%BB%84/</url>
+    <content><![CDATA[<ul>
+<li>Array创建实例</li>
+</ul>
+<span id="more"></span>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//用构造函数的方法</span><br><span class="line">var colors=new Array();</span><br><span class="line">var colors=new Array(20);</span><br><span class="line">var colors=new Array(&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;);</span><br><span class="line">var colors=Array();//可以省略new</span><br><span class="line"></span><br><span class="line">//用数组字面量表示法</span><br><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">var names=[];</span><br><span class="line">var values=[1,2,];//不要这样，这样会创建一个包含2或3项的数组</span><br><span class="line">var options=[,,,,,]//不要这样，这样会创建一个包含2或6项的数组</span><br></pre></td></tr></table></figure>
+<h4 id="检测数组"><a href="#检测数组" class="headerlink" title="检测数组"></a>检测数组</h4><ul>
+<li><code> Array.isArray()</code>确定一个值到底是不是数组<h4 id="转换方法"><a href="#转换方法" class="headerlink" title="转换方法"></a>转换方法</h4></li>
+<li>toString()：返回有由数组中每个值得字符串形式拼接而成的一个以逗号分隔的字符串。</li>
+<li>valueOf()：直接返回数组</li>
+<li>toLocaleString()：创建一个数组值的以逗号分隔的字符串。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">alert(colors.toString());  //gray,green,red</span><br><span class="line">alert(colors.valueOf());   //gray,green,red</span><br><span class="line">alert(colors);             //gray,green,red</span><br><span class="line">//最后一行将数组传给alert，alert要求接受字符串，所以后台自动调用头String（）</span><br><span class="line"></span><br><span class="line">var person1=&#123;</span><br><span class="line">    toLocaleString:function()&#123;</span><br><span class="line">        return &quot;Nikolaos&quot;;</span><br><span class="line">    &#125;,</span><br><span class="line">    toString:function()&#123;</span><br><span class="line">        return &quot;Nicholas&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">var person2=&#123;</span><br><span class="line">    toLocaleString:function()&#123;</span><br><span class="line">        return &quot;Grigorios&quot;;</span><br><span class="line">    &#125;,</span><br><span class="line">    toString:function()&#123;</span><br><span class="line">        return &quot;Greg&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">var people=[person1,person2];</span><br><span class="line">alert(people);                       //Nicholas,Greg</span><br><span class="line">alert(people.toString());            //Nicholas,Greg</span><br><span class="line">alert(people.toLocaleString());      //Nicholas,Grigorios</span><br></pre></td></tr></table></figure></li>
+<li>join()方法：可以用其他符号来分隔数组<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">alert(colors.join(&quot;,&quot;));     //gray,green,red</span><br><span class="line">alert(solors.join(&quot;||&quot;));    //gray||green||red</span><br></pre></td></tr></table></figure>
+<h4 id="栈方法"><a href="#栈方法" class="headerlink" title="栈方法"></a>栈方法</h4></li>
+<li>push()方法可以接受任意数量的参数，把他们逐个添加到数组末尾，并返回修改后的数组的长度。</li>
+<li>pop()方法则是从数组末尾移除最后一项，减少数组的length值，然后返回移除的项。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=new Array();</span><br><span class="line">var count=colors.push(&quot;red&quot;,&quot;green&quot;);</span><br><span class="line">alert(count);            //2</span><br><span class="line">count=colors.push(&quot;black&quot;);</span><br><span class="line">alert(count);            //3</span><br><span class="line">var item=color.pop();</span><br><span class="line">alert(item);             //&quot;black&quot;;</span><br><span class="line">alert(colors.length);    //2</span><br><span class="line">//可以将栈方法和其它数组方法连用</span><br><span class="line">var colors=[&quot;red&quot;,&quot;blue&quot;];</span><br><span class="line">colors.push(&quot;brow&quot;);</span><br><span class="line">colors.[3]=&quot;black&quot;;</span><br><span class="line">alert(colors.length);    //4</span><br><span class="line">var item=colors.pop();</span><br><span class="line">alert(item);             //&quot;black&quot;</span><br></pre></td></tr></table></figure>
+<h4 id="队列方法"><a href="#队列方法" class="headerlink" title="队列方法"></a>队列方法</h4></li>
+<li>shift()方法能够移除数组中的第一项，并且返回该项，同时将数组长度减1。</li>
+<li>unshift()方法能在数组前段端添加任意个项并返回数组长度。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=new Array();</span><br><span class="line">var count=colors.push(&quot;red&quot;,&quot;green&quot;);</span><br><span class="line">alert(count);            //2</span><br><span class="line">var item=colors.shift();</span><br><span class="line">alert(item);             //&quot;red&quot;</span><br><span class="line">alert(colors.length);    //1</span><br><span class="line">count=colors.unshift(&quot;black&quot;);</span><br><span class="line">alert(count);            //2</span><br></pre></td></tr></table></figure>
+<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4></li>
+<li>reverse()方法：反转数组项的顺序。返回值是数组。</li>
+<li>sort()方法：按升序排列数字项。（比较的是字符串）返回值是数组。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var values=[1,2,3,4,5];</span><br><span class="line">values.reverse();</span><br><span class="line">alert(values);   //5,4,3,2,1</span><br><span class="line"></span><br><span class="line">var values=[0,1,5,10,15];</span><br><span class="line">values.sort();</span><br><span class="line">alert(values);   //0,1,10,15,5</span><br><span class="line">//在字符串进行比较的时候5是比10大的，这个时候我们经常让sort方法接受一个比较函数作为参考。</span><br><span class="line">//比较函数（升序，改变大于和小于就能变成降序）</span><br><span class="line">function campare(value1,value2)&#123;</span><br><span class="line">    if(value1&lt;value2)</span><br><span class="line">        return -1;</span><br><span class="line">    else if(value1&gt;value2)</span><br><span class="line">        return 1;</span><br><span class="line">    else</span><br><span class="line">        return 0;</span><br><span class="line">&#125;</span><br><span class="line">var values=[0,1,5,10,15];</span><br><span class="line">values.sort(campare);</span><br><span class="line">alert(values);   //0,1,5,10,15</span><br></pre></td></tr></table></figure>
+<h4 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h4></li>
+<li>concat()方法：创建一个新的数组。复制一遍数组并在末尾添上新的元素。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">var colors2=colors.contac(&quot;yellow&quot;,[&quot;black&quot;,&quot;brown&quot;]);</span><br><span class="line">alert(colors);             //gray,green,red</span><br><span class="line">alert(colors2);            //gray,green,red,yellow,black,brown</span><br></pre></td></tr></table></figure></li>
+<li>slice()方法：能够基于当前数组中的一或多个项创建一个新数组。</li>
+<li>当有一个参数时：返回从该参数指定位置开始到当前数组末尾的所有项。</li>
+<li>如果有两个参数时：返回起始和结束位置之间的项，但不包括结束为止的项。</li>
+<li>splice()方法：主要用途是项数组中部插入项。（最强大的数组方法）</li>
+<li>删除：需要两个参数，位置和删除项数。例：<code>splice(0,2);</code>删除数组中的前两项。</li>
+<li>插入：需要三个参数，起始位置，0（删除的项数）和插入项。例：<code>splice(2,0,&quot;red,&quot;green&quot;)</code>从数组的位置2开始插入字符串”red”和”green”。</li>
+<li>替换：需要三个参数，起始位置，要删除的的项数和要插入的任意数量的项。例：<code>splice(2，1，&quot;red&quot;,&quot;green&quot;)</code>删除当前数组位置2的项，然后再从位置2开始插入字符串。<h4 id="位置方法"><a href="#位置方法" class="headerlink" title="位置方法"></a>位置方法</h4></li>
+<li>indexOf()方法：从数组的开头开始向后查找。</li>
+<li>lastIndexOf()方法：从数组的末尾开始向前查找。<br>两个方法都接收两个参数，要查找的项和开始查找的起始位置。没找到的情况返回-1，返回值是位置。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">alert(numbers.indexOf(4));              //3</span><br><span class="line">alert(numbers.lastIndexOf(4));          //5</span><br><span class="line"></span><br><span class="line">alert(numbers.indexOf(4，4));           //5</span><br><span class="line">alert(numbers.lastIndexOf(4，4));       //3</span><br><span class="line"></span><br><span class="line">var person=&#123;name:&quot;Nicholas&quot;&#125;;</span><br><span class="line">var people=[&#123;name:&quot;Nicholas&quot;&#125;];</span><br><span class="line">var morePeople=[people];</span><br><span class="line">alert(people.indexOf(person));          //-1</span><br><span class="line">alert(morePeople.indexOf(peoson));      //0</span><br></pre></td></tr></table></figure>
+<h4 id="迭代方法"><a href="#迭代方法" class="headerlink" title="迭代方法"></a>迭代方法</h4></li>
+<li>every():对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true，否则返回false。</li>
+<li>filter():对数组中的每一项运行给定函数，返回该函数会返回true的项组成数组。</li>
+<li>forEach():对数组中的每一项运行给定函数，这个方法没有返回值。</li>
+<li>map():对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。</li>
+<li>some():对数组中的每一项运行给定函数，如果该函数对任意一项返回true，则返回true。<br>以上方法都不会修改数组中包含的值。都接收三个参数：数组项的值，该项在数组的位置，数组对象本身。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//every()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var everyResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return (item&gt;2);</span><br><span class="line">&#125;);</span><br><span class="line">alert(everyResult);           //false</span><br><span class="line">//some()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var someResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return (item&gt;2);</span><br><span class="line">&#125;);</span><br><span class="line">alert(someResult);           //true</span><br><span class="line">//filter()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var filterResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return (item&gt;2);</span><br><span class="line">&#125;);</span><br><span class="line">alert(filterResult);           //[3,4,5,4,3]</span><br><span class="line">//map()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var mapResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return item*2;</span><br><span class="line">&#125;);</span><br><span class="line">alert(mapResult);           //[2,4,6,8,10,8,6,4,2]</span><br><span class="line">//forEach()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">numbers.forEach(function(item,index,array)&#123;</span><br><span class="line">    //执行某些操作</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h4 id="归并方法"><a href="#归并方法" class="headerlink" title="归并方法"></a>归并方法</h4></li>
+<li>reduce():从数组的第一个开始，逐个遍历到最后。</li>
+<li>reduceRight():从数组最后一个开始，逐个遍历到第一个。</li>
+</ul>
+<ol>
+<li>这两个函数接收两个参数：一个在每一项上的调用的函数和（可选的）作为归并基础的初始值。</li>
+<li>传给两个函数的函数接收四个参数：前一个值，当前值，项的索引，数组对象。</li>
+<li>函数的返回值都会作为第一个参数自动传给下一项。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//reduce()正向</span><br><span class="line">var values=[1,2,3,4,5];</span><br><span class="line">var sum=values.reduce(function(prev,cur,index,array)&#123;</span><br><span class="line">    return prev+cur;</span><br><span class="line">&#125;);</span><br><span class="line">alert(sum);          //15</span><br><span class="line">//ruduceRight()反向</span><br><span class="line">var values=[1,2,3,4,5];</span><br><span class="line">var sum=values.reduceRight(function(prev,cur,index,array)&#123;</span><br><span class="line">    return prev+cur;</span><br><span class="line">&#125;);</span><br><span class="line">alert(sum);          //15</span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>笔记</tag>
+        <tag>数组</tag>
       </tags>
   </entry>
   <entry>
@@ -3022,219 +3236,6 @@ test width&#x3D;父元素width-margin-padding-border</li>
       <tags>
         <tag>学习</tag>
         <tag>服务产品</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>微信历史文章（持续更新）</title>
-    <url>/2019/02/25/%E5%BE%AE%E4%BF%A1%E5%8E%86%E5%8F%B2%E6%96%87%E7%AB%A0%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
-    <content><![CDATA[<blockquote>
-<p>自己将所写的微信文章以及排版的微信文章都整理到这里，以便查看。</p>
-</blockquote>
-<span id="more"></span>
-
-
-<blockquote>
-<p>学院公众号</p>
-</blockquote>
-<ol>
-<li><a href="https://mp.weixin.qq.com/s/fEt7XXyzBgUi7oBp1ApflQ">（【新媒体一岁啦】幸会，有你~）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/BRnjtDIPNbFY2uBGYb1EWA">（你的端午已到，请查收）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/5D7t8GwXeZswA5iYMqRAVg">（放假了小视频）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/nC4lN-MrkeRYGdCzwMSz4A">（达康书记给你发了一张“三下乡”体验卡，快来领取）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/D9A9z9xL2hRc2FamQK3Plg">（经济管理学院积极开展“学习总书记讲话 做合格共青团员”系列活动）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/qUFZHdQXeuwTMvMEZHioHg">（“不忘初心跟党走”入团仪式篇）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/yUhM3s-V0U8luRJ37TLz1Q">（【PK赢大奖】1000元大奖！团体赛、个人赛！这个主题网络活动这么嗨）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/hpmvRX98NeCEcIqrq6txQw">（【重邮征集令】现代邮政学院LOGO、经管学院吉祥物征集）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/_prI-1Lqu21PzfkHAj6wQA">（经管RADIO第十期|我们的圣诞礼）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/KzdTND_wI5a1Whc6T-5zoA">（经管小奥运之奥运小达人评选开始啦！）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/tPEuVB_CxpO6ddrf_ojgwQ">（【投票】曲艺大赛参赛节目微信投票）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/J42xzTIUr29qrFASHYvnCA">（【经济管理学院十佳科技之星线上票选】）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/kF6CorIDWlEdZaWv8GqZcQ">（主曲艺新声绝代 持经管至尚风华）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/DAQsFp29zEWAQ_CAzZhMig">（科创理想浩瀚 科技之星璀璨）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/lvG0BSFSSJHnyj07YMjzgg">（支教第四课：带不走的支教情怀）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/jnT7Eltu12MLOucoc2qb5g">（经管法学专场报告人先进事迹简介）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/V132eluNDzUKkDO97fcZYw">（【活动报名】曲艺大赛终极夜主持人线上海选）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/tMJC3bTTHyllyYvJSWv4YQ">（经管小奥运开始报名啦！！！）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/Kqd91W2emkr5v60k6yxMFQ">（新起点，新征程—记经济管理学院“团学工作一体化”运营启动大会）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/q1uviEgtax1933SyUUFTKw">（【经管RADIO第五期】从你的全重庆路过）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/iSKCuA2iMWJF75rJGGYsyQ">（蓝瘦，香菇！为什么我那么忙！）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/mnyzeAqSkc_U4WTOfud45g">（铲屎官带你看可爱又迷人的汪星人）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/-bzmdHX56vPTElo6l9Vygg">（生活服务中心成立暨第一期培训大会，我们拭目以待）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/8g2wPy_sxMl2_BCz7ImkTQ">（重邮经管今日速报）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/fkPvuMrURbNjqE836yMqnw">（经济管理学院学生事务管理体系介绍）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/ioHgXNHzBvV4NgjkoGF-MA">（情系重邮 相约经管）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/YLwhNNCtzO9QeRXi-RB_RA">（微微一笑，在经管遇见那个Ta）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/YZLg-_UPaP5n1x9OX2dwqA">（重庆邮电大学丨经济管理学院欢迎你）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/m-IBvXZeZwUyQH2IYLJsBw">（青春三下乡 美丽中国行||三下乡回顾—“助V邮我”实践服务队）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/qNUtUeMllYIVDH8q4QiJLg">（青春三下乡 美丽中国行||三下乡回顾—小平的后“忆”国情观察团）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/N8UKwDAZCkv2sYqcabqOzw">（青春三下乡 美丽中国行||三下乡回顾—e行·益童）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/2GV-izgWv2njVym2cJXdiw">（青春三下乡 美丽中国行||三下乡回顾—闪闪红星）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/NP3eHnNheqKAtrsyg_TUmA">（【青春三下乡，美丽中国行】“共系柚乡情”向你扔来一个柚子，快接住）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/5BV6FYge98w2fclZqC01vw">（【青春三下乡，美丽中国行】“闪闪红星”体验敬老院日常，发挥专业特长）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/RIVblZSooAhUB9EgSpXH7Q">（【青春三下乡，美丽中国行】追寻小平足迹，调研红色经济）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/JF-vfPURXwuzdnwI2LJZzA">（军训汇演预热丨小编带你抢先看）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/SnVDcq0vsHchWvXlFnsbPA">（如果你跟着追风筝的人团队，那么你将体验…….）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/YRAA5mbcMQxLBNpIP38X3w">（【夜读】你的问题主要在于想的太多）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/Wb-hPR1lw1-c5YkskcdN9g">（青春三下乡，美丽中国行）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/v_x0TgZaDCeAWyY_uOQBiw">（2015级军训，我们来了！）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/VsBUnPh-qcymGeMsjQFyAw">（经济管理学院2016年 第二专业招生简章）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/lYojKW2Nx3SFtBf1ctgRKQ">（带上诚信，共赴考场）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/zq1QaY1M1L0k7Qvl2eGdnw">（毕业季丨经济管理学院2016届毕业典礼暨授位仪式）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/cGw9BO5QXDsbZrpOU0icOw">（万晓榆院长在毕业典礼上的讲话）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/-KWQZdrFGGKt4WkFIP5qSg">（在大学，期末备考给你带来了哪些折磨……）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/UADsIQxtqN-7CJMHcbr2zg">（经管RADIO第四期|火车旅行）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/xk6Lie3rncCJUnOqA1MhPw">（【六一投稿】还记得你小时候的样子吗？……）</a></li>
-</ol>
-<blockquote>
-<p>以下文章来自自己的公众号</p>
-</blockquote>
-<ol>
-<li><a href="https://mp.weixin.qq.com/s/3LuBDj__mpdC_1ZqVcrIAQ">（做朋友是不可能的）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/DMsASqPl2JdZl6vthZ8SJQ">（旅行首长 | | 台湾花莲）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/n4zp7vcItlzZbI7isyA1vw">（所有热爱的事情都要不留余力）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/xVS010QXJJD-0Xw19WhvOQ">（一路回望，继续前行【第二篇】）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/YGBtFslWzBDYWg1YLl5PLA">（一路回望，继续前行【第一篇】）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/3_8Y4Nwy3giNvZsg86uoCA">（初来乍到）</a></li>
-<li><a href="https://mp.weixin.qq.com/s/g0YY6-UWtYxhXv1PZNzEgg">（懒癌晚期的老杨终于推文了）</a></li>
-</ol>
-]]></content>
-      <categories>
-        <category>公众号</category>
-      </categories>
-      <tags>
-        <tag>新媒体</tag>
-        <tag>微信公众号</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数组</title>
-    <url>/2017/04/10/%E6%95%B0%E7%BB%84/</url>
-    <content><![CDATA[<ul>
-<li>Array创建实例</li>
-</ul>
-<span id="more"></span>
-
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//用构造函数的方法</span><br><span class="line">var colors=new Array();</span><br><span class="line">var colors=new Array(20);</span><br><span class="line">var colors=new Array(&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;);</span><br><span class="line">var colors=Array();//可以省略new</span><br><span class="line"></span><br><span class="line">//用数组字面量表示法</span><br><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">var names=[];</span><br><span class="line">var values=[1,2,];//不要这样，这样会创建一个包含2或3项的数组</span><br><span class="line">var options=[,,,,,]//不要这样，这样会创建一个包含2或6项的数组</span><br></pre></td></tr></table></figure>
-<h4 id="检测数组"><a href="#检测数组" class="headerlink" title="检测数组"></a>检测数组</h4><ul>
-<li><code> Array.isArray()</code>确定一个值到底是不是数组<h4 id="转换方法"><a href="#转换方法" class="headerlink" title="转换方法"></a>转换方法</h4></li>
-<li>toString()：返回有由数组中每个值得字符串形式拼接而成的一个以逗号分隔的字符串。</li>
-<li>valueOf()：直接返回数组</li>
-<li>toLocaleString()：创建一个数组值的以逗号分隔的字符串。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">alert(colors.toString());  //gray,green,red</span><br><span class="line">alert(colors.valueOf());   //gray,green,red</span><br><span class="line">alert(colors);             //gray,green,red</span><br><span class="line">//最后一行将数组传给alert，alert要求接受字符串，所以后台自动调用头String（）</span><br><span class="line"></span><br><span class="line">var person1=&#123;</span><br><span class="line">    toLocaleString:function()&#123;</span><br><span class="line">        return &quot;Nikolaos&quot;;</span><br><span class="line">    &#125;,</span><br><span class="line">    toString:function()&#123;</span><br><span class="line">        return &quot;Nicholas&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">var person2=&#123;</span><br><span class="line">    toLocaleString:function()&#123;</span><br><span class="line">        return &quot;Grigorios&quot;;</span><br><span class="line">    &#125;,</span><br><span class="line">    toString:function()&#123;</span><br><span class="line">        return &quot;Greg&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">var people=[person1,person2];</span><br><span class="line">alert(people);                       //Nicholas,Greg</span><br><span class="line">alert(people.toString());            //Nicholas,Greg</span><br><span class="line">alert(people.toLocaleString());      //Nicholas,Grigorios</span><br></pre></td></tr></table></figure></li>
-<li>join()方法：可以用其他符号来分隔数组<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">alert(colors.join(&quot;,&quot;));     //gray,green,red</span><br><span class="line">alert(solors.join(&quot;||&quot;));    //gray||green||red</span><br></pre></td></tr></table></figure>
-<h4 id="栈方法"><a href="#栈方法" class="headerlink" title="栈方法"></a>栈方法</h4></li>
-<li>push()方法可以接受任意数量的参数，把他们逐个添加到数组末尾，并返回修改后的数组的长度。</li>
-<li>pop()方法则是从数组末尾移除最后一项，减少数组的length值，然后返回移除的项。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=new Array();</span><br><span class="line">var count=colors.push(&quot;red&quot;,&quot;green&quot;);</span><br><span class="line">alert(count);            //2</span><br><span class="line">count=colors.push(&quot;black&quot;);</span><br><span class="line">alert(count);            //3</span><br><span class="line">var item=color.pop();</span><br><span class="line">alert(item);             //&quot;black&quot;;</span><br><span class="line">alert(colors.length);    //2</span><br><span class="line">//可以将栈方法和其它数组方法连用</span><br><span class="line">var colors=[&quot;red&quot;,&quot;blue&quot;];</span><br><span class="line">colors.push(&quot;brow&quot;);</span><br><span class="line">colors.[3]=&quot;black&quot;;</span><br><span class="line">alert(colors.length);    //4</span><br><span class="line">var item=colors.pop();</span><br><span class="line">alert(item);             //&quot;black&quot;</span><br></pre></td></tr></table></figure>
-<h4 id="队列方法"><a href="#队列方法" class="headerlink" title="队列方法"></a>队列方法</h4></li>
-<li>shift()方法能够移除数组中的第一项，并且返回该项，同时将数组长度减1。</li>
-<li>unshift()方法能在数组前段端添加任意个项并返回数组长度。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=new Array();</span><br><span class="line">var count=colors.push(&quot;red&quot;,&quot;green&quot;);</span><br><span class="line">alert(count);            //2</span><br><span class="line">var item=colors.shift();</span><br><span class="line">alert(item);             //&quot;red&quot;</span><br><span class="line">alert(colors.length);    //1</span><br><span class="line">count=colors.unshift(&quot;black&quot;);</span><br><span class="line">alert(count);            //2</span><br></pre></td></tr></table></figure>
-<h4 id="排序"><a href="#排序" class="headerlink" title="排序"></a>排序</h4></li>
-<li>reverse()方法：反转数组项的顺序。返回值是数组。</li>
-<li>sort()方法：按升序排列数字项。（比较的是字符串）返回值是数组。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var values=[1,2,3,4,5];</span><br><span class="line">values.reverse();</span><br><span class="line">alert(values);   //5,4,3,2,1</span><br><span class="line"></span><br><span class="line">var values=[0,1,5,10,15];</span><br><span class="line">values.sort();</span><br><span class="line">alert(values);   //0,1,10,15,5</span><br><span class="line">//在字符串进行比较的时候5是比10大的，这个时候我们经常让sort方法接受一个比较函数作为参考。</span><br><span class="line">//比较函数（升序，改变大于和小于就能变成降序）</span><br><span class="line">function campare(value1,value2)&#123;</span><br><span class="line">    if(value1&lt;value2)</span><br><span class="line">        return -1;</span><br><span class="line">    else if(value1&gt;value2)</span><br><span class="line">        return 1;</span><br><span class="line">    else</span><br><span class="line">        return 0;</span><br><span class="line">&#125;</span><br><span class="line">var values=[0,1,5,10,15];</span><br><span class="line">values.sort(campare);</span><br><span class="line">alert(values);   //0,1,5,10,15</span><br></pre></td></tr></table></figure>
-<h4 id="操作方法"><a href="#操作方法" class="headerlink" title="操作方法"></a>操作方法</h4></li>
-<li>concat()方法：创建一个新的数组。复制一遍数组并在末尾添上新的元素。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var colors=[&quot;gray&quot;,&quot;green&quot;,&quot;red&quot;];</span><br><span class="line">var colors2=colors.contac(&quot;yellow&quot;,[&quot;black&quot;,&quot;brown&quot;]);</span><br><span class="line">alert(colors);             //gray,green,red</span><br><span class="line">alert(colors2);            //gray,green,red,yellow,black,brown</span><br></pre></td></tr></table></figure></li>
-<li>slice()方法：能够基于当前数组中的一或多个项创建一个新数组。</li>
-<li>当有一个参数时：返回从该参数指定位置开始到当前数组末尾的所有项。</li>
-<li>如果有两个参数时：返回起始和结束位置之间的项，但不包括结束为止的项。</li>
-<li>splice()方法：主要用途是项数组中部插入项。（最强大的数组方法）</li>
-<li>删除：需要两个参数，位置和删除项数。例：<code>splice(0,2);</code>删除数组中的前两项。</li>
-<li>插入：需要三个参数，起始位置，0（删除的项数）和插入项。例：<code>splice(2,0,&quot;red,&quot;green&quot;)</code>从数组的位置2开始插入字符串”red”和”green”。</li>
-<li>替换：需要三个参数，起始位置，要删除的的项数和要插入的任意数量的项。例：<code>splice(2，1，&quot;red&quot;,&quot;green&quot;)</code>删除当前数组位置2的项，然后再从位置2开始插入字符串。<h4 id="位置方法"><a href="#位置方法" class="headerlink" title="位置方法"></a>位置方法</h4></li>
-<li>indexOf()方法：从数组的开头开始向后查找。</li>
-<li>lastIndexOf()方法：从数组的末尾开始向前查找。<br>两个方法都接收两个参数，要查找的项和开始查找的起始位置。没找到的情况返回-1，返回值是位置。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">alert(numbers.indexOf(4));              //3</span><br><span class="line">alert(numbers.lastIndexOf(4));          //5</span><br><span class="line"></span><br><span class="line">alert(numbers.indexOf(4，4));           //5</span><br><span class="line">alert(numbers.lastIndexOf(4，4));       //3</span><br><span class="line"></span><br><span class="line">var person=&#123;name:&quot;Nicholas&quot;&#125;;</span><br><span class="line">var people=[&#123;name:&quot;Nicholas&quot;&#125;];</span><br><span class="line">var morePeople=[people];</span><br><span class="line">alert(people.indexOf(person));          //-1</span><br><span class="line">alert(morePeople.indexOf(peoson));      //0</span><br></pre></td></tr></table></figure>
-<h4 id="迭代方法"><a href="#迭代方法" class="headerlink" title="迭代方法"></a>迭代方法</h4></li>
-<li>every():对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true，否则返回false。</li>
-<li>filter():对数组中的每一项运行给定函数，返回该函数会返回true的项组成数组。</li>
-<li>forEach():对数组中的每一项运行给定函数，这个方法没有返回值。</li>
-<li>map():对数组中的每一项运行给定函数，返回每次函数调用的结果组成的数组。</li>
-<li>some():对数组中的每一项运行给定函数，如果该函数对任意一项返回true，则返回true。<br>以上方法都不会修改数组中包含的值。都接收三个参数：数组项的值，该项在数组的位置，数组对象本身。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//every()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var everyResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return (item&gt;2);</span><br><span class="line">&#125;);</span><br><span class="line">alert(everyResult);           //false</span><br><span class="line">//some()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var someResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return (item&gt;2);</span><br><span class="line">&#125;);</span><br><span class="line">alert(someResult);           //true</span><br><span class="line">//filter()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var filterResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return (item&gt;2);</span><br><span class="line">&#125;);</span><br><span class="line">alert(filterResult);           //[3,4,5,4,3]</span><br><span class="line">//map()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">var mapResult=numbers.every(function(item,index,array)&#123;</span><br><span class="line">    return item*2;</span><br><span class="line">&#125;);</span><br><span class="line">alert(mapResult);           //[2,4,6,8,10,8,6,4,2]</span><br><span class="line">//forEach()</span><br><span class="line">var numbers=[1,2,3,4,5,4,3,2,1];</span><br><span class="line">numbers.forEach(function(item,index,array)&#123;</span><br><span class="line">    //执行某些操作</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<h4 id="归并方法"><a href="#归并方法" class="headerlink" title="归并方法"></a>归并方法</h4></li>
-<li>reduce():从数组的第一个开始，逐个遍历到最后。</li>
-<li>reduceRight():从数组最后一个开始，逐个遍历到第一个。</li>
-</ul>
-<ol>
-<li>这两个函数接收两个参数：一个在每一项上的调用的函数和（可选的）作为归并基础的初始值。</li>
-<li>传给两个函数的函数接收四个参数：前一个值，当前值，项的索引，数组对象。</li>
-<li>函数的返回值都会作为第一个参数自动传给下一项。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//reduce()正向</span><br><span class="line">var values=[1,2,3,4,5];</span><br><span class="line">var sum=values.reduce(function(prev,cur,index,array)&#123;</span><br><span class="line">    return prev+cur;</span><br><span class="line">&#125;);</span><br><span class="line">alert(sum);          //15</span><br><span class="line">//ruduceRight()反向</span><br><span class="line">var values=[1,2,3,4,5];</span><br><span class="line">var sum=values.reduceRight(function(prev,cur,index,array)&#123;</span><br><span class="line">    return prev+cur;</span><br><span class="line">&#125;);</span><br><span class="line">alert(sum);          //15</span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>笔记</tag>
-        <tag>数组</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>斐波那契数列学习</title>
-    <url>/2018/07/25/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91%E6%95%B0%E5%88%97%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<blockquote>
-<p>复习过程中涉及到计算算法的时间复杂度，课后例题中的“计算斐波那契数列时间复杂度”引起了自己的思考，通过学习，总结出好集中不同的方式。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="斐波那契数列简介"><a href="#斐波那契数列简介" class="headerlink" title="斐波那契数列简介"></a>斐波那契数列简介</h2><blockquote>
-<p>斐波那契数列（意大利语：Successione di Fibonacci），又译为菲波拿契数列、菲波那西数列、斐波那契数列、黄金分割数列。<br>在数学上，费波那契数列是以递归的方法来定义：</p>
-</blockquote>
-<ul>
-<li>F[0] &#x3D; 0</li>
-<li>F[1] &#x3D; 0</li>
-<li>F[n] &#x3D; F[n-1] + F<a href="n%3E=2">n-2</a></li>
-</ul>
-<blockquote>
-<p>用文字来说，就是费波那契数列由0和1开始，之后的费波那契系数就是由之前的两数相加而得出。首几个费波那契系数是：</p>
-</blockquote>
-<ul>
-<li>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233……</li>
-</ul>
-<blockquote>
-<p>特别指出：0不是第一项，而是第零项。</p>
-</blockquote>
-<h2 id="计算方法"><a href="#计算方法" class="headerlink" title="计算方法"></a>计算方法</h2><h4 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h4><p>递归计算斐波那契数列的JavaScript如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Fibonacci1(n)&#123;</span><br><span class="line">    if(n==0)</span><br><span class="line">        return 0;</span><br><span class="line">    if(n==1)</span><br><span class="line">        return 1;</span><br><span class="line">    return Fibonacci1(n-1) + Fibonacci1(n-2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>递归的方法很简单，但是显然十分显然存在大量的重复运算，效率低下很低，还会占用大量的内存。</p>
-<ul>
-<li>时间复杂度：T(n) &#x3D; O(2^n)</li>
-</ul>
-<h4 id="递推法"><a href="#递推法" class="headerlink" title="递推法"></a>递推法</h4><p>为了避免递归的低效率，我们可以采取累加的方式，一项一项的计算，JavaScript代码如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Fibonacci2(n)&#123;</span><br><span class="line">    a = 0;</span><br><span class="line">    b = 1;</span><br><span class="line">    if(n==0)</span><br><span class="line">        return a;</span><br><span class="line">    for(i = 1;i &lt;= n;i++)&#123;</span><br><span class="line">        c = a + b;</span><br><span class="line">        a = b;</span><br><span class="line">        b = c;</span><br><span class="line">    &#125;</span><br><span class="line">    return c;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>时间复杂度：T(n) &#x3D; O(n)</li>
-<li>空间复杂度：O(n)</li>
-</ul>
-<h4 id="公式法"><a href="#公式法" class="headerlink" title="公式法"></a>公式法</h4><script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-<p>以下是斐波那契数列的常见递推公式：</p>
-<p>$$ F_{n}&#x3D;\dfrac {1}{\sqrt {5}}\times \left[ \left( \dfrac {1+\sqrt {5}}{2}\right) ^{n}-\left( \dfrac {1-\sqrt {5}}{2}\right) ^{n}\right] $$</p>
-<p>公式法的JavaScript代码如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function Fibonacci3(n)&#123;</span><br><span class="line">    root_five = sqrt(5);</span><br><span class="line">    f1=f2=1;</span><br><span class="line">    for(i=1;i&lt;=n;i++)&#123;</span><br><span class="line">        f1 *= (1+root_five)/2;</span><br><span class="line">        f2 *= (1-root_five)/2;</span><br><span class="line">    &#125;</span><br><span class="line">    result = (f1 - f2)/root_five;</span><br><span class="line">    return int(result);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>虽然公式看起来不是很复杂，但是当中有很多的浮点运算，返回的结果也会因为n越来越大而不断产生更大的误差，因此并不可靠。</p>
-<h4 id="矩阵法"><a href="#矩阵法" class="headerlink" title="矩阵法"></a>矩阵法</h4><p>$$ \begin{bmatrix} F_{n} \ F_{n-1} \end{bmatrix}&#x3D;\begin{bmatrix} F_{n-1}+F_{n-2} \ F_{n-1} \end{bmatrix}&#x3D;\begin{bmatrix} 1\times f_{n-1}+1\times F_{n}-2 \ 1\times f_{n-1}+0\times F_{n-2} \end{bmatrix}&#x3D;\begin{bmatrix}<br>1 &amp; 1 \<br>1 &amp; 0<br>\end{bmatrix} $$</p>
-<p>由此可推得：</p>
-<p>$$ \begin{bmatrix} F_{n} \ F_{n-1} \end{bmatrix}&#x3D;\begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \end{bmatrix}^{n-1}\times \begin{bmatrix} F_{1} \ F_{0} \end{bmatrix}&#x3D;\begin{bmatrix} 1 &amp; 1 \ 1 &amp; 0 \end{bmatrix}^{n-1}\times \begin{bmatrix} 1 \ 0 \end{bmatrix} $$</p>
-<p>那这里就把问题转换为了求矩阵的n-1次幂，利用快速幂的方式来计算：</p>
-<p>$$ a_{n}&#x3D;\begin{cases}a^{\dfrac {n}{2}}a^{\dfrac {n}{2}},ifniseven\ a^{\dfrac {n-1}{2}}a^{\dfrac {n-1}{2}}a,ifnisodd\end{cases} $$</p>
-<p>以上方法的JavaScript代码如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 矩阵乘法</span><br><span class="line">function multiMatrix(int[][] m1,int[][] m2) &#123;</span><br><span class="line">//参数判断什么的就不给了，如果矩阵是n*m和m*p,那结果是n*p</span><br><span class="line">    int[][] res = new int[m1.length][m2[0].length];</span><br><span class="line">    for (int i = 0; i &lt; m1.length; i++) &#123;</span><br><span class="line">        for (int j = 0; j &lt; m2[0].length; j++) &#123;</span><br><span class="line">            for (int k = 0; k &lt; m2.length; k++) &#123;</span><br><span class="line">                res[i][j] += m1[i][k] * m2[k][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return res;</span><br><span class="line">&#125;</span><br><span class="line">// 矩阵快速幂</span><br><span class="line">function Fibonacci4(int n) &#123;</span><br><span class="line">    if (n &lt; 1) &#123;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line">    if (n == 1 || n == 2) &#123; </span><br><span class="line">        return 1;</span><br><span class="line">    &#125;</span><br><span class="line">    //底</span><br><span class="line">    int[][] base = &#123;&#123;1,1&#125;,</span><br><span class="line">                    &#123;1,0&#125;&#125;;</span><br><span class="line">    //求底为base矩阵的n-2次幂</span><br><span class="line">    int[][] res = matrixPower(base, n - 2);</span><br><span class="line">    //根据[f(n),f(n-1)] = [1,1] * &#123;[1,1],[1,0]&#125;^(n-2)，f(n)就是</span><br><span class="line">    //1*res[0][0] + 1*res[1][0]</span><br><span class="line">    return res[0][0] + res[1][0];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>时间复杂度：T(n) &#x3D; O(log(n))</li>
-</ul>
-<blockquote>
-<p>今天的学习过程中并不是全部都理解透彻了，关于时间复杂度也还有更长的路去学习，本文仅关于一道课后题延伸出这些内容。<br>未完待续~~~</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -3410,8 +3411,8 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </categories>
       <tags>
         <tag>复习</tag>
-        <tag>博客</tag>
         <tag>数据结构</tag>
+        <tag>博客</tag>
       </tags>
   </entry>
   <entry>
@@ -3474,6 +3475,20 @@ test width&#x3D;父元素width-margin-padding-border</li>
         <tag>web</tag>
         <tag>GET</tag>
         <tag>POST</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>生辰乐</title>
+    <url>/2020/12/13/%E7%94%9F%E8%BE%B0%E4%B9%90/</url>
+    <content><![CDATA[<p>《生辰乐·寄尤安》<br>九月秋风送爽，浓郁红茶飘香;<br>离别一年有余，思念由心满溢。<br>留念闹市橱窗，留下美好时光；<br>无数擦肩拥抱，交换彼此心跳。<br>世道慌乱无措，人心险恶难测；<br>生活漫漫且过，莫要在意太多。<br>十月悄然来临，生辰无奈遥距；<br>愿卿如初微笑，如吾梦里骄傲。</p>
+<p>《生辰乐·寄嘉艺》<br>雪落京城映故宫，寒意滚滚过秦岭；<br>风吹山城染丘林，落叶翩翩盖行径。<br>生于春而归于秋，岁岁年年；<br>辰时起而落于酉，朝朝暮暮。<br>乐享清净半日闲，只与十一论逍遥；<br>怡然自得笑嫣然，亦如初遇仍年少。</p>
+<p>《生辰乐·余生为期》<br>九九重阳秋高气爽，微凉;<br>默默出现凝聚焦点，画面。<br>年轻的热度，感受生命在今夕;<br>选择的方向，聆听结果去目击;<br>八个三岁的小孩，余生为期。</p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>日常</tag>
       </tags>
   </entry>
   <entry>
@@ -3557,122 +3572,6 @@ test width&#x3D;父元素width-margin-padding-border</li>
       <tags>
         <tag>学习</tag>
         <tag>App分析</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>用户验证与数据库</title>
-    <url>/2017/12/06/%E7%94%A8%E6%88%B7%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    <content><![CDATA[<blockquote>
-<p>这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="验证用户方法"><a href="#验证用户方法" class="headerlink" title="验证用户方法"></a>验证用户方法</h2><h3 id="1-HTTP自带的验证"><a href="#1-HTTP自带的验证" class="headerlink" title="1. HTTP自带的验证"></a>1. HTTP自带的验证</h3><blockquote>
-<p>这种方式是利用HTTP所提供的验证头信息来对用户进行身份验证。由于这种凡是对大量的使用者缺乏有效的管理，在用户太多时并没有太大用处，因此少量用户时使用。例如开发人员。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">    // 如果 $PHP_AUTH_USER 不等于 &quot;tea&quot;，就进不去网站。 </span><br><span class="line">    if($_SERVER[&#x27;PHP_AUTH_USER&#x27;] !=&#x27;tea&#x27; || $_SERVER[&#x27;PHP_AUTH_PW&#x27;] !=&#x27;ok&#x27;)&#123; </span><br><span class="line">    //通过头部信息告知浏览器验证</span><br><span class="line">    header(&#x27;WWW-Authenticate: Basic realm=&quot;「需验证」---请输入账户/密码&quot;&#x27;); </span><br><span class="line">    header(&#x27;HTTP/1.0 401 Unauthorized&#x27;); </span><br><span class="line">    echo &quot;账号或密码错误。请刷新重新输入。&quot;; </span><br><span class="line">    </span><br><span class="line">    //记得要加上 exit() 离开，不然就跟没有验证一样了！ </span><br><span class="line">    exit(); </span><br><span class="line">    &#125; </span><br><span class="line">    /* </span><br><span class="line">    如果用户输入正确的账户和密码，下面的 HTML 就会显示 </span><br><span class="line">    */ </span><br><span class="line">    ?&gt; </span><br><span class="line">&lt;HTML&gt; </span><br><span class="line">    &lt;HEAD&gt; </span><br><span class="line">        &lt;TITLE&gt;&lt;/TlTLE&gt; </span><br><span class="line">    &lt;/HEAD&gt; </span><br><span class="line"></span><br><span class="line">    &lt;BODY&gt; </span><br><span class="line">        &lt;P&gt;Hello World！&lt;/P&gt; </span><br><span class="line">    &lt;/BODY&gt; </span><br><span class="line">&lt;/HTML&gt; </span><br></pre></td></tr></table></figure>
-
-<h3 id="2-htaccess方式的验证"><a href="#2-htaccess方式的验证" class="headerlink" title="2. htaccess方式的验证"></a>2. <code>htaccess</code>方式的验证</h3><blockquote>
-<p>这种凡是其实时Apche所提供的加强版HTTP验证方式，利用Apche所提供的<code>htpasswd</code>来设定使用者账号和密码。但是任然不适用过多用户。</p>
-</blockquote>
-<h4 id="首先建立用户数据（授权的动作）"><a href="#首先建立用户数据（授权的动作）" class="headerlink" title="首先建立用户数据（授权的动作）"></a>首先建立用户数据（授权的动作）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 第一次 -c，第二次添加就不需要了</span><br><span class="line">c:\appserv\apache\bin&gt; htpasswd -c htusers Tom </span><br><span class="line">New password: ←输入用户密码 </span><br><span class="line">Re-type new password: ←再次输入 </span><br><span class="line">Adding password for user Tom</span><br><span class="line"></span><br><span class="line">c:\appserv\apache\bin&gt; htpasswd htusers Jack </span><br><span class="line">New password: </span><br><span class="line">Re-type new password: </span><br><span class="line">Adding password for user Jack</span><br><span class="line"></span><br><span class="line">// 可以将不同的人进行分组，group是群组名称</span><br><span class="line">group:Tom Jack</span><br></pre></td></tr></table></figure>
-
-<h4 id="然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）"><a href="#然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）" class="headerlink" title="然后在需要权限才可以进入的路径中建.htaccess文档（将已授权和访问地址联系到一起）"></a>然后在需要权限才可以进入的路径中建<code>.htaccess</code>文档（将已授权和访问地址联系到一起）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 显示给用户看的提示</span><br><span class="line">AuthName &quot;登陆时需要输入账号和密码「账号」与「密码」&quot; </span><br><span class="line">// 验证时不编码</span><br><span class="line">AuthType Basic </span><br><span class="line">// 之前建立的用户数据</span><br><span class="line">AuthUserFile c:\appserv\apache\bin\htusers </span><br><span class="line">#AuthGroupFile c:\appserv\apache\bin\htgroup </span><br><span class="line">// 所有访问的都需要验证</span><br><span class="line">require valid-user </span><br><span class="line">#require user jollen </span><br><span class="line">#require group ieem316 </span><br><span class="line">// 定义说拒绝所有，允许个别</span><br><span class="line">order deny,allow </span><br><span class="line">deny from all </span><br><span class="line">#allow from .nthu.edu.tw </span><br><span class="line">allow from 140.114.70.31 </span><br></pre></td></tr></table></figure>
-
-<h3 id="3-数据库存储用户数据"><a href="#3-数据库存储用户数据" class="headerlink" title="3. 数据库存储用户数据"></a>3. 数据库存储用户数据</h3><blockquote>
-<p>最有效，最普遍的做法，将用户的账户和密码存在数据库中，每次登陆到数据库中查找数据，最后返回有无和正确性。</p>
-</blockquote>
-<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
-<li>登陆的表单</li>
-<li>登陆的程序</li>
-<li>建好用户的资料库，至少要包括账号和密码</li>
-</ol>
-<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
-<li>通过表单获取用户账号与密码</li>
-<li>到数据库中查找对应的账号和密码</li>
-<li>失败就返回重新获取信息，直到成功为止</li>
-</ol>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 本程序通过头信息获取的用户的账户和密码</span><br><span class="line">&lt;?php </span><br><span class="line">    // 如果用户沒有输入账户，要求用户重新验证。 </span><br><span class="line">    IF(!isset($PHP_AUTH_USER))&#123; </span><br><span class="line">        header(&#x27;WWW-Authenticate: Basic realm=&quot;请输入账号和密码&quot;&#x27;); </span><br><span class="line">        header(&#x27;HTTP/1.0 401 Unauthorized&#x27;); </span><br><span class="line">        echo &quot;刷新后重新登陆&quot;; </span><br><span class="line">        exit(); </span><br><span class="line">    &#125;</span><br><span class="line">    else&#123; </span><br><span class="line">        mysql_connect(&quot;localhost&quot;,&quot;admin&quot;,&quot;asdee4&quot;) or die (&quot;无法连接 MySQL&quot;); </span><br><span class="line">        rnysql_select_db(&quot;members&quot;) or die(&quot;无法连接数据库&quot;); </span><br><span class="line">        $query=&quot;select id from users where username=&#x27;$PHP_AUTH_USER&#x27; and </span><br><span class="line">        password=&#x27;$PHP_AUTH_PW&#x27;&quot;; </span><br><span class="line">        $result=mysql_query($query); </span><br><span class="line">        $n_rows=mysql_num_rows($result); </span><br><span class="line">        mysql_close(); </span><br><span class="line">        // 当row&lt;1时，用户账号与密码有错，重新登陆</span><br><span class="line">        if($n_rows &lt; 1)&#123; </span><br><span class="line">            header(&#x27;WWW_Authenticate: Basic realm=&quot;请输入账号和密码&quot;&#x27;); </span><br><span class="line">            header(&#x27;HTTP/1.0 401 Unauthorized&#x27;); </span><br><span class="line">            echo &quot;刷新重新登陆&quot;; </span><br><span class="line">            exit(); </span><br><span class="line">        &#125; </span><br><span class="line">    &#125; </span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
-
-<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="数据库系统-x3D-数据库管理系统-数据库"><a href="#数据库系统-x3D-数据库管理系统-数据库" class="headerlink" title="数据库系统 &#x3D; 数据库管理系统 + 数据库"></a>数据库系统 &#x3D; 数据库管理系统 + 数据库</h3><h4 id="DBMS（数据库管理系统）：database-management-system"><a href="#DBMS（数据库管理系统）：database-management-system" class="headerlink" title="DBMS（数据库管理系统）：database management system"></a>DBMS（数据库管理系统）：database management system</h4><ul>
-<li>只是一个软件</li>
-<li>作用：资料的管理和维护</li>
-</ul>
-<h4 id="DB（数据库）：database"><a href="#DB（数据库）：database" class="headerlink" title="DB（数据库）：database"></a>DB（数据库）：database</h4><h3 id="SQL（structure-query-language）：结构化查询语句"><a href="#SQL（structure-query-language）：结构化查询语句" class="headerlink" title="SQL（structure query language）：结构化查询语句"></a>SQL（structure query language）：结构化查询语句</h3><ul>
-<li>第一代：89</li>
-<li>第二代：92（绝大部分数据库所遵循的规则）</li>
-<li>第三代：99（没有成立）</li>
-</ul>
-<h4 id="DDL（data-definition-language）：数据库和数据表定义语言"><a href="#DDL（data-definition-language）：数据库和数据表定义语言" class="headerlink" title="DDL（data definition language）：数据库和数据表定义语言"></a>DDL（data definition language）：数据库和数据表定义语言</h4><ul>
-<li>create</li>
-<li>database</li>
-<li>table</li>
-<li>drop</li>
-<li>database</li>
-<li>table</li>
-<li>alter（改变数据库的结构）</li>
-<li>table</li>
-</ul>
-<h4 id="DML（data-manipulation-language）：数据处理语言"><a href="#DML（data-manipulation-language）：数据处理语言" class="headerlink" title="DML（data manipulation language）：数据处理语言"></a>DML（data manipulation language）：数据处理语言</h4><ul>
-<li>select（查询）</li>
-<li>insert [into]（添加）</li>
-<li>delete（删除）</li>
-<li>updata（单个属性的改变）</li>
-</ul>
-<h4 id="DCL（data-control-language）：数据库控制语言"><a href="#DCL（data-control-language）：数据库控制语言" class="headerlink" title="DCL（data control language）：数据库控制语言"></a>DCL（data control language）：数据库控制语言</h4><ul>
-<li>grant（授权）</li>
-<li>revoke（取消授权）</li>
-</ul>
-<h3 id="使用者"><a href="#使用者" class="headerlink" title="使用者"></a>使用者</h3><ul>
-<li>DBO（database operater）</li>
-<li>DBA（database administrator）：root&#x2F;password</li>
-</ul>
-<h3 id="简单的结构"><a href="#简单的结构" class="headerlink" title="简单的结构"></a>简单的结构</h3><pre><code>DB Server（数据库服务器）
- DB（数据库）
-  table（数据表）
-   record（）
-    field
-     charset
-</code></pre>
-<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><ol>
-<li>链接数据库</li>
-<li>use&#x2F;create：database</li>
-<li>create：table&#x2F;改变资料表里面的数据</li>
-</ol>
-<h3 id="数据库操作方法"><a href="#数据库操作方法" class="headerlink" title="数据库操作方法"></a>数据库操作方法</h3><ul>
-<li>通过程式（php）</li>
-<li>通过命令行</li>
-<li>-u：使用者</li>
-<li>-h：主机</li>
-<li>-p：密码</li>
-<li>通过图形界面（软件）</li>
-</ul>
-<h3 id="PHP-amp-数据库"><a href="#PHP-amp-数据库" class="headerlink" title="PHP &amp; 数据库"></a>PHP &amp; 数据库</h3><h4 id="1-连接数据库"><a href="#1-连接数据库" class="headerlink" title="1. 连接数据库"></a>1. 连接数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$db = mysql_connect（数据库主机名称或ip,数据库账号,数据库密码）;</span><br><span class="line">      or die(&quot;无法连接数据库服务器&quot;);</span><br></pre></td></tr></table></figure>
-
-<h4 id="2-使用数据库"><a href="#2-使用数据库" class="headerlink" title="2. 使用数据库"></a>2. 使用数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql_ select_db(名称,$db);</span><br><span class="line">    or die(&quot;无法连接数据库&quot;);</span><br></pre></td></tr></table></figure>
-
-<h4 id="3-对数据进行操作"><a href="#3-对数据进行操作" class="headerlink" title="3. 对数据进行操作"></a>3. 对数据进行操作</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$sql = &quot;(此处就是SQL指令)&quot;;</span><br></pre></td></tr></table></figure>
-
-<h4 id="4-用变量对数据进行存取"><a href="#4-用变量对数据进行存取" class="headerlink" title="4. 用变量对数据进行存取"></a>4. 用变量对数据进行存取</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$result = mysql_query($sql,$db);</span><br></pre></td></tr></table></figure>
-
-<h4 id="5-最后关闭数据库"><a href="#5-最后关闭数据库" class="headerlink" title="5. 最后关闭数据库"></a>5. 最后关闭数据库</h4><blockquote>
-<p>当取到数据的时候就可以关掉了，这样可以降低数据库风险。</p>
-</blockquote>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql_close($db); </span><br></pre></td></tr></table></figure>
-
-<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><ul>
-<li>sql指令可以大小写，但各种数据库名称和数据表名称要区别大小写。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>学习</category>
-      </categories>
-      <tags>
-        <tag>笔记</tag>
-        <tag>PHP</tag>
-        <tag>台湾交换学习</tag>
-        <tag>验证</tag>
-        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -3919,6 +3818,122 @@ test width&#x3D;父元素width-margin-padding-border</li>
         <tag>学习</tag>
         <tag>电子商务</tag>
         <tag>网站分析</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用户验证与数据库</title>
+    <url>/2017/12/06/%E7%94%A8%E6%88%B7%E9%AA%8C%E8%AF%81%E4%B8%8E%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <content><![CDATA[<blockquote>
+<p>这是今天web课程的笔记，亲自尝试了前面两种验证方式，第三种方式之前也有所接触，还都算比较好理解。后面还有一些数据库的简单解释。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="验证用户方法"><a href="#验证用户方法" class="headerlink" title="验证用户方法"></a>验证用户方法</h2><h3 id="1-HTTP自带的验证"><a href="#1-HTTP自带的验证" class="headerlink" title="1. HTTP自带的验证"></a>1. HTTP自带的验证</h3><blockquote>
+<p>这种方式是利用HTTP所提供的验证头信息来对用户进行身份验证。由于这种凡是对大量的使用者缺乏有效的管理，在用户太多时并没有太大用处，因此少量用户时使用。例如开发人员。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">    // 如果 $PHP_AUTH_USER 不等于 &quot;tea&quot;，就进不去网站。 </span><br><span class="line">    if($_SERVER[&#x27;PHP_AUTH_USER&#x27;] !=&#x27;tea&#x27; || $_SERVER[&#x27;PHP_AUTH_PW&#x27;] !=&#x27;ok&#x27;)&#123; </span><br><span class="line">    //通过头部信息告知浏览器验证</span><br><span class="line">    header(&#x27;WWW-Authenticate: Basic realm=&quot;「需验证」---请输入账户/密码&quot;&#x27;); </span><br><span class="line">    header(&#x27;HTTP/1.0 401 Unauthorized&#x27;); </span><br><span class="line">    echo &quot;账号或密码错误。请刷新重新输入。&quot;; </span><br><span class="line">    </span><br><span class="line">    //记得要加上 exit() 离开，不然就跟没有验证一样了！ </span><br><span class="line">    exit(); </span><br><span class="line">    &#125; </span><br><span class="line">    /* </span><br><span class="line">    如果用户输入正确的账户和密码，下面的 HTML 就会显示 </span><br><span class="line">    */ </span><br><span class="line">    ?&gt; </span><br><span class="line">&lt;HTML&gt; </span><br><span class="line">    &lt;HEAD&gt; </span><br><span class="line">        &lt;TITLE&gt;&lt;/TlTLE&gt; </span><br><span class="line">    &lt;/HEAD&gt; </span><br><span class="line"></span><br><span class="line">    &lt;BODY&gt; </span><br><span class="line">        &lt;P&gt;Hello World！&lt;/P&gt; </span><br><span class="line">    &lt;/BODY&gt; </span><br><span class="line">&lt;/HTML&gt; </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-htaccess方式的验证"><a href="#2-htaccess方式的验证" class="headerlink" title="2. htaccess方式的验证"></a>2. <code>htaccess</code>方式的验证</h3><blockquote>
+<p>这种凡是其实时Apche所提供的加强版HTTP验证方式，利用Apche所提供的<code>htpasswd</code>来设定使用者账号和密码。但是任然不适用过多用户。</p>
+</blockquote>
+<h4 id="首先建立用户数据（授权的动作）"><a href="#首先建立用户数据（授权的动作）" class="headerlink" title="首先建立用户数据（授权的动作）"></a>首先建立用户数据（授权的动作）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 第一次 -c，第二次添加就不需要了</span><br><span class="line">c:\appserv\apache\bin&gt; htpasswd -c htusers Tom </span><br><span class="line">New password: ←输入用户密码 </span><br><span class="line">Re-type new password: ←再次输入 </span><br><span class="line">Adding password for user Tom</span><br><span class="line"></span><br><span class="line">c:\appserv\apache\bin&gt; htpasswd htusers Jack </span><br><span class="line">New password: </span><br><span class="line">Re-type new password: </span><br><span class="line">Adding password for user Jack</span><br><span class="line"></span><br><span class="line">// 可以将不同的人进行分组，group是群组名称</span><br><span class="line">group:Tom Jack</span><br></pre></td></tr></table></figure>
+
+<h4 id="然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）"><a href="#然后在需要权限才可以进入的路径中建-htaccess文档（将已授权和访问地址联系到一起）" class="headerlink" title="然后在需要权限才可以进入的路径中建.htaccess文档（将已授权和访问地址联系到一起）"></a>然后在需要权限才可以进入的路径中建<code>.htaccess</code>文档（将已授权和访问地址联系到一起）</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 显示给用户看的提示</span><br><span class="line">AuthName &quot;登陆时需要输入账号和密码「账号」与「密码」&quot; </span><br><span class="line">// 验证时不编码</span><br><span class="line">AuthType Basic </span><br><span class="line">// 之前建立的用户数据</span><br><span class="line">AuthUserFile c:\appserv\apache\bin\htusers </span><br><span class="line">#AuthGroupFile c:\appserv\apache\bin\htgroup </span><br><span class="line">// 所有访问的都需要验证</span><br><span class="line">require valid-user </span><br><span class="line">#require user jollen </span><br><span class="line">#require group ieem316 </span><br><span class="line">// 定义说拒绝所有，允许个别</span><br><span class="line">order deny,allow </span><br><span class="line">deny from all </span><br><span class="line">#allow from .nthu.edu.tw </span><br><span class="line">allow from 140.114.70.31 </span><br></pre></td></tr></table></figure>
+
+<h3 id="3-数据库存储用户数据"><a href="#3-数据库存储用户数据" class="headerlink" title="3. 数据库存储用户数据"></a>3. 数据库存储用户数据</h3><blockquote>
+<p>最有效，最普遍的做法，将用户的账户和密码存在数据库中，每次登陆到数据库中查找数据，最后返回有无和正确性。</p>
+</blockquote>
+<h4 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h4><ol>
+<li>登陆的表单</li>
+<li>登陆的程序</li>
+<li>建好用户的资料库，至少要包括账号和密码</li>
+</ol>
+<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
+<li>通过表单获取用户账号与密码</li>
+<li>到数据库中查找对应的账号和密码</li>
+<li>失败就返回重新获取信息，直到成功为止</li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">// 本程序通过头信息获取的用户的账户和密码</span><br><span class="line">&lt;?php </span><br><span class="line">    // 如果用户沒有输入账户，要求用户重新验证。 </span><br><span class="line">    IF(!isset($PHP_AUTH_USER))&#123; </span><br><span class="line">        header(&#x27;WWW-Authenticate: Basic realm=&quot;请输入账号和密码&quot;&#x27;); </span><br><span class="line">        header(&#x27;HTTP/1.0 401 Unauthorized&#x27;); </span><br><span class="line">        echo &quot;刷新后重新登陆&quot;; </span><br><span class="line">        exit(); </span><br><span class="line">    &#125;</span><br><span class="line">    else&#123; </span><br><span class="line">        mysql_connect(&quot;localhost&quot;,&quot;admin&quot;,&quot;asdee4&quot;) or die (&quot;无法连接 MySQL&quot;); </span><br><span class="line">        rnysql_select_db(&quot;members&quot;) or die(&quot;无法连接数据库&quot;); </span><br><span class="line">        $query=&quot;select id from users where username=&#x27;$PHP_AUTH_USER&#x27; and </span><br><span class="line">        password=&#x27;$PHP_AUTH_PW&#x27;&quot;; </span><br><span class="line">        $result=mysql_query($query); </span><br><span class="line">        $n_rows=mysql_num_rows($result); </span><br><span class="line">        mysql_close(); </span><br><span class="line">        // 当row&lt;1时，用户账号与密码有错，重新登陆</span><br><span class="line">        if($n_rows &lt; 1)&#123; </span><br><span class="line">            header(&#x27;WWW_Authenticate: Basic realm=&quot;请输入账号和密码&quot;&#x27;); </span><br><span class="line">            header(&#x27;HTTP/1.0 401 Unauthorized&#x27;); </span><br><span class="line">            echo &quot;刷新重新登陆&quot;; </span><br><span class="line">            exit(); </span><br><span class="line">        &#125; </span><br><span class="line">    &#125; </span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h2><h3 id="数据库系统-x3D-数据库管理系统-数据库"><a href="#数据库系统-x3D-数据库管理系统-数据库" class="headerlink" title="数据库系统 &#x3D; 数据库管理系统 + 数据库"></a>数据库系统 &#x3D; 数据库管理系统 + 数据库</h3><h4 id="DBMS（数据库管理系统）：database-management-system"><a href="#DBMS（数据库管理系统）：database-management-system" class="headerlink" title="DBMS（数据库管理系统）：database management system"></a>DBMS（数据库管理系统）：database management system</h4><ul>
+<li>只是一个软件</li>
+<li>作用：资料的管理和维护</li>
+</ul>
+<h4 id="DB（数据库）：database"><a href="#DB（数据库）：database" class="headerlink" title="DB（数据库）：database"></a>DB（数据库）：database</h4><h3 id="SQL（structure-query-language）：结构化查询语句"><a href="#SQL（structure-query-language）：结构化查询语句" class="headerlink" title="SQL（structure query language）：结构化查询语句"></a>SQL（structure query language）：结构化查询语句</h3><ul>
+<li>第一代：89</li>
+<li>第二代：92（绝大部分数据库所遵循的规则）</li>
+<li>第三代：99（没有成立）</li>
+</ul>
+<h4 id="DDL（data-definition-language）：数据库和数据表定义语言"><a href="#DDL（data-definition-language）：数据库和数据表定义语言" class="headerlink" title="DDL（data definition language）：数据库和数据表定义语言"></a>DDL（data definition language）：数据库和数据表定义语言</h4><ul>
+<li>create</li>
+<li>database</li>
+<li>table</li>
+<li>drop</li>
+<li>database</li>
+<li>table</li>
+<li>alter（改变数据库的结构）</li>
+<li>table</li>
+</ul>
+<h4 id="DML（data-manipulation-language）：数据处理语言"><a href="#DML（data-manipulation-language）：数据处理语言" class="headerlink" title="DML（data manipulation language）：数据处理语言"></a>DML（data manipulation language）：数据处理语言</h4><ul>
+<li>select（查询）</li>
+<li>insert [into]（添加）</li>
+<li>delete（删除）</li>
+<li>updata（单个属性的改变）</li>
+</ul>
+<h4 id="DCL（data-control-language）：数据库控制语言"><a href="#DCL（data-control-language）：数据库控制语言" class="headerlink" title="DCL（data control language）：数据库控制语言"></a>DCL（data control language）：数据库控制语言</h4><ul>
+<li>grant（授权）</li>
+<li>revoke（取消授权）</li>
+</ul>
+<h3 id="使用者"><a href="#使用者" class="headerlink" title="使用者"></a>使用者</h3><ul>
+<li>DBO（database operater）</li>
+<li>DBA（database administrator）：root&#x2F;password</li>
+</ul>
+<h3 id="简单的结构"><a href="#简单的结构" class="headerlink" title="简单的结构"></a>简单的结构</h3><pre><code>DB Server（数据库服务器）
+ DB（数据库）
+  table（数据表）
+   record（）
+    field
+     charset
+</code></pre>
+<h4 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h4><ol>
+<li>链接数据库</li>
+<li>use&#x2F;create：database</li>
+<li>create：table&#x2F;改变资料表里面的数据</li>
+</ol>
+<h3 id="数据库操作方法"><a href="#数据库操作方法" class="headerlink" title="数据库操作方法"></a>数据库操作方法</h3><ul>
+<li>通过程式（php）</li>
+<li>通过命令行</li>
+<li>-u：使用者</li>
+<li>-h：主机</li>
+<li>-p：密码</li>
+<li>通过图形界面（软件）</li>
+</ul>
+<h3 id="PHP-amp-数据库"><a href="#PHP-amp-数据库" class="headerlink" title="PHP &amp; 数据库"></a>PHP &amp; 数据库</h3><h4 id="1-连接数据库"><a href="#1-连接数据库" class="headerlink" title="1. 连接数据库"></a>1. 连接数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$db = mysql_connect（数据库主机名称或ip,数据库账号,数据库密码）;</span><br><span class="line">      or die(&quot;无法连接数据库服务器&quot;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-使用数据库"><a href="#2-使用数据库" class="headerlink" title="2. 使用数据库"></a>2. 使用数据库</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql_ select_db(名称,$db);</span><br><span class="line">    or die(&quot;无法连接数据库&quot;);</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-对数据进行操作"><a href="#3-对数据进行操作" class="headerlink" title="3. 对数据进行操作"></a>3. 对数据进行操作</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$sql = &quot;(此处就是SQL指令)&quot;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4-用变量对数据进行存取"><a href="#4-用变量对数据进行存取" class="headerlink" title="4. 用变量对数据进行存取"></a>4. 用变量对数据进行存取</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$result = mysql_query($sql,$db);</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-最后关闭数据库"><a href="#5-最后关闭数据库" class="headerlink" title="5. 最后关闭数据库"></a>5. 最后关闭数据库</h4><blockquote>
+<p>当取到数据的时候就可以关掉了，这样可以降低数据库风险。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mysql_close($db); </span><br></pre></td></tr></table></figure>
+
+<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><ul>
+<li>sql指令可以大小写，但各种数据库名称和数据表名称要区别大小写。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>笔记</tag>
+        <tag>PHP</tag>
+        <tag>台湾交换学习</tag>
+        <tag>验证</tag>
+        <tag>数据库</tag>
       </tags>
   </entry>
   <entry>
@@ -4261,17 +4276,24 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </tags>
   </entry>
   <entry>
-    <title>生辰乐</title>
-    <url>/2020/12/13/%E7%94%9F%E8%BE%B0%E4%B9%90/</url>
-    <content><![CDATA[<p>《生辰乐·寄尤安》<br>九月秋风送爽，浓郁红茶飘香;<br>离别一年有余，思念由心满溢。<br>留念闹市橱窗，留下美好时光；<br>无数擦肩拥抱，交换彼此心跳。<br>世道慌乱无措，人心险恶难测；<br>生活漫漫且过，莫要在意太多。<br>十月悄然来临，生辰无奈遥距；<br>愿卿如初微笑，如吾梦里骄傲。</p>
-<p>《生辰乐·寄嘉艺》<br>雪落京城映故宫，寒意滚滚过秦岭；<br>风吹山城染丘林，落叶翩翩盖行径。<br>生于春而归于秋，岁岁年年；<br>辰时起而落于酉，朝朝暮暮。<br>乐享清净半日闲，只与十一论逍遥；<br>怡然自得笑嫣然，亦如初遇仍年少。</p>
-<p>《生辰乐·余生为期》<br>九九重阳秋高气爽，微凉;<br>默默出现凝聚焦点，画面。<br>年轻的热度，感受生命在今夕;<br>选择的方向，聆听结果去目击;<br>八个三岁的小孩，余生为期。</p>
+    <title>那一场即将醒来的梦</title>
+    <url>/2020/02/06/%E9%82%A3%E4%B8%80%E5%9C%BA%E5%8D%B3%E5%B0%86%E9%86%92%E6%9D%A5%E7%9A%84%E6%A2%A6/</url>
+    <content><![CDATA[<blockquote>
+<p>说在前面：这一年注定不凡，但却没想到不凡的开始带着如此多的意外。</p>
+</blockquote>
+<span id="more"></span>
+
+<p>猪年的结束，最后一天除夕终是回到家中……<br>新年的爆竹不再响彻除夕<br>拥挤的车厢没了笑颜<br>团聚的话题变得沉重<br>空荡的街道<br>繁华的夜景孤自耀眼</p>
+<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/dream.jpg?raw=true" alt="除夕的夜晚"></p>
+<p>鼠年的开始，第一天上班竟是在家中……<br>没离开家的自己总是觉得假期还未结束，总是想着哪天醒来能接到通知:<br>“今天所有员工必须回公司上班。”<br>然后我背上行囊再次走上自己的路<br>路上行人纷纷，打车还要排队<br>幸然我抢到票，还有车送我到车站<br>挤上早高峰一般拥挤的地铁……</p>
+<p>生肖到鼠，是一个轮回<br>作为轮回的结束，平安喜乐<br>作为轮回的开始，既然注定不凡<br>那想必这一轮定然超乎所有人的预料<br>黎明固然黑暗<br>但也是离光最近的时刻<br>到时影子都只能跑到你的身后<br>还有何所惧呢？</p>
+<p>愿各自安好~<br>愿平安喜乐~<br>更愿无所畏~</p>
 ]]></content>
       <categories>
         <category>生活</category>
       </categories>
       <tags>
-        <tag>日常</tag>
+        <tag>随笔记</tag>
       </tags>
   </entry>
   <entry>
@@ -4495,27 +4517,6 @@ test width&#x3D;父元素width-margin-padding-border</li>
       </categories>
       <tags>
         <tag>英语</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>那一场即将醒来的梦</title>
-    <url>/2020/02/06/%E9%82%A3%E4%B8%80%E5%9C%BA%E5%8D%B3%E5%B0%86%E9%86%92%E6%9D%A5%E7%9A%84%E6%A2%A6/</url>
-    <content><![CDATA[<blockquote>
-<p>说在前面：这一年注定不凡，但却没想到不凡的开始带着如此多的意外。</p>
-</blockquote>
-<span id="more"></span>
-
-<p>猪年的结束，最后一天除夕终是回到家中……<br>新年的爆竹不再响彻除夕<br>拥挤的车厢没了笑颜<br>团聚的话题变得沉重<br>空荡的街道<br>繁华的夜景孤自耀眼</p>
-<p><img src="https://github.com/FrannieYi/Blogimage/blob/master/Blogimage/dream.jpg?raw=true" alt="除夕的夜晚"></p>
-<p>鼠年的开始，第一天上班竟是在家中……<br>没离开家的自己总是觉得假期还未结束，总是想着哪天醒来能接到通知:<br>“今天所有员工必须回公司上班。”<br>然后我背上行囊再次走上自己的路<br>路上行人纷纷，打车还要排队<br>幸然我抢到票，还有车送我到车站<br>挤上早高峰一般拥挤的地铁……</p>
-<p>生肖到鼠，是一个轮回<br>作为轮回的结束，平安喜乐<br>作为轮回的开始，既然注定不凡<br>那想必这一轮定然超乎所有人的预料<br>黎明固然黑暗<br>但也是离光最近的时刻<br>到时影子都只能跑到你的身后<br>还有何所惧呢？</p>
-<p>愿各自安好~<br>愿平安喜乐~<br>更愿无所畏~</p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>随笔记</tag>
       </tags>
   </entry>
   <entry>
