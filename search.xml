@@ -1449,32 +1449,6 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
-    <title>WeeklyMind-9</title>
-    <url>/2019/07/07/WeeklyMind-9/</url>
-    <content><![CDATA[<blockquote>
-<p>说在前面：这个周开始，自己就正式开始了上班的生活，上个周还在和各位同学依依不舍，这个周一切都切换到了不同的轨道，就简单说一下这个周发生的事情吧。</p>
-</blockquote>
-<span id="more"></span>
-
-<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>总之，一切都还是那么生疏，但是自己在开始慢慢转变自己的观念了，从一个在学校只有输入的学生（或许有少量的输出），慢慢转变为一个需要每天都有输出的工作者。</p>
-<h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>刚刚搬到这个地方，住了大概两个周了吧，周边环境还是很不错，现状唯一的不好就是还没有锅，不能自己做东西吃，这是很不方便的，所以先定下个月去购买厨房用品，这个月先坚持过去。</p>
-<h3 id="随心"><a href="#随心" class="headerlink" title="随心"></a>随心</h3><p>自己除了工作以外的时间安排还不够合理，没有主动的push自己，不管是心理上还是身体上，都不是自己理想中的工作生活，尽管现在可能是累了一点，但是学习这个事情，还是不能放到玩耍的前面，所以接下来这个周，自己要开始慢慢调整。</p>
-<h3 id="调整待跟进事项"><a href="#调整待跟进事项" class="headerlink" title="调整待跟进事项"></a>调整待跟进事项</h3><ul>
-<li>每天简单的更新自己的微博（工作和学习内容），有机会要更新自己的微信公众号（想法和当下情感）。</li>
-<li>每天看至少二十页的书，需要给自己充电。</li>
-<li>马上教师资格证就要开始考试了，自己要开始准备，既然答应了就要做到。</li>
-<li>英语不应该放下，自己每天应抽出半个小时，看看英语。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>文章</category>
-      </categories>
-      <tags>
-        <tag>工作</tag>
-        <tag>周记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>WeeklyMind-8</title>
     <url>/2018/03/11/WeeklyMind-8/</url>
     <content><![CDATA[<blockquote>
@@ -1573,6 +1547,32 @@ urlpatterns = [
       </categories>
       <tags>
         <tag>大学</tag>
+        <tag>周记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>WeeklyMind-9</title>
+    <url>/2019/07/07/WeeklyMind-9/</url>
+    <content><![CDATA[<blockquote>
+<p>说在前面：这个周开始，自己就正式开始了上班的生活，上个周还在和各位同学依依不舍，这个周一切都切换到了不同的轨道，就简单说一下这个周发生的事情吧。</p>
+</blockquote>
+<span id="more"></span>
+
+<h3 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h3><p>总之，一切都还是那么生疏，但是自己在开始慢慢转变自己的观念了，从一个在学校只有输入的学生（或许有少量的输出），慢慢转变为一个需要每天都有输出的工作者。</p>
+<h3 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h3><p>刚刚搬到这个地方，住了大概两个周了吧，周边环境还是很不错，现状唯一的不好就是还没有锅，不能自己做东西吃，这是很不方便的，所以先定下个月去购买厨房用品，这个月先坚持过去。</p>
+<h3 id="随心"><a href="#随心" class="headerlink" title="随心"></a>随心</h3><p>自己除了工作以外的时间安排还不够合理，没有主动的push自己，不管是心理上还是身体上，都不是自己理想中的工作生活，尽管现在可能是累了一点，但是学习这个事情，还是不能放到玩耍的前面，所以接下来这个周，自己要开始慢慢调整。</p>
+<h3 id="调整待跟进事项"><a href="#调整待跟进事项" class="headerlink" title="调整待跟进事项"></a>调整待跟进事项</h3><ul>
+<li>每天简单的更新自己的微博（工作和学习内容），有机会要更新自己的微信公众号（想法和当下情感）。</li>
+<li>每天看至少二十页的书，需要给自己充电。</li>
+<li>马上教师资格证就要开始考试了，自己要开始准备，既然答应了就要做到。</li>
+<li>英语不应该放下，自己每天应抽出半个小时，看看英语。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>文章</category>
+      </categories>
+      <tags>
+        <tag>工作</tag>
         <tag>周记</tag>
       </tags>
   </entry>
@@ -2248,66 +2248,6 @@ urlpatterns = [
       </categories>
   </entry>
   <entry>
-    <title>坎帕斯学院日常讨论</title>
-    <url>/2017/04/16/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-1/</url>
-    <content><![CDATA[<h2 id="话题：width：100-和width：auto的区别"><a href="#话题：width：100-和width：auto的区别" class="headerlink" title="话题：width：100%和width：auto的区别"></a>话题：width：100%和width：auto的区别</h2><span id="more"></span>
-<h4 id="width：100"><a href="#width：100" class="headerlink" title="width：100%"></a>width：100%</h4><ul>
-<li>元素宽度等于父级元素的宽度。</li>
-</ul>
-<h4 id="width：auto"><a href="#width：auto" class="headerlink" title="width：auto"></a>width：auto</h4><ul>
-<li>元素的宽度等于父元素的宽度减去margin，padding，border这些。</li>
-</ul>
-<h4 id="高度知识点"><a href="#高度知识点" class="headerlink" title="高度知识点"></a>高度知识点</h4><ul>
-<li>子元素的margin和padding百分比知识点根据父元素的width来算。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test1</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        width:500px;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-test width&#x3D;父元素width-margin-padding-border</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test2</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>test width&#x3D;123123123123123+margin+padding+border</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test3</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        font-size:20px;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">        width:500px;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<p>test width&#x3D;500-padding-margin-border<br>这里的500px并不是继承，而是因为div块级元素的影响而来的。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test4a</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	body&#123;</span><br><span class="line">		font-size: 20px;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	.first1&#123;</span><br><span class="line">		background: red;</span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 400px;</span><br><span class="line">		overflow: hidden;</span><br><span class="line">	&#125;</span><br><span class="line">	.second1&#123;</span><br><span class="line">		height: 25%;width: 25%;</span><br><span class="line">		margin-top: 10%;</span><br><span class="line">		background-color: green;</span><br><span class="line">		padding-left: 10%;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div class=&quot;first1&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;second1&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p>test width&#x3D;50,height&#x3D;100,margin-top&#x3D;20</p>
-<h5 id="2017-4-19-21-00"><a href="#2017-4-19-21-00" class="headerlink" title="2017.4.19 21:00"></a>2017.4.19 21:00</h5><h2 id="话题：document-getElementByClassName-返回的是什么？"><a href="#话题：document-getElementByClassName-返回的是什么？" class="headerlink" title="话题：document.getElementByClassName()返回的是什么？"></a>话题：document.getElementByClassName()返回的是什么？</h2><ul>
-<li>是一个HTML集合。</li>
-</ul>
-<h4 id="集合和数组的区别"><a href="#集合和数组的区别" class="headerlink" title="集合和数组的区别"></a>集合和数组的区别</h4><ul>
-<li>HTML集合：一直与文档保持着链接，每次你需要最新的信息时，都会重复执行查询的过程，哪怕只是获取集合里的元素个数，即集合的length属性也是这样。（简单的说就是这个集合会实时改变）</li>
-<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var alldivs document.getElementsByTagName(&#x27;div&#x27;);</span><br><span class="line">for(var i=0;i&lt;alldivs.length;i++)&#123;</span><br><span class="line">    document.body.appendChild(document.createElement(&#x27;div&#x27;));</span><br><span class="line">&#125;</span><br><span class="line">//该循环会一直循环下去，因为每次添加一个div之后，alldicvs.length的值也会改变，导致循环条件一直为true，一直循环。</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h4 id="关于闭包和词法作用域"><a href="#关于闭包和词法作用域" class="headerlink" title="关于闭包和词法作用域"></a>关于闭包和词法作用域</h4><ul>
-<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function foo()&#123;</span><br><span class="line">    concile.log(a);//2</span><br><span class="line">&#125;</span><br><span class="line">function bar()&#123;</span><br><span class="line">    var a=3;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line">var a=2;</span><br><span class="line">bar();</span><br><span class="line">//原理：js的运行原理是词法作用域，而非动态作用域，因此当foo函数被调用的时候，对a进行查询的时候会直接在全局作用域中查询。</span><br></pre></td></tr></table></figure></li>
-</ul>
-<h2 id="话题：display：none和visibility：hidden区别？"><a href="#话题：display：none和visibility：hidden区别？" class="headerlink" title="话题：display：none和visibility：hidden区别？"></a>话题：display：none和visibility：hidden区别？</h2><ul>
-<li>display：none；有dom树，没有渲染树，也就是说js可以找到display：none。</li>
-<li>visibility：hidden；只是将内容隐藏起来了，还是要占位的。</li>
-</ul>
-<h2 id="话题：两个inline-block元素在同一行中间的那个间距是多少？"><a href="#话题：两个inline-block元素在同一行中间的那个间距是多少？" class="headerlink" title="话题：两个inline-block元素在同一行中间的那个间距是多少？"></a>话题：两个inline-block元素在同一行中间的那个间距是多少？</h2><ul>
-<li>每个浏览器间距不同。</li>
-<li>字体大小不同间距不同。</li>
-</ul>
-<h4 id="如何去掉这个空格？"><a href="#如何去掉这个空格？" class="headerlink" title="如何去掉这个空格？"></a>如何去掉这个空格？</h4><ul>
-<li>去掉最底层html标签的空格。</li>
-<li>margin为负值。（每个浏览器不同，值不同）</li>
-<li>将父级元素的字体大小设置为0。（推荐方案）</li>
-</ul>
-<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
-<li>这个间距不仅在水平方向有，在垂直方向也有！</li>
-<li>距离大概是字体大小的1&#x2F;8（可能会有叠加）。</li>
-<li>inline-block元素之间，block和inline-block和inline的元素之间都有间距。</li>
-</ul>
-]]></content>
-      <categories>
-        <category>旧文存档</category>
-      </categories>
-      <tags>
-        <tag>前端</tag>
-        <tag>学习</tag>
-        <tag>记录</tag>
-        <tag>问题</tag>
-        <tag>讨论</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>动画和HTML5</title>
     <url>/2017/03/23/%E5%8A%A8%E7%94%BB%E5%92%8CHTML5/</url>
     <content><![CDATA[<h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3><span id="more"></span>
@@ -2382,6 +2322,66 @@ test width&#x3D;父元素width-margin-padding-border</li>
         <tag>Javascript</tag>
         <tag>动画</tag>
         <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>坎帕斯学院日常讨论</title>
+    <url>/2017/04/16/%E5%9D%8E%E5%B8%95%E6%96%AF%E5%AD%A6%E9%99%A2%E6%97%A5%E5%B8%B8%E8%AE%A8%E8%AE%BA-1/</url>
+    <content><![CDATA[<h2 id="话题：width：100-和width：auto的区别"><a href="#话题：width：100-和width：auto的区别" class="headerlink" title="话题：width：100%和width：auto的区别"></a>话题：width：100%和width：auto的区别</h2><span id="more"></span>
+<h4 id="width：100"><a href="#width：100" class="headerlink" title="width：100%"></a>width：100%</h4><ul>
+<li>元素宽度等于父级元素的宽度。</li>
+</ul>
+<h4 id="width：auto"><a href="#width：auto" class="headerlink" title="width：auto"></a>width：auto</h4><ul>
+<li>元素的宽度等于父元素的宽度减去margin，padding，border这些。</li>
+</ul>
+<h4 id="高度知识点"><a href="#高度知识点" class="headerlink" title="高度知识点"></a>高度知识点</h4><ul>
+<li>子元素的margin和padding百分比知识点根据父元素的width来算。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test1</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        width:500px;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+test width&#x3D;父元素width-margin-padding-border</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test2</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>test width&#x3D;123123123123123+margin+padding+border</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test3</span><br><span class="line">&lt;style&gt;</span><br><span class="line">    body&#123;</span><br><span class="line">        font-size:20px;</span><br><span class="line">        margin:0;</span><br><span class="line">        padding:0;</span><br><span class="line">    &#125;</span><br><span class="line">    .main&#123;</span><br><span class="line">        display:inline-block;</span><br><span class="line">        background:red;</span><br><span class="line">        width:500px;</span><br><span class="line">    &#125;</span><br><span class="line">    .test&#123;</span><br><span class="line">        width:auto;</span><br><span class="line">        padding:20px;</span><br><span class="line">        margin:10px;</span><br><span class="line">        border:5px solid blue;</span><br><span class="line">        background:green;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line"></span><br><span class="line">&lt;div class=&quot;main&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;wrap&quot;&gt;</span><br><span class="line">        &lt;div class=&quot;test&quot;&gt;123123123123123&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>test width&#x3D;500-padding-margin-border<br>这里的500px并不是继承，而是因为div块级元素的影响而来的。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">//test4a</span><br><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">	body&#123;</span><br><span class="line">		font-size: 20px;</span><br><span class="line">		padding: 0;</span><br><span class="line">		margin: 0;</span><br><span class="line">	&#125;</span><br><span class="line">	.first1&#123;</span><br><span class="line">		background: red;</span><br><span class="line">		width: 200px;</span><br><span class="line">		height: 400px;</span><br><span class="line">		overflow: hidden;</span><br><span class="line">	&#125;</span><br><span class="line">	.second1&#123;</span><br><span class="line">		height: 25%;width: 25%;</span><br><span class="line">		margin-top: 10%;</span><br><span class="line">		background-color: green;</span><br><span class="line">		padding-left: 10%;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	&lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">	&lt;div class=&quot;first1&quot;&gt;</span><br><span class="line">		&lt;div class=&quot;second1&quot;&gt;&lt;/div&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>test width&#x3D;50,height&#x3D;100,margin-top&#x3D;20</p>
+<h5 id="2017-4-19-21-00"><a href="#2017-4-19-21-00" class="headerlink" title="2017.4.19 21:00"></a>2017.4.19 21:00</h5><h2 id="话题：document-getElementByClassName-返回的是什么？"><a href="#话题：document-getElementByClassName-返回的是什么？" class="headerlink" title="话题：document.getElementByClassName()返回的是什么？"></a>话题：document.getElementByClassName()返回的是什么？</h2><ul>
+<li>是一个HTML集合。</li>
+</ul>
+<h4 id="集合和数组的区别"><a href="#集合和数组的区别" class="headerlink" title="集合和数组的区别"></a>集合和数组的区别</h4><ul>
+<li>HTML集合：一直与文档保持着链接，每次你需要最新的信息时，都会重复执行查询的过程，哪怕只是获取集合里的元素个数，即集合的length属性也是这样。（简单的说就是这个集合会实时改变）</li>
+<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">var alldivs document.getElementsByTagName(&#x27;div&#x27;);</span><br><span class="line">for(var i=0;i&lt;alldivs.length;i++)&#123;</span><br><span class="line">    document.body.appendChild(document.createElement(&#x27;div&#x27;));</span><br><span class="line">&#125;</span><br><span class="line">//该循环会一直循环下去，因为每次添加一个div之后，alldicvs.length的值也会改变，导致循环条件一直为true，一直循环。</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h4 id="关于闭包和词法作用域"><a href="#关于闭包和词法作用域" class="headerlink" title="关于闭包和词法作用域"></a>关于闭包和词法作用域</h4><ul>
+<li>案例：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">function foo()&#123;</span><br><span class="line">    concile.log(a);//2</span><br><span class="line">&#125;</span><br><span class="line">function bar()&#123;</span><br><span class="line">    var a=3;</span><br><span class="line">    foo();</span><br><span class="line">&#125;</span><br><span class="line">var a=2;</span><br><span class="line">bar();</span><br><span class="line">//原理：js的运行原理是词法作用域，而非动态作用域，因此当foo函数被调用的时候，对a进行查询的时候会直接在全局作用域中查询。</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="话题：display：none和visibility：hidden区别？"><a href="#话题：display：none和visibility：hidden区别？" class="headerlink" title="话题：display：none和visibility：hidden区别？"></a>话题：display：none和visibility：hidden区别？</h2><ul>
+<li>display：none；有dom树，没有渲染树，也就是说js可以找到display：none。</li>
+<li>visibility：hidden；只是将内容隐藏起来了，还是要占位的。</li>
+</ul>
+<h2 id="话题：两个inline-block元素在同一行中间的那个间距是多少？"><a href="#话题：两个inline-block元素在同一行中间的那个间距是多少？" class="headerlink" title="话题：两个inline-block元素在同一行中间的那个间距是多少？"></a>话题：两个inline-block元素在同一行中间的那个间距是多少？</h2><ul>
+<li>每个浏览器间距不同。</li>
+<li>字体大小不同间距不同。</li>
+</ul>
+<h4 id="如何去掉这个空格？"><a href="#如何去掉这个空格？" class="headerlink" title="如何去掉这个空格？"></a>如何去掉这个空格？</h4><ul>
+<li>去掉最底层html标签的空格。</li>
+<li>margin为负值。（每个浏览器不同，值不同）</li>
+<li>将父级元素的字体大小设置为0。（推荐方案）</li>
+</ul>
+<h4 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h4><ul>
+<li>这个间距不仅在水平方向有，在垂直方向也有！</li>
+<li>距离大概是字体大小的1&#x2F;8（可能会有叠加）。</li>
+<li>inline-block元素之间，block和inline-block和inline的元素之间都有间距。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>旧文存档</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+        <tag>学习</tag>
+        <tag>记录</tag>
+        <tag>问题</tag>
+        <tag>讨论</tag>
       </tags>
   </entry>
   <entry>
