@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>团队的记忆，不该只存在某个人的脑子里 | 人间一趟</title><meta name="keywords" content="AI,团队协作,知识管理"><meta name="author" content="Frannie"><meta name="copyright" content="Frannie"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="关于 AI 原生团队的一点思考 · Frannie  每个团队都有一些“大家都知道、但没人写下来”的东西。过去，这些东西靠老同事口口相传；现在，团队里多了一批新成员——AI agent。它们不喝咖啡，不参加午饭闲聊，也就永远听不到那些“口口相传”。 这篇文章想聊的就是这件事：当 agent 真正成为团队的一员，团队的知识应该放在哪里，又该怎样被维护。 01 十个人，十个版本的团队先说我观察到的痛">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>团队的记忆，不该只存在某个人的脑子里 | 人间一趟</title><meta name="keywords" content="AI,团队协作,知识管理"><meta name="author" content="Frannie"><meta name="copyright" content="Frannie"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#F6F2EA"><meta name="description" content="关于 AI 原生团队的一点思考 · Frannie  每个团队都有一些“大家都知道、但没人写下来”的东西。过去，这些东西靠老同事口口相传；现在，团队里多了一批新成员——AI agent。它们不喝咖啡，不参加午饭闲聊，也就永远听不到那些“口口相传”。 这篇文章想聊的就是这件事：当 agent 真正成为团队的一员，团队的知识应该放在哪里，又该怎样被维护。 01 十个人，十个版本的团队先说我观察到的痛">
 <meta property="og:type" content="article">
 <meta property="og:title" content="团队的记忆，不该只存在某个人的脑子里">
 <meta property="og:url" content="https://yangkunyi.com/2026/11/10/%E5%9B%A2%E9%98%9F%E7%9A%84%E8%AE%B0%E5%BF%86/index.html">
@@ -46,7 +46,7 @@
   },
   copyright: {"limitCount":50,"languages":{"author":"作者: Frannie","link":"链接: ","source":"来源: 人间一趟","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
   lightbox: 'fancybox',
-  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#B4432C","bgDark":"#E2795F","position":"bottom-left"},
   source: {
     justifiedGallery: {
       js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
@@ -122,13 +122,13 @@
       win.activateDarkMode = function () {
         document.documentElement.setAttribute('data-theme', 'dark')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#161513')
         }
       }
       win.activateLightMode = function () {
         document.documentElement.setAttribute('data-theme', 'light')
         if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#F6F2EA')
         }
       }
       const t = saveToLocal.get('theme')

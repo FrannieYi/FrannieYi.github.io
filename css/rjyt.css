@@ -12,17 +12,46 @@
   --rj-teal: #3E6463;
   --rj-soft: #EFE9DE;
   --rj-title-font: "LXGW WenKai Screen", "Kaiti SC", STKaiti, KaiTi, serif;
+  --rj-ver-active: #6F2819;
+  --rj-ver-visited: #8A4538;
+  --rj-ver-tint: #F6E8E2;
+  --rj-teal-hover: #2F4E4D;
+  --rj-on-ver: #FFFDF9;
+  --rj-scroll: #8A7C6B;
+  --rj-scroll-hover: #6E675E;
+  --rj-code-bg: #EFE9DE;
+  --rj-code-fg: #8F3320;
+  --rj-share: #6E675E;
+  --rj-bq: #4A4540;
+  --rj-focus: var(--rj-ver);
 
   --global-bg: var(--rj-paper);
   --card-bg: var(--rj-card);
   --font-color: var(--rj-ink);
   --card-meta: var(--rj-sub);
   --hr-border: var(--rj-line);
+  --hr-before-color: var(--rj-ver);
   --blockquote-bg: var(--rj-soft);
-  --blockquote-color: #4A4540;
+  --blockquote-color: var(--rj-bq);
   --card-box-shadow: none;
   --text-highlight-color: var(--rj-ink);
   --card-hover-box-shadow: 0 4px 16px rgba(42, 39, 36, .06);
+  --btn-bg: var(--rj-ver);
+  --btn-hover-color: var(--rj-ver-hover);
+  --btn-color: var(--rj-on-ver);
+  --text-bg-hover: var(--rj-ver-tint);
+  --pseudo-hover: var(--rj-ver-hover);
+  --scrollbar-color: var(--rj-scroll);
+  --toc-link-color: var(--rj-sub);
+  --search-bg: var(--rj-card);
+  --search-input-color: var(--rj-ink);
+  --search-result-title: var(--rj-ink);
+  --sidebar-bg: var(--rj-card);
+  --btn-beautify-color: var(--rj-ver);
+  --timeline-color: var(--rj-ver);
+  --timeline-bg: var(--rj-soft);
+  --waline-theme-color: var(--rj-ver);
+  --waline-active-color: var(--rj-ver-hover);
 }
 
 /* 2. 色板（暗） */
@@ -36,15 +65,44 @@
   --rj-ver-hover: #F09A82;
   --rj-teal: #8DB7B3;
   --rj-soft: #26231F;
+  --rj-ver-active: #F3B09D;
+  --rj-ver-visited: #C99586;
+  --rj-ver-tint: #332420;
+  --rj-teal-hover: #A8CDC9;
+  --rj-on-ver: #161513;
+  --rj-scroll: #7A7166;
+  --rj-scroll-hover: #A39A8E;
+  --rj-code-bg: #2A2622;
+  --rj-code-fg: #F09A82;
+  --rj-share: #A39A8E;
+  --rj-bq: #A39A8E;
+  --rj-focus: var(--rj-ver);
 
   --global-bg: var(--rj-paper);
   --card-bg: var(--rj-card);
   --font-color: var(--rj-ink);
   --card-meta: var(--rj-sub);
   --hr-border: var(--rj-line);
+  --hr-before-color: var(--rj-ver);
   --blockquote-bg: var(--rj-soft);
-  --blockquote-color: var(--rj-sub);
+  --blockquote-color: var(--rj-bq);
   --text-highlight-color: var(--rj-ink);
+  --btn-bg: var(--rj-ver);
+  --btn-hover-color: var(--rj-ver-hover);
+  --btn-color: var(--rj-on-ver);
+  --text-bg-hover: var(--rj-ver-tint);
+  --pseudo-hover: var(--rj-ver-hover);
+  --scrollbar-color: var(--rj-scroll);
+  --toc-link-color: var(--rj-sub);
+  --search-bg: var(--rj-card);
+  --search-input-color: var(--rj-ink);
+  --search-result-title: var(--rj-ink);
+  --sidebar-bg: var(--rj-card);
+  --btn-beautify-color: var(--rj-ver);
+  --timeline-color: var(--rj-ver);
+  --timeline-bg: var(--rj-soft);
+  --waline-theme-color: var(--rj-ver);
+  --waline-active-color: var(--rj-ver-hover);
 }
 [data-theme="dark"] #page-header.full_page { background-color: var(--rj-paper) !important; }
 
@@ -138,3 +196,666 @@
 @media (max-width: 768px) { .rj-about-hero { flex-direction: column; text-align: center; } }
 [data-theme="dark"] #article-container .btn-beautify:not(.outline),
 [data-theme="dark"] #article-container .btn-beautify.outline:hover { color: #161513; }
+
+/* ============================================================
+ * 11. 全站交互色覆盖
+ * 与 /workspace/rjyt-design/color-spec/rjyt-colors.css 同源。
+ * 独立文件可单独 inject（放在本文件之后）；若已 inject rjyt-colors.css，
+ * 不要再重复追加本节。规范见 color-spec/color-spec.md。
+ * ============================================================ */
+/* ========== 选中文字、滚动条、焦点环 ========== */
+::selection,
+*::selection {
+  background: var(--rj-ver);
+  color: var(--rj-on-ver);
+}
+
+* {
+  scrollbar-color: var(--rj-scroll) transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: var(--rj-scroll);
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--rj-scroll-hover);
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--rj-focus);
+  outline-offset: 2px;
+}
+
+/* ========== 链接 ========== */
+/* 覆盖 Butterfly 默认 a { color:#99a9bf } 与 a:hover { color:#49b1f5 } */
+a {
+  color: var(--rj-ink);
+}
+a:hover {
+  color: var(--rj-ver);
+}
+a:active {
+  color: var(--rj-ver-active);
+}
+
+#article-container a:not(.btn-beautify) {
+  color: var(--rj-ver);
+  border-bottom: 1px solid color-mix(in srgb, var(--rj-ver) 35%, transparent);
+}
+#article-container a:not(.btn-beautify):visited,
+#post .post-copyright .post-copyright-info a:visited {
+  color: var(--rj-ver-visited);
+}
+#article-container a:not(.btn-beautify):hover {
+  color: var(--rj-ver-hover);
+  text-decoration: none;
+  border-bottom-color: var(--rj-ver-hover);
+}
+#article-container a:not(.btn-beautify):active {
+  color: var(--rj-ver-active);
+}
+
+#recent-posts > .recent-post-item > .recent-post-info > .article-title:hover,
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap a:hover,
+#post-info #post-meta a:hover,
+#aside-content .aside-list > .aside-list-item .content > .title:hover,
+#aside-content .aside-list > .aside-list-item .content > .comment:hover,
+.article-sort-item-title:hover,
+.category-lists .category-list a:hover,
+#local-search .search-dialog .local-search__hit-item a:hover {
+  color: var(--rj-ver);
+}
+
+/* ========== 按钮 ========== */
+#aside-content .card-info #card-info-btn,
+.post-reward .reward-button,
+.hide-inline > .hide-button,
+.hide-block > .hide-button {
+  background-color: var(--rj-ver);
+  color: var(--rj-on-ver);
+}
+#aside-content .card-info #card-info-btn:hover,
+.post-reward .reward-button:hover,
+.hide-inline > .hide-button:hover,
+.hide-block > .hide-button:hover {
+  background-color: var(--rj-ver-hover);
+  color: var(--rj-on-ver);
+}
+#aside-content .card-info #card-info-btn:active,
+.post-reward .reward-button:active,
+.hide-inline > .hide-button:active,
+.hide-block > .hide-button:active {
+  background-color: var(--rj-ver-active);
+  color: var(--rj-on-ver);
+}
+
+#rightside > div > button,
+#rightside > div > a {
+  background-color: var(--rj-ver);
+  color: var(--rj-on-ver);
+}
+#rightside > div > button:hover,
+#rightside > div > a:hover {
+  background-color: var(--rj-ver-hover);
+  color: var(--rj-on-ver);
+}
+#rightside > div > button:active,
+#rightside > div > a:active {
+  background-color: var(--rj-ver-active);
+  color: var(--rj-on-ver);
+}
+
+#article-container .btn-beautify {
+  background-color: var(--btn-beautify-color, var(--rj-ver));
+  color: var(--rj-on-ver);
+}
+#article-container .btn-beautify:hover {
+  filter: none;
+  background-color: var(--rj-ver-hover);
+  color: var(--rj-on-ver);
+}
+#article-container .btn-beautify.outline {
+  background-color: transparent;
+  border-color: var(--rj-ver);
+  color: var(--rj-ver);
+}
+#article-container .btn-beautify.outline:hover {
+  background: var(--rj-ver);
+  color: var(--rj-on-ver);
+}
+
+/* 深色模式不要对按钮做 brightness(0.8)，否则朱砂会发脏 */
+[data-theme="dark"] .btn-beautify,
+[data-theme='dark'] .btn-beautify,
+[data-theme="dark"] .hide-button,
+[data-theme='dark'] .hide-button {
+  filter: none;
+}
+
+/* ========== 标签（文章底、标签云、侧栏） ========== */
+#post .tag_share .post-meta__tags {
+  border: 1px solid var(--rj-ver);
+  color: var(--rj-ver);
+  background: transparent;
+}
+#post .tag_share .post-meta__tags:hover,
+#post .tag_share .post-meta__tags:active {
+  background: var(--rj-ver);
+  color: var(--rj-on-ver);
+  border-color: var(--rj-ver);
+}
+
+.card-tag-cloud a {
+  color: var(--rj-teal) !important;
+}
+#aside-content .card-tag-cloud a:hover,
+.tag-cloud-list a:hover {
+  color: var(--rj-ver) !important;
+}
+
+/* ========== 版权框 ========== */
+#post .post-copyright {
+  border: 1px solid var(--rj-line);
+  background: var(--rj-soft);
+  box-shadow: none;
+}
+#post .post-copyright:hover {
+  box-shadow: var(--card-hover-box-shadow);
+}
+#post .post-copyright:before {
+  color: var(--rj-ver);
+}
+#post .post-copyright .post-copyright-meta {
+  color: var(--rj-ver);
+  font-weight: 700;
+}
+#post .post-copyright .post-copyright-info a {
+  color: var(--rj-ver);
+}
+#post .post-copyright .post-copyright-info a:hover {
+  color: var(--rj-ver-hover);
+}
+
+/* ========== 分享按钮：统一品牌色，hover 用主色填满 ========== */
+/* share.min.css 在文章页 body 内异步插入，必须 !important */
+#post .tag_share .post_share .social-share .social-share-icon,
+.social-share .social-share-icon,
+.social-share a.social-share-icon,
+.social-share .icon-weibo,
+.social-share .icon-tencent,
+.social-share .icon-qq,
+.social-share .icon-qzone,
+.social-share .icon-wechat,
+.social-share .icon-facebook,
+.social-share .icon-twitter,
+.social-share .icon-google,
+.social-share .icon-linkedin,
+.social-share .icon-douban,
+.social-share .icon-diandian {
+  color: var(--rj-share) !important;
+  border-color: var(--rj-line) !important;
+  background: transparent !important;
+}
+#post .tag_share .post_share .social-share .social-share-icon:hover,
+#post .tag_share .post_share .social-share .social-share-icon:active,
+.social-share .social-share-icon:hover,
+.social-share .social-share-icon:active,
+.social-share .icon-weibo:hover,
+.social-share .icon-tencent:hover,
+.social-share .icon-qq:hover,
+.social-share .icon-qzone:hover,
+.social-share .icon-wechat:hover,
+.social-share .icon-facebook:hover,
+.social-share .icon-twitter:hover,
+.social-share .icon-google:hover,
+.social-share .icon-linkedin:hover,
+.social-share .icon-douban:hover,
+.social-share .icon-diandian:hover {
+  color: var(--rj-on-ver) !important;
+  border-color: var(--rj-ver) !important;
+  background: var(--rj-ver) !important;
+}
+
+/* ========== 分页 ========== */
+#pagination .page-number.current,
+.layout > .recent-posts .pagination .page-number.current {
+  background: var(--rj-ver);
+  color: var(--rj-on-ver);
+}
+.layout > .recent-posts .pagination a,
+#pagination .pagination a {
+  color: var(--rj-ink);
+}
+.layout > .recent-posts .pagination > *:not(.space):hover,
+#pagination .pagination a:hover,
+#pagination .pagination .extend:hover {
+  background: var(--rj-ver-hover);
+  color: var(--rj-on-ver);
+}
+.layout > .recent-posts .pagination > *:not(.space):active,
+#pagination .pagination a:active {
+  background: var(--rj-ver-active);
+  color: var(--rj-on-ver);
+}
+
+/* 文章页上下篇：遮罩上的文字保持浅色，不套全局墨色链接 */
+#pagination.pagination-post .prev-post a,
+#pagination.pagination-post .next-post a,
+#pagination .prev_info,
+#pagination .next_info {
+  color: #fff;
+}
+#pagination .prev-post .label,
+#pagination .next-post .label {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* ========== 目录 TOC ========== */
+#aside-content #card-toc .toc-content .toc-link {
+  color: var(--rj-sub);
+  border-radius: 6px;
+}
+#aside-content #card-toc .toc-content .toc-link:hover {
+  color: var(--rj-ver);
+  background: var(--rj-ver-tint);
+}
+#aside-content #card-toc .toc-content .toc-link.active {
+  background: var(--rj-ver-tint);
+  color: var(--rj-ver);
+  font-weight: 600;
+}
+#aside-content #card-toc .toc-percentage {
+  color: var(--rj-sub);
+}
+[data-theme="dark"] #card-toc,
+[data-theme='dark'] #card-toc {
+  background: var(--rj-card);
+}
+
+/* ========== 侧栏卡片、站点数据、分类/归档列表 ========== */
+.site-data > a:hover div {
+  color: var(--rj-ver) !important;
+}
+#aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,
+#aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
+  background-color: var(--rj-ver-tint);
+  color: var(--rj-ver);
+}
+
+/* ========== 导航 ========== */
+#page-header.nav-fixed #nav a:hover,
+#page-header.nav-fixed #nav #site-name:hover,
+#page-header.nav-fixed #nav #toggle-menu:hover,
+#page-header.not-top-img #nav a:hover {
+  color: var(--rj-ver);
+}
+#nav .site-page:not(.child):after {
+  background-color: var(--rj-ver);
+}
+#page-header.not-top-img #nav,
+#page-header.nav-fixed #nav {
+  background: color-mix(in srgb, var(--rj-paper) 88%, transparent);
+  box-shadow: 0 5px 6px -5px rgba(42, 39, 36, 0.12);
+}
+[data-theme="dark"] #page-header.nav-fixed > #nav,
+[data-theme="dark"] #page-header.not-top-img > #nav,
+[data-theme='dark'] #page-header.nav-fixed > #nav,
+[data-theme='dark'] #page-header.not-top-img > #nav {
+  background: color-mix(in srgb, var(--rj-paper) 88%, transparent);
+  box-shadow: none;
+}
+#nav .menus_items .menus_item .menus_item_child li a {
+  color: var(--rj-ink) !important;
+}
+#nav .menus_items .menus_item .menus_item_child li:hover {
+  background: var(--rj-ver-tint);
+}
+
+/* 头图未加载时不要露出默认蓝 */
+#page-header {
+  background-color: var(--rj-paper);
+}
+
+/* ========== 代码块、行内代码、kbd ========== */
+#article-container code {
+  background: var(--rj-code-bg);
+  color: var(--rj-code-fg);
+}
+#article-container pre > code,
+#article-container figure.highlight code {
+  background: transparent;
+  color: inherit;
+}
+[data-theme="dark"] #article-container code,
+[data-theme='dark'] #article-container code {
+  background: var(--rj-code-bg);
+  color: var(--rj-code-fg);
+}
+[data-theme="dark"] #article-container pre > code,
+[data-theme="dark"] #article-container figure.highlight code,
+[data-theme='dark'] #article-container pre > code,
+[data-theme='dark'] #article-container figure.highlight code {
+  background: transparent;
+  color: inherit;
+}
+#article-container .highlight-tools .copy-button:hover {
+  color: var(--rj-ver);
+}
+#article-container kbd {
+  background-color: var(--rj-soft);
+  border-color: var(--rj-line);
+  color: var(--rj-ink);
+  box-shadow: 0 1px 0 var(--rj-line);
+}
+[data-theme="dark"] #article-container kbd,
+[data-theme='dark'] #article-container kbd {
+  background-color: var(--rj-soft);
+  border-color: var(--rj-line);
+  color: var(--rj-ink);
+}
+
+/* 代码块外壳略改暖黑，语法高亮色保持原主题（功能色，不是品牌蓝） */
+#article-container pre,
+#article-container figure.highlight {
+  --hl-bg: #1C1916;
+  --hltools-bg: #161412;
+  --hlnumber-bg: #1C1916;
+  --hlscrollbar-bg: #3A342E;
+}
+[data-theme="dark"] #article-container pre,
+[data-theme="dark"] #article-container figure.highlight,
+[data-theme='dark'] #article-container pre,
+[data-theme='dark'] #article-container figure.highlight {
+  --hl-bg: #141210;
+  --hltools-bg: #100E0C;
+  --hlnumber-bg: #141210;
+}
+
+/* ========== 引用块 ========== */
+blockquote {
+  border-left-color: var(--rj-teal);
+  background-color: var(--blockquote-bg);
+  color: var(--blockquote-color);
+}
+#article-container blockquote {
+  border-left-color: var(--rj-teal);
+  color: var(--blockquote-color);
+}
+
+/* ========== 归档时间轴、分类列表圆点 ========== */
+.article-sort-title:before,
+.article-sort-item:before,
+.list-beauty li:before,
+.category-lists ul li:before,
+#local-search .search-dialog .local-search__hit-item:before {
+  border-color: var(--rj-ver);
+}
+.article-sort-item.year:hover:before {
+  border-color: var(--rj-ver);
+}
+
+/* ========== 搜索对话框 ========== */
+.search-dialog .search-nav,
+.search-dialog .search-nav .search-dialog-title,
+.search-dialog .search-nav .search-close-button:hover {
+  color: var(--rj-ver);
+}
+#local-search .search-dialog .local-search-box input {
+  border-color: var(--rj-ver);
+  background: var(--search-bg);
+  color: var(--search-input-color);
+}
+
+/* ========== 文章内 Tab、时间线、置顶标记、评论切换 ========== */
+#article-container .tabs > .nav-tabs > .tab.active button {
+  border-top-color: var(--rj-ver);
+}
+#article-container .timeline {
+  border-left-color: var(--timeline-color, var(--rj-ver));
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap .sticky {
+  color: var(--rj-ver);
+}
+#post-comment .comment-head #comment-switch .first-comment,
+#post-comment .comment-head #comment-switch .switch-btn {
+  color: var(--rj-ver);
+}
+#post-comment .comment-head #comment-switch .switch-btn {
+  background-color: var(--rj-ver);
+}
+#post-comment .comment-head #comment-switch .second-comment,
+#post-comment .comment-head #comment-switch .switch-btn.move {
+  color: var(--rj-ver-hover);
+}
+#post-comment .comment-head #comment-switch .switch-btn.move {
+  background-color: var(--rj-ver-hover);
+}
+
+/* Waline（服务端接好后生效；主题色变量写在容器上，避免被后来的 Waline CSS 默认蓝盖掉） */
+#waline-wrap,
+#waline-wrap.waline-wrap,
+.wl-container {
+  --waline-theme-color: var(--rj-ver);
+  --waline-active-color: var(--rj-ver-hover);
+}
+
+/* Snackbar：JS 会把 bgLight:#49b1f5 写到行内 style，必须 !important */
+.snackbar-container,
+.snackbar-css,
+.snackbar-container .snackbar-content,
+#snackbar-container {
+  background-color: var(--rj-ver) !important;
+  color: var(--rj-on-ver) !important;
+}
+
+/* 其它仍硬编码蓝的边角 */
+.error404 #error-wrap .error-content .error-img img {
+  background-color: var(--rj-soft);
+}
+
+/* ========== 扩展：公告、搜索高亮、归档轴、meta、表头、note、X 图标 ========== */
+:root {
+  --rj-note-default: #6E675E;
+  --rj-note-default-bg: #EFE9DE;
+  --rj-note-primary: #3E6463;
+  --rj-note-primary-bg: #E6EEEE;
+  --rj-note-info: #3A5A72;
+  --rj-note-info-bg: #E8EEF2;
+  --rj-note-success: #3D6B4F;
+  --rj-note-success-bg: #E7F0EA;
+  --rj-note-warning: #8A5A1E;
+  --rj-note-warning-bg: #F4EBDD;
+  --rj-note-danger: #B4432C;
+  --rj-note-danger-bg: #F6E8E2;
+}
+[data-theme="dark"],
+[data-theme='dark'] {
+  --rj-note-default: #A39A8E;
+  --rj-note-default-bg: #26231F;
+  --rj-note-primary: #8DB7B3;
+  --rj-note-primary-bg: #24302F;
+  --rj-note-info: #9BB8CE;
+  --rj-note-info-bg: #243038;
+  --rj-note-success: #8FBF9A;
+  --rj-note-success-bg: #24332A;
+  --rj-note-warning: #E0B06A;
+  --rj-note-warning-bg: #3A2F1C;
+  --rj-note-danger: #E2795F;
+  --rj-note-danger-bg: #332420;
+  --card-hover-box-shadow: 0 4px 16px rgba(0, 0, 0, .28);
+}
+
+#aside-content .card-announcement .item-headline i {
+  color: var(--rj-ver);
+}
+
+#local-search .search-dialog .local-search__hit-item .search-keyword,
+.search-keyword {
+  color: var(--rj-ver);
+  background: var(--rj-ver-tint);
+  font-weight: 700;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.article-sort {
+  border-left-color: var(--rj-line);
+}
+.article-sort-title:after {
+  background: var(--rj-line);
+}
+
+/* 次要文字：首页卡片 meta、分类计数、归档日期。封面图上的 #post-info 保持浅色，不要改。 */
+#recent-posts .article-meta-wrap,
+#recent-posts .article-meta-wrap .post-meta-date,
+#recent-posts .article-meta-wrap .article-meta,
+.category-list-count,
+.article-sort-item-time {
+  color: var(--rj-sub);
+}
+
+#article-container table thead,
+table thead {
+  background: var(--rj-soft);
+  color: var(--rj-ink);
+}
+
+/* 分享里的 Twitter 旧鸟图标换成 X（Font Awesome 6 Brands，站点已引入 6.7.2） */
+.social-share .icon-twitter:before {
+  font-family: "Font Awesome 6 Brands" !important;
+  content: "\e61b" !important;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* note 语义色：左线 + 浅底 + 文字；覆盖 default/primary/info/success/warning/danger */
+.note,
+.note.default,
+.note.simple {
+  border-left-color: var(--rj-note-default);
+  background: var(--rj-note-default-bg);
+  color: var(--rj-note-default);
+}
+.note.primary,
+.note.primary:not(.disabled) {
+  border-left-color: var(--rj-note-primary) !important;
+  background: var(--rj-note-primary-bg);
+  color: var(--rj-note-primary);
+}
+.note.info,
+.note.info:not(.modern),
+.note.blue:not(.disabled) {
+  border-left-color: var(--rj-note-info) !important;
+  background: var(--rj-note-info-bg);
+  color: var(--rj-note-info);
+}
+.note.success,
+.note.success:not(.disabled),
+.note.green:not(.disabled) {
+  border-left-color: var(--rj-note-success) !important;
+  background: var(--rj-note-success-bg);
+  color: var(--rj-note-success);
+}
+.note.warning,
+.note.warning:not(.disabled),
+.note.orange:not(.disabled),
+.note.yellow:not(.disabled) {
+  border-left-color: var(--rj-note-warning) !important;
+  background: var(--rj-note-warning-bg);
+  color: var(--rj-note-warning);
+}
+.note.danger,
+.note.danger:not(.disabled),
+.note.red:not(.disabled) {
+  border-left-color: var(--rj-note-danger) !important;
+  background: var(--rj-note-danger-bg);
+  color: var(--rj-note-danger);
+}
+.note.primary > .note-icon,
+.note.info > .note-icon,
+.note.success > .note-icon,
+.note.warning > .note-icon,
+.note.danger > .note-icon,
+.note.info:not(.no-icon):not(.modern)::before,
+.note.primary:not(.no-icon):not(.modern)::before,
+.note.success:not(.no-icon):not(.modern)::before,
+.note.warning:not(.no-icon):not(.modern)::before,
+.note.danger:not(.no-icon):not(.modern)::before {
+  color: inherit;
+}
+.note.modern,
+.note.primary.modern,
+.note.info.modern,
+.note.success.modern,
+.note.warning.modern,
+.note.danger.modern {
+  border-color: color-mix(in srgb, currentColor 35%, transparent);
+}
+[data-theme="dark"] .note,
+[data-theme='dark'] .note,
+[data-theme="dark"] .hl-label,
+[data-theme='dark'] .hl-label,
+[data-theme="dark"] .post-outdate-notice,
+[data-theme='dark'] .post-outdate-notice {
+  filter: none;
+}
+
+#post .post-outdate-notice {
+  background-color: var(--rj-note-danger-bg);
+  color: var(--rj-note-danger);
+  border-left-color: var(--rj-note-danger);
+}
+#post .post-outdate-notice:before {
+  color: var(--rj-note-danger);
+}
+
+/* 阅读模式跟随品牌纸色，避免回到主题灰白 */
+.read-mode {
+  --font-color: var(--rj-ink);
+  --readmode-light-color: var(--rj-paper);
+  --white: var(--rj-ink);
+  --light-grey: var(--rj-sub);
+  --hr-border: var(--rj-line);
+  --hr-before-color: var(--rj-ver);
+}
+
+/* ============================================================
+ * 12. 落地补丁（全栈 2026-11-10 自查）：theme_color 把 meta_color 等编译成写死的亮色，
+ *     且主题选择器比第 11 节更具体，暗色下不会翻转；这里按规范 token 补齐。
+ * ============================================================ */
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap,
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap a,
+#aside-content .aside-list > .aside-list-item .content > time,
+#aside-content .aside-list > .aside-list-item .content > .name,
+.img-alt,
+.search-dialog .search-nav .search-close-button,
+#article-container .tabs .tab-to-top {
+  color: var(--rj-sub);
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-meta-wrap a:hover,
+#article-container .tabs .tab-to-top:hover {
+  color: var(--rj-ver);
+}
+[data-theme="dark"] #article-container .note code,
+[data-theme='dark'] #article-container .note code {
+  background: var(--rj-code-bg);
+}
+/* 12b. 截图自查补丁：主题给搜索框写了 outline:none（优先级高于全站 focus-visible）；
+ *      归档年份圆点和条目 hover 圆点用的是 --pseudo-hover，规范为 ver。 */
+#local-search .search-dialog .local-search-box input:focus-visible {
+  outline: 2px solid var(--rj-focus);
+  outline-offset: 2px;
+}
+.article-sort-item.year:before,
+.article-sort-item:hover:before,
+.article-sort-title:hover:before {
+  border-color: var(--rj-ver);
+}
