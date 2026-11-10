@@ -1,0 +1,140 @@
+/* 「人间一趟」视觉层 —— 放在 source/css/rjyt.css，经 inject.head 引入 */
+
+/* 1. 色板（亮） */
+:root {
+  --rj-paper: #F6F2EA;
+  --rj-card: #FFFDF9;
+  --rj-ink: #2A2724;
+  --rj-sub: #6E675E;
+  --rj-line: #E4DDD0;
+  --rj-ver: #B4432C;
+  --rj-ver-hover: #8F3320;
+  --rj-teal: #3E6463;
+  --rj-soft: #EFE9DE;
+  --rj-title-font: "LXGW WenKai Screen", "Kaiti SC", STKaiti, KaiTi, serif;
+
+  --global-bg: var(--rj-paper);
+  --card-bg: var(--rj-card);
+  --font-color: var(--rj-ink);
+  --card-meta: var(--rj-sub);
+  --hr-border: var(--rj-line);
+  --blockquote-bg: var(--rj-soft);
+  --blockquote-color: #4A4540;
+  --card-box-shadow: none;
+  --text-highlight-color: var(--rj-ink);
+  --card-hover-box-shadow: 0 4px 16px rgba(42, 39, 36, .06);
+}
+
+/* 2. 色板（暗） */
+[data-theme="dark"] {
+  --rj-paper: #161513;
+  --rj-card: #1F1D1A;
+  --rj-ink: #ECE6DB;
+  --rj-sub: #A39A8E;
+  --rj-line: #34302B;
+  --rj-ver: #E2795F;
+  --rj-ver-hover: #F09A82;
+  --rj-teal: #8DB7B3;
+  --rj-soft: #26231F;
+
+  --global-bg: var(--rj-paper);
+  --card-bg: var(--rj-card);
+  --font-color: var(--rj-ink);
+  --card-meta: var(--rj-sub);
+  --hr-border: var(--rj-line);
+  --blockquote-bg: var(--rj-soft);
+  --blockquote-color: var(--rj-sub);
+  --text-highlight-color: var(--rj-ink);
+}
+[data-theme="dark"] #page-header.full_page { background-color: var(--rj-paper) !important; }
+
+/* 3. 卡片：去阴影，改细边框 */
+#recent-posts > .recent-post-item,
+#aside-content .card-widget,
+.layout > div:first-child:not(.recent-posts) {
+  border: 1px solid var(--rj-line);
+  box-shadow: var(--card-box-shadow);
+}
+#recent-posts > .recent-post-item { border-radius: 10px; }
+#recent-posts > .recent-post-item > .recent-post-info.no-cover { padding: 26px 32px 24px; }
+#recent-posts > .recent-post-item > .recent-post-info > .article-title:hover { color: var(--rj-ver); }
+
+/* 4. 字体：标题、站名、侧栏标题用文楷 */
+#site-subtitle, #post-info .post-title, #page-site-info #site-title,
+.article-title, #article-container h1, #article-container h2, #article-container h3,
+#aside-content .item-headline, .card-author .author-info-name {
+  font-family: var(--rj-title-font);
+  font-weight: 500;
+  letter-spacing: .02em;
+}
+#article-container { font-size: 16.5px; line-height: 1.95; }
+#article-container h2 { border-left: 3px solid var(--rj-ver); padding-left: 12px; }
+#article-container h2::before, #article-container h3::before { display: none; } /* 去掉默认风车图标 */
+#article-container a:not(.btn-beautify) { color: var(--rj-ver); border-bottom: 1px solid color-mix(in srgb, var(--rj-ver) 35%, transparent); }
+#article-container a:not(.btn-beautify):hover { color: var(--rj-ver-hover); text-decoration: none; }
+#article-container blockquote { border-left-color: var(--rj-teal); color: var(--blockquote-color); }
+
+/* 5. 首页头部：纸色、无遮罩、字标替代站名文字（h1 仍保留给 SEO 和读屏） */
+#page-header.full_page { border-bottom: 1px solid var(--rj-line); background-attachment: scroll; }
+#page-header.full_page::before { display: none; }
+#page-header.full_page #site-title {
+  height: 132px;
+  background: url(/img/rjyt/wordmark.svg) no-repeat center / contain;
+  color: transparent; text-shadow: none; overflow: hidden;
+}
+[data-theme="dark"] #page-header.full_page #site-title { background-image: url(/img/rjyt/wordmark-dark.svg); }
+#page-header.full_page #site-subtitle { color: var(--rj-sub); text-shadow: none; font-size: 1.3em; margin-top: 8px; }
+#page-header.full_page #scroll-down .scroll-down-effects { color: var(--rj-sub); text-shadow: none; }
+#page-header.full_page #nav:not(.fixed) a,
+#page-header.full_page #nav:not(.fixed) span.site-page,
+#page-header.full_page #nav:not(.fixed) #toggle-menu { color: var(--rj-ink); text-shadow: none; }
+#page-header.full_page #site_social_icons .social-icon { color: var(--rj-sub); text-shadow: none; }
+@media (max-width: 768px) {
+  #page-header.full_page { height: 260px !important; }
+  #page-header.full_page #site-title { height: 84px; }
+  #page-header.full_page #site-subtitle { font-size: 1.05em; }
+  #page-header.full_page #scroll-down { display: none; }
+  #recent-posts > .recent-post-item > .recent-post-info.no-cover { padding: 22px 20px; }
+}
+
+/* 6. 导航栏：站名换成横排字标 */
+#nav .nav-site-title .site-name {
+  display: inline-block; width: 104px; height: 30px; vertical-align: middle;
+  font-size: 0; background: url(/img/rjyt/wordmark-nav-white.svg) no-repeat left center / contain;
+}
+#page-header.full_page #nav:not(.fixed) .nav-site-title .site-name,
+#page-header.nav-fixed #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav.svg); }
+[data-theme="dark"] #page-header.full_page #nav .nav-site-title .site-name,
+[data-theme="dark"] #page-header.nav-fixed #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav-dark.svg); }
+#page-header.not-top-img #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav.svg); }
+[data-theme="dark"] #page-header.not-top-img #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav-dark.svg); }
+#nav .nav-page-title .site-name { width: auto; height: auto; font-size: inherit; background: none; }
+
+/* 7. 按钮、分页、标签 */
+#card-info-btn { border-radius: 6px; }
+.card-tag-cloud a { color: var(--rj-teal) !important; }
+::selection { background: var(--rj-ver); color: #fff; }
+
+/* 8. 页脚 */
+#footer { background: transparent; color: var(--rj-sub); border-top: 1px solid var(--rj-line); }
+#footer::before { display: none; }
+#footer .footer-other, #footer .footer-other a, #footer .copyright, #footer .footer_custom_text { color: var(--rj-sub); text-shadow: none; }
+
+/* 9. 暗色下按钮（作者卡、右下角按钮）保持朱砂 */
+[data-theme="dark"] { --btn-bg: var(--rj-ver); --btn-hover-color: var(--rj-ver-hover); --btn-color: #161513; }
+
+/* 10. 关于页 */
+.rj-about-hero { display: flex; gap: 24px; align-items: center; margin: 8px 0 28px; }
+.rj-about-hero img { width: 120px; height: 120px; border-radius: 50%; flex: none; margin: 0 !important; }
+.rj-about-hero h1 { margin: 0 0 6px !important; font-family: var(--rj-title-font); font-weight: 500; font-size: 1.9em; }
+.rj-about-hero p { margin: 0; color: var(--rj-sub); }
+.rj-about-foot { margin-top: 32px; color: var(--rj-sub); font-family: var(--rj-title-font); text-align: center; }
+#article-container .btn-beautify.outline { border-color: var(--rj-ver); color: var(--rj-ver); margin: 4px 6px 4px 0; }
+#article-container .btn-beautify.outline:hover { background: var(--rj-ver); color: #fff; }
+#article-container .btn-beautify:not(.outline) { background: var(--rj-ver); color: #fff; margin: 4px 6px 4px 0; }
+#article-container .btn-beautify:not(.outline):hover { background: var(--rj-ver-hover); }
+#page:has(.rj-about-hero) > .page-title { display: none; }
+#article-container .timeline { --timeline-color: var(--rj-ver); --timeline-bg: var(--rj-soft); }
+@media (max-width: 768px) { .rj-about-hero { flex-direction: column; text-align: center; } }
+[data-theme="dark"] #article-container .btn-beautify:not(.outline),
+[data-theme="dark"] #article-container .btn-beautify.outline:hover { color: #161513; }
