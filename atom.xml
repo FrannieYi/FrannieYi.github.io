@@ -6,7 +6,7 @@
   <link href="https://yangkunyi.com/atom.xml" rel="self"/>
   
   <link href="https://yangkunyi.com/"/>
-  <updated>2022-12-12T08:04:07.000Z</updated>
+  <updated>2026-11-10T12:40:00.000Z</updated>
   <id>https://yangkunyi.com/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>团队的记忆，不该只存在某个人的脑子里</title>
+    <link href="https://yangkunyi.com/2026/11/10/%E5%9B%A2%E9%98%9F%E7%9A%84%E8%AE%B0%E5%BF%86/"/>
+    <id>https://yangkunyi.com/2026/11/10/%E5%9B%A2%E9%98%9F%E7%9A%84%E8%AE%B0%E5%BF%86/</id>
+    <published>2026-11-10T12:40:00.000Z</published>
+    <updated>2026-11-10T12:40:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>关于 AI 原生团队的一点思考 · Frannie</p></blockquote><p>每个团队都有一些“大家都知道、但没人写下来”的东西。过去，这些东西靠老同事口口相传；现在，团队里多了一批新成员——AI agent。它们不喝咖啡，不参加午饭闲聊，也就永远听不到那些“口口相传”。</p><p>这篇文章想聊的就是这件事：当 agent 真正成为团队的一员，团队的知识应该放在哪里，又该怎样被维护。</p><h2 id="01-十个人，十个版本的团队"><a href="#01-十个人，十个版本的团队" class="headerlink" title="01 十个人，十个版本的团队"></a>01 十个人，十个版本的团队</h2><p>先说我观察到的痛点。</p><p>一个团队真正有价值的知识，往往不在文档里，而在几位资深同事的脑子里：这个接口为什么不能直接改，那个客户为什么要单独处理，上次线上事故之后我们约定了什么。新人要花好几个月，才能把这些“为什么”慢慢拼起来。</p><p>AI agent 的加入，让这个问题变得更明显。每个人都在用自己的 agent，每个 agent 都有自己私有的上下文——有人给它写了详细的说明，有人什么也没写，有人上个月纠正过它一次，有人从没纠正过。结果是：<strong>十个人用 agent，就有十个不同“版本”的团队。</strong></p><p>更让人沮丧的是重复踩坑。A 的 agent 上周犯过的错误，A 已经教会它了；但 B 的 agent 这周会原样再犯一次，因为那次教训只留在了 A 的对话记录里。</p><p>入职和离职也一样。新人来了，他的 agent 和他一样一无所知；老同事走了，他脑子里的东西和他电脑里那个被“调教”得很好的 agent 一起离开。</p><h2 id="02-个人记忆与团队记忆：先分开"><a href="#02-个人记忆与团队记忆：先分开" class="headerlink" title="02 个人记忆与团队记忆：先分开"></a>02 个人记忆与团队记忆：先分开</h2><p>说到“共享记忆”，很容易走向另一个极端：把所有人的对话都收集起来，统一管理。我认为这是错的。</p><p>我更愿意把记忆分成两类：</p><ul><li><strong>个人记忆</strong>：我习惯怎么写代码、我喜欢什么样的回复风格、我手头正在想的半成品念头。它是私有的、本地的，属于个人。</li><li><strong>团队记忆</strong>：命名约定、架构决策、发布流程、不能碰的红线、“我们为什么这么做”。它是共享的，属于团队，由团队维护。</li></ul><p>这两者不应该混在一起。个人和 agent 之间的对话，应该像个人笔记本一样被尊重——管理员不该能翻看别人的聊天记录，团队也不需要。团队要的不是每个人的思考过程，而是<strong>思考之后被确认下来的结论</strong>。</p><p>分开之后，二者之间可以有一座桥：个人在工作中发现了值得全队知道的东西，可以主动把它“提”出来，变成团队记忆的候选。但这一步是主动的，而不是被收集的。</p><h2 id="03-分层：不是记得越多越好"><a href="#03-分层：不是记得越多越好" class="headerlink" title="03 分层：不是记得越多越好"></a>03 分层：不是记得越多越好</h2><p>团队记忆一旦开始积累，下一个问题就来了：东西越来越多，全都塞给 agent，它反而会抓不住重点。人也一样，一份五十页的“新人必读”，基本等于没有。</p><p>我比较认同的做法是分层：</p><table><thead><tr><th>层级</th><th>内容</th></tr></thead><tbody><tr><td><strong>全局原则</strong></td><td>整个团队都适用的少数几条：价值取向、安全红线、协作方式。</td></tr><tr><td><strong>领域 &#x2F; 模块约定</strong></td><td>某个代码库、某个业务线自己的规矩和历史决策。</td></tr><tr><td><strong>任务级上下文</strong></td><td>这一次要做的事所需的具体背景，用完即止。</td></tr></tbody></table><p>agent 在做一件具体的事时，只加载和它相关的那几层。现在很多 coding agent 都支持在仓库里放一份类似 AGENTS.md 的说明文件，并且可以在子目录里再放更具体的版本——这本质上就是一种朴素的分层。思路是对的，值得推广到代码之外的地方。</p><h2 id="04-没有评审的记忆，只是传言"><a href="#04-没有评审的记忆，只是传言" class="headerlink" title="04 没有评审的记忆，只是传言"></a>04 没有评审的记忆，只是传言</h2><p>这是我最想强调的一点。</p><p>如果任何人、任何 agent 都可以随手往团队记忆里写东西，那么用不了多久，它就会变成一个充满过时信息、相互矛盾、甚至是错误结论的垃圾场。agent 会很认真地遵守一条三个月前就已经被推翻的约定。</p><blockquote><p><strong>一条没有被评审过的记忆，只是一条传言。</strong></p></blockquote><p>所以我觉得，团队记忆应该像代码一样拥有生命周期：</p><div class="mermaid-wrap"><pre class="mermaid-src" hidden>  flowchart LR  A[&quot;提出&lt;br&#x2F;&gt;人或 agent，来自真实工作&quot;] --&gt; B[&quot;评审&lt;br&#x2F;&gt;维护者确认&quot;]  B --&gt; C[&quot;版本化&lt;br&#x2F;&gt;可追溯、可回滚&quot;]  C --&gt; D[&quot;使用&lt;br&#x2F;&gt;人和 agent 共读&quot;]  D --&gt; E[&quot;过期 &#x2F; 修剪&lt;br&#x2F;&gt;不再适用就删&quot;]  D -. 新任务中发现新经验 .-&gt; A  </pre></div><p><em>图：团队记忆的生命周期，和代码很像</em></p><p>提出的人可以是人，也可以是 agent——agent 在完成任务时发现“这里有个坑”，完全可以起草一条建议。但写进去之前，要有一个明确的维护者看过、点头。写进去之后，它有版本、有历史，出了问题可以回滚。不再适用的时候，要有人愿意把它删掉。</p><p>“删掉”这件事常被忽略。记忆不是越多越好，<strong>一份定期修剪的记忆，比一份只增不减的记忆可靠得多。</strong></p><h2 id="05-记忆、规则与检查：诚实面对边界"><a href="#05-记忆、规则与检查：诚实面对边界" class="headerlink" title="05 记忆、规则与检查：诚实面对边界"></a>05 记忆、规则与检查：诚实面对边界</h2><p>还有一件需要说实话的事：把一条约定写进记忆，并不意味着它就会被遵守。agent 可能会忽略它，可能会误解它，也可能在上下文太长时根本没注意到它。人也一样。</p><p>所以我会把团队知识大致分成三种：</p><ul><li><strong>可以被机器强制的</strong>：格式规范、禁止提交密钥、某些接口不能被调用。这类东西最好变成自动检查，而不是靠“记得”。</li><li><strong>只能被提醒的</strong>：“这个模块改动前最好先和某个团队打招呼”。写进记忆，让 agent 和人在合适的时候看到。</li><li><strong>只能由人判断的</strong>：取舍、优先级、对用户的感受。记忆可以提供背景，但决定权在人。</li></ul><p>把这三者混为一谈，要么会让人对记忆产生不切实际的期待，要么会把本该自动化的东西留给运气。<strong>记忆是提醒，不是保证。</strong>能变成检查的，就尽量变成检查。</p><h2 id="06-让每一次任务都回流"><a href="#06-让每一次任务都回流" class="headerlink" title="06 让每一次任务都回流"></a>06 让每一次任务都回流</h2><p>如果说前面讲的是“怎么存”，那这一节讲的是“怎么长”。</p><p>一个健康的团队记忆，不是某次集中整理出来的，而是在日常工作里一点点长出来的。修完一个 bug，顺手留下一句“为什么会这样”；做完一个决策，记下当时考虑过、但没有选的方案；agent 被纠正了一次，把这次纠正变成一条候选记忆，交给维护者看。</p><p>我理想中的状态是：<strong>每完成一个任务，团队都比之前聪明一点点。</strong>不是某个人更聪明了，也不是某个人的 agent 更聪明了，而是整个团队共享的那一份上下文更完整了。下一个人、下一个 agent 再来做类似的事时，起点就更高。</p><p>这件事听起来不难，难在习惯。它需要回流的成本足够低，低到顺手就能完成；也需要评审的节奏足够快，快到大家愿意继续提。</p><h2 id="07-结语：模型人人都有，上下文只属于你们"><a href="#07-结语：模型人人都有，上下文只属于你们" class="headerlink" title="07 结语：模型人人都有，上下文只属于你们"></a>07 结语：模型人人都有，上下文只属于你们</h2><p>在 AI 时代，一个团队真正的护城河是什么？</p><p>我越来越觉得不是模型。大家能用到的模型差不多，今天领先的能力，过几个月就会普及。真正拉开差距的，是团队自己积累下来的那些东西：踩过的坑、做过的决定、形成的默契、说得清楚的“为什么”。</p><p>这些东西过去一直存在，只是散落在某些人的脑子里和无数条聊天记录里。agent 的到来，逼着我们把它们拿出来，整理好，放在一个人和 agent 都能读到、都能改进、也都能信任的地方。</p><p>换句话说，我们不只是在给 agent 写说明书，我们是在第一次认真地给团队写下它自己的记忆。</p><hr><h3 id="留给你的几个问题"><a href="#留给你的几个问题" class="headerlink" title="留给你的几个问题"></a>留给你的几个问题</h3><ol><li>你的团队里，有哪一条“大家都知道”的规矩，其实从来没有被写下来过？</li><li>如果明天团队里最资深的那个人离开，哪些知识会跟着他一起消失？</li><li>你的 agent 上一次犯同样的错误，是什么时候？那次教训，团队里的其他人知道吗？</li></ol>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;关于 AI 原生团队的一点思考 · Frannie&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;每个团队都有一些“大家都知道、但没人写下来”的东西。过去，这些东西靠老同事口口相传；现在，团队里多了一批新成员——AI agent。它们不喝咖啡，不参加午</summary>
+      
+    
+    
+    
+    <category term="文章" scheme="https://yangkunyi.com/categories/%E6%96%87%E7%AB%A0/"/>
+    
+    
+    <category term="AI" scheme="https://yangkunyi.com/tags/AI/"/>
+    
+    <category term="团队协作" scheme="https://yangkunyi.com/tags/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/"/>
+    
+    <category term="知识管理" scheme="https://yangkunyi.com/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>关于我阳了的整个过程</title>
@@ -470,29 +501,6 @@
     <category term="微信公众号" scheme="https://yangkunyi.com/tags/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
     
     <category term="公众号" scheme="https://yangkunyi.com/tags/%E5%85%AC%E4%BC%97%E5%8F%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>英语阅读技巧</title>
-    <link href="https://yangkunyi.com/2018/09/27/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E6%8A%80%E5%B7%A7/"/>
-    <id>https://yangkunyi.com/2018/09/27/%E8%8B%B1%E8%AF%AD%E9%98%85%E8%AF%BB%E6%8A%80%E5%B7%A7/</id>
-    <published>2018-09-27T04:35:41.000Z</published>
-    <updated>2022-03-10T03:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>这是根据老师上课整理的，一天的课程其实有很多的东西都需要在后续的练习中去体会，毕竟这是老师根据自己的经验总结的，自己只能作为参考，需要总结的是自己的经验，我这才是最后能把题做对的方法。</p></blockquote><span id="more"></span><h2 id="Day1-Reading-Skills"><a href="#Day1-Reading-Skills" class="headerlink" title="Day1 Reading Skills"></a>Day1 Reading Skills</h2><h3 id="Topic（主题）"><a href="#Topic（主题）" class="headerlink" title="Topic（主题）:"></a>Topic（主题）:</h3><ul><li>内容：2-3 key words (对象，话题)</li><li>位置：1st+2nd (开局)</li><li>特点：</li><li>1.一篇文章的主题有且仅有一个(Only One)</li><li>2.复现频率高</li></ul><blockquote><p>英语为了避免重复，总是用隐形再现，以下是隐形再现的方式。</p></blockquote><p>①同一置换<br>Eg: animalscreaturesspeciesindividualscommunity</p><p>②主题省略<br>Eg: the (height) trend in sports (NBA) may obscure an unrecognized reality.</p><p>③暗喻借代（逆向思维）</p><p>④逻辑暗示<br>A.change(改变):比如时间的改变<br>B.impact(影响)<br>C.relationship(关系)</p><h3 id="Thesis-statement-主旨"><a href="#Thesis-statement-主旨" class="headerlink" title="Thesis statement(主旨)"></a>Thesis statement(主旨)</h3><ul><li><p>内容：One sentence(主旨句)</p></li><li><p>位置：1st+2nd</p></li><li><p>寻找步骤与方式：</p></li><li><p>1.第二段的开头是否有转折标志。</p></li><li><p>2.若没有则看第一段最后是否有总结句。</p></li><li><p>3.若没有则自行总结。（合二为一）</p></li><li><p>特点：它是全文的中心思想，是全文的话题、观点、看法、结论。</p></li></ul><h3 id="Topic-sentence-每一段的主旨句"><a href="#Topic-sentence-每一段的主旨句" class="headerlink" title="Topic sentence (每一段的主旨句)"></a>Topic sentence (每一段的主旨句)</h3><ul><li><p>特点：</p></li><li><p>1.与Topic相关（key words）</p></li><li><p>2.支持主旨句</p></li><li><p>3.有着语篇标志</p></li><li><p>4.拥有三个标准</p></li><li><p>5.拥有三种逻辑结构</p></li></ul><h4 id="六种语篇标志"><a href="#六种语篇标志" class="headerlink" title="六种语篇标志"></a>六种语篇标志</h4><p>(一)    三种转承连词&#x2F;副词</p><ul><li><ol><li>转折对比</li></ol></li><li><ol start="2"><li>因果总结</li></ol></li><li><ol start="3"><li>强调排他</li></ol></li></ul><p>(二)    表达观点&#x2F;结论<br>(三)    特殊标点</p><ul><li><ol><li>：</li></ol></li><li><ol start="2"><li>——</li></ol></li><li><ol start="3"><li>”“</li></ol></li><li><ol start="4"><li>()</li></ol></li></ul><p>(四)    情态动词（2.5个）</p><ul><li><ol><li>Must</li></ol></li><li><ol start="2"><li>Should</li></ol></li><li><ol start="3"><li>Need(当应该的时候)</li></ol></li></ul><p>(五)    特殊结构句型<br>(六)    平铺直叙（首末句，以第一句为主）</p><h4 id="三个标准"><a href="#三个标准" class="headerlink" title="三个标准"></a>三个标准</h4><p>(一)    关联法：主题、主旨、上段主题句<br>(二)    数量法：标志的数量<br>(三)    顺序法：最后一次转承连词出现，标志级别的顺序</p><h4 id="三种逻辑结构"><a href="#三种逻辑结构" class="headerlink" title="三种逻辑结构"></a>三种逻辑结构</h4><p>(一)    重叠性<br>(二)    对立性<br>(三)    互补性</p><h3 id="阅读文章的四大框架"><a href="#阅读文章的四大框架" class="headerlink" title="阅读文章的四大框架"></a>阅读文章的四大框架</h3><p>(一)    描述现象+分析现象+得出结论<br>(二)    提出对象+支持观点or反驳观点or讨论观点+归纳总结<br>(三)    提出问题+分析问题（原因+后果）+解决问题（提出建议方法）<br>(四)    对比对照+分项对比+总体结论</p><h3 id="做题步骤"><a href="#做题步骤" class="headerlink" title="做题步骤"></a>做题步骤</h3><p>(一)    通读开局，把握文章主题主旨（2分钟以内）<br>(二)    浏览题干（选项），文中定位（1-2分钟之间）<br>(三)    程序答题，辨析干扰（15分钟）</p><h2 id="Day2-Selecting-Skills"><a href="#Day2-Selecting-Skills" class="headerlink" title="Day2 Selecting Skills"></a>Day2 Selecting Skills</h2><h3 id="六大题型Testing-items-选择题目"><a href="#六大题型Testing-items-选择题目" class="headerlink" title="六大题型Testing items(选择题目)"></a>六大题型Testing items(选择题目)</h3><p>(一)    步骤</p><ul><li>1.定位有匹配，定位段落</li><li>2.查看中心句</li><li>3.关联主旨</li><li>4.匹配选项</li></ul><p>(二)    步骤</p><ul><li>1.定位无匹配，定位段落</li><li>2.关联上段中心句</li><li>3.寻找下段有无指示代词</li><li>4.理解匹配选项</li></ul><p>(三)    问以下何者正确</p><ul><li>1.第一题：定位在1st+2nd</li><li>2.不是第一题：上题答案之后便是本题出处。</li></ul><p>(四)    作者观点态度</p><ul><li>1.无人认领的观点即为作者的观点</li><li>2.must&#x2F;should</li><li>3.连词&#x2F;副词&#x2F;介词短语观点句子</li><li>4.形式主语的形容词色彩</li></ul><p>(五)    文章大意主旨</p><ul><li>1.主旨句</li><li>2.各段中心句</li><li>3.利用十字交叉法</li><li>4.注意主语宾语</li></ul><p>(六)    定位查找</p><ul><li>1.本题考查词汇量</li><li>2.上下句推理</li><li>3.定位在哪一句答案就在哪一句</li></ul><h3 id="四大干扰选项辨析"><a href="#四大干扰选项辨析" class="headerlink" title="四大干扰选项辨析"></a>四大干扰选项辨析</h3><p>(一)    偷换概念</p><ul><li>1.与原文信息高度相似</li><li>2.替换词或句导致意思变异</li><li>3.增加或减少词句导致意思变异</li><li>4.颠倒因果&#x2F;条件导致逻辑变异</li><li>排除步骤：</li><li><ol><li>why？与原文相似</li></ol></li><li><ol start="2"><li>where different？</li></ol></li><li><ol start="3"><li>how？变异× 一致√</li></ol></li></ul><p>(二)    主次混淆</p><ul><li>1.与原文完全一致（照抄原文）</li><li>2.但是只是detail 不是point</li></ul><p>(三)    观念错误</p><ul><li>1.对象不对</li></ul><p>(四)    过度推理</p><ul><li>1.选项中包含比较级或者最高级</li><li>2.极端排他词（only&#x2F;unless&#x2F;no one&#x2F;no one else…）</li></ul><h2 id="Day3-Reading-Tips-x2F-Strategies"><a href="#Day3-Reading-Tips-x2F-Strategies" class="headerlink" title="Day3 Reading Tips&#x2F;Strategies"></a>Day3 Reading Tips&#x2F;Strategies</h2><h3 id="给标题匹配段落"><a href="#给标题匹配段落" class="headerlink" title="给标题匹配段落"></a>给标题匹配段落</h3><ul><li>1.通读文章开局，把握文章主题背景</li><li>2.关联文章主题，准确理解标题</li><li>3.归纳各段的中心，比对选取标题</li></ul><h3 id="段落排序"><a href="#段落排序" class="headerlink" title="段落排序"></a>段落排序</h3><ul><li>1.交叉阅读，把握文章主题和背景</li><li>两段复现率Topic</li><li>2.段落标志&#x2F;功能，进行大致定位</li><li>3.六种关联证据，段落精准排序</li><li><ol><li>在哪找？<br>a)    90%首尾关联<br>b)    10%首首关联平行段落</li></ol></li><li><ol start="2"><li>找什么关联？<br>a)    指代关联<br>b)    词义关联<br>c)    转承关联<br>d)    数字关联<br>e)    时地关联<br>f)    专有名词关联</li></ol></li><li><ol start="3"><li>怎么找？<br>a)    指代（指示代词）<br>b)    词义：上下文，同根，同义，原词<br>c)    转承：逻辑<br>d)    数字：计算，顺序<br>e)    时地：点对点，日对日，月对月，年对年，地点归属…<br>f)    专有名词：专有名词是否指的同一对象</li></ol></li></ul><h3 id="信息补全题"><a href="#信息补全题" class="headerlink" title="信息补全题"></a>信息补全题</h3><ul><li>1.通读文章开局，把握文章的主旨背景</li><li>2.上下文推理，确定文中缺失信息的大意</li><li><ol><li>归纳中心</li></ol></li><li><ol start="2"><li>上下句推理</li></ol></li><li>3.关联证据，确定答案</li></ul>]]></content>
-    
-    
-    <summary type="html">英语笔记</summary>
-    
-    
-    
-    <category term="旧文存档" scheme="https://yangkunyi.com/categories/%E6%97%A7%E6%96%87%E5%AD%98%E6%A1%A3/"/>
-    
-    
-    <category term="学习" scheme="https://yangkunyi.com/tags/%E5%AD%A6%E4%B9%A0/"/>
-    
-    <category term="英语" scheme="https://yangkunyi.com/tags/%E8%8B%B1%E8%AF%AD/"/>
     
   </entry>
   

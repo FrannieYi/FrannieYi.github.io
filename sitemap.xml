@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yangkunyi.com/2026/11/10/%E5%9B%A2%E9%98%9F%E7%9A%84%E8%AE%B0%E5%BF%86/</loc>
+    
+    <lastmod>2026-11-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yangkunyi.com/2022/12/12/%E5%85%B3%E4%BA%8E%E6%88%91%E9%98%B3%E4%BA%86%E7%9A%84%E6%95%B4%E4%B8%AA%E8%BF%87%E7%A8%8B/</loc>
     
     <lastmod>2022-12-12</lastmod>
@@ -853,6 +862,27 @@
   
   <url>
     <loc>https://yangkunyi.com/tags/HTML5/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yangkunyi.com/tags/AI/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yangkunyi.com/tags/%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yangkunyi.com/tags/%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
