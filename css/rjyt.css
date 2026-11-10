@@ -155,18 +155,7 @@
   #recent-posts > .recent-post-item > .recent-post-info.no-cover { padding: 22px 20px; }
 }
 
-/* 6. 导航栏：站名换成横排字标 */
-#nav .nav-site-title .site-name {
-  display: inline-block; width: 104px; height: 30px; vertical-align: middle;
-  font-size: 0; background: url(/img/rjyt/wordmark-nav-white.svg) no-repeat left center / contain;
-}
-#page-header.full_page #nav:not(.fixed) .nav-site-title .site-name,
-#page-header.nav-fixed #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav.svg); }
-[data-theme="dark"] #page-header.full_page #nav .nav-site-title .site-name,
-[data-theme="dark"] #page-header.nav-fixed #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav-dark.svg); }
-#page-header.not-top-img #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav.svg); }
-[data-theme="dark"] #page-header.not-top-img #nav .nav-site-title .site-name { background-image: url(/img/rjyt/wordmark-nav-dark.svg); }
-#nav .nav-page-title .site-name { width: auto; height: auto; font-size: inherit; background: none; }
+/* 6. 导航栏站名：4.2.2 结构为 #blog_name > a#site-name（纯文字），原 .nav-site-title .site-name 字标规则（4.3+ 结构）不命中，已删除；颜色见文末字标暗色修复 */
 
 /* 7. 按钮、分页、标签 */
 #card-info-btn { border-radius: 6px; }
@@ -859,3 +848,42 @@ table thead {
 .article-sort-title:hover:before {
   border-color: var(--rj-ver);
 }
+
+/* ==========================================================================
+   人间一趟 · 首页字标暗色修复（Butterfly 4.2.2）
+   追加到 source/css/rjyt.css 末尾（或第 5、6 节之后）。配套 head 脚本见 wordmark-fix.md §4.2
+   ========================================================================== */
+
+/* 1. 声明配色方案：让浏览器知道本站自带亮/暗两套。
+      暗色时 used color-scheme = dark，Chrome / WebView 的算法强制深色不再叠加到我们自己的暗色上；
+      滚动条、表单控件也跟着走。 */
+:root { color-scheme: light; }
+[data-theme="dark"] { color-scheme: dark; }
+
+/* 2. 首页大字标：暗色选择器加 html 前缀并 !important，避免以后任何 #page-header… 的简写
+      background 规则（包括 768px 媒体查询里的）把 background-image 冲掉。 */
+#page-header.full_page #site-title {
+  background-image: url(/img/rjyt/wordmark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+html[data-theme="dark"] #page-header.full_page #site-title {
+  background-image: url(/img/rjyt/wordmark-dark.svg) !important;
+}
+
+/* 3. 浏览器强制深色（被 head 脚本检测到）时的兜底：脚本会切到本站暗色并加 .rj-forced-dark，
+      这里再保险一次，即使 activateDarkMode 没跑成也换成暗色字标、深纸底。 */
+html.rj-forced-dark #page-header.full_page { background-color: #161513 !important; }
+html.rj-forced-dark #page-header.full_page #site-title {
+  background-image: url(/img/rjyt/wordmark-dark.svg) !important;
+}
+
+/* 4. 导航栏站名：Butterfly 4.2.2 的结构是 #blog_name > a#site-name（纯文字），
+      rjyt.css 第 6 节写的 .nav-site-title .site-name 是 4.3+/5.x 的结构，在线上不命中。
+      保留文字站名（它会随主题和强制深色自动反色，这正是导航"看着正常"的原因），只把颜色钉到 token。 */
+#page-header.full_page #nav:not(.fixed) #site-name { color: var(--rj-ink); text-shadow: none; }
+#page-header.nav-fixed #nav #site-name,
+#page-header.not-top-img #nav #site-name { color: var(--rj-ink); }
+#page-header.nav-fixed #nav #site-name:hover,
+#page-header.full_page #nav:not(.fixed) #site-name:hover { color: var(--rj-ver); }

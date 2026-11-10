@@ -2158,6 +2158,83 @@ urlpatterns = [
       </tags>
   </entry>
   <entry>
+    <title>动画和HTML5</title>
+    <url>/2017/03/23/%E5%8A%A8%E7%94%BB%E5%92%8CHTML5/</url>
+    <content><![CDATA[<h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3><span id="more"></span>
+<h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><ul>
+<li>position属性：</li>
+<li>static：默认值，意思是有关元素将按照它们在标记里出现的先后顺序出现在浏览器窗口里。</li>
+<li>relative：与static相似，区别是relative的元素还可以（通过应用float属性）从文档的正常显示顺序里脱离出来。</li>
+<li>absolute：我们就可以将它摆在“容器”的任何位置。这个容器要么是文档本身，要么是一个有着fixed或absolute属性的父元素。这个元素在原始标记里面出现的位置与它显示位置无关，因为它的显示位置由top，left，right和bottom等属性决定。你可以使用像素或百分比为单位设置这些属性。</li>
+<li>overflow属性：</li>
+<li>visible：不裁剪溢出内容。</li>
+<li>hidden：隐藏溢出内容。</li>
+<li>scroll：类似鱼hidden，浏览器将对溢出的内容进行隐藏，但显示一个滚动条以便让用户能够滚动看到内容的其他部分。</li>
+<li>auto：类似于scroll，但浏览器只在确实发生溢出时才显示滚动条，如果没有溢出就不显示滚动条。<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4></li>
+<li>setTimeout：能够让某个函数在经过一段预定的时间之后才开始执行。</li>
+<li>函数有两个参数：第一个是字符串，执行的函数名；第二个是数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数所给出的函数。</li>
+<li><code>setTimeout(&quot;function&quot;,interval)</code></li>
+<li>在绝大多数情况下，将函数调用赋值给一个变量是一个好主意。</li>
+<li><code>varible=setTimeout(&quot;function&quot;,interval)</code></li>
+<li>取消某个正在排队等候执行的函数：</li>
+<li><code>clearTimeout(variable)</code></li>
+</ul>
+<h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><h4 id="video："><a href="#video：" class="headerlink" title="video："></a>video：</h4><ul>
+<li>currentTime：返回当前播放的位置，以秒表示；</li>
+<li>duration：返回媒体的总时长，以秒表示，对于流媒体返回无穷大； * paused：表示媒体是否处于暂停状态；</li>
+<li>触发脚本的事件：</li>
+<li>play：在媒体播放开始时发生；</li>
+<li>pause：在媒体暂停是发生；</li>
+<li>loadeddata：在媒体可以从当前播放位置开始播放时发生；</li>
+<li>ended：在媒体已播放完成而停止时发生；</li>
+<li>别忘了给<code>&lt;video&gt;</code>元素叫control属性：</li>
+<li><code>&lt;video src=&quot;movie.ogv&quot; control&gt;</code></li>
+</ul>
+<h4 id="表单："><a href="#表单：" class="headerlink" title="表单："></a>表单：</h4><p>新的输入控件类型</p>
+<ul>
+<li><p>email，用于输入电子邮件地址；</p>
+</li>
+<li><p>url，用于输入URL；</p>
+</li>
+<li><p>date，用于输入日期和时间；</p>
+</li>
+<li><p>number，数值；</p>
+</li>
+<li><p>ranger，生成滑动条；</p>
+</li>
+<li><p>search，搜索框；</p>
+</li>
+<li><p>tel，电话号码；</p>
+</li>
+<li><p>color，选择颜色；<br>新的属性</p>
+</li>
+<li><p>autocomplete，用于为文本（text）输入框添加一组建议的输入项；</p>
+</li>
+<li><p>autofocus，让表单元素自动获得焦点；</p>
+</li>
+<li><p>form，对<form>标签外部的表单元素分组；</p>
+</li>
+<li><p>min，max和step，用在范围（range）和数值（number）输入框中；</p>
+</li>
+<li><p>pattern，定义一个正则表达式，以便验证输入的值；</p>
+</li>
+<li><p>placeholder，在文本输入临时性的提示信息；</p>
+</li>
+<li><p>required，表示必填；</p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>旧文存档</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+        <tag>Javascript</tag>
+        <tag>动画</tag>
+        <tag>HTML5</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>关于我阳了的整个过程</title>
     <url>/2022/12/12/%E5%85%B3%E4%BA%8E%E6%88%91%E9%98%B3%E4%BA%86%E7%9A%84%E6%95%B4%E4%B8%AA%E8%BF%87%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
@@ -2246,83 +2323,6 @@ urlpatterns = [
       <categories>
         <category>生活</category>
       </categories>
-  </entry>
-  <entry>
-    <title>动画和HTML5</title>
-    <url>/2017/03/23/%E5%8A%A8%E7%94%BB%E5%92%8CHTML5/</url>
-    <content><![CDATA[<h3 id="用JavaScript实现动画效果"><a href="#用JavaScript实现动画效果" class="headerlink" title="用JavaScript实现动画效果"></a>用JavaScript实现动画效果</h3><span id="more"></span>
-<h4 id="知识点"><a href="#知识点" class="headerlink" title="知识点"></a>知识点</h4><ul>
-<li>position属性：</li>
-<li>static：默认值，意思是有关元素将按照它们在标记里出现的先后顺序出现在浏览器窗口里。</li>
-<li>relative：与static相似，区别是relative的元素还可以（通过应用float属性）从文档的正常显示顺序里脱离出来。</li>
-<li>absolute：我们就可以将它摆在“容器”的任何位置。这个容器要么是文档本身，要么是一个有着fixed或absolute属性的父元素。这个元素在原始标记里面出现的位置与它显示位置无关，因为它的显示位置由top，left，right和bottom等属性决定。你可以使用像素或百分比为单位设置这些属性。</li>
-<li>overflow属性：</li>
-<li>visible：不裁剪溢出内容。</li>
-<li>hidden：隐藏溢出内容。</li>
-<li>scroll：类似鱼hidden，浏览器将对溢出的内容进行隐藏，但显示一个滚动条以便让用户能够滚动看到内容的其他部分。</li>
-<li>auto：类似于scroll，但浏览器只在确实发生溢出时才显示滚动条，如果没有溢出就不显示滚动条。<h4 id="时间"><a href="#时间" class="headerlink" title="时间"></a>时间</h4></li>
-<li>setTimeout：能够让某个函数在经过一段预定的时间之后才开始执行。</li>
-<li>函数有两个参数：第一个是字符串，执行的函数名；第二个是数值，以毫秒为单位设定了需要经过多长时间才开始执行第一个参数所给出的函数。</li>
-<li><code>setTimeout(&quot;function&quot;,interval)</code></li>
-<li>在绝大多数情况下，将函数调用赋值给一个变量是一个好主意。</li>
-<li><code>varible=setTimeout(&quot;function&quot;,interval)</code></li>
-<li>取消某个正在排队等候执行的函数：</li>
-<li><code>clearTimeout(variable)</code></li>
-</ul>
-<h3 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h3><h4 id="video："><a href="#video：" class="headerlink" title="video："></a>video：</h4><ul>
-<li>currentTime：返回当前播放的位置，以秒表示；</li>
-<li>duration：返回媒体的总时长，以秒表示，对于流媒体返回无穷大； * paused：表示媒体是否处于暂停状态；</li>
-<li>触发脚本的事件：</li>
-<li>play：在媒体播放开始时发生；</li>
-<li>pause：在媒体暂停是发生；</li>
-<li>loadeddata：在媒体可以从当前播放位置开始播放时发生；</li>
-<li>ended：在媒体已播放完成而停止时发生；</li>
-<li>别忘了给<code>&lt;video&gt;</code>元素叫control属性：</li>
-<li><code>&lt;video src=&quot;movie.ogv&quot; control&gt;</code></li>
-</ul>
-<h4 id="表单："><a href="#表单：" class="headerlink" title="表单："></a>表单：</h4><p>新的输入控件类型</p>
-<ul>
-<li><p>email，用于输入电子邮件地址；</p>
-</li>
-<li><p>url，用于输入URL；</p>
-</li>
-<li><p>date，用于输入日期和时间；</p>
-</li>
-<li><p>number，数值；</p>
-</li>
-<li><p>ranger，生成滑动条；</p>
-</li>
-<li><p>search，搜索框；</p>
-</li>
-<li><p>tel，电话号码；</p>
-</li>
-<li><p>color，选择颜色；<br>新的属性</p>
-</li>
-<li><p>autocomplete，用于为文本（text）输入框添加一组建议的输入项；</p>
-</li>
-<li><p>autofocus，让表单元素自动获得焦点；</p>
-</li>
-<li><p>form，对<form>标签外部的表单元素分组；</p>
-</li>
-<li><p>min，max和step，用在范围（range）和数值（number）输入框中；</p>
-</li>
-<li><p>pattern，定义一个正则表达式，以便验证输入的值；</p>
-</li>
-<li><p>placeholder，在文本输入临时性的提示信息；</p>
-</li>
-<li><p>required，表示必填；</p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>旧文存档</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-        <tag>Javascript</tag>
-        <tag>动画</tag>
-        <tag>HTML5</tag>
-      </tags>
   </entry>
   <entry>
     <title>团队的记忆，不该只存在某个人的脑子里</title>
